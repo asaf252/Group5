@@ -4,9 +4,7 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="3a85256d-f386-4d1b-8f4c-d1287acb997b" name="Changes" comment="check">
-      <change beforePath="$PROJECT_DIR$/LogInPage.html" beforeDir="false" afterPath="$PROJECT_DIR$/LogInPage.html" afterDir="false" />
-    </list>
+    <list default="true" id="3a85256d-f386-4d1b-8f4c-d1287acb997b" name="Changes" comment="check" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -20,8 +18,25 @@
     </option>
   </component>
   <component name="Git.Settings">
+    <option name="PREVIOUS_COMMIT_AUTHORS">
+      <list>
+        <option value="asaf252 &lt;asaf9@post.bgu.ac.il&gt;" />
+      </list>
+    </option>
+    <option name="PUSH_TAGS">
+      <GitPushTagMode>
+        <option name="argument" value="--tags" />
+        <option name="title" value="All" />
+      </GitPushTagMode>
+    </option>
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
   </component>
+  <component name="GitHubPullRequestSearchHistory"><![CDATA[{
+  "lastFilter": {
+    "state": "OPEN",
+    "assignee": "asaf252"
+  }
+}]]></component>
   <component name="GithubPullRequestsUISettings"><![CDATA[{
   "selectedUrlAndAccountId": {
     "url": "https://github.com/asaf252/Group5.git",
@@ -91,7 +106,7 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1734045342917</updated>
-      <workItem from="1734045353152" duration="838000" />
+      <workItem from="1734045353152" duration="1146000" />
     </task>
     <task id="LOCAL‎-00001" summary="check">
       <option name="closed" value="true" />
@@ -117,13 +132,38 @@
       <option name="project" value="LOCAL‎" />
       <updated>1734046196266</updated>
     </task>
-    <option name="localTasksCounter" value="4" />
+    <task id="LOCAL‎-00004" summary="check">
+      <option name="closed" value="true" />
+      <created>1734046245569</created>
+      <option name="number" value="00004" />
+      <option name="presentableId" value="LOCAL‎-00004" />
+      <option name="project" value="LOCAL‎" />
+      <updated>1734046245569</updated>
+    </task>
+    <task id="LOCAL‎-00005" summary="check">
+      <option name="closed" value="true" />
+      <created>1734046317271</created>
+      <option name="number" value="00005" />
+      <option name="presentableId" value="LOCAL‎-00005" />
+      <option name="project" value="LOCAL‎" />
+      <updated>1734046317271</updated>
+    </task>
+    <task id="LOCAL‎-00006" summary="check">
+      <option name="closed" value="true" />
+      <created>1734046503565</created>
+      <option name="number" value="00006" />
+      <option name="presentableId" value="LOCAL‎-00006" />
+      <option name="project" value="LOCAL‎" />
+      <updated>1734046503565</updated>
+    </task>
+    <option name="localTasksCounter" value="7" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
     <option name="version" value="3" />
   </component>
   <component name="VcsManagerConfiguration">
+    <option name="CHECK_CODE_SMELLS_BEFORE_PROJECT_COMMIT" value="true" />
     <MESSAGE value="check" />
     <option name="LAST_COMMIT_MESSAGE" value="check" />
   </component>
