@@ -1,0 +1,182 @@
+Index: .idea/workspace.xml
+IDEA additional info:
+Subsystem: com.intellij.openapi.diff.impl.patch.BaseRevisionTextPatchEP
+<+><?xml version=\"1.0\" encoding=\"UTF-8\"?>\r\n<project version=\"4\">\r\n  <component name=\"AutoImportSettings\">\r\n    <option name=\"autoReloadType\" value=\"SELECTIVE\" />\r\n  </component>\r\n  <component name=\"ChangeListManager\">\r\n    <list default=\"true\" id=\"3a85256d-f386-4d1b-8f4c-d1287acb997b\" name=\"Changes\" comment=\"check\" />\r\n    <option name=\"SHOW_DIALOG\" value=\"false\" />\r\n    <option name=\"HIGHLIGHT_CONFLICTS\" value=\"true\" />\r\n    <option name=\"HIGHLIGHT_NON_ACTIVE_CHANGELIST\" value=\"false\" />\r\n    <option name=\"LAST_RESOLUTION\" value=\"IGNORE\" />\r\n  </component>\r\n  <component name=\"FileTemplateManagerImpl\">\r\n    <option name=\"RECENT_TEMPLATES\">\r\n      <list>\r\n        <option value=\"HTML File\" />\r\n      </list>\r\n    </option>\r\n  </component>\r\n  <component name=\"Git.Settings\">\r\n    <option name=\"PREVIOUS_COMMIT_AUTHORS\">\r\n      <list>\r\n        <option value=\"asaf252 &lt;asaf9@post.bgu.ac.il&gt;\" />\r\n      </list>\r\n    </option>\r\n    <option name=\"PUSH_TAGS\">\r\n      <GitPushTagMode>\r\n        <option name=\"argument\" value=\"--follow-tags\" />\r\n        <option name=\"title\" value=\"Current Branch\" />\r\n      </GitPushTagMode>\r\n    </option>\r\n    <option name=\"RECENT_GIT_ROOT_PATH\" value=\"$PROJECT_DIR$\" />\r\n  </component>\r\n  <component name=\"GitHubPullRequestSearchHistory\">{\r\n  &quot;lastFilter&quot;: {\r\n    &quot;state&quot;: &quot;OPEN&quot;,\r\n    &quot;assignee&quot;: &quot;asaf252&quot;\r\n  }\r\n}</component>\r\n  <component name=\"GithubPullRequestsUISettings\">{\r\n  &quot;selectedUrlAndAccountId&quot;: {\r\n    &quot;url&quot;: &quot;https://github.com/asaf252/Group5.git&quot;,\r\n    &quot;accountId&quot;: &quot;1fb6d962-10f6-4f10-b84e-f017f1e0cd10&quot;\r\n  }\r\n}</component>\r\n  <component name=\"ProjectColorInfo\">{\r\n  &quot;associatedIndex&quot;: 4\r\n}</component>\r\n  <component name=\"ProjectId\" id=\"2q8XnJCL5gXvmcrwf0l6sLqPTkm\" />\r\n  <component name=\"ProjectLevelVcsManager\" settingsEditedManually=\"true\" />\r\n  <component name=\"ProjectViewState\">\r\n    <option name=\"hideEmptyMiddlePackages\" value=\"true\" />\r\n    <option name=\"showLibraryContents\" value=\"true\" />\r\n  </component>\r\n  <component name=\"PropertiesComponent\"><![CDATA[{\r\n  \"keyToString\": {\r\n    \"DefaultHtmlFileTemplate\": \"HTML File\",\r\n    \"RunOnceActivity.ShowReadmeOnStart\": \"true\",\r\n    \"git-widget-placeholder\": \"main\",\r\n    \"node.js.detected.package.eslint\": \"true\",\r\n    \"node.js.detected.package.tslint\": \"true\",\r\n    \"node.js.selected.package.eslint\": \"(autodetect)\",\r\n    \"node.js.selected.package.tslint\": \"(autodetect)\",\r\n    \"nodejs_package_manager_path\": \"npm\",\r\n    \"settings.editor.selected.configurable\": \"org.jetbrains.plugins.github.ui.GithubSettingsConfigurable\",\r\n    \"vue.rearranger.settings.migration\": \"true\"\r\n  }\r\n}]]></component>\r\n  <component name=\"RunManager\">\r\n    <configuration name=\"main\" type=\"PythonConfigurationType\" factoryName=\"Python\" nameIsGenerated=\"true\">\r\n      <module name=\"Paw_Paradise_Group5\" />\r\n      <option name=\"ENV_FILES\" value=\"\" />\r\n      <option name=\"INTERPRETER_OPTIONS\" value=\"\" />\r\n      <option name=\"PARENT_ENVS\" value=\"true\" />\r\n      <envs>\r\n        <env name=\"PYTHONUNBUFFERED\" value=\"1\" />\r\n      </envs>\r\n      <option name=\"SDK_HOME\" value=\"\" />\r\n      <option name=\"WORKING_DIRECTORY\" value=\"$PROJECT_DIR$\" />\r\n      <option name=\"IS_MODULE_SDK\" value=\"true\" />\r\n      <option name=\"ADD_CONTENT_ROOTS\" value=\"true\" />\r\n      <option name=\"ADD_SOURCE_ROOTS\" value=\"true\" />\r\n      <EXTENSION ID=\"PythonCoverageRunConfigurationExtension\" runner=\"coverage.py\" />\r\n      <option name=\"SCRIPT_NAME\" value=\"$PROJECT_DIR$/main.py\" />\r\n      <option name=\"PARAMETERS\" value=\"\" />\r\n      <option name=\"SHOW_COMMAND_LINE\" value=\"false\" />\r\n      <option name=\"EMULATE_TERMINAL\" value=\"false\" />\r\n      <option name=\"MODULE_MODE\" value=\"false\" />\r\n      <option name=\"REDIRECT_INPUT\" value=\"false\" />\r\n      <option name=\"INPUT_FILE\" value=\"\" />\r\n      <method v=\"2\" />\r\n    </configuration>\r\n  </component>\r\n  <component name=\"SharedIndexes\">\r\n    <attachedChunks>\r\n      <set>\r\n        <option value=\"bundled-js-predefined-d6986cc7102b-5c90d61e3bab-JavaScript-PY-242.23726.102\" />\r\n        <option value=\"bundled-python-sdk-5e1850174b45-399fe30bd8c1-com.jetbrains.pycharm.pro.sharedIndexes.bundled-PY-242.23726.102\" />\r\n      </set>\r\n    </attachedChunks>\r\n  </component>\r\n  <component name=\"SpellCheckerSettings\" RuntimeDictionaries=\"0\" Folders=\"0\" CustomDictionaries=\"0\" DefaultDictionary=\"application-level\" UseSingleDictionary=\"true\" transferred=\"true\" />\r\n  <component name=\"TaskManager\">\r\n    <task active=\"true\" id=\"Default\" summary=\"Default task\">\r\n      <changelist id=\"3a85256d-f386-4d1b-8f4c-d1287acb997b\" name=\"Changes\" comment=\"\" />\r\n      <created>1734045342917</created>\r\n      <option name=\"number\" value=\"Default\" />\r\n      <option name=\"presentableId\" value=\"Default\" />\r\n      <updated>1734045342917</updated>\r\n      <workItem from=\"1734045353152\" duration=\"1486000\" />\r\n      <workItem from=\"1734046878369\" duration=\"1598000\" />\r\n    </task>\r\n    <task id=\"LOCAL\u200E-00001\" summary=\"check\">\r\n      <option name=\"closed\" value=\"true\" />\r\n      <created>1734045782281</created>\r\n      <option name=\"number\" value=\"00001\" />\r\n      <option name=\"presentableId\" value=\"LOCAL\u200E-00001\" />\r\n      <option name=\"project\" value=\"LOCAL\u200E\" />\r\n      <updated>1734045782281</updated>\r\n    </task>\r\n    <task id=\"LOCAL\u200E-00002\" summary=\"check\">\r\n      <option name=\"closed\" value=\"true\" />\r\n      <created>1734046037475</created>\r\n      <option name=\"number\" value=\"00002\" />\r\n      <option name=\"presentableId\" value=\"LOCAL\u200E-00002\" />\r\n      <option name=\"project\" value=\"LOCAL\u200E\" />\r\n      <updated>1734046037475</updated>\r\n    </task>\r\n    <task id=\"LOCAL\u200E-00003\" summary=\"check\">\r\n      <option name=\"closed\" value=\"true\" />\r\n      <created>1734046196266</created>\r\n      <option name=\"number\" value=\"00003\" />\r\n      <option name=\"presentableId\" value=\"LOCAL\u200E-00003\" />\r\n      <option name=\"project\" value=\"LOCAL\u200E\" />\r\n      <updated>1734046196266</updated>\r\n    </task>\r\n    <task id=\"LOCAL\u200E-00004\" summary=\"check\">\r\n      <option name=\"closed\" value=\"true\" />\r\n      <created>1734046245569</created>\r\n      <option name=\"number\" value=\"00004\" />\r\n      <option name=\"presentableId\" value=\"LOCAL\u200E-00004\" />\r\n      <option name=\"project\" value=\"LOCAL\u200E\" />\r\n      <updated>1734046245569</updated>\r\n    </task>\r\n    <task id=\"LOCAL\u200E-00005\" summary=\"check\">\r\n      <option name=\"closed\" value=\"true\" />\r\n      <created>1734046317271</created>\r\n      <option name=\"number\" value=\"00005\" />\r\n      <option name=\"presentableId\" value=\"LOCAL\u200E-00005\" />\r\n      <option name=\"project\" value=\"LOCAL\u200E\" />\r\n      <updated>1734046317271</updated>\r\n    </task>\r\n    <task id=\"LOCAL\u200E-00006\" summary=\"check\">\r\n      <option name=\"closed\" value=\"true\" />\r\n      <created>1734046503565</created>\r\n      <option name=\"number\" value=\"00006\" />\r\n      <option name=\"presentableId\" value=\"LOCAL\u200E-00006\" />\r\n      <option name=\"project\" value=\"LOCAL\u200E\" />\r\n      <updated>1734046503565</updated>\r\n    </task>\r\n    <task id=\"LOCAL\u200E-00007\" summary=\"check\">\r\n      <option name=\"closed\" value=\"true\" />\r\n      <created>1734046616459</created>\r\n      <option name=\"number\" value=\"00007\" />\r\n      <option name=\"presentableId\" value=\"LOCAL\u200E-00007\" />\r\n      <option name=\"project\" value=\"LOCAL\u200E\" />\r\n      <updated>1734046616459</updated>\r\n    </task>\r\n    <task id=\"LOCAL\u200E-00008\" summary=\"check\">\r\n      <option name=\"closed\" value=\"true\" />\r\n      <created>1734047109745</created>\r\n      <option name=\"number\" value=\"00008\" />\r\n      <option name=\"presentableId\" value=\"LOCAL\u200E-00008\" />\r\n      <option name=\"project\" value=\"LOCAL\u200E\" />\r\n      <updated>1734047109745</updated>\r\n    </task>\r\n    <task id=\"LOCAL\u200E-00009\" summary=\"check\">\r\n      <option name=\"closed\" value=\"true\" />\r\n      <created>1734047196206</created>\r\n      <option name=\"number\" value=\"00009\" />\r\n      <option name=\"presentableId\" value=\"LOCAL\u200E-00009\" />\r\n      <option name=\"project\" value=\"LOCAL\u200E\" />\r\n      <updated>1734047196206</updated>\r\n    </task>\r\n    <task id=\"LOCAL\u200E-00010\" summary=\"check\">\r\n      <option name=\"closed\" value=\"true\" />\r\n      <created>1734048008515</created>\r\n      <option name=\"number\" value=\"00010\" />\r\n      <option name=\"presentableId\" value=\"LOCAL\u200E-00010\" />\r\n      <option name=\"project\" value=\"LOCAL\u200E\" />\r\n      <updated>1734048008515</updated>\r\n    </task>\r\n    <task id=\"LOCAL\u200E-00011\" summary=\"check\">\r\n      <option name=\"closed\" value=\"true\" />\r\n      <created>1734048344259</created>\r\n      <option name=\"number\" value=\"00011\" />\r\n      <option name=\"presentableId\" value=\"LOCAL\u200E-00011\" />\r\n      <option name=\"project\" value=\"LOCAL\u200E\" />\r\n      <updated>1734048344259</updated>\r\n    </task>\r\n    <option name=\"localTasksCounter\" value=\"12\" />\r\n    <servers />\r\n  </component>\r\n  <component name=\"TypeScriptGeneratedFilesManager\">\r\n    <option name=\"version\" value=\"3\" />\r\n  </component>\r\n  <component name=\"Vcs.Log.Tabs.Properties\">\r\n    <option name=\"OPEN_GENERIC_TABS\">\r\n      <map>\r\n        <entry key=\"b86d3f15-893d-4a37-8d0e-c1e315903d67\" value=\"TOOL_WINDOW\" />\r\n      </map>\r\n    </option>\r\n    <option name=\"TAB_STATES\">\r\n      <map>\r\n        <entry key=\"MAIN\">\r\n          <value>\r\n            <State />\r\n          </value>\r\n        </entry>\r\n        <entry key=\"b86d3f15-893d-4a37-8d0e-c1e315903d67\">\r\n          <value>\r\n            <State>\r\n              <option name=\"FILTERS\">\r\n                <map>\r\n                  <entry key=\"branch\">\r\n                    <value>\r\n                      <list>\r\n                        <option value=\"HEAD\" />\r\n                      </list>\r\n                    </value>\r\n                  </entry>\r\n                  <entry key=\"roots\">\r\n                    <value>\r\n                      <list>\r\n                        <option value=\"$PROJECT_DIR$\" />\r\n                      </list>\r\n                    </value>\r\n                  </entry>\r\n                </map>\r\n              </option>\r\n              <option name=\"SHOW_ONLY_AFFECTED_CHANGES\" value=\"true\" />\r\n            </State>\r\n          </value>\r\n        </entry>\r\n      </map>\r\n    </option>\r\n  </component>\r\n  <component name=\"VcsManagerConfiguration\">\r\n    <option name=\"CHECK_CODE_SMELLS_BEFORE_PROJECT_COMMIT\" value=\"true\" />\r\n    <MESSAGE value=\"check\" />\r\n    <option name=\"LAST_COMMIT_MESSAGE\" value=\"check\" />\r\n  </component>\r\n</project>
+Subsystem: com.intellij.openapi.diff.impl.patch.CharsetEP
+<+>UTF-8
+===================================================================
+diff --git a/.idea/workspace.xml b/.idea/workspace.xml
+--- a/.idea/workspace.xml	(revision 7a3b736fdd1ae7787f4f8d8db01a7aedbb85c512)
++++ b/.idea/workspace.xml	(date 1734050464218)
+@@ -18,6 +18,8 @@
+     </option>
+   </component>
+   <component name="Git.Settings">
++    <branch-grouping />
++    <option name="PREVIEW_PUSH_ON_COMMIT_AND_PUSH" value="false" />
+     <option name="PREVIOUS_COMMIT_AUTHORS">
+       <list>
+         <option value="asaf252 &lt;asaf9@post.bgu.ac.il&gt;" />
+@@ -30,19 +32,20 @@
+       </GitPushTagMode>
+     </option>
+     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
++    <option name="UPDATE_TYPE" value="REBASE" />
+   </component>
+-  <component name="GitHubPullRequestSearchHistory">{
+-  &quot;lastFilter&quot;: {
+-    &quot;state&quot;: &quot;OPEN&quot;,
+-    &quot;assignee&quot;: &quot;asaf252&quot;
+-  }
+-}</component>
++  <component name="GitHubPullRequestSearchHistory"><![CDATA[{
++  "lastFilter": {}
++}]]></component>
+   <component name="GithubPullRequestsUISettings">{
+   &quot;selectedUrlAndAccountId&quot;: {
+     &quot;url&quot;: &quot;https://github.com/asaf252/Group5.git&quot;,
+     &quot;accountId&quot;: &quot;1fb6d962-10f6-4f10-b84e-f017f1e0cd10&quot;
+   }
+ }</component>
++  <component name="ProblemsViewState">
++    <option name="selectedTabId" value="CurrentFile" />
++  </component>
+   <component name="ProjectColorInfo">{
+   &quot;associatedIndex&quot;: 4
+ }</component>
+@@ -62,8 +65,15 @@
+     "node.js.selected.package.eslint": "(autodetect)",
+     "node.js.selected.package.tslint": "(autodetect)",
+     "nodejs_package_manager_path": "npm",
+-    "settings.editor.selected.configurable": "org.jetbrains.plugins.github.ui.GithubSettingsConfigurable",
++    "settings.editor.selected.configurable": "vcs.Git",
+     "vue.rearranger.settings.migration": "true"
++  },
++  "keyToStringList": {
++    "GitStage.ChangesTree.GroupingKeys": [
++      "directory",
++      "module",
++      "repository"
++    ]
+   }
+ }]]></component>
+   <component name="RunManager">
+@@ -108,7 +118,7 @@
+       <option name="presentableId" value="Default" />
+       <updated>1734045342917</updated>
+       <workItem from="1734045353152" duration="1486000" />
+-      <workItem from="1734046878369" duration="1598000" />
++      <workItem from="1734046878369" duration="3547000" />
+     </task>
+     <task id="LOCAL‎-00001" summary="check">
+       <option name="closed" value="true" />
+@@ -198,7 +208,55 @@
+       <option name="project" value="LOCAL‎" />
+       <updated>1734048344259</updated>
+     </task>
+-    <option name="localTasksCounter" value="12" />
++    <task id="LOCAL‎-00012" summary="check">
++      <option name="closed" value="true" />
++      <created>1734048570167</created>
++      <option name="number" value="00012" />
++      <option name="presentableId" value="LOCAL‎-00012" />
++      <option name="project" value="LOCAL‎" />
++      <updated>1734048570167</updated>
++    </task>
++    <task id="LOCAL‎-00013" summary="check">
++      <option name="closed" value="true" />
++      <created>1734048716758</created>
++      <option name="number" value="00013" />
++      <option name="presentableId" value="LOCAL‎-00013" />
++      <option name="project" value="LOCAL‎" />
++      <updated>1734048716758</updated>
++    </task>
++    <task id="LOCAL‎-00014" summary="check">
++      <option name="closed" value="true" />
++      <created>1734049017455</created>
++      <option name="number" value="00014" />
++      <option name="presentableId" value="LOCAL‎-00014" />
++      <option name="project" value="LOCAL‎" />
++      <updated>1734049017456</updated>
++    </task>
++    <task id="LOCAL‎-00015" summary="check">
++      <option name="closed" value="true" />
++      <created>1734049455602</created>
++      <option name="number" value="00015" />
++      <option name="presentableId" value="LOCAL‎-00015" />
++      <option name="project" value="LOCAL‎" />
++      <updated>1734049455602</updated>
++    </task>
++    <task id="LOCAL‎-00016" summary="check">
++      <option name="closed" value="true" />
++      <created>1734049922029</created>
++      <option name="number" value="00016" />
++      <option name="presentableId" value="LOCAL‎-00016" />
++      <option name="project" value="LOCAL‎" />
++      <updated>1734049922029</updated>
++    </task>
++    <task id="LOCAL‎-00017" summary="check">
++      <option name="closed" value="true" />
++      <created>1734049947114</created>
++      <option name="number" value="00017" />
++      <option name="presentableId" value="LOCAL‎-00017" />
++      <option name="project" value="LOCAL‎" />
++      <updated>1734049947114</updated>
++    </task>
++    <option name="localTasksCounter" value="18" />
+     <servers />
+   </component>
+   <component name="TypeScriptGeneratedFilesManager">
+@@ -207,32 +265,40 @@
+   <component name="Vcs.Log.Tabs.Properties">
+     <option name="OPEN_GENERIC_TABS">
+       <map>
+-        <entry key="b86d3f15-893d-4a37-8d0e-c1e315903d67" value="TOOL_WINDOW" />
++        <entry key="382ec363-d8de-4635-84de-fc597ddd2e2f" value="TOOL_WINDOW" />
++      </map>
++    </option>
++    <option name="RECENT_FILTERS">
++      <map>
++        <entry key="Paths">
++          <value>
++            <list>
++              <RecentGroup>
++                <option name="FILTER_VALUES">
++                  <option value="file:$PROJECT_DIR$/LogInPage.html" />
++                </option>
++              </RecentGroup>
++            </list>
++          </value>
++        </entry>
+       </map>
+     </option>
+     <option name="TAB_STATES">
+       <map>
+-        <entry key="MAIN">
++        <entry key="382ec363-d8de-4635-84de-fc597ddd2e2f">
+           <value>
+             <State />
+           </value>
+         </entry>
+-        <entry key="b86d3f15-893d-4a37-8d0e-c1e315903d67">
++        <entry key="MAIN">
+           <value>
+             <State>
+               <option name="FILTERS">
+                 <map>
+-                  <entry key="branch">
++                  <entry key="structure">
+                     <value>
+                       <list>
+-                        <option value="HEAD" />
+-                      </list>
+-                    </value>
+-                  </entry>
+-                  <entry key="roots">
+-                    <value>
+-                      <list>
+-                        <option value="$PROJECT_DIR$" />
++                        <option value="file:$PROJECT_DIR$/LogInPage.html" />
+                       </list>
+                     </value>
+                   </entry>
