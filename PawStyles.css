@@ -1,0 +1,119 @@
+body {
+    margin: 0;
+    font-family: 'Arial', sans-serif;
+    background-color: #f8ece6;
+    color: #5a3a29;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+
+
+}
+
+/**/
+.MainStyle {
+    text-align: center;
+    padding: 20px;
+    max-width: 400px;
+    background-color: #fff7f0;
+    border-radius: 15px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+    position: relative; /* לשימוש במיקום אלמנטים פנימיים */
+}
+
+header h1 {
+    font-size: 30px; /* גודל הכותרת */
+    font-weight: bold;
+    margin: 0;
+    color: #7b4d3a; /* צבע חום כהה */
+}
+
+header p {
+    margin: 10px 0 20px; /* מרווח בין הכותרת לתיאור */
+    font-size: 1.1rem; /* גודל טקסט התיאור */
+}
+
+main h2 {
+    font-size: 1.8rem; /* כותרת "Sign In" */
+    margin-bottom: 10px;
+}
+
+.myBackground
+{
+    background-image: url('Paws.png'); /* מיקום התמונה */
+    background-repeat: repeat; /* התמונה לא תחזור */
+    background-position: right center; /* מצמיד את התמונה לימין ומרכז אנכית */
+    background-size: contain; /* מתאים את גודל התמונה לפי היחס שלה */
+}
+form label {
+    display: block; /* מציג את התווית בשורה נפרדת */
+    text-align: left; /* יישור שמאל */
+    margin: 10px 0 5px; /* מרווח סביב */
+    font-size: 0.9rem; /* גודל טקסט */
+}
+
+form input {
+    width: 95%; /* רוחב מלא */
+    padding: 10px; /* ריווח פנימי */
+    margin-bottom: 15px; /* מרווח תחתון */
+    border: 1px solid #ccc; /* גבול אפור */
+    border-radius: 5px; /* קצוות מעוגלים */
+    font-size: 16px; /* גודל טקסט */
+}
+
+button {
+    display: block;
+    width: 100%;
+    margin: 10px 0; /* מרווח סביב הכפתור */
+    padding: 10px; /* ריווח פנימי */
+    font-size: 1rem; /* גודל טקסט */
+    border: none;
+    border-radius: 5px; /* קצוות מעוגלים */
+    cursor: pointer; /* סמן יד */
+}
+
+.google-login {
+    background-color: #d9a764; /* צבע רקע כהה יותר */
+    color: #ffffff; /* צבע טקסט לבן */
+    font-weight: bold;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+}
+
+
+
+.enter {
+    background-color: #7b4d3a; /* צבע חום כהה */
+    color: white; /* צבע טקסט */
+}
+
+
+
+/*buttom style*/
+footer button {
+    background-color: #f3d8c7;
+    color: #5a3a29;
+    padding: 10px 20px;
+    border: 1px solid #5a3a29;
+    font-size: 16px;
+
+}
+.LogInFooter {
+    display: flex; /* מציג את הכפתורים בשורה */
+    justify-content: center; /* ממרכז את הכפתורים */
+    gap: 20px; /* יוצר רווח של 20 פיקסלים בין הכפתורים */
+}
+/* change syle while over the buttom*/
+.LogInFooter button:hover {
+    background-color: #7b4d3a;
+    color: white;
+    border-color: white;
+}
+.Logo
+{
+        width: 20px; /* רוחב התמונה */
+    height: 20px; /* גובה התמונה */
+}
