@@ -1,56 +1,94 @@
+/*---------------------- Generic for pages-----------------*/
 body {
     margin: 0;
-    font-family: 'Arial', sans-serif;
+    font-family:  'Arial',sans-serif;
     background-color: #f8ece6;
     color: #5a3a29;
     display: flex;
     justify-content: center;
     align-items: center;
-
-
-
 }
 
-/**/
+header h1 {
+    font-size: 2.5rem;
+    font-weight: bold;
+    margin: 0;
+    color: #7b4d3a;
+}
+
+main h2 {
+    font-size: 1.8rem;
+    margin-bottom: 10px;
+}
+
+header p {
+    margin: 10px 0 20px;
+    font-size: 1.1rem;
+}
+
+button {
+    display: block;
+    width: 100%;
+    margin: 10px 0;
+    padding: 10px;
+    font-size: 1rem;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+/*---------------------- END Generic for pages-----------------*/
+
+/*---------------------- Main styles for all pages-----------------*/
+
+.Logo {
+        width: 20px; /* רוחב התמונה */
+    height: 20px; /* גובה התמונה */
+    vertical-align: middle; /* מוודא שהתמונה בקו אחד עם הטקסט */
+}
+
 .MainStyle {
     text-align: center;
     padding: 20px;
-    max-width: 400px;
+    max-width:400px;
     background-color: #fff7f0;
     border-radius: 15px;
     box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
     position: relative; /* לשימוש במיקום אלמנטים פנימיים */
 }
 
-header h1 {
-    font-size: 30px; /* גודל הכותרת */
-    font-weight: bold;
-    margin: 0;
-    color: #7b4d3a; /* צבע חום כהה */
-}
-
-header p {
-    margin: 10px 0 20px; /* מרווח בין הכותרת לתיאור */
-    font-size: 1.1rem; /* גודל טקסט התיאור */
-}
-
-main h2 {
-    font-size: 1.8rem; /* כותרת "Sign In" */
-    margin-bottom: 10px;
-}
-
-.myBackground
-{
+.myBackground {
     background-image: url('Paws.png'); /* מיקום התמונה */
     background-repeat: repeat; /* התמונה לא תחזור */
     background-position: right center; /* מצמיד את התמונה לימין ומרכז אנכית */
     background-size: contain; /* מתאים את גודל התמונה לפי היחס שלה */
 }
+
+.regularIMG {
+    width: 150px; /* רוחב התיבה */
+    height: 150px; /* גובה התיבה */
+    border: 2px solid #5a3a29; /* גבול */
+    border-radius: 10px; /* פינות מעוגלות */
+    display: flex; /* ממרכז תוכן אנכית ואופקית */
+    justify-content: center;
+    align-items: center;
+    background-color: white; /* צבע רקע */
+    font-size: 1rem; /* גודל טקסט */
+    font-weight: bold; /* טקסט מודגש */
+    color: #5a3a29;
+    float: left;
+}
+
+/*----------------------END Main styles for all pages-----------------*/
+
+/*---------------------- form Login-----------------*/
+
 form label {
     display: block; /* מציג את התווית בשורה נפרדת */
     text-align: left; /* יישור שמאל */
     margin: 10px 0 5px; /* מרווח סביב */
-    font-size: 0.9rem; /* גודל טקסט */
+    font-size: 20px; /* גודל טקסט */
+    font-weight: bold;
 }
 
 form input {
@@ -60,20 +98,40 @@ form input {
     border: 1px solid #ccc; /* גבול אפור */
     border-radius: 5px; /* קצוות מעוגלים */
     font-size: 16px; /* גודל טקסט */
+
 }
 
-button {
-    display: block;
-    width: 100%;
-    margin: 10px 0; /* מרווח סביב הכפתור */
-    padding: 10px; /* ריווח פנימי */
-    font-size: 1rem; /* גודל טקסט */
-    border: none;
-    border-radius: 5px; /* קצוות מעוגלים */
-    cursor: pointer; /* סמן יד */
+.Raw {
+    display: flex; /* מציג את הכפתורים בשורה */
+    justify-content: center; /* ממרכז את הכפתורים */
+    gap: 20px; /* יוצר רווח של 20 פיקסלים בין הכפתורים */
 }
 
-.google-login {
+/*---------------------- form Login end-----------------*/
+
+/*---------------------- btm1-----------------*/
+
+.btmType1 {
+    background-color: #7b4d3a; /* צבע חום כהה */
+    color: #ffffff; /* צבע טקסט */
+    border: 1px solid #5a3a29;
+    font-weight: bold;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+}
+
+.btmType1:hover {
+    background-color: #f3d8c7;
+    color: #5a3a29;
+}
+
+/*----------------------END btm1-----------------*/
+
+/*---------------------- btm2-----------------*/
+
+.btmType2 {
     background-color: #d9a764; /* צבע רקע כהה יותר */
     color: #ffffff; /* צבע טקסט לבן */
     font-weight: bold;
@@ -83,37 +141,96 @@ button {
     gap: 10px;
 }
 
+/*----------------------END btm2-----------------*/
 
-
-.enter {
-    background-color: #7b4d3a; /* צבע חום כהה */
-    color: white; /* צבע טקסט */
-}
-
-
-
-/*buttom style*/
-footer button {
-    background-color: #f3d8c7;
+.btmType3{
+    background-color: #d3a18a; /* צבע כהה יותר */
     color: #5a3a29;
     padding: 10px 20px;
     border: 1px solid #5a3a29;
     font-size: 16px;
+}
 
+.btmType3:hover {
+    background-color: #f3d8c7;
+    color: #5a3a29;
 }
-.LogInFooter {
-    display: flex; /* מציג את הכפתורים בשורה */
-    justify-content: center; /* ממרכז את הכפתורים */
-    gap: 20px; /* יוצר רווח של 20 פיקסלים בין הכפתורים */
+
+/*---------------------- About US Page-----------------*/
+
+.AboutPicAndText {
+    overflow: hidden; /* מונע בעיות פריסה עם float */
 }
-/* change syle while over the buttom*/
-.LogInFooter button:hover {
-    background-color: #7b4d3a;
-    color: white;
-    border-color: white;
+
+.AboutPicAndText img {
+    float: right; /* מציב את התמונה בצד ימין */
+    margin-left: 15px; /* רווח בין התמונה לטקסט */
+    margin-bottom: 15px; /* רווח מתחת לתמונה */
+    width: 250px; /* גודל התמונה */
+    height: auto; /* שמירת יחס גובה-רוחב */
+    border-radius: 10px; /* פינות מעוגלות */
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); /* צל לתמונה */
 }
-.Logo
-{
-        width: 20px; /* רוחב התמונה */
-    height: 20px; /* גובה התמונה */
+
+/*----------------------END About US Page-----------------*/
+
+/*---------------------- Profile Grid Page-----------------*/
+
+.Dogprofilepage {
+    padding: 30px; /* יותר רווח פנימי */
+    background-color: #f8ece6;
+    text-align: left;
+    font-family: 'Arial', sans-serif;
+    color: #5a3a29;
+    border-radius: 10px;
+    max-width: 1000px; /* הגדלת הרוחב המרבי */
+    margin: 0 auto;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
 }
+/* תפריט נפתח */
+.dog-select {
+    padding: 10px;
+    font-size: 1rem;
+    border: 1px solid #5a3a29;
+    border-radius: 5px;
+    margin-bottom: 20px;
+}
+
+/* רשת פרופיל הכלב */
+.dog-profile-grid {
+    display: grid;
+    grid-template-columns: 1fr 2fr 1.5fr; /* שלוש עמודות */
+    grid-gap: 15px; /* רווח בין האלמנטים */
+    align-items: start;
+    margin-top: 20px;
+}
+
+/* עיצוב התוויות (label) */
+.dog-profile-grid label {
+    font-weight: bold;
+    text-align: right;
+    padding-right: 10px;
+    align-self: center;
+}
+/* עיצוב הערכים (span) */
+.dog-profile-grid span {
+    background-color: #fff;
+    padding: 6px;
+    border: 1px solid #5a3a29;
+    border-radius: 5px;
+    font-size: 1rem;
+}
+
+.dog-picture {
+    grid-column: 3 / 4; /* התמונה תופסת את העמודה השלישית */
+    grid-row: 1 / 7; /* התמונה נפרשת לאורך כל השורות */
+    text-align: center;
+    width: 250px;
+    height: 300px;
+    border-radius: 10px;
+    object-fit: cover;
+    border: 2px solid #5a3a29;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    margin-bottom: 10px;
+}
+/*----------------------END Profile Grid Page-----------------*/
