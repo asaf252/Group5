@@ -49,12 +49,14 @@ button {
 
 .MainStyle {
     text-align: center;
-    padding: 20px;
-    max-width:400px;
+    padding: 30px;
+    max-width:1000px;
     background-color: #fff7f0;
     border-radius: 15px;
     box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
     position: relative; /* לשימוש במיקום אלמנטים פנימיים */
+
+
 }
 
 .myBackground {
@@ -62,6 +64,8 @@ button {
     background-repeat: repeat; /* התמונה לא תחזור */
     background-position: right center; /* מצמיד את התמונה לימין ומרכז אנכית */
     background-size: contain; /* מתאים את גודל התמונה לפי היחס שלה */
+    width: 100%;
+    height: 500px; /* קבע גובה אחיד */
 }
 
 .regularIMG {
@@ -79,6 +83,39 @@ button {
     float: left;
 }
 
+/* רשת פרופיל הכלב */
+.MainGrid {
+    display: grid;
+    grid-template-columns: 1fr 2fr 1.5fr; /* שלוש עמודות */
+    grid-gap: 15px; /* רווח בין האלמנטים */
+    align-items: start;
+    margin-top: 20px;
+}
+
+/* עיצוב התוויות (label) */
+.MainGrid label {
+    font-weight: bold;
+    padding-right: 10px;
+    align-self: center;
+    text-align: start;
+}
+
+/* עיצוב הערכים (span) */
+.MainGrid span {
+    background-color: #fff;
+    padding: 6px;
+    border: 1px solid #5a3a29;
+    border-radius: 5px;
+    font-size: 1rem;
+}
+
+.MainGrid input {
+    background-color: #fff;
+    padding: 6px;
+    border: 1px solid #5a3a29;
+    border-radius: 5px;
+    font-size: 1rem;
+}
 /*----------------------END Main styles for all pages-----------------*/
 
 /*---------------------- form Login-----------------*/
@@ -149,6 +186,8 @@ form input {
     padding: 10px 20px;
     border: 1px solid #5a3a29;
     font-size: 16px;
+    font-weight: bold;
+
 }
 
 .btmType3:hover {
@@ -177,6 +216,7 @@ form input {
 /*---------------------- Profile Grid Page-----------------*/
 
 .Dogprofilepage {
+
     padding: 30px; /* יותר רווח פנימי */
     background-color: #f8ece6;
     text-align: left;
@@ -186,7 +226,10 @@ form input {
     max-width: 1000px; /* הגדלת הרוחב המרבי */
     margin: 0 auto;
     box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+    top: 50%; /* ממקם 50% מגובה ההורה */
+
 }
+
 /* תפריט נפתח */
 .dog-select {
     padding: 10px;
@@ -194,32 +237,12 @@ form input {
     border: 1px solid #5a3a29;
     border-radius: 5px;
     margin-bottom: 20px;
+    width: 80%;
 }
 
-/* רשת פרופיל הכלב */
-.dog-profile-grid {
-    display: grid;
-    grid-template-columns: 1fr 2fr 1.5fr; /* שלוש עמודות */
-    grid-gap: 15px; /* רווח בין האלמנטים */
-    align-items: start;
-    margin-top: 20px;
-}
 
-/* עיצוב התוויות (label) */
-.dog-profile-grid label {
-    font-weight: bold;
-    text-align: right;
-    padding-right: 10px;
-    align-self: center;
-}
-/* עיצוב הערכים (span) */
-.dog-profile-grid span {
-    background-color: #fff;
-    padding: 6px;
-    border: 1px solid #5a3a29;
-    border-radius: 5px;
-    font-size: 1rem;
-}
+
+
 
 .dog-picture {
     grid-column: 3 / 4; /* התמונה תופסת את העמודה השלישית */
