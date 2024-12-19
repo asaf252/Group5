@@ -50,17 +50,16 @@ button {
 }
 
 .MainStyle {
+    display: inline-block; /* התאמה לגודל התוכן */
     text-align: center;
-    padding: 30px;
-    width: 100%;
+    padding: 30px 30px;
+    width: 95%;
     max-width:1000px;
+    min-width: 500px;
     background-color: #fff7f0;
     border-radius: 15px;
     box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
     position: relative; /* לשימוש במיקום אלמנטים פנימיים */
-
-
-
 }
 
 .myBackground {
@@ -90,10 +89,12 @@ button {
 /* רשת פרופיל הכלב */
 .MainGrid {
     display: grid;
-    grid-template-columns:  repeat(auto-fit, 1fr 2fr 1.5fr); /* שלוש עמודות */
+    grid-template-columns:   1fr 2fr 1.5fr; /* שלוש עמודות */
     grid-gap: 15px; /* רווח בין האלמנטים */
     align-items: start;
-    margin: 10px 20px;
+    width: 100%; /* התאמה מלאה לרוחב האב */
+    max-width: 100%; /* ודא שלא יחרוג מגבולות האב */
+    margin: 0 auto; /* מרכז את ה-Grid בתוך האב */
 }
 
 /* עיצוב התוויות (label) */
