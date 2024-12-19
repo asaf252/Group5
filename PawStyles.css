@@ -7,6 +7,8 @@ body {
     display: flex;
     justify-content: center;
     align-items: center;
+    min-height: 150vh; /* גובה המינימום של החלון */
+    min-width: 150vh;
 }
 
 header h1 {
@@ -50,11 +52,13 @@ button {
 .MainStyle {
     text-align: center;
     padding: 30px;
+    width: 100%;
     max-width:1000px;
     background-color: #fff7f0;
     border-radius: 15px;
     box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
     position: relative; /* לשימוש במיקום אלמנטים פנימיים */
+
 
 
 }
@@ -86,10 +90,10 @@ button {
 /* רשת פרופיל הכלב */
 .MainGrid {
     display: grid;
-    grid-template-columns: 1fr 2fr 1.5fr; /* שלוש עמודות */
+    grid-template-columns:  repeat(auto-fit, 1fr 2fr 1.5fr); /* שלוש עמודות */
     grid-gap: 15px; /* רווח בין האלמנטים */
     align-items: start;
-    margin-top: 20px;
+    margin: 10px 20px;
 }
 
 /* עיצוב התוויות (label) */
@@ -224,7 +228,7 @@ form input {
     color: #5a3a29;
     border-radius: 10px;
     max-width: 1000px; /* הגדלת הרוחב המרבי */
-    margin: 0 auto;
+    margin: 10px;
     box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
     top: 50%; /* ממקם 50% מגובה ההורה */
 
