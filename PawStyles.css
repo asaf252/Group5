@@ -97,6 +97,8 @@ table tr {
     position: relative; /* לשימוש במיקום אלמנטים פנימיים */
 }
 
+
+
 .myBackground {
     background-image: url('Paws.png'); /* מיקום התמונה */
     background-repeat: repeat; /* התמונה לא תחזור */
