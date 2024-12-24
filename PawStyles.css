@@ -87,6 +87,14 @@ table td {
     height: 20px; /* גובה התמונה */
     vertical-align: middle; /* מוודא שהתמונה בקו אחד עם הטקסט */
 }
+.LogoBone {
+    width: 60px;
+    height: 60px;
+    margin-right: 0px;
+    margin-bottom: 0;
+    display: inline-block; /* מבטיח יישור אחיד */
+    vertical-align: middle;
+}
 
 .MainStyle {
     display: flex; /* הפיכת הקופסה לקונטיינר של Flexbox */
