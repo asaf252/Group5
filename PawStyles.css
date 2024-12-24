@@ -7,6 +7,8 @@ body {
     display: flex;
     justify-content: center;
     align-items: center;
+    min-height: 150vh; /* גובה המינימום של החלון */
+    min-width: 150vh;
 }
 
 header h1 {
@@ -83,15 +85,16 @@ table tr {
 }
 
 .MainStyle {
+    display: inline-block; /* התאמה לגודל התוכן */
     text-align: center;
-    padding: 30px;
+    padding: 30px 30px;
+    width: 95%;
     max-width:1000px;
+    min-width: 500px;
     background-color: #fff7f0;
     border-radius: 15px;
     box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
     position: relative; /* לשימוש במיקום אלמנטים פנימיים */
-
-
 }
 
 .myBackground {
@@ -121,10 +124,12 @@ table tr {
 /* רשת פרופיל הכלב */
 .MainGrid {
     display: grid;
-    grid-template-columns: 1fr 2fr 1.5fr; /* שלוש עמודות */
+    grid-template-columns:   1fr 2fr 1.5fr; /* שלוש עמודות */
     grid-gap: 15px; /* רווח בין האלמנטים */
     align-items: start;
-    margin-top: 20px;
+    width: 100%; /* התאמה מלאה לרוחב האב */
+    max-width: 100%; /* ודא שלא יחרוג מגבולות האב */
+    margin: 0 auto; /* מרכז את ה-Grid בתוך האב */
 }
 
 /* עיצוב התוויות (label) */
@@ -266,7 +271,7 @@ form input {
     color: #5a3a29;
     border-radius: 10px;
     max-width: 1000px; /* הגדלת הרוחב המרבי */
-    margin: 0 auto;
+    margin: 10px;
     box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
     top: 50%; /* ממקם 50% מגובה ההורה */
 
