@@ -95,11 +95,13 @@ table td {
     align-items: center; /* ממרכז את התוכן הפנימי אופקית */
     text-align: center; /* ממרכז את הטקסט בתוך האלמנטים */
     padding: 30px 30px;
-    width: 95%;
+    width: fit-content;
     max-width: 1000px;
     background-color: #fff7f0;
     border-radius: 15px;
     box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+    margin: auto;
+    box-sizing: border-box; /* מונע overflow */
 }
 
 
@@ -177,7 +179,7 @@ form label {
     font-weight: bold;
 }
 
-form input {
+form input,form select {
     width: 95%; /* רוחב מלא */
     padding: 10px; /* ריווח פנימי */
     margin-bottom: 15px; /* מרווח תחתון */
@@ -185,11 +187,10 @@ form input {
     border-radius: 5px; /* קצוות מעוגלים */
     font-size: 16px; /* גודל טקסט */
 
+
+
 }
-.form-group {
-    display: flex; /* מציב את השאלה ו-Select בשורה אחת */
-    align-items: center; /* יישור אנכי */
-}
+
 
 .Raw {
     display: flex; /* מציג את הכפתורים בשורה */
@@ -311,11 +312,3 @@ form input {
     margin-bottom: 10px;
 }
 /*----------------------END Profile Grid Page-----------------*/
-/*----------------------Top Kennels Page-----------------*/
-
-
-
-
-
-
-/*---------------------- END Top Kennels Page-----------------*/

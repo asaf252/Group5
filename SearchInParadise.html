@@ -6,35 +6,27 @@
     <link rel="stylesheet" href="PawStyles.css">
 </head>
 <body class="myBackground">
-<div CLASS="MainStyle">
-    <h1>search in Paradise</h1>
-    <div class="MainGrid">
-        <!-- שאלה ראשונה -->
-        <div class="form-group">
-            <label for="select-dog">which dog is going to vacation?</label>
-            <select id="select-dog">
-                <option value="dog1">Dog 1</option>
-                <option value="dog2">Dog 2</option>
-                <option value="dog3">Dog 3</option>
-            </select>
+<div class="MainStyle">
+    <form>
+        <header>
+            <h1>Search in Paradise</h1>
+        </header>
+        <label for="dog-select">Which dog is going to vacation?</label>
+        <select id="dog-select">
+            <option>Dog 1</option>
+            <option>Dog 2</option>
+            <option>Dog 3</option>
+        </select>
+        <label for="rating-select">Rate according to:</label>
+        <select id="rating-select">
+            <option>Order By Rate</option>
+            <option>Order by Distance</option>
+        </select>
+        <div class="Raw">
+            <button type="button" class="btmType1">Back</button>
+            <button type="submit" class="btmType3">Search</button>
         </div>
-        <!-- שאלה שנייה -->
-        <div class="form-group">
-            <label for="rate-according">Rate according to:</label>
-            <select id="rate-according">
-                <option value="rating1">Rating 1</option>
-                <option value="rating2">Rating 2</option>
-                <option value="rating3">Rating 3</option>
-            </select>
-        </div>
-    </div>
-    <!-- כפתורים -->
-
-     <div class="Raw">
-        <button class="btmType3">Back</button>
-        <button class="btmType1">Search</button>
-    </div>
-</div>
-
+    </form>
+ </div>
 </body>
 </html>
