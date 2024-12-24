@@ -36,13 +36,48 @@ button {
     border-radius: 5px;
     cursor: pointer;
 }
+table {
+    width: 100%; /* הטבלה תתפרס על כל הרוחב */
+    table-layout: fixed; /* פריסת עמודות קבועה */
+    border-collapse: collapse; /* איחוד גבולות */
+    margin: 20px 0; /* רווח מסביב לטבלה */
+    background-color: #fdf6f3; /* צבע רקע לטבלה */
+}
+
+/* עיצוב לתאי כותרת */
+
+
+/* עיצוב לתאים רגילים */
+table td {
+    text-align: center; /* יישור טקסט למרכז */
+    vertical-align: middle; /* יישור אנכי למרכז */
+    padding: 10px; /* ריווח פנימי */
+    border: 1px solid #5a3a29; /* גבול */
+    font-size: 1rem; /* גודל טקסט */
+    color: #5a3a29; /* צבע טקסט */
+    word-wrap: break-word; /* שבירת טקסט אם ארוך מדי */
+
+}
+
+table tr {
+    text-align: center; /* יישור טקסט למרכז */
+    vertical-align: middle; /* יישור אנכי למרכז */
+    padding: 10px; /* ריווח פנימי */
+    background-color: #d9a18a; /* צבע רקע לכותרת */
+    color: #5a3a29; /* צבע טקסט */
+    font-weight: bold; /* טקסט מודגש */
+    font-size: 1.2rem; /* גודל טקסט */
+    border: 1px solid #5a3a29; /* גבול */
+    word-wrap: break-word; /* שבירת טקסט אם ארוך מדי */
+}
+
 
 /*---------------------- END Generic for pages-----------------*/
 
 /*---------------------- Main styles for all pages-----------------*/
 
 .Logo {
-        width: 20px; /* רוחב התמונה */
+    width: 20px; /* רוחב התמונה */
     height: 20px; /* גובה התמונה */
     vertical-align: middle; /* מוודא שהתמונה בקו אחד עם הטקסט */
 }
@@ -116,6 +151,8 @@ button {
     border-radius: 5px;
     font-size: 1rem;
 }
+
+
 /*----------------------END Main styles for all pages-----------------*/
 
 /*---------------------- form Login-----------------*/
@@ -136,6 +173,10 @@ form input {
     border-radius: 5px; /* קצוות מעוגלים */
     font-size: 16px; /* גודל טקסט */
 
+}
+.form-group {
+    display: flex; /* מציב את השאלה ו-Select בשורה אחת */
+    align-items: center; /* יישור אנכי */
 }
 
 .Raw {
@@ -179,7 +220,7 @@ form input {
 }
 
 /*----------------------END btm2-----------------*/
-
+/*---------------------- btm3-----------------*/
 .btmType3{
     background-color: #d3a18a; /* צבע כהה יותר */
     color: #5a3a29;
@@ -194,6 +235,7 @@ form input {
     background-color: #f3d8c7;
     color: #5a3a29;
 }
+/*----------------------END btm3-----------------*/
 
 /*---------------------- About US Page-----------------*/
 
@@ -257,3 +299,11 @@ form input {
     margin-bottom: 10px;
 }
 /*----------------------END Profile Grid Page-----------------*/
+/*----------------------Top Kennels Page-----------------*/
+
+
+
+
+
+
+/*---------------------- END Top Kennels Page-----------------*/
