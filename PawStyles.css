@@ -39,28 +39,18 @@ button {
     cursor: pointer;
 }
 table {
-    width: 100%; /* הטבלה תתפרס על כל הרוחב */
+    align-content: center;
     table-layout: fixed; /* פריסת עמודות קבועה */
     border-collapse: collapse; /* איחוד גבולות */
-    margin: 20px 0; /* רווח מסביב לטבלה */
+    margin: 20px 20px; /* רווח מסביב לטבלה */
     background-color: #fdf6f3; /* צבע רקע לטבלה */
+    text-align: center; /* יישור כל האלמנטים בתוך הקונטיינר למרכז */
 }
 
 /* עיצוב לתאי כותרת */
 
 
 /* עיצוב לתאים רגילים */
-table td {
-    text-align: center; /* יישור טקסט למרכז */
-    vertical-align: middle; /* יישור אנכי למרכז */
-    padding: 10px; /* ריווח פנימי */
-    border: 1px solid #5a3a29; /* גבול */
-    font-size: 1rem; /* גודל טקסט */
-    color: #5a3a29; /* צבע טקסט */
-    word-wrap: break-word; /* שבירת טקסט אם ארוך מדי */
-
-}
-
 table tr {
     text-align: center; /* יישור טקסט למרכז */
     vertical-align: middle; /* יישור אנכי למרכז */
@@ -72,6 +62,20 @@ table tr {
     border: 1px solid #5a3a29; /* גבול */
     word-wrap: break-word; /* שבירת טקסט אם ארוך מדי */
 }
+
+table td {
+    text-align: center; /* יישור טקסט למרכז */
+    vertical-align: middle; /* יישור אנכי למרכז */
+    padding: 10px; /* ריווח פנימי */
+    border: 1px solid #5a3a29; /* גבול */
+    font-size: 1rem; /* גודל טקסט */
+    color: #5a3a29; /* צבע טקסט */
+    word-wrap: break-word; /* שבירת טקסט אם ארוך מדי */
+  background-color: #fff7f0;
+
+
+}
+
 
 
 /*---------------------- END Generic for pages-----------------*/
@@ -85,16 +89,17 @@ table tr {
 }
 
 .MainStyle {
-    display: inline-block; /* התאמה לגודל התוכן */
-    text-align: center;
+    display: flex; /* הפיכת הקופסה לקונטיינר של Flexbox */
+    flex-direction: column; /* שמירה על סדר אנכי של האלמנטים */
+    justify-content: center; /* ממרכז את התוכן הפנימי אנכית */
+    align-items: center; /* ממרכז את התוכן הפנימי אופקית */
+    text-align: center; /* ממרכז את הטקסט בתוך האלמנטים */
     padding: 30px 30px;
     width: 95%;
-    max-width:1000px;
-    min-width: 500px;
+    max-width: 1000px;
     background-color: #fff7f0;
     border-radius: 15px;
     box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
-    position: relative; /* לשימוש במיקום אלמנטים פנימיים */
 }
 
 
