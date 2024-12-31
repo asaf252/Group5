@@ -5,10 +5,16 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="3a85256d-f386-4d1b-8f4c-d1287acb997b" name="Changes" comment="check">
-      <change afterPath="$PROJECT_DIR$/DogBonePic.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/House_pic.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/RateYourStay.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/RateYourStay.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/calendar_icon.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/dog_pic.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/shelf/Uncommitted_changes_before_Update_at_19_12_2024_10_08_[Changes]/shelved.patch" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/shelf/Uncommitted_changes_before_Update_at_19_12_2024_10_08__Changes_.xml" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/PawStyles.css" beforeDir="false" afterPath="$PROJECT_DIR$/PawStyles.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/SearchInParadise.html" beforeDir="false" afterPath="$PROJECT_DIR$/SearchInParadise.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Thankyou.html" beforeDir="false" afterPath="$PROJECT_DIR$/Thankyou.html" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -50,6 +56,9 @@
     &quot;accountId&quot;: &quot;1fb6d962-10f6-4f10-b84e-f017f1e0cd10&quot;
   }
 }</component>
+  <component name="HighlightingSettingsPerFile">
+    <setting file="file://$PROJECT_DIR$/RateYourStay.js" root0="SKIP_INSPECTION" />
+  </component>
   <component name="ProblemsViewState">
     <option name="selectedTabId" value="CurrentFile" />
   </component>
@@ -382,7 +391,15 @@
       <option name="project" value="LOCAL‎" />
       <updated>1735056790204</updated>
     </task>
-    <option name="localTasksCounter" value="31" />
+    <task id="LOCAL-00031" summary="check">
+      <option name="closed" value="true" />
+      <created>1735060194377</created>
+      <option name="number" value="00031" />
+      <option name="presentableId" value="LOCAL-00031" />
+      <option name="project" value="LOCAL" />
+      <updated>1735060194377</updated>
+    </task>
+    <option name="localTasksCounter" value="32" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
