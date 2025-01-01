@@ -5,16 +5,13 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="3a85256d-f386-4d1b-8f4c-d1287acb997b" name="Changes" comment="check">
-      <change afterPath="$PROJECT_DIR$/House_pic.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/RateYourStay.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/RateYourStay.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/calendar_icon.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/dog_pic.png" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/shelf/Uncommitted_changes_before_Update_at_19_12_2024_10_08_[Changes]/shelved.patch" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/shelf/Uncommitted_changes_before_Update_at_19_12_2024_10_08__Changes_.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/shelf/Uncommitted_changes_before_Update_at_12_24_2024_7_08_PM__Changes_.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/shelf/Uncommitted_changes_before_Update_at_24_12_2024_17_36__Changes_.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/shelf/Uncommitted_changes_before_rebase__Changes_.xml" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/PawJavaScript.js" beforeDir="false" afterPath="$PROJECT_DIR$/PawJavaScript.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/PawStyles.css" beforeDir="false" afterPath="$PROJECT_DIR$/PawStyles.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Thankyou.html" beforeDir="false" afterPath="$PROJECT_DIR$/Thankyou.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/SignUp.html" beforeDir="false" afterPath="$PROJECT_DIR$/SignUp.html" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -150,6 +147,7 @@
       <workItem from="1734534996031" duration="6420000" />
       <workItem from="1734595489538" duration="2973000" />
       <workItem from="1734896107753" duration="3828000" />
+      <workItem from="1735745496506" duration="1305000" />
     </task>
     <task id="LOCAL‎-00001" summary="check">
       <option name="closed" value="true" />
@@ -406,12 +404,6 @@
     <option name="version" value="3" />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
-    <option name="OPEN_GENERIC_TABS">
-      <map>
-        <entry key="382ec363-d8de-4635-84de-fc597ddd2e2f" value="TOOL_WINDOW" />
-        <entry key="967a3867-6fbb-4eb5-a57d-0f9824bb481a" value="TOOL_WINDOW" />
-      </map>
-    </option>
     <option name="RECENT_FILTERS">
       <map>
         <entry key="Paths">
@@ -429,39 +421,14 @@
     </option>
     <option name="TAB_STATES">
       <map>
-        <entry key="382ec363-d8de-4635-84de-fc597ddd2e2f">
-          <value>
-            <State />
-          </value>
-        </entry>
-        <entry key="967a3867-6fbb-4eb5-a57d-0f9824bb481a">
-          <value>
-            <State>
-              <option name="FILTERS">
-                <map>
-                  <entry key="branch">
-                    <value>
-                      <list>
-                        <option value="HEAD" />
-                      </list>
-                    </value>
-                  </entry>
-                  <entry key="roots">
-                    <value>
-                      <list>
-                        <option value="$PROJECT_DIR$" />
-                      </list>
-                    </value>
-                  </entry>
-                </map>
-              </option>
-              <option name="SHOW_ONLY_AFFECTED_CHANGES" value="true" />
-            </State>
-          </value>
-        </entry>
         <entry key="MAIN">
           <value>
             <State>
+              <option name="CUSTOM_BOOLEAN_PROPERTIES">
+                <map>
+                  <entry key="Show.Git.Branches" value="true" />
+                </map>
+              </option>
               <option name="FILTERS">
                 <map>
                   <entry key="structure">

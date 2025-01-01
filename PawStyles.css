@@ -8,7 +8,6 @@ body {
     justify-content: center;
     align-items: center;
     min-height: 150vh; /* גובה המינימום של החלון */
-    min-width: 150vh;
 }
 
 header h1 {
@@ -103,12 +102,11 @@ table td {
     align-items: center; /* ממרכז את התוכן הפנימי אופקית */
     text-align: center; /* ממרכז את הטקסט בתוך האלמנטים */
     padding: 30px 30px;
-    width: fit-content;
+    width: 95%;
     max-width: 1000px;
     background-color: #fff7f0;
     border-radius: 15px;
     box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
-    margin: auto;
     box-sizing: border-box; /* מונע overflow */
 }
 
@@ -146,7 +144,7 @@ table td {
     align-items: start;
     width: 100%; /* התאמה מלאה לרוחב האב */
     max-width: 100%; /* ודא שלא יחרוג מגבולות האב */
-    margin: 0 auto; /* מרכז את ה-Grid בתוך האב */
+    margin: 10%; /* מרכז את ה-Grid בתוך האב */
 }
 
 /* עיצוב התוויות (label) */
@@ -309,16 +307,19 @@ form input,form select {
 
 
 .dog-picture {
-    grid-column: 3 / 4; /* התמונה תופסת את העמודה השלישית */
-    grid-row: 1 / 7; /* התמונה נפרשת לאורך כל השורות */
+    grid-column: 3 / 4; /* העמודה השלישית */
+    grid-row: 1 / 7; /* משתרע על השורות */
     text-align: center;
-    width: 250px;
-    height: 300px;
+
     border-radius: 10px;
-    object-fit: cover;
+    overflow: hidden; /* מונע מהתמונה לחרוג מגבולות המיכל */
+    object-fit: contain;
     border: 2px solid #5a3a29;
     box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
     margin-bottom: 10px;
+        width: 100%; /* מתאים את התמונה לרוחב המיכל */
+    height: 100%; /* מתאים את התמונה לגובה המיכל */
+    border-radius: 10px; /* פינות מעוגלות */
 }
 /*----------------------END Profile Grid Page-----------------*/
 /*----------------------rate your stay page-----------------*/
@@ -335,6 +336,8 @@ form input,form select {
 .rating input[type="checkbox"] {
     display: none; /* מסתיר את תיבות הסימון */
 }
+
+
 
 .rating label {
     cursor: pointer;

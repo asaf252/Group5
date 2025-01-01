@@ -1,25 +1,70 @@
-// Function to update the width and background color of all elements with the MainStyle class
-const updateMainStyleWidth = () => {
-    const windowWidth = window.innerWidth; // Get current window width
-    const elements = document.querySelectorAll(".MainStyle"); // Select all elements with MainStyle class
+document.getElementById("Signup").addEventListener("submit", function(event) {
+    const emailInput = document.getElementById("email");
+    const emailError = document.getElementById("emailError");
+    const emailValue = emailInput.value.trim();
 
-    // Loop through each element and update its width
-    elements.forEach((element) => {
-        element.style.width = `${windowWidth * 0.8}px`; // 80% of the window width
-    });
+    // רשימת סימנים אסורים
+    const forbiddenCharacters = [',', '"', '\\', '(', ')', '<', '>', '[', ']', ';', ':', '&', '*'];
+    // Regex לבדיקה שהכתובת מכילה רק תווים באנגלית
+    const validEnglishRegex = /^[a-zA-Z0-9@._-]+$/;
 
-    // Update background color based on window width
-    if (windowWidth <= 600) {
-        elements.forEach((element) => {
-            element.style.backgroundColor = "red"; // For small screens
-        });
-    } else {
-        elements.forEach((element) => {
-            element.style.backgroundColor = "blue"; // For larger screens
-        });
+    // איפוס הודעת השגיאה
+    emailError.style.display = "none";
+    emailError.textContent = "";
+
+
+
+    // בדיקה אם האימייל מכיל @
+    if (!emailValue.includes("@")) {
+        emailError.textContent = "The email must contain '@'.";
+        emailError.style.display = "block";
+        event.preventDefault();
+        return;
     }
-};
 
-// Run the function initially and on window resize
-updateMainStyleWidth();
-window.addEventListener("resize", updateMainStyleWidth);
+    // בדיקה של חלקים לפני ואחרי @
+    const [beforeAt, afterAt] = emailValue.split("@");
+    if (!beforeAt || !afterAt) {
+        emailError.textContent = "The email must have content before and after '@'.";
+        emailError.style.display = "block";
+        event.preventDefault();
+        return;
+    }
+
+    // בדיקה אם יש נקודה אחרי ה-@
+    if (!afterAt.includes(".")) {
+        emailError.textContent = "The part after '@' must contain a '.'";
+        emailError.style.display = "block";
+        event.preventDefault();
+        return;
+    }
+
+    const [beforeDot, afterDot] = afterAt.split(".");
+    if (!beforeDot || !afterDot) {
+        emailError.textContent = "The email must have content before and after the '.'";
+        emailError.style.display = "block";
+        event.preventDefault();
+        return;
+    }
+
+        // בדיקה אם יש סימנים אסורים באימייל
+    for (const char of forbiddenCharacters) {
+        if (emailValue.includes(char)) {
+            emailError.textContent = `The email contains a forbidden character: "${char}".`;
+            emailError.style.display = "block";
+            event.preventDefault();
+            return;
+        }
+    }
+
+    // בדיקה אם התווים הם רק באנגלית
+    if (!validEnglishRegex.test(emailValue)) {
+        emailError.textContent = "The email must contain only English letters, numbers, and allowed symbols (@, ., _, -).";
+        emailError.style.display = "block";
+        event.preventDefault();
+        return;
+    }
+
+    // אם הכל תקין
+    alert("Email is valid!");
+});
