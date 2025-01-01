@@ -192,6 +192,14 @@ form input,form select {
     border: 1px solid #ccc; /* גבול אפור */
     border-radius: 5px; /* קצוות מעוגלים */
     font-size: 16px; /* גודל טקסט */
+}
+
+form span {
+    display: block; /* הופך את ה-span ל-block כדי לאפשר שבירת שורות */
+    color: red; /* צבע אדום לשגיאה */
+    font-size: 0.9rem; /* גודל טקסט */
+    white-space: pre-line; /* תמיכה בשבירת שורות עם \n */
+    margin-top: 5px; /* רווח קטן מעל ההודעה */
 
 
 
