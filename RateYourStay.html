@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Rate Your Stay</title>
+    <link rel="stylesheet" href="PawStyles.css">
+
+</head>
+<body class="myBackground">
+<div class="MainStyle">
+    <form>
+        <header>
+            <h1>Rate Your Stay</h1>
+        </header>
+
+        <label for="dog-select">Which visit do you want to rate?</label>
+        <select id="dog-select">
+            <option>Visit 1</option>
+            <option>Visit 2</option>
+            <option>Visit 3</option>
+        </select>
+
+        <label>Enter your grade:</label>
+        <div class="rating">
+            <input type="checkbox" id="bone1" name="rating" value="1">
+            <label for="bone1"><img src="DogBonePic.png" alt="1 Bone"></label>
+
+            <input type="checkbox" id="bone2" name="rating" value="2">
+            <label for="bone2"><img src="DogBonePic.png" alt="2 Bones"></label>
+
+            <input type="checkbox" id="bone3" name="rating" value="3">
+            <label for="bone3"><img src="DogBonePic.png" alt="3 Bones"></label>
+
+            <input type="checkbox" id="bone4" name="rating" value="4">
+            <label for="bone4"><img src="DogBonePic.png" alt="4 Bones"></label>
+
+            <input type="checkbox" id="bone5" name="rating" value="5">
+            <label for="bone5"><img src="DogBonePic.png" alt="5 Bones"></label>
+        </div>
+
+        <label for="comment">Add a comment:</label>
+        <textarea id="comment" placeholder="Write your comment here..." rows="4" cols="50"></textarea>
+
+        <button type="submit" class="btmType1">Submit Rating</button>
+    </form>
+</div>
+<script src="script.js"></script> <!-- חיבור לקובץ ה-JavaScript -->
+
+</body>
+</html>

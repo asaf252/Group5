@@ -206,6 +206,7 @@ form input,form select {
     gap: 20px; /* יוצר רווח של 20 פיקסלים בין הכפתורים */
 }
 
+
 /*---------------------- form Login end-----------------*/
 
 /*---------------------- btm1-----------------*/
@@ -320,3 +321,41 @@ form input,form select {
     margin-bottom: 10px;
 }
 /*----------------------END Profile Grid Page-----------------*/
+/*----------------------rate your stay page-----------------*/
+
+/* עיצוב לדירוג */
+.rating {
+    display: flex;
+    gap: 10px;
+    justify-content: center;
+    align-items: center;
+    margin: 20px 0;
+}
+
+.rating input[type="checkbox"] {
+    display: none; /* מסתיר את תיבות הסימון */
+}
+
+.rating label {
+    cursor: pointer;
+}
+
+.rating label img {
+    width: 40px;
+    height: 40px;
+    transition: transform 0.2s, border 0.2s; /* אפקטים של שינוי */
+}
+
+/* סימון העצם כאשר היא נבחרת */
+.rating input[type="checkbox"]:checked + label img {
+    transform: scale(1.2); /* הגדלת העצם */
+    border: 2px solid #5a3a29; /* מסגרת קבועה */
+    border-radius: 5px;
+}
+
+/* הגדלת העצם כאשר משתמשים ב-hover */
+.rating label:hover img {
+    transform: scale(1.2); /* הגדלת העצם */
+    border: 2px solid #5a3a29; /* מסגרת זמנית */
+    border-radius: 5px;
+}
