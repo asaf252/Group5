@@ -5,10 +5,38 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="3a85256d-f386-4d1b-8f4c-d1287acb997b" name="Changes" comment="check">
+      <change afterPath="$PROJECT_DIR$/About.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/About.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/AddNewDog.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/NavigatorScript.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/NavigatorStyle.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/RateYourStay.css" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/PawJavaScript.js" beforeDir="false" afterPath="$PROJECT_DIR$/PawJavaScript.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/About.html" beforeDir="false" afterPath="$PROJECT_DIR$/About.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/AboutPhoto.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/Photos/AboutPhoto.jpg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/AddNewDog.html" beforeDir="false" afterPath="$PROJECT_DIR$/AddNewDog.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/DogBonePic.png" beforeDir="false" afterPath="$PROJECT_DIR$/Photos/DogBonePic.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/DogProfile.html" beforeDir="false" afterPath="$PROJECT_DIR$/DogProfile.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/GoogleLogo.png" beforeDir="false" afterPath="$PROJECT_DIR$/Photos/GoogleLogo.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/HomePage.html" beforeDir="false" afterPath="$PROJECT_DIR$/HomePage.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/House_pic.png" beforeDir="false" afterPath="$PROJECT_DIR$/Photos/House_pic.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/InstagramIcon.png" beforeDir="false" afterPath="$PROJECT_DIR$/Photos/InstagramIcon.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/LogInPage.html" beforeDir="false" afterPath="$PROJECT_DIR$/LogInPage.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Marvel.jpeg" beforeDir="false" afterPath="$PROJECT_DIR$/Photos/Marvel.jpeg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Part1_Group5.docx" beforeDir="false" afterPath="$PROJECT_DIR$/PartA/Part1_Group5.docx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/PawJavaScript.js" beforeDir="false" afterPath="$PROJECT_DIR$/Signup.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/PawStyles.css" beforeDir="false" afterPath="$PROJECT_DIR$/PawStyles.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Paws.png" beforeDir="false" afterPath="$PROJECT_DIR$/Photos/Paws.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/RateYourStay.html" beforeDir="false" afterPath="$PROJECT_DIR$/RateYourStay.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/RateYourStay.js" beforeDir="false" afterPath="$PROJECT_DIR$/RateYourStay.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/SearchInParadise.html" beforeDir="false" afterPath="$PROJECT_DIR$/SearchInParadise.html" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/SignUp.html" beforeDir="false" afterPath="$PROJECT_DIR$/SignUp.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Thankyou.html" beforeDir="false" afterPath="$PROJECT_DIR$/Thankyou.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Upload.png" beforeDir="false" afterPath="$PROJECT_DIR$/Photos/Upload.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/calendar_icon.png" beforeDir="false" afterPath="$PROJECT_DIR$/Photos/calendar_icon.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/dog_pic.png" beforeDir="false" afterPath="$PROJECT_DIR$/Photos/dog_pic.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/info.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/Photos/info.jpg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/top kennels.html" beforeDir="false" afterPath="$PROJECT_DIR$/top kennels.html" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -18,9 +46,10 @@
   <component name="FileTemplateManagerImpl">
     <option name="RECENT_TEMPLATES">
       <list>
-        <option value="CSS File" />
         <option value="HTML File" />
+        <option value="TypeScript File" />
         <option value="JavaScript File" />
+        <option value="CSS File" />
       </list>
     </option>
   </component>
@@ -66,39 +95,48 @@
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="PropertiesComponent">{
-  &quot;keyToString&quot;: {
-    &quot;DefaultHtmlFileTemplate&quot;: &quot;HTML File&quot;,
-    &quot;Python.main.executor&quot;: &quot;Run&quot;,
-    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
-    &quot;git-widget-placeholder&quot;: &quot;main&quot;,
-    &quot;last_opened_file_path&quot;: &quot;C:/Users/halfo/PycharmProjects/Group5&quot;,
-    &quot;list.type.of.created.stylesheet&quot;: &quot;CSS&quot;,
-    &quot;node.js.detected.package.eslint&quot;: &quot;true&quot;,
-    &quot;node.js.detected.package.tslint&quot;: &quot;true&quot;,
-    &quot;node.js.selected.package.eslint&quot;: &quot;(autodetect)&quot;,
-    &quot;node.js.selected.package.tslint&quot;: &quot;(autodetect)&quot;,
-    &quot;nodejs_package_manager_path&quot;: &quot;npm&quot;,
-    &quot;settings.editor.selected.configurable&quot;: &quot;vcs.Git&quot;,
-    &quot;vue.rearranger.settings.migration&quot;: &quot;true&quot;
+  <component name="PropertiesComponent"><![CDATA[{
+  "keyToString": {
+    "DefaultHtmlFileTemplate": "HTML File",
+    "Node.js.RateYourStay.js.executor": "Debug",
+    "Python.main.executor": "Run",
+    "RunOnceActivity.ShowReadmeOnStart": "true",
+    "git-widget-placeholder": "main",
+    "last_opened_file_path": "C:/Users/halfo/PycharmProjects/Group5",
+    "list.type.of.created.stylesheet": "CSS",
+    "node.js.detected.package.eslint": "true",
+    "node.js.detected.package.tslint": "true",
+    "node.js.selected.package.eslint": "(autodetect)",
+    "node.js.selected.package.tslint": "(autodetect)",
+    "nodejs_package_manager_path": "npm",
+    "settings.editor.selected.configurable": "vcs.Git",
+    "ts.external.directory.path": "C:\\Program Files\\JetBrains\\PyCharm 2024.2.4\\plugins\\javascript-plugin\\jsLanguageServicesImpl\\external",
+    "vue.rearranger.settings.migration": "true"
   },
-  &quot;keyToStringList&quot;: {
-    &quot;GitStage.ChangesTree.GroupingKeys&quot;: [
-      &quot;directory&quot;,
-      &quot;module&quot;,
-      &quot;repository&quot;
+  "keyToStringList": {
+    "GitStage.ChangesTree.GroupingKeys": [
+      "directory",
+      "module",
+      "repository"
     ],
-    &quot;com.intellij.ide.scratch.ScratchImplUtil$2/New Scratch File&quot;: [
-      &quot;CSS&quot;
+    "com.intellij.ide.scratch.ScratchImplUtil$2/New Scratch File": [
+      "CSS"
     ]
   }
-}</component>
+}]]></component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
       <recent name="C:\Users\halfo\PycharmProjects\Group5" />
     </key>
+    <key name="MoveFile.RECENT_KEYS">
+      <recent name="C:\Users\assaf\PycharmProjects\Paw_Paradise_Group5\PartA" />
+      <recent name="C:\Users\assaf\PycharmProjects\Paw_Paradise_Group5\Photos" />
+    </key>
   </component>
-  <component name="RunManager">
+  <component name="RunManager" selected="Node.js.RateYourStay.js">
+    <configuration name="RateYourStay.js" type="NodeJSConfigurationType" temporary="true" nameIsGenerated="true" path-to-js-file="$PROJECT_DIR$/RateYourStay.js" working-dir="$PROJECT_DIR$">
+      <method v="2" />
+    </configuration>
     <configuration name="main" type="PythonConfigurationType" factoryName="Python" nameIsGenerated="true">
       <module name="Paw_Paradise_Group5" />
       <option name="ENV_FILES" value="" />
@@ -122,6 +160,11 @@
       <option name="INPUT_FILE" value="" />
       <method v="2" />
     </configuration>
+    <recent_temporary>
+      <list>
+        <item itemvalue="Node.js.RateYourStay.js" />
+      </list>
+    </recent_temporary>
   </component>
   <component name="SharedIndexes">
     <attachedChunks>
@@ -145,7 +188,8 @@
       <workItem from="1734534996031" duration="6420000" />
       <workItem from="1734595489538" duration="2973000" />
       <workItem from="1734896107753" duration="3828000" />
-      <workItem from="1735745496506" duration="9562000" />
+      <workItem from="1735745496506" duration="10312000" />
+      <workItem from="1736195176743" duration="20918000" />
     </task>
     <task id="LOCAL‎-00001" summary="check">
       <option name="closed" value="true" />
@@ -411,7 +455,15 @@
       <option name="project" value="LOCAL‎" />
       <updated>1735747424962</updated>
     </task>
-    <option name="localTasksCounter" value="34" />
+    <task id="LOCAL‎-00034" summary="check">
+      <option name="closed" value="true" />
+      <created>1735755363327</created>
+      <option name="number" value="00034" />
+      <option name="presentableId" value="LOCAL‎-00034" />
+      <option name="project" value="LOCAL‎" />
+      <updated>1735755363327</updated>
+    </task>
+    <option name="localTasksCounter" value="35" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">

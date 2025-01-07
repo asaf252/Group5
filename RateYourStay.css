@@ -1,0 +1,51 @@
+form {
+    background-color: #fff7f0;
+    border: 1px solid #d9a18a;
+    border-radius: 15px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+    padding: 20px;
+    width: 90%;
+    max-width: 600px;
+    margin: 20px auto;
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    color: #5a3a29;
+}
+/* עיצוב ברירת מחדל לעצמות */
+.rating label img {
+    width: 50px;
+    height: 50px;
+    transition: transform 0.2s, border 0.2s;
+}
+
+
+/* סימון קבוע */
+.rating input[type="checkbox"]:checked + label img {
+    transform: scale(1.2);
+    border: 2px solid #5a3a29;
+    border-radius: 5px;
+}
+
+
+/* העצמות המודגשות בזמן hover */
+.rating label.hover img {
+    transform: scale(1.2);
+    border: 2px solid #d9a18a;
+    border-radius: 5px;
+}
+
+/* העצמות המיועדות לביטול סימון */
+.rating label.to-uncheck img {
+    border: 2px dashed red !important; /* שימוש ב-!important */
+    transform: scale(1.2);
+    opacity: 0.7;
+}
+/* העצמות המודגשות בזמן hover */
+.rating label.hover img {
+    transform: scale(1.2);
+    border: 2px solid #d9a18a;
+    border-radius: 5px;
+}
+
+

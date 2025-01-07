@@ -1,0 +1,16 @@
+
+/*---------------------- About US Page-----------------*/
+
+.AboutPicAndText {
+    overflow: hidden; /* מונע בעיות פריסה עם float */
+}
+
+.AboutPicAndText img {
+    float: right; /* מציב את התמונה בצד ימין */
+    margin-left: 15px; /* רווח בין התמונה לטקסט */
+    margin-bottom: 15px; /* רווח מתחת לתמונה */
+    width: 250px; /* גודל התמונה */
+    height: auto; /* שמירת יחס גובה-רוחב */
+    border-radius: 10px; /* פינות מעוגלות */
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); /* צל לתמונה */
+}
