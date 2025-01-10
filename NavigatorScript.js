@@ -29,7 +29,7 @@ function setupNavbar() {
     addNavLink('About', 'About.html');
     addNavLink('Add New Dog', 'AddNewDog.html');
     addNavLink('Home Page', 'HomePage.html');
-    addNavLink('Dog Profile', 'DogProfile.html');
+    addNavLink('Dog Profile', 'ProfileDog.html');
     addNavLink('Login', 'LoginPage.html');
     addNavLink('Rate Your Stay', 'RateYourStay.html');
     addNavLink('Search in Paradise', 'SearchInParadise.html');
