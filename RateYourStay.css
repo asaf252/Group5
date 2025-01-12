@@ -1,17 +1,59 @@
-form {
+.RateStyle {
+
+    background-color: #fff7f0; /* צבע רקע */
+    border: 1px solid #d9a18a; /* גבול */
+    border-radius: 15px; /* פינות מעוגלות */
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1); /* צל */
+    padding: 30px; /* רווח פנימי */
+    width: 90%; /* רוחב מקסימלי */
+    max-width: 600px; /* מגבלת רוחב */
+    margin: 20px auto; /* ממרכז את התיבה */
+    box-sizing: border-box; /* מתחשב ב-padding */
+    display: flex; /* מציג את התוכן בפלקס */
+    flex-direction: column; /* תוכן מסודר אנכית */
+    gap: 20px; /* ריווח בין האלמנטים */
+}
+@media (max-width: 768px) {
+    .MainStyle {
+        width: 95%; /* מצמצם רוחב במסכים קטנים */
+        padding: 20px; /* פחות ריווח פנימי */
+    }
+}
+
+.rating form {
     background-color: #fff7f0;
     border: 1px solid #d9a18a;
     border-radius: 15px;
     box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
     padding: 20px;
-    width: 90%;
-    max-width: 600px;
-    margin: 20px auto;
+    width: 100%; /* רוחב מלא */
+    max-width: 600px; /* רוחב מקסימלי */
+    margin: 20px auto; /* ממרכז את הטופס */
     display: flex;
     flex-direction: column;
-    gap: 20px;
+    gap: 20px; /* ריווח בין האלמנטים */
+    box-sizing: border-box; /* לוקח בחשבון את ה-padding */
     color: #5a3a29;
 }
+
+/* התאמה לאלמנטים פנימיים */
+.rating input, form select, form textarea {
+    width: 100%; /* תופס את כל רוחב הטופס */
+    max-width: 580px; /* מגביל את הרוחב בתוך הטופס */
+    padding: 10px; /* רווח פנימי */
+    border: 1px solid #d9a18a;
+    border-radius: 5px;
+    box-sizing: border-box;
+}
+/* עיצוב קלאס rating */
+.rating {
+    display: flex; /* יישור אופקי של העצמות */
+    justify-content: center; /* ממרכז את העצמות */
+    align-items: center; /* מיישר את העצמות אנכית */
+    gap: 10px; /* ריווח בין העצמות */
+    margin: 20px 0; /* רווח מעל ומתחת למערכת הדירוג */
+}
+
 /* עיצוב ברירת מחדל לעצמות */
 .rating label img {
     width: 50px;

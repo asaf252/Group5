@@ -8,7 +8,7 @@
     <link rel="stylesheet" href="NavigatorStyle.css">
 
 </head>
-<body CLASS="myBackground">
+<body class ="myBackground">
     <div class="MainStyle" >
         <header>
             <h1>Paw Paradise</h1>
@@ -16,21 +16,23 @@
         </header>
         <main>
             <h2>Sign In</h2>
-            <form >
+            <form id="loginForm">
                     <label for="email">Email</label>
-                    <input type="email" id="email" placeholder="Enter your email" required>
+                    <input  id="email" placeholder="Enter your email" >
+                     <span id="emailError"></span>
                     <label for="password">Password</label>
                     <input type="password" id="password" placeholder="Enter your password" required>
-                <button class="btmType2" type="button">LOGIN WITH GOOGLE     <img src="Photos/GoogleLogo.png" class="Logo"></button>
                 <button class="btmType1" type="submit">ENTER</button>
-                <p>New Here? <a href="#">SIGN UP</a></p>
+                <p>New Here? <a href="SignUp.html">SIGN UP</a></p>
             </form>
         </main>
         <footer class="Raw">
-            <button class="btmType3">ABOUT US <img src="Photos/info.jpg" class="Logo"></button>
-            <button class="btmType3">FOLLOW US <img src="Photos/InstagramIcon.png" class="Logo"></button>
+            <button id="aboutButton" class="btmType3">ABOUT US <img src="Photos/info.jpg" class="Logo"></button>
+            <button id="followButton" class="btmType3">FOLLOW US <img src="Photos/InstagramIcon.png" class="Logo"></button>
         </footer>
     </div>
 <script src="NavigatorScript.js"></script>
+<script src="LogInPage.js"></script>
+
 </body>
 </html>

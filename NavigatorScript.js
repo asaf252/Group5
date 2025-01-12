@@ -1,41 +1,55 @@
 // פונקציה להוספת קישורים לנוויגייטור
 function addNavLink(label, href) {
     const nav = document.getElementById('Navigator');
-
-    // בדיקה אם הקישור מוביל לעמוד הנוכחי
-    if (isCurrentPage(href)) {
-        return; // אם זה אותו עמוד, לא מוסיפים את הקישור
-    }
-
-    // יצירת אלמנט 'a' חדש
+    if (isCurrentPage(href)) return; // לא להוסיף קישור לעמוד הנוכחי
     const link = document.createElement('a');
-    link.textContent = label; // שם הקישור
-    link.href = href; // כתובת הקישור
-
-    // הוספת הקישור לנוויגייטור
+    link.textContent = label;
+    link.href = href;
     nav.appendChild(link);
 }
 
 // פונקציה לבדוק אם זה העמוד הנוכחי
 function isCurrentPage(href) {
-    const currentPath = window.location.pathname.split('/').pop(); // השם של הקובץ הנוכחי
-    const linkPath = href.split('/').pop(); // השם של הקובץ מהקישור
+    const currentPath = window.location.pathname.split('/').pop();
+    const linkPath = href.split('/').pop();
     return currentPath === linkPath;
 }
 
 // לוגיקה מותנית להוספת קישורים
 function setupNavbar() {
-    // הוספת קישורים לכל העמודים הרלוונטיים
-    addNavLink('About', 'About.html');
-    addNavLink('Add New Dog', 'AddNewDog.html');
-    addNavLink('Home Page', 'HomePage.html');
-    addNavLink('Dog Profile', 'ProfileDog.html');
-    addNavLink('Login', 'LoginPage.html');
-    addNavLink('Rate Your Stay', 'RateYourStay.html');
-    addNavLink('Search in Paradise', 'SearchInParadise.html');
-    addNavLink('Sign Up', 'SignUp.html');
-    addNavLink('Top Kennels', 'top%20kennels.html');
+    const isLoggedIn = true; // סימולציה של התחברות (יש להחליף עם מערכת אמיתית)
+    const currentPage = window.location.pathname.split('/').pop();
+
+    if (currentPage === 'HomePage.html') {
+        // מקרה ייחודי לעמוד HomePage
+        if (isLoggedIn) {
+            addNavLink('About', 'About.html');
+            addNavLink('Add New Dog', 'ProfileNew.html');
+            addNavLink('Top Kennels', 'top%20kennels.html');
+            addNavLink('Logout', 'LoginPage.html'); // יציאה
+        } else {
+            addNavLink('About', 'About.html');
+            addNavLink('Login', 'LoginPage.html');
+            addNavLink('Sign Up', 'SignUp.html');
+        }
+    } else {
+        // מקרה כללי לשאר העמודים
+        addNavLink('About', 'About.html');
+        addNavLink('Add New Dog', 'ProfileNew.html');
+        addNavLink('Home Page', 'HomePage.html');
+        if (isLoggedIn) {
+            addNavLink('Dog Profile', 'ProfileDog.html');
+            addNavLink('Rate Your Stay', 'RateYourStay.html');
+            addNavLink('Search in Paradise', 'SearchInParadise.html');
+            addNavLink('Logout', 'LoginPage.html');
+        } else {
+            addNavLink('Login', 'LoginPage.html');
+            addNavLink('Sign Up', 'SignUp.html');
+        }
+    }
 }
 
 // קריאה לפונקציה בעת טעינת הדף
-setupNavbar();
+document.addEventListener("DOMContentLoaded", () => {
+    setupNavbar();
+});

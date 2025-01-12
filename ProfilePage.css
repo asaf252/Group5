@@ -1,0 +1,90 @@
+
+
+.dog-picture {
+    grid-column: 3 / 4; /* העמודה השלישית */
+    grid-row: 1 / 7; /* משתרע על השורות */
+    text-align: center;
+
+    border-radius: 10px;
+    overflow: hidden; /* מונע מהתמונה לחרוג מגבולות המיכל */
+    object-fit: contain;
+    border: 2px solid #5a3a29;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    margin-bottom: 10px;
+        width: 100%; /* מתאים את התמונה לרוחב המיכל */
+    height: 100%; /* מתאים את התמונה לגובה המיכל */
+    border-radius: 10px; /* פינות מעוגלות */
+}
+
+/*---------------------- Profile Grid Page-----------------*/
+
+.Dogprofilepage {
+
+    padding: 30px; /* יותר רווח פנימי */
+    background-color: #f8ece6;
+    text-align: left;
+    font-family: 'Arial', sans-serif;
+    color: #5a3a29;
+    border-radius: 10px;
+    max-width: 1000px; /* הגדלת הרוחב המרבי */
+    margin: 10px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+    top: 50%; /* ממקם 50% מגובה ההורה */
+
+}
+/* עיצוב מחדש לגריד */
+.GridProfile {
+    display: grid;
+    grid-template-columns: 1.5fr 1fr; /* חלוקה פרופורציונלית */
+    grid-gap: 20px;
+    align-items: start;
+    padding: 20px;
+    max-width: 1000px;
+    margin: 20px auto;
+    background-color: #fff7f0;
+    border-radius: 15px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+}
+
+/* תיבת בחירה - גובה מתאים */
+.GridProfile select {
+    width: 100%;
+    height: auto;
+    padding: 8px;
+    font-size: 16px;
+    border: 1px solid #d9a18a;
+    border-radius: 5px;
+}
+
+/* תמונה */
+.GridProfile .dog-picture {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    overflow: hidden;
+    border-radius: 15px;
+    border: 2px solid #d9a18a;
+    max-height: 400px; /* הגבלת גובה */
+    background-color: #fff;
+}
+
+.GridProfile .dog-picture img {
+    width: auto;
+    height: 100%; /* התאמה לגובה */
+}
+
+/* מרווח בין תוויות ושדות */
+.GridProfile .form-container {
+    display: grid;
+    grid-template-columns: 1fr 2fr;
+    grid-gap: 10px;
+}
+
+label {
+    font-weight: bold;
+    text-align: right;
+    align-self: center;
+    color: #5a3a29;
+}
+
+

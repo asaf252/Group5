@@ -1,0 +1,15 @@
+/* ---------- Specific Container for HomePage ---------- */
+.HomePageStyle {
+    max-width: 900px; /* רוחב נוח לקריאה */
+    margin: 30px auto; /* ריווח אוטומטי ומרכז התוכן */
+    padding: 25px; /* ריווח פנימי */
+    border-radius: 12px; /* פינות מעוגלות יותר */
+    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.15); /* הצללה עדינה */
+    background-color: #fff7f0; /* רקע נעים */
+    border: 1px solid #d9a18a; /* גבול עדין */
+}
+
+.HomePageStyle h1 {
+    text-align: center; /* יישור הכותרת למרכז */
+    margin-bottom: 20px; /* ריווח מתחת לכותרת */
+}
