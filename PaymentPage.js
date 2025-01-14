@@ -32,8 +32,14 @@ document.addEventListener("DOMContentLoaded", function () {
         //------------------- Card Check -------------------
         if (cardValue.length === 0) {
             cardErrors.push("Card number is required.");
-        } else if (!validCardRegex.test(cardValue)) {
-            cardErrors.push("Card number must be 16 digits.");
+        } else {
+            if (!/^\d+$/.test(cardValue)) {
+                cardErrors.push("Card number must contain only digits.");
+            } else if (cardValue.length < 16) {
+                cardErrors.push("Card number is too short. It must be 16 digits.");
+            } else if (cardValue.length > 16) {
+                cardErrors.push("Card number is too long. It must be 16 digits.");
+            }
         }
 
         if (cardErrors.length > 0) {
@@ -46,8 +52,14 @@ document.addEventListener("DOMContentLoaded", function () {
         //------------------- CVV Check -------------------
         if (cvvValue.length === 0) {
             cvvErrors.push("CVV is required.");
-        } else if (!validCVVRegex.test(cvvValue)) {
-            cvvErrors.push("CVV must be 3 digits.");
+        } else {
+            if (!/^\d+$/.test(cvvValue)) {
+                cvvErrors.push("CVV must contain only digits.");
+            } else if (cvvValue.length < 3) {
+                cvvErrors.push("CVV is too short. It must be 3 digits.");
+            } else if (cvvValue.length > 3) {
+                cvvErrors.push("CVV is too long. It must be 3 digits.");
+            }
         }
 
         if (cvvErrors.length > 0) {
@@ -60,8 +72,21 @@ document.addEventListener("DOMContentLoaded", function () {
         //------------------- Expiry Date Check -------------------
         if (expiryValue.length === 0) {
             expiryErrors.push("Expiry date is required.");
-        } else if (!validExpiryRegex.test(expiryValue)) {
-            expiryErrors.push("Expiry date must be in the format YYYY/MM.");
+        } else {
+            if (!validExpiryRegex.test(expiryValue)) {
+                expiryErrors.push("Expiry date must be in the format YYYY/MM.");
+            } else {
+                const [year, month] = expiryValue.split('/');
+                const currentDate = new Date();
+                const expiryDate = new Date(year, month - 1);
+                
+                if (month < 1 || month > 12) {
+                    expiryErrors.push("Invalid month. Month must be between 01 and 12.");
+                }
+                if (expiryDate < currentDate) {
+                    expiryErrors.push("Card has expired. Please use a valid card.");
+                }
+            }
         }
 
         if (expiryErrors.length > 0) {

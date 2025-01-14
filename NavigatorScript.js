@@ -24,7 +24,7 @@ function setupNavbar() {
         // מקרה ייחודי לעמוד HomePage
         if (isLoggedIn) {
             addNavLink('About', 'About.html');
-            addNavLink('Add New Dog', 'ProfileNew.html');
+            addNavLink('Add New Dog', 'ProfileForNewDog.html');
             addNavLink('Top Kennels', 'top%20kennels.html');
             addNavLink('Logout', 'LoginPage.html'); // יציאה
         } else {
@@ -35,7 +35,7 @@ function setupNavbar() {
     } else {
         // מקרה כללי לשאר העמודים
         addNavLink('About', 'About.html');
-        addNavLink('Add New Dog', 'ProfileNew.html');
+        addNavLink('Add New Dog', 'ProfileForNewDog.html');
         addNavLink('Home Page', 'HomePage.html');
         if (isLoggedIn) {
             addNavLink('Dog Profile', 'ProfileDog.html');

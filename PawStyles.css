@@ -175,7 +175,7 @@ table td {
 
 /*----------------------END Main styles for all pages-----------------*/
 
-/*---------------------- form checks-----------------*/
+/*---------------------- form Login-----------------*/
 
 form label {
     display: block; /* מציג את התווית בשורה נפרדת */
@@ -200,7 +200,6 @@ form span {
     font-size: 0.9rem; /* גודל טקסט */
     white-space: pre-line; /* תמיכה בשבירת שורות עם \n */
     margin-top: 5px; /* רווח קטן מעל ההודעה */
-    text-align: left; /* יישור לשמאל */
 
 
 
@@ -269,6 +268,23 @@ form span {
 
 /*----------------------END About US Page-----------------*/
 
+/*---------------------- Profile Grid Page-----------------*/
+
+.Dogprofilepage {
+
+    padding: 30px; /* יותר רווח פנימי */
+    background-color: #f8ece6;
+    text-align: left;
+    font-family: 'Arial', sans-serif;
+    color: #5a3a29;
+    border-radius: 10px;
+    max-width: 1000px; /* הגדלת הרוחב המרבי */
+    margin: 10px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+    top: 50%; /* ממקם 50% מגובה ההורה */
+
+}
+
 /* תפריט נפתח */
 .dog-select {
     padding: 10px;
@@ -282,6 +298,22 @@ form span {
 
 
 
+
+.dog-picture {
+    grid-column: 3 / 4; /* העמודה השלישית */
+    grid-row: 1 / 7; /* משתרע על השורות */
+    text-align: center;
+
+    border-radius: 10px;
+    overflow: hidden; /* מונע מהתמונה לחרוג מגבולות המיכל */
+    object-fit: contain;
+    border: 2px solid #5a3a29;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    margin-bottom: 10px;
+        width: 100%; /* מתאים את התמונה לרוחב המיכל */
+    height: 100%; /* מתאים את התמונה לגובה המיכל */
+    border-radius: 10px; /* פינות מעוגלות */
+}
 /*----------------------END Profile Grid Page-----------------*/
 /*----------------------rate your stay page-----------------*/
 

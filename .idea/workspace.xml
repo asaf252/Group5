@@ -5,7 +5,13 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="3a85256d-f386-4d1b-8f4c-d1287acb997b" name="Changes" comment="check">
+      <change afterPath="$PROJECT_DIR$/Photos/kennelDogs.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/kennelProfile.html" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/PawStyles.css" beforeDir="false" afterPath="$PROJECT_DIR$/PawStyles.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/PaymentPage.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/PaymentPage.html" beforeDir="false" afterPath="$PROJECT_DIR$/PaymentPage.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/PaymentPage.js" beforeDir="false" afterPath="$PROJECT_DIR$/PaymentPage.js" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -15,10 +21,10 @@
   <component name="FileTemplateManagerImpl">
     <option name="RECENT_TEMPLATES">
       <list>
-        <option value="TypeScript File" />
         <option value="HTML File" />
-        <option value="CSS File" />
+        <option value="TypeScript File" />
         <option value="JavaScript File" />
+        <option value="CSS File" />
       </list>
     </option>
   </component>
@@ -52,7 +58,7 @@
     <setting file="file://$PROJECT_DIR$/RateYourStay.js" root0="SKIP_INSPECTION" />
   </component>
   <component name="ProblemsViewState">
-    <option name="selectedTabId" value="QODANA_PROBLEMS_VIEW_TAB" />
+    <option name="selectedTabId" value="CurrentFile" />
     <option name="showPreview" value="true" />
   </component>
   <component name="ProjectColorInfo">{
@@ -158,11 +164,7 @@
       <workItem from="1734595489538" duration="2973000" />
       <workItem from="1734896107753" duration="3828000" />
       <workItem from="1735745496506" duration="10312000" />
-      <workItem from="1736195176743" duration="21080000" />
-      <workItem from="1736352983341" duration="1546000" />
-      <workItem from="1736520498137" duration="690000" />
-      <workItem from="1736626391006" duration="3396000" />
-      <workItem from="1736680288696" duration="11382000" />
+      <workItem from="1736195176743" duration="20918000" />
     </task>
     <task id="LOCAL‎-00001" summary="check">
       <option name="closed" value="true" />
@@ -436,31 +438,7 @@
       <option name="project" value="LOCAL‎" />
       <updated>1735755363327</updated>
     </task>
-    <task id="LOCAL‎-00035" summary="check">
-      <option name="closed" value="true" />
-      <created>1736266227731</created>
-      <option name="number" value="00035" />
-      <option name="presentableId" value="LOCAL‎-00035" />
-      <option name="project" value="LOCAL‎" />
-      <updated>1736266227731</updated>
-    </task>
-    <task id="LOCAL‎-00036" summary="check">
-      <option name="closed" value="true" />
-      <created>1736520515304</created>
-      <option name="number" value="00036" />
-      <option name="presentableId" value="LOCAL‎-00036" />
-      <option name="project" value="LOCAL‎" />
-      <updated>1736520515304</updated>
-    </task>
-    <task id="LOCAL‎-00037" summary="check">
-      <option name="closed" value="true" />
-      <created>1736695081635</created>
-      <option name="number" value="00037" />
-      <option name="presentableId" value="LOCAL‎-00037" />
-      <option name="project" value="LOCAL‎" />
-      <updated>1736695081635</updated>
-    </task>
-    <option name="localTasksCounter" value="38" />
+    <option name="localTasksCounter" value="35" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
