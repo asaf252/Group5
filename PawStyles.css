@@ -175,7 +175,7 @@ table td {
 
 /*----------------------END Main styles for all pages-----------------*/
 
-/*---------------------- form Login-----------------*/
+/*---------------------- forms-----------------*/
 
 form label {
     display: block; /* מציג את התווית בשורה נפרדת */
@@ -270,20 +270,7 @@ form span {
 
 /*---------------------- Profile Grid Page-----------------*/
 
-.Dogprofilepage {
 
-    padding: 30px; /* יותר רווח פנימי */
-    background-color: #f8ece6;
-    text-align: left;
-    font-family: 'Arial', sans-serif;
-    color: #5a3a29;
-    border-radius: 10px;
-    max-width: 1000px; /* הגדלת הרוחב המרבי */
-    margin: 10px;
-    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
-    top: 50%; /* ממקם 50% מגובה ההורה */
-
-}
 
 /* תפריט נפתח */
 .dog-select {

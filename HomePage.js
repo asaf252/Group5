@@ -14,7 +14,7 @@ document.addEventListener("DOMContentLoaded", function () {
     // כפתור "My Paw profile"
     const profileButton = document.getElementById("profileButton");
     profileButton.addEventListener("click", function () {
-        location.href = "ProfileDog.html"; // קישור לעמוד הפרופיל
+        location.href = "ProfilePage.html"; // קישור לעמוד הפרופיל
     });
 
     // כפתור "Logout"

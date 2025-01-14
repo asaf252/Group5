@@ -1,0 +1,30 @@
+.LogInMain {
+
+    padding: 30px; /* יותר רווח פנימי */
+    background-color: #f8ece6;
+    text-align: left;
+    font-family: 'Arial', sans-serif;
+    color: #5a3a29;
+    border-radius: 10px;
+    max-width: 1000px; /* הגדלת הרוחב המרבי */
+    margin: 10px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+    top: 50%; /* ממקם 50% מגובה ההורה */
+
+}
+/* התאמות לLogInMainפריסה של ה-Checkbox והכפתורים */
+.Raw {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 10px; /* רווח בין האלמנטים */
+    margin-bottom: 15px;
+    flex-wrap: nowrap; /* מונע שבירה של השורות */
+}
+
+/* התאמות לגודל ולריווח של Checkbox */
+.Raw input[type="checkbox"] {
+    width: 20px;
+    height: 20px;
+    margin-right: 10px; /* רווח בין ה-checkbox לטקסט */
+}

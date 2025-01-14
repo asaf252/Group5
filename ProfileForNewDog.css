@@ -1,0 +1,56 @@
+/* גריד: טופס */
+.GridProfile {
+    display: grid;
+    grid-template-columns: 1fr; /* עמודה אחת */
+    grid-gap: 20px;
+    align-items: start;
+    text-align: left;
+    padding: 20px;
+    max-width: 1000px;
+    margin: 20px auto;
+    background-color: #fff7f0;
+    border-radius: 15px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+}
+
+/* תיבת בחירה - גובה מתאים */
+.GridProfile select {
+    width: 100%;
+    height: auto;
+    padding: 8px;
+    font-size: 16px;
+    border: 1px solid #d9a18a;
+    border-radius: 5px;
+}
+
+/* רווח בין שדות */
+.form-field {
+    margin-bottom: 15px;
+}
+
+/* כותרת טופס */
+.ProfilePageTitle {
+    font-size: 2.5rem;
+    font-weight: bold;
+    color: #5a3a29;
+    text-align: center;
+    margin-bottom: 20px;
+    padding-bottom: 10px;
+    border-bottom: 2px solid #d9a18a;
+    letter-spacing: 1px;
+}
+
+/* תיבת שגיאות */
+span {
+    font-size: 0.9rem;
+    color: red;
+    display: block;
+    margin-top: 5px;
+}
+
+/* אם מדובר במובייל, כל השדות יפרשו לעמודה אחת */
+@media (max-width: 768px) {
+    .GridProfile {
+        grid-template-columns: 1fr; /* עמודה אחת במובייל */
+    }
+}

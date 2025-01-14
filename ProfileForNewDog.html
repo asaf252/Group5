@@ -2,53 +2,77 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Add New Dog</title>
-      <link rel="stylesheet" href="PawStyles.css">
-      <link rel="stylesheet" href="NavigatorStyle.css">
-        <link rel="stylesheet" href="ProfilePage.css">
-
+    <link rel="stylesheet" href="PawStyles.css">
+    <link rel="stylesheet" href="NavigatorStyle.css">
+    <link rel="stylesheet" href="ProfileForNewDog.css">
 </head>
 <body class="myBackground">
 
-<div class="MainStyle">
-<nav id="Navigator" ></nav>
+<div>
+    <nav id="Navigator"></nav>
 
-    <h1>Add new dog</h1>
+    <h1 class="ProfilePageTitle">Add New Dog</h1>
+
+    <!-- גריד: טופס ותמונה -->
     <div class="GridProfile">
-        <!-- טופס הכלב -->
-        <label for="dog-name">Dog Name</label>
-        <input type="text" id="dog-name" placeholder="Enter dog's name">
+        <form class="form-fields" id="dog-form">
+            <div class="form-field">
+                <label for="dog-name">Dog Name</label>
+                <input type="text" id="dog-name" placeholder="Enter dog's name">
+                <span id="dog-name-error"></span>
+            </div>
 
-        <label for="dog-last-name">Dog last name</label>
-        <input type="text" id="dog-last-name" placeholder="Enter dog's last name">
+            <div class="form-field">
+                <label for="dog-last-name">Dog Last Name</label>
+                <input type="text" id="dog-last-name" placeholder="Enter dog's last name">
+                <span id="dog-last-name-error"></span>
+            </div>
 
-        <label for="type">Type</label>
-        <input type="text" id="type" placeholder="Enter dog's type">
+            <div class="form-field">
+                <label for="type">Type</label>
+                <select id="type">
+                    <option value="" disabled selected>Please choose dog's type</option>
+                </select> <span id="type-error"></span>
+            </div>
 
-        <label for="description">Description</label>
-        <input type="text" id="description" placeholder="Enter description">
+            <div class="form-field">
+                <label for="description">Description</label>
+                <input type="text" id="description" placeholder="Enter description">
+                <span id="description-error"></span>
+            </div>
 
-        <label for="birthdate">BirthDate</label>
-        <input type="date" id="birthdate">
+            <div class="form-field">
+                <label for="birthdate" >BirthDate</label>
+                <input type="date" id="birthdate" required>
+                <span id="birthdate-error"></span>
+            </div>
 
-        <label for="health-level">HealthLevel</label>
-        <input type="text" id="health-level" placeholder="Enter health level">
+            <div class="form-field">
+                <label for="health-level">Health Level</label>
+                <select id="health-level">
+                    <option value="" disabled selected>Please choose dog's type</option>
+                </select> <span id="health-level-error"></span>
+            </div>
 
+            <!-- העלאת תמונה -->
+            <div class="form-field">
+                <label for="dog-picture-upload">Upload Dog Picture</label>
+                <input type="file" id="dog-picture-upload" accept="image/*">
+                <span id="dog-picture-error"></span>
+            </div>
 
-
-            <img src="Photos/Upload.png" class="dog-picture">
-
+            <div class="form-field">
+                <button class="btmType3" type="button" id="add-dog-btn">Add</button>
+            </div>
+        </form>
     </div>
 
-    <!-- כפתורים -->
-    <div class="Raw">
-        <button class="btmType1">Back</button>
-        <button class="btmType3">Add</button>
-    </div>
 </div>
-<script src="Signup.js"> </script>
+
+<script src="ProfileForNewDog.js"></script>
 <script src="NavigatorScript.js"></script>
-<script src="ProfilePage.js"></script>
 
 </body>
 </html>

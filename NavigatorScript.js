@@ -38,7 +38,7 @@ function setupNavbar() {
         addNavLink('Add New Dog', 'ProfileForNewDog.html');
         addNavLink('Home Page', 'HomePage.html');
         if (isLoggedIn) {
-            addNavLink('Dog Profile', 'ProfileDog.html');
+            addNavLink('Dog Profile', 'ProfilePage.html');
             addNavLink('Rate Your Stay', 'RateYourStay.html');
             addNavLink('Search in Paradise', 'SearchInParadise.html');
             addNavLink('Logout', 'LoginPage.html');

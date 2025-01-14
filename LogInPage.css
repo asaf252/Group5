@@ -1,0 +1,79 @@
+.LogInMain {
+
+    padding: 30px; /* יותר רווח פנימי */
+    background-color: #f8ece6;
+    text-align: left;
+    font-family: 'Arial', sans-serif;
+    color: #5a3a29;
+    border-radius: 10px;
+    max-width: 1000px; /* הגדלת הרוחב המרבי */
+    margin: 10px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+    top: 50%; /* ממקם 50% מגובה ההורה */
+
+}
+/*---------------------- התאמות למסכים קטנים ----------------------*/
+@media (max-width: 768px) {
+    .MainStyle {
+        padding: 20px; /* הפחתת הריווח */
+        max-width: 90%; /* שימוש רחב יותר במסך */
+    }
+
+    header h1 {
+        font-size: 1.8rem; /* הקטנת גודל הכותרת */
+        margin-bottom: 15px;
+    }
+
+    header p {
+        font-size: 0.95rem; /* הקטנת גודל הפסקה */
+    }
+
+    form label {
+        font-size: 14px; /* הקטנת גודל הטקסט בשדות */
+    }
+
+    .Raw {
+        flex-direction: column; /* מעבר לרשימה אנכית */
+        gap: 10px; /* יצירת רווחים בין הכפתורים */
+    }
+}
+
+@media (max-width: 480px) {
+    .MainStyle {
+        padding: 15px;
+        max-width: 100%; /* ניצול מלא של המסך */
+    }
+
+    header h1 {
+        font-size: 1.5rem; /* כותרת קטנה יותר למכשירים קטנים */
+    }
+
+    header p {
+        font-size: 0.85rem; /* התאמה קטנה יותר לפסקאות */
+    }
+
+    form input {
+        padding: 8px; /* הפחתת ריווח פנימי */
+        font-size: 14px;
+    }
+
+    form label {
+        font-size: 12px; /* טקסט קטן יותר */
+    }
+
+    button {
+        font-size: 14px; /* הקטנת הכפתורים */
+        padding: 8px 10px;
+    }
+
+    .Raw {
+        gap: 5px; /* ריווח קטן יותר בין הכפתורים */
+    }
+}
+@media (min-width: 768px) {
+    .MainStyle {
+        max-width: 700px; /* מגביל את הרוחב המקסימלי */
+        margin: 0 auto; /* ממרכז את האלמנט */
+    }
+}
+
