@@ -22,7 +22,7 @@
 
     padding: 30px; /* יותר רווח פנימי */
     background-color: #f8ece6;
-    text-align: left;
+
     font-family: 'Arial', sans-serif;
     color: #5a3a29;
     border-radius: 10px;
@@ -38,6 +38,7 @@
     grid-template-columns: 1.5fr 1fr; /* חלוקה פרופורציונלית */
     grid-gap: 20px;
     align-items: start;
+       text-align: left;
     padding: 20px;
     max-width: 1000px;
     margin: 20px auto;

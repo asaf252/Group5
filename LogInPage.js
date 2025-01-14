@@ -59,7 +59,7 @@ document.addEventListener("DOMContentLoaded", function () {
     const aboutButton = document.getElementById("aboutButton");
     if (aboutButton) {
         aboutButton.addEventListener("click", function () {
-            location.href = "About.html"; // קישור לעמוד 'ABOUT US'
+            location.href = "AboutUs.html"; // קישור לעמוד 'ABOUT US'
         });
     }
 

@@ -23,18 +23,18 @@ function setupNavbar() {
     if (currentPage === 'HomePage.html') {
         // מקרה ייחודי לעמוד HomePage
         if (isLoggedIn) {
-            addNavLink('About', 'About.html');
+            addNavLink('About', 'AboutUs.html');
             addNavLink('Add New Dog', 'ProfileForNewDog.html');
             addNavLink('Top Kennels', 'top%20kennels.html');
             addNavLink('Logout', 'LoginPage.html'); // יציאה
         } else {
-            addNavLink('About', 'About.html');
+            addNavLink('About', 'AboutUs.html');
             addNavLink('Login', 'LoginPage.html');
             addNavLink('Sign Up', 'SignUp.html');
         }
     } else {
         // מקרה כללי לשאר העמודים
-        addNavLink('About', 'About.html');
+        addNavLink('About', 'AboutUs.html');
         addNavLink('Add New Dog', 'ProfileForNewDog.html');
         addNavLink('Home Page', 'HomePage.html');
         if (isLoggedIn) {
