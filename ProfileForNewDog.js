@@ -78,3 +78,14 @@ function clearError(fieldId) {
     const errorSpan = document.getElementById(`${fieldId}-error`);
     errorSpan.textContent = '';
 }
+// Function to restrict input to only English letters
+function restrictNonEnglishInput(event) {
+    const regex = /^[A-Za-z]*$/;  // Allows only English letters
+    if (!regex.test(event.target.value)) {
+        event.target.value = event.target.value.replace(/[^A-Za-z]/g, '');  // Remove non-English characters
+    }
+}
+
+// Adding event listeners to both "Dog Name" and "Dog Last Name"
+document.getElementById('dog-name').addEventListener('input', restrictNonEnglishInput);
+document.getElementById('dog-last-name').addEventListener('input', restrictNonEnglishInput);
