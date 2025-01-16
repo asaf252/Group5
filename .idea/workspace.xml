@@ -6,11 +6,11 @@
   <component name="ChangeListManager">
     <list default="true" id="3a85256d-f386-4d1b-8f4c-d1287acb997b" name="Changes" comment="check">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Scripts/SearchInParadise.js" beforeDir="false" afterPath="$PROJECT_DIR$/Scripts/SearchInParadise.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Styles/TopKennels.css" beforeDir="false" afterPath="$PROJECT_DIR$/Styles/TopKennels.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Templets/PaymentPage.html" beforeDir="false" afterPath="$PROJECT_DIR$/Templets/PaymentPage.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Templets/ProfilePage.html" beforeDir="false" afterPath="$PROJECT_DIR$/Templets/ProfilePage.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Templets/SearchInParadise.html" beforeDir="false" afterPath="$PROJECT_DIR$/Templets/SearchInParadise.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Scripts/AboutUs.js" beforeDir="false" afterPath="$PROJECT_DIR$/Scripts/AboutUs.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Scripts/RateYourStay.js" beforeDir="false" afterPath="$PROJECT_DIR$/Scripts/RateYourStay.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Templets/AboutUs.html" beforeDir="false" afterPath="$PROJECT_DIR$/Templets/AboutUs.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Templets/RateYourStay.html" beforeDir="false" afterPath="$PROJECT_DIR$/Templets/RateYourStay.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Templets/Topkennels.html" beforeDir="false" afterPath="$PROJECT_DIR$/Templets/Topkennels.html" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -169,7 +169,7 @@
       <workItem from="1736520498137" duration="690000" />
       <workItem from="1736626391006" duration="3396000" />
       <workItem from="1736680288696" duration="11382000" />
-      <workItem from="1737040098124" duration="956000" />
+      <workItem from="1737040098124" duration="2575000" />
     </task>
     <task id="LOCAL‎-00001" summary="check">
       <option name="closed" value="true" />
@@ -467,7 +467,23 @@
       <option name="project" value="LOCAL‎" />
       <updated>1736695081635</updated>
     </task>
-    <option name="localTasksCounter" value="38" />
+    <task id="LOCAL-00038" summary="check">
+      <option name="closed" value="true" />
+      <created>1737041124100</created>
+      <option name="number" value="00038" />
+      <option name="presentableId" value="LOCAL-00038" />
+      <option name="project" value="LOCAL" />
+      <updated>1737041124100</updated>
+    </task>
+    <task id="LOCAL-00039" summary="check">
+      <option name="closed" value="true" />
+      <created>1737041233150</created>
+      <option name="number" value="00039" />
+      <option name="presentableId" value="LOCAL-00039" />
+      <option name="project" value="LOCAL" />
+      <updated>1737041233150</updated>
+    </task>
+    <option name="localTasksCounter" value="40" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">

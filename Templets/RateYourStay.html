@@ -13,7 +13,7 @@
     <nav id="Navigator"></nav>
     <form>
         <header>
-                    <h1 class="ProfilePageTitle">Rate Your Stay</h1>
+            <h1 class="ProfilePageTitle">Rate Your Stay</h1>
         </header>
 
         <label for="dog-select">Which visit do you want to rate?</label>
@@ -41,7 +41,11 @@
         <label for="comment">Add a comment:</label>
         <textarea id="comment" placeholder="Write your comment here..." rows="4" cols="50" maxlength="100"></textarea>
 
-        <button type="submit" class="btmType1">Submit Rating</button>
+        <div class="Raw">
+            <button type="button" class="btmType1" id="backButton">Back to home page</button>
+            <button type="submit" class="btmType2">Submit Rating</button>
+        </div>
+
     </form>
 </div>
 <script src="../Scripts/RateYourStay.js"></script>
