@@ -10,57 +10,58 @@
 <body class="myBackground">
 <div class="Dogprofilepage">
     <nav id="Navigator"></nav>
-    <h1 class="ProfilePageTitle">My Paw profile</h1>
+    <h1 class="ProfilePageTitle">My Paw Profile</h1>
 
     <!-- Grid layout for profile information -->
     <div class="grid-container">
         <!-- Information about the dog -->
         <div class="profile-info">
-            <label>Which dog you want to show:</label>
-            <select class="dog-select">
+
+            <h2>Which dog you want to show:</h2>
+            <select class="dog-select" id="dog-select">
                 <option value="dog1">Marvel</option>
-                <option value="dog2">Dog 2</option>
-                <option value="dog3">Dog 3</option>
+                <option value="dog2">Louie</option>
+                <option value="dog3">Lucy</option>
             </select>
 
             <!-- Dog Info -->
             <div class="dog-details">
                 <div>
                     <label>Dog Name:</label>
-                    <span id="Dogname">Marvel</span>
+                    <span id="Dogname"></span>
                 </div>
                 <div>
                     <label>Dog Last Name:</label>
-                    <span id="dog-last-name">Gil</span>
+                    <span id="dog-last-name"></span>
                 </div>
                 <div>
                     <label>Type:</label>
-                    <span id="type">Unknown</span>
+                    <span id="type"></span>
                 </div>
                 <div>
                     <label>Description:</label>
-                    <span id="description">Friendly and playful</span>
+                    <span id="description"></span>
                 </div>
                 <div>
                     <label>BirthDate:</label>
-                    <span id="birthdate">01/01/2020</span>
+                    <span id="birthdate"></span>
                 </div>
                 <div>
                     <label>Health Level:</label>
-                    <span id="health-level">Excellent</span>
+                    <span id="health-level"></span>
                 </div>
             </div>
         </div>
 
         <!-- Dog Image (in separate grid column) -->
         <div class="dog-picture-container">
-            <img src="../Photos/Marvel.jpeg" class="dog-picture" alt="Marvel">
+            <img src="" class="dog-picture" alt="Dog Picture">
         </div>
     </div>
 
     <!-- Buttons -->
     <div class="Raw">
-        <button class="btmType1">Back to Top</button>
+        <button id="backButton" class="btmType1">Back to home page</button>
         <button class="btmType3">Add New Dog</button>
     </div>
 </div>
