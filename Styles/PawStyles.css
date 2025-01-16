@@ -113,7 +113,7 @@ table td {
 
 
 .myBackground {
-    background-image: url('Photos/Paws.png'); /* מיקום התמונה */
+    background-image: url('../Photos/Paws.png'); /* מיקום התמונה */
     background-repeat: repeat; /* התמונה לא תחזור */
     background-position: right center; /* מצמיד את התמונה לימין ומרכז אנכית */
     background-size: contain; /* מתאים את גודל התמונה לפי היחס שלה */

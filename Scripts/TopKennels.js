@@ -40,7 +40,7 @@ document.addEventListener("DOMContentLoaded", function () {
 
         // דירוג עם עצמות בלבד
         const gradeCell = document.createElement("td");
-        gradeCell.innerHTML = `${'<img src="Photos/DogBonePic.png" class="LogoBone" alt="Bone">'.repeat(kennel.grade)}`;
+        gradeCell.innerHTML = `${'<img src="../Photos/DogBonePic.png" class="LogoBone" alt="Bone">'.repeat(kennel.grade)}`;
         row.appendChild(gradeCell);
 
         // פרטי קשר
