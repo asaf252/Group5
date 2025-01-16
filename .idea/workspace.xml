@@ -6,11 +6,12 @@
   <component name="ChangeListManager">
     <list default="true" id="3a85256d-f386-4d1b-8f4c-d1287acb997b" name="Changes" comment="check">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Scripts/NavigatorScript.js" beforeDir="false" afterPath="$PROJECT_DIR$/Scripts/NavigatorScript.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Scripts/PaymentPage.js" beforeDir="false" afterPath="$PROJECT_DIR$/Scripts/MakeOrder.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Scripts/ProfilePage.js" beforeDir="false" afterPath="$PROJECT_DIR$/Scripts/ProfilePage.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Styles/TopKennels.css" beforeDir="false" afterPath="$PROJECT_DIR$/Styles/TopKennels.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Styles/PaymentPage.css" beforeDir="false" afterPath="$PROJECT_DIR$/Styles/MakeOrder.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Templets/PaymentPage.html" beforeDir="false" afterPath="$PROJECT_DIR$/Templets/MakeOrder.html" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Templets/ProfilePage.html" beforeDir="false" afterPath="$PROJECT_DIR$/Templets/ProfilePage.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Templets/RateYourStay.html" beforeDir="false" afterPath="$PROJECT_DIR$/Templets/RateYourStay.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Templets/Topkennels.html" beforeDir="false" afterPath="$PROJECT_DIR$/Templets/Topkennels.html" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -500,7 +501,15 @@
       <option name="project" value="LOCAL" />
       <updated>1737051849332</updated>
     </task>
-    <option name="localTasksCounter" value="42" />
+    <task id="LOCAL-00042" summary="check">
+      <option name="closed" value="true" />
+      <created>1737053902888</created>
+      <option name="number" value="00042" />
+      <option name="presentableId" value="LOCAL-00042" />
+      <option name="project" value="LOCAL" />
+      <updated>1737053902888</updated>
+    </task>
+    <option name="localTasksCounter" value="43" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">

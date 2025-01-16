@@ -82,7 +82,19 @@ document.addEventListener("DOMContentLoaded", function () {
             dogPicture.alt = dogData.name; // עדכון האלטרנטיבי לתמונה
         }
     });
-
+// כפתור "Make Order" מעביר לעמוד הטופס
+    const makeOrderButton = document.getElementById("makeOrderButton");
+    makeOrderButton.addEventListener("click", function () {
+        // שמירת שם הכלב הנבחר ב-localStorage
+        const selectedDog = dogSelect.value;
+        const dogData = dogs[selectedDog];
+        if (dogData) {
+            localStorage.setItem("selectedDogName", dogData.name);
+        }
+        setTimeout(() => {
+            window.location.href = "MakeOrder.html";
+        }, 200); // עיכוב של 200ms
+    });
     // הפעלת ברירת מחדל: הצגת הנתונים של הכלב הראשון
     dogSelect.dispatchEvent(new Event("change"));
 
