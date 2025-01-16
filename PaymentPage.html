@@ -2,21 +2,45 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Make an order in paradise</title>
-    <!-- קישור לקובץ CSS -->
+    <title>Make an Order in Paradise</title>
+    <!-- קישורים לעיצוב -->
     <link rel="stylesheet" href="PawStyles.css">
     <link rel="stylesheet" href="NavigatorStyle.css">
-
+    <link rel="stylesheet" href="PaymentPage.css">
 </head>
 <body class="myBackground">
-<div class="MainStyle">
+<div class="PaymentStyle">
     <form id="payment-form">
         <header>
-            <h1>Make an order in paradise</h1>
+                <nav id="Navigator"></nav>
+
+            <h1 class="ProfilePageTitle">Make an Order in Paradise</h1>
             <h2>Book Your Dog's Stay</h2>
         </header>
-        <div class="form-row">
+        <div class="form-group">
+            <label for="kennel">Select Kennel:</label>
+            <select id="kennel" name="kennel">
+                <option value="" disabled selected>Select a kennel</option>
+                <option value="Paw Paradise">Paw Paradise</option>
+                <option value="Happy Tails">Happy Tails</option>
+                <option value="Bone and Tail">Bone and Tail</option>
+            </select>
+            <span id="kennelError" class="error"></span>
+        </div>
+
+        <div class="form-grid">
+            <div class="form-group">
+                <label for="ownerName">Full Name of Dog Owner:</label>
+                <input type="text" id="ownerName" name="ownerName" placeholder="Enter owner's full name">
+                <span id="ownerNameError" class="error"></span>
+            </div>
+            <div class="form-group">
+                <label for="dogName">Dog's Name:</label>
+                <input type="text" id="dogName" name="dogName" placeholder="Enter dog's name">
+                <span id="dogNameError" class="error"></span>
+            </div>
+        </div>
+        <div class="form-grid">
             <div class="form-group">
                 <label for="from">From:</label>
                 <input type="date" id="from" name="from">
@@ -24,24 +48,27 @@
             <div class="form-group">
                 <label for="until">Until:</label>
                 <input type="date" id="until" name="until">
+                <span id="dateError" class="error"></span>
             </div>
         </div>
-        <div class="form-group form-row">
+
+        <div class="form-group price-row">
             <label for="price">Total Price:</label>
-            <label id="price">$50</label>
+            <label id="price">$0</label>
         </div>
-        <div class="form-group">
-            <label for="card">Card Number:</label>
-            <input type="text" id="card" name="card" placeholder="Enter card number">
-            <span id="cardError" class="error"></span>
-        </div>
-        <div class="form-row">
+
+        <div class="form-grid">
             <div class="form-group">
                 <label for="type">Payment Type:</label>
                 <select id="type" name="type">
                     <option value="credit">Credit</option>
                     <option value="debit">Debit</option>
                 </select>
+            </div>
+            <div class="form-group">
+                <label for="card">Card Number:</label>
+                <input type="text" id="card" name="card" placeholder="Enter card number">
+                <span id="cardError" class="error"></span>
             </div>
             <div class="form-group">
                 <label for="cvv">CVV:</label>
@@ -55,17 +82,16 @@
             </div>
         </div>
         <div class="form-group">
-            <label for="id">ID Number:</label>
+            <label for="id">ID of the cardholder:</label>
             <input type="text" id="id" name="id" placeholder="Enter ID number">
             <span id="idError" class="error"></span>
         </div>
         <footer class="Raw">
             <button type="button" class="btmType1">Back</button>
-            <button type="submit" id="confirm-btn" class="btmType2">Confirm</button>
+            <button type="submit" id="confirmButton" class="btmType2">Confirm</button>
         </footer>
     </form>
 </div>
-<!-- קישור לקובץ JavaScript -->
 <script src="PaymentPage.js"></script>
 <script src="NavigatorScript.js"></script>
 </body>

@@ -1,0 +1,28 @@
+.TopKennelStyle {
+
+    background-color: #fff7f0; /* צבע רקע */
+    border: 1px solid #d9a18a; /* גבול */
+    border-radius: 15px; /* פינות מעוגלות */
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1); /* צל */
+    padding: 30px; /* רווח פנימי */
+    width: 90%; /* רוחב מקסימלי */
+    max-width: 600px; /* מגבלת רוחב */
+    margin: 20px auto; /* ממרכז את התיבה */
+    box-sizing: border-box; /* מתחשב ב-padding */
+    display: flex; /* מציג את התוכן בפלקס */
+    flex-direction: column; /* תוכן מסודר אנכית */
+    gap: 20px; /* ריווח בין האלמנטים */
+    align-items: center; /* יישור תמונה וטקסט אנכית */
+
+}
+/* כותרת טופס */
+.ProfilePageTitle {
+    font-size: 2.5rem;
+    font-weight: bold;
+    color: #5a3a29;
+    text-align: center;
+    margin-bottom: 20px;
+    padding-bottom: 10px;
+    border-bottom: 2px solid #d9a18a;
+    letter-spacing: 1px;
+}

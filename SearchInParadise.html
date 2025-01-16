@@ -2,34 +2,31 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Search In Paradise</title>
     <link rel="stylesheet" href="PawStyles.css">
     <link rel="stylesheet" href="NavigatorStyle.css">
-
+    <link rel="stylesheet" href="SearchInParadise.css">
 </head>
 <body class="myBackground">
-<div class="MainStyle">
-    <form>
+<div class="blockStyle">
+    <nav id="Navigator"></nav>
+    <form id="search-form">
         <header>
-            <h1>Search in Paradise</h1>
+            <h1 class="ProfilePageTitle">Search in Paradise</h1>
         </header>
-        <label for="dog-select">Which dog is going to vacation?</label>
-        <select id="dog-select">
-            <option>Dog 1</option>
-            <option>Dog 2</option>
-            <option>Dog 3</option>
-        </select>
         <label for="rating-select">Rate according to:</label>
         <select id="rating-select">
-            <option>Order By Rate</option>
-            <option>Order by Distance</option>
+            <option value="alphabetical">Sort Alphabetically</option>
+            <option value="rate">Order By Grade</option>
         </select>
         <div class="Raw">
-            <button type="button" class="btmType1">Back</button>
+            <button type="button" class="btmType1" onclick="history.back()">Back</button>
             <button type="submit" class="btmType3">Search</button>
         </div>
     </form>
- </div>
+</div>
 <script src="NavigatorScript.js"></script>
+<script src="SearchInParadise.js" defer></script>
 </body>
 </html>

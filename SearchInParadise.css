@@ -1,0 +1,25 @@
+.blockStyle {
+    display: flex; /* הפיכת הקופסה לקונטיינר של Flexbox */
+    flex-direction: column; /* שמירה על סדר אנכי של האלמנטים */
+    justify-content: center; /* ממרכז את התוכן הפנימי אנכית */
+    align-items: center; /* ממרכז את התוכן הפנימי אופקית */
+    text-align: center; /* ממרכז את הטקסט בתוך האלמנטים */
+    padding: 30px 30px;
+    width: 60%;
+    max-width: 500px;
+    background-color: #fff7f0;
+    border-radius: 15px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+    box-sizing: border-box; /* מונע overflow */
+}
+/* כותרת טופס */
+.ProfilePageTitle {
+    font-size: 2.5rem;
+    font-weight: bold;
+    color: #5a3a29;
+    text-align: center;
+    margin-bottom: 20px;
+    padding-bottom: 10px;
+    border-bottom: 2px solid #d9a18a;
+    letter-spacing: 1px;
+}

@@ -1,0 +1,68 @@
+.ThankyouStyle {
+
+    background-color: #fff7f0; /* צבע רקע */
+    border: 1px solid #d9a18a; /* גבול */
+    border-radius: 15px; /* פינות מעוגלות */
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1); /* צל */
+    padding: 30px; /* רווח פנימי */
+    width: 90%; /* רוחב מקסימלי */
+    max-width: 600px; /* מגבלת רוחב */
+    margin: 20px auto; /* ממרכז את התיבה */
+    box-sizing: border-box; /* מתחשב ב-padding */
+    display: flex; /* מציג את התוכן בפלקס */
+    flex-direction: column; /* תוכן מסודר אנכית */
+    gap: 20px; /* ריווח בין האלמנטים */
+    align-items: center; /* יישור תמונה וטקסט אנכית */
+
+}
+
+/* עיצוב עבור הבלוק של פרטי ההזמנה */
+.reservation-details {
+    border: 2px solid #d1d1d1; /* מסגרת */
+    border-radius: 10px; /* פינות מעוגלות */
+    padding: 20px; /* מרווח פנימי */
+    background-color: #f9f9f9; /* צבע רקע */
+    margin: 20px 0; /* רווח מעל ומתחת */
+    box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1); /* הצללה */
+    display: flex; /* פריסה גמישה */
+    flex-direction: column; /* מסדר את השורות אנכית */
+    gap: 15px; /* רווח בין השורות */
+}
+
+/* עיצוב עבור כל שורה בתוך הבלוק */
+.Raw {
+    display: flex; /* פריסה גמישה */
+    align-items: center; /* יישור תמונה וטקסט אנכית */
+    gap: 10px; /* רווח בין התמונה לטקסט */
+}
+
+
+
+/* עיצוב עבור הטקסט */
+.Raw p {
+    margin: 0; /* הסרת מרווחים מיותרים */
+    font-size: 1rem; /* גודל טקסט אחיד */
+    color: #4a4a4a; /* צבע טקסט */
+}
+
+/* עיצוב עבור המילים המתארות */
+.descriptor {
+    font-weight: bold; /* כתב בבולד */
+    text-decoration: underline; /* קו תחתון */
+    margin-right: 5px; /* רווח אחרי המילה המתארת */
+}
+/* כותרת טופס */
+.ProfilePageTitle {
+    font-size: 2.5rem;
+    font-weight: bold;
+    color: #5a3a29;
+    text-align: center;
+    margin-bottom: 20px;
+    padding-bottom: 10px;
+    border-bottom: 2px solid #d9a18a;
+    letter-spacing: 1px;
+}
+h2, h3 {
+    text-align: center; /* ממרכז את הטקסט */
+    margin: 10px 0; /* רווחים למעלה ולמטה */
+}

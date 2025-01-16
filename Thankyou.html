@@ -4,32 +4,36 @@
     <meta charset="UTF-8">
     <title>Thank You!</title>
     <link rel="stylesheet" href="PawStyles.css">
-
+    <link rel="stylesheet" href="Thankyou.css">
 </head>
 <body class="myBackground">
-<div class="MainStyle">
+<div class="ThankyouStyle">
     <div>
-        <h1>Thank You!</h1>
+        <h1 class="ProfilePageTitle">Thank You!</h1>
     </div>
     <h2>Your reservation has been successfully confirmed! <br>
-    A confirmation has been sent to your email</h2>
+        A confirmation has been sent to your email.</h2>
     <h3>Reservation Details:</h3>
-    <div class="Raw">
-        <img src="Photos/calendar_icon.png" class="LogoBone">
-        <p>Stay Dates: 12/12/2023 - 14/12/2023</p>
+    <div class="reservation-details">
+        <div class="Raw">
+            <p><span class="descriptor">Stay Dates:</span> <span id="stayDates"></span></p>
+        </div>
+        <div class="Raw">
+            <p><span class="descriptor">Kennel Name:</span> <span id="kennel"></span></p>
+        </div>
+        <div class="Raw">
+            <p><span class="descriptor">Dog’s Name:</span> <span id="dogName"></span></p>
+        </div>
+        <div class="Raw">
+            <p><span class="descriptor">Owner’s Name:</span> <span id="ownerName"></span></p>
+        </div>
     </div>
-    <div class="Raw">
-        <img src="Photos/dog_pic.png" class="LogoBone">
-        <p>Dog’s Name: Max</p>
-    </div>
-    <div class="Raw">
-        <img src="Photos/House_pic.png" class="LogoBone">
-        <p>Facility: Paw Paradise</p>
-    </div>
+
     <h3>We can’t wait to welcome you and your furry friend!<br>
-    If you have any questions or need to update your reservation, feel free to reach out.</h3>
-    <button class="btmType1">Back to home page</button>
+        If you have any questions or need to update your reservation, feel free to reach out.</h3>
+    <button id="backButton" class="btmType1">Back to home page</button>
 </div>
-<script src="NavigatorScript.js"></script>
+    </div>
+<script src="Thankyou.js"></script>
 </body>
 </html>

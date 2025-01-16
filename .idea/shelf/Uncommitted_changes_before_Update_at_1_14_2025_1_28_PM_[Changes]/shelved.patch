@@ -1,0 +1,19 @@
+Index: DogProfile.html
+IDEA additional info:
+Subsystem: com.intellij.openapi.diff.impl.patch.BaseRevisionTextPatchEP
+<+><!DOCTYPE html>\r\n<html lang=\"en\">\r\n<head>\r\n    <meta charset=\"UTF-8\">\r\n    <title>Dog Profile</title>\r\n    <link rel=\"stylesheet\" href=\"PawStyles.css\">\r\n    <link rel=\"stylesheet\" href=\"NavigatorStyle.css\">\r\n\r\n</head>\r\n\r\n\r\n<body class=\"myBackground\">\r\n<div class=\"Dogprofilepage\">\r\n    <h1>My Paw profile</h1>\r\n         <nav id=\"Navigator\" >\r\n    </nav>\r\n    <div class=\"MainGrid\">\r\n\r\n        <label>which dog you want to show:</label>\r\n    <select class=\"dog-select\">\r\n        <option value=\"dog1\">Marvel</option>\r\n        <option value=\"dog2\">Dog 2</option>\r\n        <option value=\"dog3\">Dog 3</option>\r\n    </select>\r\n\r\n        <!-- נתוני הכלב -->\r\n        <img src=\"Photos/Marvel.jpeg\" class=\"dog-picture\">\r\n        <label>Dog Name:</label>\r\n        <span id=\"Dogname\">Marvel</span>\r\n\r\n        <label>Dog last name:</label>\r\n        <span id=\"dog-last-name\">Gil</span>\r\n\r\n        <label>Type:</label>\r\n        <span id=\"type\">Unknown</span>\r\n\r\n        <label>Description:</label>\r\n        <span id=\"description\">Friendly and playful</span>\r\n\r\n        <label>BirthDate:</label>\r\n        <span id=\"birthdate\">01/01/2020</span>\r\n\r\n        <label>Health Level:</label>\r\n        <span id=\"health-level\">Excellent</span>\r\n    </div>\r\n\r\n    <div class=\"Raw\">\r\n        <button class=\"btmType3\">Back</button>\r\n        <button class=\"btmType1\">Add new dog</button>\r\n    </div>\r\n\r\n</div>\r\n<script src=\"NavigatorScript.js\"></script>\r\n</body>\r\n</html>
+===================================================================
+diff --git a/DogProfile.html b/DogProfile.html
+--- a/DogProfile.html	(revision 98ae19d2280a7c79e85ec60f15a3146ae25e831a)
++++ b/DogProfile.html	(date 1736853465811)
+@@ -24,7 +24,9 @@
+     </select>
+ 
+         <!-- נתוני הכלב -->
+-        <img src="Photos/Marvel.jpeg" class="dog-picture">
++        <div class="dog-image-container">
++    <img src="Photos/Marvel.jpeg" class="dog-picture" alt="Dog Picture">
++</div>
+         <label>Dog Name:</label>
+         <span id="Dogname">Marvel</span>
+ 

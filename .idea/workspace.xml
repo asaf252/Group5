@@ -5,19 +5,57 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="3a85256d-f386-4d1b-8f4c-d1287acb997b" name="Changes" comment="check">
-      <change afterPath="$PROJECT_DIR$/LogInPage.css" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/ProfileForNewDog.css" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/ProfileForNewDog.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/SignUp.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/shelf/Uncommitted_changes_before_Update_at_1_10_2025_12_24_PM_[Changes]/kennelDogs.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/shelf/Uncommitted_changes_before_Update_at_1_10_2025_12_24_PM_[Changes]/shelved.patch" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/shelf/Uncommitted_changes_before_Update_at_1_10_2025_12_24_PM__Changes_.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/shelf/Uncommitted_changes_before_Update_at_1_14_2025_1_28_PM_[Changes]/kennelDogs.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/shelf/Uncommitted_changes_before_Update_at_1_14_2025_1_28_PM_[Changes]/shelved.patch" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/shelf/Uncommitted_changes_before_Update_at_1_14_2025_1_28_PM_[Changes]1/kennelDogs.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/shelf/Uncommitted_changes_before_Update_at_1_14_2025_1_28_PM_[Changes]1/shelved.patch" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/shelf/Uncommitted_changes_before_Update_at_1_14_2025_1_28_PM__Changes_.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/shelf/Uncommitted_changes_before_Update_at_1_14_2025_1_28_PM__Changes_1.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/shelf/Uncommitted_changes_before_Update_at_1_14_2025_2_16_PM_[Changes]/shelved.patch" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/shelf/Uncommitted_changes_before_Update_at_1_14_2025_2_16_PM__Changes_.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/shelf/Uncommitted_changes_before_Update_at_1_14_2025_7_30_PM_[Changes]/shelved.patch" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/shelf/Uncommitted_changes_before_Update_at_1_14_2025_7_30_PM__Changes_.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/shelf/Uncommitted_changes_before_Update_at_1_16_2025_1_12_PM_[Changes]/shelved.patch" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/shelf/Uncommitted_changes_before_Update_at_1_16_2025_1_12_PM__Changes_.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/shelf/Uncommitted_changes_before_rebase_[Changes]/kennelDogs.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/shelf/Uncommitted_changes_before_rebase_[Changes]/shelved.patch" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/shelf/Uncommitted_changes_before_rebase_[Changes]1/kennelDogs.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/shelf/Uncommitted_changes_before_rebase_[Changes]1/shelved.patch" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/shelf/Uncommitted_changes_before_rebase_[Changes]2/kennelDogs.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/shelf/Uncommitted_changes_before_rebase_[Changes]2/shelved.patch" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/shelf/Uncommitted_changes_before_rebase_[Changes]3/kennelDogs.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/shelf/Uncommitted_changes_before_rebase_[Changes]3/shelved.patch" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/shelf/Uncommitted_changes_before_rebase_[Changes]4/shelved.patch" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/shelf/Uncommitted_changes_before_rebase__Changes_.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/shelf/Uncommitted_changes_before_rebase__Changes_1.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/shelf/Uncommitted_changes_before_rebase__Changes_2.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/shelf/Uncommitted_changes_before_rebase__Changes_3.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/shelf/Uncommitted_changes_before_rebase__Changes_4.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/PaymentPage.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/SearchInParadise.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/SearchInParadise.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Thankyou.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Thankyou.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/TopKennels.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/TopKennels.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Topkennels.html" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/HomePage.js" beforeDir="false" afterPath="$PROJECT_DIR$/HomePage.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/LogInPage.html" beforeDir="false" afterPath="$PROJECT_DIR$/LogInPage.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/NavigatorScript.js" beforeDir="false" afterPath="$PROJECT_DIR$/NavigatorScript.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/PawStyles.css" beforeDir="false" afterPath="$PROJECT_DIR$/PawStyles.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/ProfileDog.html" beforeDir="false" afterPath="$PROJECT_DIR$/ProfilePage.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/ProfileForNewDog.html" beforeDir="false" afterPath="$PROJECT_DIR$/ProfileForNewDog.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/ProfilePage.css" beforeDir="false" afterPath="$PROJECT_DIR$/ProfilePage.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/AboutUs.css" beforeDir="false" afterPath="$PROJECT_DIR$/AboutUs.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/AboutUs.html" beforeDir="false" afterPath="$PROJECT_DIR$/AboutUs.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/HomePage.html" beforeDir="false" afterPath="$PROJECT_DIR$/HomePage.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/PaymentPage.html" beforeDir="false" afterPath="$PROJECT_DIR$/PaymentPage.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/PaymentPage.js" beforeDir="false" afterPath="$PROJECT_DIR$/PaymentPage.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/ProfileForNewDog.css" beforeDir="false" afterPath="$PROJECT_DIR$/ProfileForNewDog.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/RateYourStay.css" beforeDir="false" afterPath="$PROJECT_DIR$/RateYourStay.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/RateYourStay.html" beforeDir="false" afterPath="$PROJECT_DIR$/RateYourStay.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/SearchInParadise.html" beforeDir="false" afterPath="$PROJECT_DIR$/SearchInParadise.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/SignUp.css" beforeDir="false" afterPath="$PROJECT_DIR$/SignUp.css" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/SignUp.html" beforeDir="false" afterPath="$PROJECT_DIR$/SignUp.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Thankyou.html" beforeDir="false" afterPath="$PROJECT_DIR$/Thankyou.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/top kennels.html" beforeDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -29,8 +67,8 @@
       <list>
         <option value="TypeScript File" />
         <option value="HTML File" />
-        <option value="JavaScript File" />
         <option value="CSS File" />
+        <option value="JavaScript File" />
       </list>
     </option>
   </component>
@@ -472,23 +510,7 @@
       <option name="project" value="LOCAL‎" />
       <updated>1736695081635</updated>
     </task>
-    <task id="LOCAL‎-00038" summary="check">
-      <option name="closed" value="true" />
-      <created>1736856827104</created>
-      <option name="number" value="00038" />
-      <option name="presentableId" value="LOCAL‎-00038" />
-      <option name="project" value="LOCAL‎" />
-      <updated>1736856827104</updated>
-    </task>
-    <task id="LOCAL‎-00039" summary="check">
-      <option name="closed" value="true" />
-      <created>1736875641613</created>
-      <option name="number" value="00039" />
-      <option name="presentableId" value="LOCAL‎-00039" />
-      <option name="project" value="LOCAL‎" />
-      <updated>1736875641613</updated>
-    </task>
-    <option name="localTasksCounter" value="40" />
+    <option name="localTasksCounter" value="38" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">

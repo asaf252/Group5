@@ -1,4 +1,5 @@
 /* גריד: טופס */
+
 .GridProfile {
     display: grid;
     grid-template-columns: 1fr; /* עמודה אחת */
