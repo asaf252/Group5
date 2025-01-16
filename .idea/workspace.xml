@@ -5,19 +5,45 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="3a85256d-f386-4d1b-8f4c-d1287acb997b" name="Changes" comment="check">
-      <change afterPath="$PROJECT_DIR$/LogInPage.css" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/ProfileForNewDog.css" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/ProfileForNewDog.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/SignUp.css" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/HomePage.js" beforeDir="false" afterPath="$PROJECT_DIR$/HomePage.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/LogInPage.html" beforeDir="false" afterPath="$PROJECT_DIR$/LogInPage.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/NavigatorScript.js" beforeDir="false" afterPath="$PROJECT_DIR$/NavigatorScript.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/PawStyles.css" beforeDir="false" afterPath="$PROJECT_DIR$/PawStyles.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/ProfileDog.html" beforeDir="false" afterPath="$PROJECT_DIR$/ProfilePage.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/ProfileForNewDog.html" beforeDir="false" afterPath="$PROJECT_DIR$/ProfileForNewDog.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/ProfilePage.css" beforeDir="false" afterPath="$PROJECT_DIR$/ProfilePage.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/SignUp.html" beforeDir="false" afterPath="$PROJECT_DIR$/SignUp.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/AboutUs.css" beforeDir="false" afterPath="$PROJECT_DIR$/Styles/AboutUs.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/AboutUs.html" beforeDir="false" afterPath="$PROJECT_DIR$/Templets/AboutUs.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/AboutUs.js" beforeDir="false" afterPath="$PROJECT_DIR$/Scripts/AboutUs.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/HomePage.css" beforeDir="false" afterPath="$PROJECT_DIR$/Styles/HomePage.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/HomePage.html" beforeDir="false" afterPath="$PROJECT_DIR$/Templets/HomePage.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/HomePage.js" beforeDir="false" afterPath="$PROJECT_DIR$/Scripts/HomePage.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/KennelProfile.css" beforeDir="false" afterPath="$PROJECT_DIR$/Styles/KennelProfile.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/LogInPage.css" beforeDir="false" afterPath="$PROJECT_DIR$/Styles/LogInPage.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/LogInPage.html" beforeDir="false" afterPath="$PROJECT_DIR$/Templets/LogInPage.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/LogInPage.js" beforeDir="false" afterPath="$PROJECT_DIR$/Scripts/LogInPage.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/NavigatorScript.js" beforeDir="false" afterPath="$PROJECT_DIR$/Scripts/NavigatorScript.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/NavigatorStyle.css" beforeDir="false" afterPath="$PROJECT_DIR$/Styles/NavigatorStyle.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/PawStyles.css" beforeDir="false" afterPath="$PROJECT_DIR$/Styles/PawStyles.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/PaymentPage.css" beforeDir="false" afterPath="$PROJECT_DIR$/Styles/PaymentPage.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/PaymentPage.html" beforeDir="false" afterPath="$PROJECT_DIR$/Templets/PaymentPage.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/PaymentPage.js" beforeDir="false" afterPath="$PROJECT_DIR$/Scripts/PaymentPage.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/ProfileForNewDog.css" beforeDir="false" afterPath="$PROJECT_DIR$/Styles/ProfileForNewDog.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/ProfileForNewDog.html" beforeDir="false" afterPath="$PROJECT_DIR$/Templets/ProfileForNewDog.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/ProfileForNewDog.js" beforeDir="false" afterPath="$PROJECT_DIR$/Scripts/ProfileForNewDog.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/ProfilePage.css" beforeDir="false" afterPath="$PROJECT_DIR$/Styles/ProfilePage.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/ProfilePage.html" beforeDir="false" afterPath="$PROJECT_DIR$/Templets/ProfilePage.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/ProfilePage.js" beforeDir="false" afterPath="$PROJECT_DIR$/Scripts/ProfilePage.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/RateYourStay.css" beforeDir="false" afterPath="$PROJECT_DIR$/Styles/RateYourStay.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/RateYourStay.html" beforeDir="false" afterPath="$PROJECT_DIR$/Templets/RateYourStay.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/RateYourStay.js" beforeDir="false" afterPath="$PROJECT_DIR$/Scripts/RateYourStay.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/SearchInParadise.css" beforeDir="false" afterPath="$PROJECT_DIR$/Styles/SearchInParadise.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/SearchInParadise.html" beforeDir="false" afterPath="$PROJECT_DIR$/Templets/SearchInParadise.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/SearchInParadise.js" beforeDir="false" afterPath="$PROJECT_DIR$/Scripts/SearchInParadise.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/SignUp.css" beforeDir="false" afterPath="$PROJECT_DIR$/Styles/SignUp.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/SignUp.html" beforeDir="false" afterPath="$PROJECT_DIR$/Templets/SignUp.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Signup.js" beforeDir="false" afterPath="$PROJECT_DIR$/Scripts/Signup.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Thankyou.css" beforeDir="false" afterPath="$PROJECT_DIR$/Styles/Thankyou.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Thankyou.html" beforeDir="false" afterPath="$PROJECT_DIR$/Templets/Thankyou.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Thankyou.js" beforeDir="false" afterPath="$PROJECT_DIR$/Scripts/Thankyou.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/TopKennels.css" beforeDir="false" afterPath="$PROJECT_DIR$/Styles/TopKennels.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/TopKennels.js" beforeDir="false" afterPath="$PROJECT_DIR$/Scripts/TopKennels.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Topkennels.html" beforeDir="false" afterPath="$PROJECT_DIR$/Templets/Topkennels.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/kennelProfile.html" beforeDir="false" afterPath="$PROJECT_DIR$/Templets/kennelProfile.html" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -76,46 +102,49 @@
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="PropertiesComponent">{
-  &quot;keyToString&quot;: {
-    &quot;DefaultHtmlFileTemplate&quot;: &quot;HTML File&quot;,
-    &quot;Node.js.RateYourStay.js.executor&quot;: &quot;Debug&quot;,
-    &quot;Python.main.executor&quot;: &quot;Run&quot;,
-    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
-    &quot;git-widget-placeholder&quot;: &quot;main&quot;,
-    &quot;last_opened_file_path&quot;: &quot;C:/Users/halfo/PycharmProjects/Group5&quot;,
-    &quot;list.type.of.created.stylesheet&quot;: &quot;CSS&quot;,
-    &quot;node.js.detected.package.eslint&quot;: &quot;true&quot;,
-    &quot;node.js.detected.package.tslint&quot;: &quot;true&quot;,
-    &quot;node.js.selected.package.eslint&quot;: &quot;(autodetect)&quot;,
-    &quot;node.js.selected.package.tslint&quot;: &quot;(autodetect)&quot;,
-    &quot;nodejs_package_manager_path&quot;: &quot;npm&quot;,
-    &quot;settings.editor.selected.configurable&quot;: &quot;vcs.Git&quot;,
-    &quot;ts.external.directory.path&quot;: &quot;C:\\Program Files\\JetBrains\\PyCharm 2024.2.4\\plugins\\javascript-plugin\\jsLanguageServicesImpl\\external&quot;,
-    &quot;vue.rearranger.settings.migration&quot;: &quot;true&quot;
+  <component name="PropertiesComponent"><![CDATA[{
+  "keyToString": {
+    "DefaultHtmlFileTemplate": "HTML File",
+    "Node.js.RateYourStay.js.executor": "Run",
+    "Python.main.executor": "Run",
+    "RunOnceActivity.ShowReadmeOnStart": "true",
+    "git-widget-placeholder": "main",
+    "last_opened_file_path": "C:/Users/halfo/PycharmProjects/Group5",
+    "list.type.of.created.stylesheet": "CSS",
+    "node.js.detected.package.eslint": "true",
+    "node.js.detected.package.tslint": "true",
+    "node.js.selected.package.eslint": "(autodetect)",
+    "node.js.selected.package.tslint": "(autodetect)",
+    "nodejs_package_manager_path": "npm",
+    "settings.editor.selected.configurable": "vcs.Git",
+    "ts.external.directory.path": "C:\\Program Files\\JetBrains\\PyCharm 2024.2.4\\plugins\\javascript-plugin\\jsLanguageServicesImpl\\external",
+    "vue.rearranger.settings.migration": "true"
   },
-  &quot;keyToStringList&quot;: {
-    &quot;GitStage.ChangesTree.GroupingKeys&quot;: [
-      &quot;directory&quot;,
-      &quot;module&quot;,
-      &quot;repository&quot;
+  "keyToStringList": {
+    "GitStage.ChangesTree.GroupingKeys": [
+      "directory",
+      "module",
+      "repository"
     ],
-    &quot;com.intellij.ide.scratch.ScratchImplUtil$2/New Scratch File&quot;: [
-      &quot;CSS&quot;
+    "com.intellij.ide.scratch.ScratchImplUtil$2/New Scratch File": [
+      "CSS"
     ]
   }
-}</component>
+}]]></component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
       <recent name="C:\Users\halfo\PycharmProjects\Group5" />
     </key>
     <key name="MoveFile.RECENT_KEYS">
+      <recent name="C:\Users\assaf\PycharmProjects\Paw_Paradise_Group5\Styles" />
+      <recent name="C:\Users\assaf\PycharmProjects\Paw_Paradise_Group5\Scripts" />
+      <recent name="C:\Users\assaf\PycharmProjects\Paw_Paradise_Group5\Templets" />
       <recent name="C:\Users\assaf\PycharmProjects\Paw_Paradise_Group5\PartA" />
       <recent name="C:\Users\assaf\PycharmProjects\Paw_Paradise_Group5\Photos" />
     </key>
   </component>
   <component name="RunManager" selected="Node.js.RateYourStay.js">
-    <configuration name="RateYourStay.js" type="NodeJSConfigurationType" temporary="true" nameIsGenerated="true" path-to-js-file="$PROJECT_DIR$/RateYourStay.js" working-dir="$PROJECT_DIR$">
+    <configuration name="RateYourStay.js" type="NodeJSConfigurationType" temporary="true" nameIsGenerated="true" path-to-js-file="$PROJECT_DIR$/Scripts/RateYourStay.js" working-dir="$PROJECT_DIR$">
       <method v="2" />
     </configuration>
     <configuration name="main" type="PythonConfigurationType" factoryName="Python" nameIsGenerated="true">
@@ -488,7 +517,15 @@
       <option name="project" value="LOCAL‎" />
       <updated>1736875641613</updated>
     </task>
-    <option name="localTasksCounter" value="40" />
+    <task id="LOCAL‎-00040" summary="check">
+      <option name="closed" value="true" />
+      <created>1737034569743</created>
+      <option name="number" value="00040" />
+      <option name="presentableId" value="LOCAL‎-00040" />
+      <option name="project" value="LOCAL‎" />
+      <updated>1737034569743</updated>
+    </task>
+    <option name="localTasksCounter" value="41" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
