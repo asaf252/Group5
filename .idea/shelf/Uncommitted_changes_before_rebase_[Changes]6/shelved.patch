@@ -1,0 +1,621 @@
+Index: Topkennels.html
+IDEA additional info:
+Subsystem: com.intellij.openapi.diff.impl.patch.BaseRevisionTextPatchEP
+<+><!DOCTYPE html>\r\n<html lang=\"en\">\r\n<head>\r\n    <meta charset=\"UTF-8\">\r\n    <meta name=\"viewport\" content=\"width=device-width, initial-scale=1.0\">\r\n    <title>Top Kennels</title>\r\n    <link rel=\"stylesheet\" href=\"PawStyles.css\">\r\n    <link rel=\"stylesheet\" href=\"NavigatorStyle.css\">\r\n    <script src=\"TopKennels.js\" defer></script>\r\n</head>\r\n<body class=\"myBackground\">\r\n<div class=\"MainStyle\">\r\n    <h1 class=\"ProfilePageTitle\">Top kennels we found for you:</h1>\r\n    <!-- תצוגת שם הכלב שנבחר -->\r\n    <p id=\"dog-selection\"></p>\r\n\r\n    <!-- טבלה להצגת התוצאות -->\r\n    <table id=\"kennelsTable\">\r\n        <thead>\r\n        <tr>\r\n            <th>Name</th>\r\n            <th>Address</th>\r\n            <th>Grade</th>\r\n            <th>Contact Details</th>\r\n        </tr>\r\n        </thead>\r\n        <tbody>\r\n        <!-- התוצאות יתווספו כאן באופן דינמי -->\r\n        </tbody>\r\n    </table>\r\n\r\n    <!-- כפתור חזרה -->\r\n    <div style=\"text-align: center; margin-top: 20px;\">\r\n        <button type=\"button\" class=\"btmType1\" id=\"backButton\">Back</button>\r\n    </div>\r\n</div>\r\n</body>\r\n</html>\r\n
+Subsystem: com.intellij.openapi.diff.impl.patch.CharsetEP
+<+>UTF-8
+===================================================================
+diff --git a/Topkennels.html b/Topkennels.html
+--- a/Topkennels.html	(revision b80fc1bd0ae473c5ee60ba9d004c16201f1b5042)
++++ b/Topkennels.html	(date 1737039790226)
+@@ -2,33 +2,33 @@
+ <html lang="en">
+ <head>
+     <meta charset="UTF-8">
+-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+     <title>Top Kennels</title>
+     <link rel="stylesheet" href="PawStyles.css">
+     <link rel="stylesheet" href="NavigatorStyle.css">
+     <script src="TopKennels.js" defer></script>
+ </head>
+ <body class="myBackground">
+-<div class="MainStyle">
+-    <h1 class="ProfilePageTitle">Top kennels we found for you:</h1>
+-    <!-- תצוגת שם הכלב שנבחר -->
+-    <p id="dog-selection"></p>
+-
+-    <!-- טבלה להצגת התוצאות -->
+-    <table id="kennelsTable">
+-        <thead>
+-        <tr>
+-            <th>Name</th>
+-            <th>Address</th>
+-            <th>Grade</th>
+-            <th>Contact Details</th>
+-        </tr>
+-        </thead>
+-        <tbody>
+-        <!-- התוצאות יתווספו כאן באופן דינמי -->
+-        </tbody>
+-    </table>
+-
++<div class="TopStyle">
++
++    <div class="table-container">
++        <h1 class="ProfilePageTitle">Top kennels we found for you:</h1>
++        <!-- תצוגת שם הכלב שנבחר -->
++        <p id="dog-selection"></p>
++        <!-- טבלה להצגת התוצאות -->
++        <table id="kennelsTable">
++            <thead>
++            <tr>
++                <th>Name</th>
++                <th>Address</th>
++                <th>Grade</th>
++                <th>Contact Details</th>
++            </tr>
++            </thead>
++            <tbody>
++            <!-- התוצאות יתווספו כאן באופן דינמי -->
++            </tbody>
++        </table>
++    </div>
+     <!-- כפתור חזרה -->
+     <div style="text-align: center; margin-top: 20px;">
+         <button type="button" class="btmType1" id="backButton">Back</button>
+Index: PawStyles.css
+IDEA additional info:
+Subsystem: com.intellij.openapi.diff.impl.patch.BaseRevisionTextPatchEP
+<+>/*---------------------- Generic for pages-----------------*/\r\nbody {\r\n    margin: 0;\r\n    font-family:  'Arial',sans-serif;\r\n    background-color: #f8ece6;\r\n    color: #5a3a29;\r\n    display: flex;\r\n    justify-content: center;\r\n    align-items: center;\r\n    min-height: 150vh; /* גובה המינימום של החלון */\r\n}\r\n\r\nheader h1 {\r\n    font-size: 2.5rem;\r\n    font-weight: bold;\r\n    margin: 0;\r\n    color: #7b4d3a;\r\n}\r\n\r\nmain h2 {\r\n    font-size: 1.8rem;\r\n    margin-bottom: 10px;\r\n}\r\n\r\nheader p {\r\n    margin: 10px 0 20px;\r\n    font-size: 1.1rem;\r\n}\r\n\r\nbutton {\r\n    display: block;\r\n    width: 100%;\r\n    margin: 10px 0;\r\n    padding: 10px;\r\n    font-size: 1rem;\r\n    border: none;\r\n    border-radius: 5px;\r\n    cursor: pointer;\r\n}\r\ntable {\r\n    align-content: center;\r\n    table-layout: fixed; /* פריסת עמודות קבועה */\r\n    border-collapse: collapse; /* איחוד גבולות */\r\n    margin: 20px 20px; /* רווח מסביב לטבלה */\r\n    background-color: #fdf6f3; /* צבע רקע לטבלה */\r\n    text-align: center; /* יישור כל האלמנטים בתוך הקונטיינר למרכז */\r\n}\r\n\r\n/* עיצוב לתאי כותרת */\r\n\r\n\r\n/* עיצוב לתאים רגילים */\r\ntable tr {\r\n    text-align: center; /* יישור טקסט למרכז */\r\n    vertical-align: middle; /* יישור אנכי למרכז */\r\n    padding: 10px; /* ריווח פנימי */\r\n    background-color: #d9a18a; /* צבע רקע לכותרת */\r\n    color: #5a3a29; /* צבע טקסט */\r\n    font-weight: bold; /* טקסט מודגש */\r\n    font-size: 1.2rem; /* גודל טקסט */\r\n    border: 1px solid #5a3a29; /* גבול */\r\n    word-wrap: break-word; /* שבירת טקסט אם ארוך מדי */\r\n}\r\n\r\ntable td {\r\n    text-align: center; /* יישור טקסט למרכז */\r\n    vertical-align: middle; /* יישור אנכי למרכז */\r\n    padding: 10px; /* ריווח פנימי */\r\n    border: 1px solid #5a3a29; /* גבול */\r\n    font-size: 1rem; /* גודל טקסט */\r\n    color: #5a3a29; /* צבע טקסט */\r\n    word-wrap: break-word; /* שבירת טקסט אם ארוך מדי */\r\n  background-color: #fff7f0;\r\n\r\n\r\n}\r\n\r\n\r\n\r\n/*---------------------- END Generic for pages-----------------*/\r\n\r\n/*---------------------- Main styles for all pages-----------------*/\r\n\r\n.Logo {\r\n    width: 20px; /* רוחב התמונה */\r\n    height: 20px; /* גובה התמונה */\r\n    vertical-align: middle; /* מוודא שהתמונה בקו אחד עם הטקסט */\r\n}\r\n.LogoBone {\r\n    width: 60px;\r\n    height: 60px;\r\n    margin-right: 0px;\r\n    margin-bottom: 0;\r\n    display: inline-block; /* מבטיח יישור אחיד */\r\n    vertical-align: middle;\r\n}\r\n\r\n.MainStyle {\r\n    display: flex; /* הפיכת הקופסה לקונטיינר של Flexbox */\r\n    flex-direction: column; /* שמירה על סדר אנכי של האלמנטים */\r\n    justify-content: center; /* ממרכז את התוכן הפנימי אנכית */\r\n    align-items: center; /* ממרכז את התוכן הפנימי אופקית */\r\n    text-align: center; /* ממרכז את הטקסט בתוך האלמנטים */\r\n    padding: 30px 30px;\r\n    width: 95%;\r\n    max-width: 1000px;\r\n    background-color: #fff7f0;\r\n    border-radius: 15px;\r\n    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);\r\n    box-sizing: border-box; /* מונע overflow */\r\n}\r\n\r\n\r\n\r\n.myBackground {\r\n    background-image: url('Photos/Paws.png'); /* מיקום התמונה */\r\n    background-repeat: repeat; /* התמונה לא תחזור */\r\n    background-position: right center; /* מצמיד את התמונה לימין ומרכז אנכית */\r\n    background-size: contain; /* מתאים את גודל התמונה לפי היחס שלה */\r\n    width: 100%;\r\n    height: 500px; /* קבע גובה אחיד */\r\n}\r\n\r\n.regularIMG {\r\n    width: 150px; /* רוחב התיבה */\r\n    height: 150px; /* גובה התיבה */\r\n    border: 2px solid #5a3a29; /* גבול */\r\n    border-radius: 10px; /* פינות מעוגלות */\r\n    display: flex; /* ממרכז תוכן אנכית ואופקית */\r\n    justify-content: center;\r\n    align-items: center;\r\n    background-color: white; /* צבע רקע */\r\n    font-size: 1rem; /* גודל טקסט */\r\n    font-weight: bold; /* טקסט מודגש */\r\n    color: #5a3a29;\r\n    float: left;\r\n}\r\n\r\n/* רשת פרופיל הכלב */\r\n.MainGrid {\r\n    display: grid;\r\n    grid-template-columns:   1fr 2fr 1.5fr; /* שלוש עמודות */\r\n    grid-gap: 15px; /* רווח בין האלמנטים */\r\n    align-items: start;\r\n    width: 100%; /* התאמה מלאה לרוחב האב */\r\n    max-width: 100%; /* ודא שלא יחרוג מגבולות האב */\r\n    margin: 10%; /* מרכז את ה-Grid בתוך האב */\r\n}\r\n\r\n/* עיצוב התוויות (label) */\r\n.MainGrid label {\r\n    font-weight: bold;\r\n    padding-right: 10px;\r\n    align-self: center;\r\n    text-align: start;\r\n}\r\n\r\n/* עיצוב הערכים (span) */\r\n.MainGrid span {\r\n    background-color: #fff;\r\n    padding: 6px;\r\n    border: 1px solid #5a3a29;\r\n    border-radius: 5px;\r\n    font-size: 1rem;\r\n}\r\n\r\n.MainGrid input {\r\n    background-color: #fff;\r\n    padding: 6px;\r\n    border: 1px solid #5a3a29;\r\n    border-radius: 5px;\r\n    font-size: 1rem;\r\n}\r\n\r\n\r\n/*----------------------END Main styles for all pages-----------------*/\r\n\r\n/*---------------------- forms-----------------*/\r\n\r\nform label {\r\n    display: block; /* מציג את התווית בשורה נפרדת */\r\n    text-align: left; /* יישור שמאל */\r\n    margin: 10px 0 5px; /* מרווח סביב */\r\n    font-size: 20px; /* גודל טקסט */\r\n    font-weight: bold;\r\n}\r\n\r\nform input,form select {\r\n    width: 95%; /* רוחב מלא */\r\n    padding: 10px; /* ריווח פנימי */\r\n    margin-bottom: 15px; /* מרווח תחתון */\r\n    border: 1px solid #ccc; /* גבול אפור */\r\n    border-radius: 5px; /* קצוות מעוגלים */\r\n    font-size: 16px; /* גודל טקסט */\r\n}\r\n\r\nform span {\r\n    display: block; /* הופך את ה-span ל-block כדי לאפשר שבירת שורות */\r\n    color: red; /* צבע אדום לשגיאה */\r\n    font-size: 0.9rem; /* גודל טקסט */\r\n    white-space: pre-line; /* תמיכה בשבירת שורות עם \\n */\r\n    margin-top: 5px; /* רווח קטן מעל ההודעה */\r\n\r\n\r\n\r\n}\r\n\r\n\r\n.Raw {\r\n    display: flex; /* מציג את הכפתורים בשורה */\r\n    justify-content: center; /* ממרכז את הכפתורים */\r\n    gap: 20px; /* יוצר רווח של 20 פיקסלים בין הכפתורים */\r\n}\r\n\r\n\r\n/*---------------------- form Login end-----------------*/\r\n\r\n/*---------------------- btm1-----------------*/\r\n\r\n.btmType1 {\r\n    background-color: #7b4d3a; /* צבע חום כהה */\r\n    color: #ffffff; /* צבע טקסט */\r\n    border: 1px solid #5a3a29;\r\n    font-weight: bold;\r\n    display: flex;\r\n    justify-content: center;\r\n    align-items: center;\r\n    gap: 10px;\r\n}\r\n\r\n.btmType1:hover {\r\n    background-color: #f3d8c7;\r\n    color: #5a3a29;\r\n}\r\n\r\n/*----------------------END btm1-----------------*/\r\n\r\n/*---------------------- btm2-----------------*/\r\n\r\n.btmType2 {\r\n    background-color: #d9a764; /* צבע רקע כהה יותר */\r\n    color: #ffffff; /* צבע טקסט לבן */\r\n    font-weight: bold;\r\n    display: flex;\r\n    justify-content: center;\r\n    align-items: center;\r\n    gap: 10px;\r\n}\r\n\r\n/*----------------------END btm2-----------------*/\r\n/*---------------------- btm3-----------------*/\r\n.btmType3{\r\n    background-color: #d3a18a; /* צבע כהה יותר */\r\n    color: #5a3a29;\r\n    padding: 10px 20px;\r\n    border: 1px solid #5a3a29;\r\n    font-size: 16px;\r\n    font-weight: bold;\r\n\r\n}\r\n\r\n.btmType3:hover {\r\n    background-color: #f3d8c7;\r\n    color: #5a3a29;\r\n}\r\n/*----------------------END btm3-----------------*/\r\n\r\n\r\n/*----------------------END About US Page-----------------*/\r\n\r\n/*---------------------- Profile Grid Page-----------------*/\r\n\r\n/* תפריט נפתח */\r\n.dog-select {\r\n    padding: 10px;\r\n    font-size: 1rem;\r\n    border: 1px solid #5a3a29;\r\n    border-radius: 5px;\r\n    margin-bottom: 20px;\r\n    width: 80%;\r\n}\r\n\r\n.dog-picture {\r\n    grid-column: 3 / 4; /* העמודה השלישית */\r\n    grid-row: 1 / 7; /* משתרע על השורות */\r\n    text-align: center;\r\n\r\n    border-radius: 10px;\r\n    overflow: hidden; /* מונע מהתמונה לחרוג מגבולות המיכל */\r\n    object-fit: contain;\r\n    border: 2px solid #5a3a29;\r\n    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);\r\n    margin-bottom: 10px;\r\n        width: 100%; /* מתאים את התמונה לרוחב המיכל */\r\n    height: 100%; /* מתאים את התמונה לגובה המיכל */\r\n    border-radius: 10px; /* פינות מעוגלות */\r\n}\r\n/*----------------------END Profile Grid Page-----------------*/\r\n/*----------------------rate your stay page-----------------*/\r\n\r\n/* עיצוב לדירוג */\r\n.rating {\r\n    display: flex;\r\n    gap: 10px;\r\n    justify-content: center;\r\n    align-items: center;\r\n    margin: 20px 0;\r\n}\r\n\r\n.rating input[type=\"checkbox\"] {\r\n    display: none; /* מסתיר את תיבות הסימון */\r\n}\r\n\r\n\r\n\r\n.rating label {\r\n    cursor: pointer;\r\n}\r\n\r\n.rating label img {\r\n    width: 40px;\r\n    height: 40px;\r\n    transition: transform 0.2s, border 0.2s; /* אפקטים של שינוי */\r\n}\r\n\r\n/* סימון העצם כאשר היא נבחרת */\r\n.rating input[type=\"checkbox\"]:checked + label img {\r\n    transform: scale(1.2); /* הגדלת העצם */\r\n    border: 2px solid #5a3a29; /* מסגרת קבועה */\r\n    border-radius: 5px;\r\n}\r\n\r\n/* הגדלת העצם כאשר משתמשים ב-hover */\r\n.rating label:hover img {\r\n    transform: scale(1.2); /* הגדלת העצם */\r\n    border: 2px solid #5a3a29; /* מסגרת זמנית */\r\n    border-radius: 5px;\r\n}\r\n
+Subsystem: com.intellij.openapi.diff.impl.patch.CharsetEP
+<+>UTF-8
+===================================================================
+diff --git a/PawStyles.css b/PawStyles.css
+--- a/PawStyles.css	(revision b80fc1bd0ae473c5ee60ba9d004c16201f1b5042)
++++ b/PawStyles.css	(date 1737039790239)
+@@ -37,43 +37,6 @@
+     border-radius: 5px;
+     cursor: pointer;
+ }
+-table {
+-    align-content: center;
+-    table-layout: fixed; /* פריסת עמודות קבועה */
+-    border-collapse: collapse; /* איחוד גבולות */
+-    margin: 20px 20px; /* רווח מסביב לטבלה */
+-    background-color: #fdf6f3; /* צבע רקע לטבלה */
+-    text-align: center; /* יישור כל האלמנטים בתוך הקונטיינר למרכז */
+-}
+-
+-/* עיצוב לתאי כותרת */
+-
+-
+-/* עיצוב לתאים רגילים */
+-table tr {
+-    text-align: center; /* יישור טקסט למרכז */
+-    vertical-align: middle; /* יישור אנכי למרכז */
+-    padding: 10px; /* ריווח פנימי */
+-    background-color: #d9a18a; /* צבע רקע לכותרת */
+-    color: #5a3a29; /* צבע טקסט */
+-    font-weight: bold; /* טקסט מודגש */
+-    font-size: 1.2rem; /* גודל טקסט */
+-    border: 1px solid #5a3a29; /* גבול */
+-    word-wrap: break-word; /* שבירת טקסט אם ארוך מדי */
+-}
+-
+-table td {
+-    text-align: center; /* יישור טקסט למרכז */
+-    vertical-align: middle; /* יישור אנכי למרכז */
+-    padding: 10px; /* ריווח פנימי */
+-    border: 1px solid #5a3a29; /* גבול */
+-    font-size: 1rem; /* גודל טקסט */
+-    color: #5a3a29; /* צבע טקסט */
+-    word-wrap: break-word; /* שבירת טקסט אם ארוך מדי */
+-  background-color: #fff7f0;
+-
+-
+-}
+ 
+ 
+ 
+Index: TopKennels.css
+IDEA additional info:
+Subsystem: com.intellij.openapi.diff.impl.patch.BaseRevisionTextPatchEP
+<+>.TopKennelStyle {\r\n\r\n    background-color: #fff7f0; /* צבע רקע */\r\n    border: 1px solid #d9a18a; /* גבול */\r\n    border-radius: 15px; /* פינות מעוגלות */\r\n    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1); /* צל */\r\n    padding: 30px; /* רווח פנימי */\r\n    width: 90%; /* רוחב מקסימלי */\r\n    max-width: 600px; /* מגבלת רוחב */\r\n    margin: 20px auto; /* ממרכז את התיבה */\r\n    box-sizing: border-box; /* מתחשב ב-padding */\r\n    display: flex; /* מציג את התוכן בפלקס */\r\n    flex-direction: column; /* תוכן מסודר אנכית */\r\n    gap: 20px; /* ריווח בין האלמנטים */\r\n    align-items: center; /* יישור תמונה וטקסט אנכית */\r\n\r\n}\r\n/* כותרת טופס */\r\n.ProfilePageTitle {\r\n    font-size: 2.5rem;\r\n    font-weight: bold;\r\n    color: #5a3a29;\r\n    text-align: center;\r\n    margin-bottom: 20px;\r\n    padding-bottom: 10px;\r\n    border-bottom: 2px solid #d9a18a;\r\n    letter-spacing: 1px;\r\n}
+Subsystem: com.intellij.openapi.diff.impl.patch.CharsetEP
+<+>UTF-8
+===================================================================
+diff --git a/TopKennels.css b/TopKennels.css
+--- a/TopKennels.css	(revision b80fc1bd0ae473c5ee60ba9d004c16201f1b5042)
++++ b/TopKennels.css	(date 1737039790250)
+@@ -1,4 +1,4 @@
+-.TopKennelStyle {
++.TopStyle {
+ 
+     background-color: #fff7f0; /* צבע רקע */
+     border: 1px solid #d9a18a; /* גבול */
+@@ -15,6 +15,47 @@
+     align-items: center; /* יישור תמונה וטקסט אנכית */
+ 
+ }
++
++
++table {
++    align-content: center;
++    table-layout: fixed; /* פריסת עמודות קבועה */
++    border-collapse: collapse; /* איחוד גבולות */
++    margin: 20px 20px; /* רווח מסביב לטבלה */
++    background-color: #fdf6f3; /* צבע רקע לטבלה */
++    text-align: center; /* יישור כל האלמנטים בתוך הקונטיינר למרכז */
++}
++
++/* עיצוב לתאי כותרת */
++
++
++/* עיצוב לתאים רגילים */
++table tr {
++    text-align: center; /* יישור טקסט למרכז */
++    vertical-align: middle; /* יישור אנכי למרכז */
++    padding: 10px; /* ריווח פנימי */
++    background-color: #d9a18a; /* צבע רקע לכותרת */
++    color: #5a3a29; /* צבע טקסט */
++    font-weight: bold; /* טקסט מודגש */
++    font-size: 1.2rem; /* גודל טקסט */
++    border: 1px solid #5a3a29; /* גבול */
++    word-wrap: break-word; /* שבירת טקסט אם ארוך מדי */
++}
++
++table td {
++    text-align: center; /* יישור טקסט למרכז */
++    vertical-align: middle; /* יישור אנכי למרכז */
++    padding: 10px; /* ריווח פנימי */
++    border: 1px solid #5a3a29; /* גבול */
++    font-size: 1rem; /* גודל טקסט */
++    color: #5a3a29; /* צבע טקסט */
++    word-wrap: break-word; /* שבירת טקסט אם ארוך מדי */
++  background-color: #fff7f0;
++
++
++}
++
++
+ /* כותרת טופס */
+ .ProfilePageTitle {
+     font-size: 2.5rem;
+Index: RateYourStay.html
+IDEA additional info:
+Subsystem: com.intellij.openapi.diff.impl.patch.BaseRevisionTextPatchEP
+<+><!DOCTYPE html>\r\n<html lang=\"en\">\r\n<head>\r\n    <meta charset=\"UTF-8\">\r\n    <title>Rate Your Stay</title>\r\n    <link rel=\"stylesheet\" href=\"PawStyles.css\">\r\n    <link rel=\"stylesheet\" href=\"NavigatorStyle.css\">\r\n    <link rel=\"stylesheet\" href=\"RateYourStay.css\">\r\n\r\n</head>\r\n<body class=\"myBackground\">\r\n<div class=\"RateStyle\">\r\n    <nav id=\"Navigator\"></nav>\r\n    <form>\r\n        <header>\r\n                    <h1 class=\"ProfilePageTitle\">Rate Your Stay</h1>\r\n        </header>\r\n\r\n        <label for=\"dog-select\">Which visit do you want to rate?</label>\r\n        <select id=\"dog-select\">\r\n        </select>\r\n\r\n        <label>Enter your grade:</label>\r\n        <div class=\"rating\">\r\n            <input type=\"checkbox\" id=\"bone1\" name=\"rating\" value=\"1\">\r\n            <label for=\"bone1\"><img src=\"Photos/DogBonePic.png\" alt=\"1 Bone\"></label>\r\n\r\n            <input type=\"checkbox\" id=\"bone2\" name=\"rating\" value=\"2\">\r\n            <label for=\"bone2\"><img src=\"Photos/DogBonePic.png\" alt=\"2 Bones\"></label>\r\n\r\n            <input type=\"checkbox\" id=\"bone3\" name=\"rating\" value=\"3\">\r\n            <label for=\"bone3\"><img src=\"Photos/DogBonePic.png\" alt=\"3 Bones\"></label>\r\n\r\n            <input type=\"checkbox\" id=\"bone4\" name=\"rating\" value=\"4\">\r\n            <label for=\"bone4\"><img src=\"Photos/DogBonePic.png\" alt=\"4 Bones\"></label>\r\n\r\n            <input type=\"checkbox\" id=\"bone5\" name=\"rating\" value=\"5\">\r\n            <label for=\"bone5\"><img src=\"Photos/DogBonePic.png\" alt=\"5 Bones\"></label>\r\n        </div>\r\n\r\n        <label for=\"comment\">Add a comment:</label>\r\n        <textarea id=\"comment\" placeholder=\"Write your comment here...\" rows=\"4\" cols=\"50\" maxlength=\"100\"></textarea>\r\n\r\n        <button type=\"submit\" class=\"btmType1\">Submit Rating</button>\r\n    </form>\r\n</div>\r\n<script src=\"RateYourStay.js\"></script>\r\n<script src=\"NavigatorScript.js\"></script>\r\n</body>\r\n</html>\r\n
+Subsystem: com.intellij.openapi.diff.impl.patch.CharsetEP
+<+>UTF-8
+===================================================================
+diff --git a/RateYourStay.html b/RateYourStay.html
+--- a/RateYourStay.html	(revision b80fc1bd0ae473c5ee60ba9d004c16201f1b5042)
++++ b/RateYourStay.html	(date 1737039790259)
+@@ -13,7 +13,7 @@
+     <nav id="Navigator"></nav>
+     <form>
+         <header>
+-                    <h1 class="ProfilePageTitle">Rate Your Stay</h1>
++            <h1 class="ProfilePageTitle">Rate Your Stay</h1>
+         </header>
+ 
+         <label for="dog-select">Which visit do you want to rate?</label>
+@@ -41,7 +41,10 @@
+         <label for="comment">Add a comment:</label>
+         <textarea id="comment" placeholder="Write your comment here..." rows="4" cols="50" maxlength="100"></textarea>
+ 
+-        <button type="submit" class="btmType1">Submit Rating</button>
++        <footer class="Raw">
++            <button class="btmType1">back</button>
++            <button type="submit" class="btmType2">Submit Rating</button>
++        </footer>
+     </form>
+ </div>
+ <script src="RateYourStay.js"></script>
+Index: RateYourStay.js
+IDEA additional info:
+Subsystem: com.intellij.openapi.diff.impl.patch.BaseRevisionTextPatchEP
+<+>document.addEventListener(\"DOMContentLoaded\", () => {\r\n    const checkboxes = document.querySelectorAll('.rating input[type=\"checkbox\"]');\r\n\r\n    checkboxes.forEach((checkbox, index) => {\r\n        const label = checkbox.nextElementSibling;\r\n\r\n        // אירוע mouseover\r\n        label.addEventListener('mouseover', () => {\r\n            console.log(`Hovering over checkbox: ${index + 1}`);\r\n\r\n            // ניקוי כל מחלקות hover ו-to-uncheck\r\n            checkboxes.forEach(cb => cb.nextElementSibling.classList.remove('hover', 'to-uncheck'));\r\n\r\n            if (checkbox.checked) {\r\n                // אם העצם מסומנת, הוסף to-uncheck לעצמה ולכל העצמות שאחריה\r\n                checkbox.nextElementSibling.classList.add('to-uncheck'); // העצם הנוכחית\r\n                for (let i = index + 1; i < checkboxes.length; i++) {\r\n                    if (checkboxes[i].checked) {\r\n                        checkboxes[i].nextElementSibling.classList.add('to-uncheck');\r\n                        //console.log(`Bone ${i + 1} marked as to-uncheck.`);\r\n                    }\r\n                }\r\n            } else {\r\n                // אם העצם לא מסומנת, נוסיף hover לכל העצמות עד העצם הנוכחית בלבד\r\n                for (let i = 0; i <= index; i++) {\r\n                    checkboxes[i].nextElementSibling.classList.add('hover');\r\n                    //console.log(`Bone ${i + 1} marked as hover.`);\r\n                }\r\n            }\r\n        });\r\n\r\n        // אירוע mouseout\r\n        label.addEventListener('mouseout', () => {\r\n        //    console.log(`Mouse out from checkbox: ${index + 1}`);\r\n            // ניקוי כל מחלקות hover ו-to-uncheck\r\n            checkboxes.forEach(cb => cb.nextElementSibling.classList.remove('hover', 'to-uncheck'));\r\n        });\r\n\r\n        // אירוע שינוי (change)\r\n        checkbox.addEventListener('change', () => {\r\n            if (checkbox.checked) {\r\n            //    console.log(`Checkbox ${index + 1} checked.`);\r\n                for (let i = 0; i <= index; i++) {\r\n                    checkboxes[i].checked = true;\r\n                }\r\n            } else {\r\n            //    console.log(`Checkbox ${index + 1} unchecked.`);\r\n                for (let i = index + 1; i < checkboxes.length; i++) {\r\n                    checkboxes[i].checked = false;\r\n                }\r\n            }\r\n        });\r\n    });\r\n});\r\n\r\n/*100 constrain*/\r\ndocument.addEventListener(\"DOMContentLoaded\", () => {\r\n    const commentBox = document.getElementById(\"comment\"); // תיבת הטקסט\r\n    const charCount = document.createElement(\"p\"); // יצירת אלמנט להצגת הספירה\r\n    charCount.id = \"charCount\"; // הוספת מזהה (id) לאלמנט\r\n    charCount.style.fontSize = \"0.9rem\"; // עיצוב בסיסי\r\n    charCount.style.color = \"#5a3a29\"; // צבע טקסט\r\n    charCount.textContent = `${commentBox.maxLength} characters remaining`; // טקסט התחלתי\r\n    // הוספת אלמנט הצגת ספירה אחרי תיבת הטקסט\r\n    commentBox.parentNode.insertBefore(charCount, commentBox.nextSibling);\r\n    // מאזין לאירוע הקלדה בתיבת הטקסט\r\n    commentBox.addEventListener(\"input\", () => {\r\n        const remaining = commentBox.maxLength - commentBox.value.length; // חישוב כמות התווים הנותרים\r\n        charCount.textContent = `${remaining} characters remaining`; // עדכון הטקסט\r\n    });\r\n});\r\n/* load visits */\r\ndocument.addEventListener(\"DOMContentLoaded\", () => {\r\n    // יצירת רשימה קבועה של ביקורים (שיכולה להתעדכן בעתיד מ-Database)\r\n    const visits = [\r\n        { id: 1, label: \"Visit 1\" },\r\n        { id: 2, label: \"Visit 2\" },\r\n        { id: 3, label: \"Visit 3\" },\r\n        { id: 4, label: \"Visit 4\" }\r\n    ];\r\n\r\n    // בחירת אלמנט ה-<select>\r\n    const visitSelect = document.getElementById(\"dog-select\");\r\n\r\n    // ניקוי תוכן קודם של <select> אם קיים\r\n    visitSelect.innerHTML = \"\";\r\n\r\n    // לולאה שמוסיפה את האופציות ל-<select>\r\n    visits.forEach((visit) => {\r\n        const option = document.createElement(\"option\"); // יצירת אלמנט <option>\r\n        option.value = visit.id; // ערך האופציה (id)\r\n        option.textContent = visit.label; // טקסט שיוצג באופציה (label)\r\n        visitSelect.appendChild(option); // הוספת האופציה ל-<select>\r\n    });\r\n});\r\n
+Subsystem: com.intellij.openapi.diff.impl.patch.CharsetEP
+<+>UTF-8
+===================================================================
+diff --git a/RateYourStay.js b/RateYourStay.js
+--- a/RateYourStay.js	(revision b80fc1bd0ae473c5ee60ba9d004c16201f1b5042)
++++ b/RateYourStay.js	(date 1737039790268)
+@@ -17,34 +17,28 @@
+                 for (let i = index + 1; i < checkboxes.length; i++) {
+                     if (checkboxes[i].checked) {
+                         checkboxes[i].nextElementSibling.classList.add('to-uncheck');
+-                        //console.log(`Bone ${i + 1} marked as to-uncheck.`);
+                     }
+                 }
+             } else {
+                 // אם העצם לא מסומנת, נוסיף hover לכל העצמות עד העצם הנוכחית בלבד
+                 for (let i = 0; i <= index; i++) {
+                     checkboxes[i].nextElementSibling.classList.add('hover');
+-                    //console.log(`Bone ${i + 1} marked as hover.`);
+                 }
+             }
+         });
+ 
+         // אירוע mouseout
+         label.addEventListener('mouseout', () => {
+-        //    console.log(`Mouse out from checkbox: ${index + 1}`);
+-            // ניקוי כל מחלקות hover ו-to-uncheck
+             checkboxes.forEach(cb => cb.nextElementSibling.classList.remove('hover', 'to-uncheck'));
+         });
+ 
+         // אירוע שינוי (change)
+         checkbox.addEventListener('change', () => {
+             if (checkbox.checked) {
+-            //    console.log(`Checkbox ${index + 1} checked.`);
+                 for (let i = 0; i <= index; i++) {
+                     checkboxes[i].checked = true;
+                 }
+             } else {
+-            //    console.log(`Checkbox ${index + 1} unchecked.`);
+                 for (let i = index + 1; i < checkboxes.length; i++) {
+                     checkboxes[i].checked = false;
+                 }
+@@ -61,17 +55,15 @@
+     charCount.style.fontSize = "0.9rem"; // עיצוב בסיסי
+     charCount.style.color = "#5a3a29"; // צבע טקסט
+     charCount.textContent = `${commentBox.maxLength} characters remaining`; // טקסט התחלתי
+-    // הוספת אלמנט הצגת ספירה אחרי תיבת הטקסט
+-    commentBox.parentNode.insertBefore(charCount, commentBox.nextSibling);
+-    // מאזין לאירוע הקלדה בתיבת הטקסט
++    commentBox.parentNode.insertBefore(charCount, commentBox.nextSibling); // הוספת אלמנט הצגת ספירה אחרי תיבת הטקסט
+     commentBox.addEventListener("input", () => {
+         const remaining = commentBox.maxLength - commentBox.value.length; // חישוב כמות התווים הנותרים
+         charCount.textContent = `${remaining} characters remaining`; // עדכון הטקסט
+     });
+ });
++
+ /* load visits */
+ document.addEventListener("DOMContentLoaded", () => {
+-    // יצירת רשימה קבועה של ביקורים (שיכולה להתעדכן בעתיד מ-Database)
+     const visits = [
+         { id: 1, label: "Visit 1" },
+         { id: 2, label: "Visit 2" },
+@@ -79,17 +71,20 @@
+         { id: 4, label: "Visit 4" }
+     ];
+ 
+-    // בחירת אלמנט ה-<select>
+     const visitSelect = document.getElementById("dog-select");
+-
+-    // ניקוי תוכן קודם של <select> אם קיים
+     visitSelect.innerHTML = "";
+ 
+-    // לולאה שמוסיפה את האופציות ל-<select>
+     visits.forEach((visit) => {
+-        const option = document.createElement("option"); // יצירת אלמנט <option>
+-        option.value = visit.id; // ערך האופציה (id)
+-        option.textContent = visit.label; // טקסט שיוצג באופציה (label)
+-        visitSelect.appendChild(option); // הוספת האופציה ל-<select>
++        const option = document.createElement("option");
++        option.value = visit.id;
++        option.textContent = visit.label;
++        visitSelect.appendChild(option);
++    });
++
++    // תיקון כפתור ה-Back
++    const backButton = document.getElementById("backButton");
++    backButton.addEventListener("click", (event) => {
++        event.preventDefault(); // למנוע פעולה ברירת מחדל
++        window.history.back(); // חזרה לעמוד הקודם
+     });
+ });
+Index: SearchInParadise.html
+IDEA additional info:
+Subsystem: com.intellij.openapi.diff.impl.patch.BaseRevisionTextPatchEP
+<+><!DOCTYPE html>\r\n<html lang=\"en\">\r\n<head>\r\n    <meta charset=\"UTF-8\">\r\n    <meta name=\"viewport\" content=\"width=device-width, initial-scale=1.0\">\r\n    <title>Search In Paradise</title>\r\n    <link rel=\"stylesheet\" href=\"PawStyles.css\">\r\n    <link rel=\"stylesheet\" href=\"NavigatorStyle.css\">\r\n    <link rel=\"stylesheet\" href=\"SearchInParadise.css\">\r\n</head>\r\n<body class=\"myBackground\">\r\n<div class=\"blockStyle\">\r\n    <nav id=\"Navigator\"></nav>\r\n    <form id=\"search-form\">\r\n        <header>\r\n            <h1 class=\"ProfilePageTitle\">Search in Paradise</h1>\r\n        </header>\r\n        <label for=\"rating-select\">Rate according to:</label>\r\n        <select id=\"rating-select\">\r\n            <option value=\"alphabetical\">Sort Alphabetically</option>\r\n            <option value=\"rate\">Order By Grade</option>\r\n        </select>\r\n        <div class=\"Raw\">\r\n            <button type=\"button\" class=\"btmType1\" onclick=\"history.back()\">Back</button>\r\n            <button type=\"submit\" class=\"btmType3\">Search</button>\r\n        </div>\r\n    </form>\r\n</div>\r\n<script src=\"NavigatorScript.js\"></script>\r\n<script src=\"SearchInParadise.js\" defer></script>\r\n</body>\r\n</html>\r\n
+Subsystem: com.intellij.openapi.diff.impl.patch.CharsetEP
+<+>UTF-8
+===================================================================
+diff --git a/SearchInParadise.html b/SearchInParadise.html
+--- a/SearchInParadise.html	(revision b80fc1bd0ae473c5ee60ba9d004c16201f1b5042)
++++ b/SearchInParadise.html	(date 1737039790275)
+@@ -21,7 +21,7 @@
+             <option value="rate">Order By Grade</option>
+         </select>
+         <div class="Raw">
+-            <button type="button" class="btmType1" onclick="history.back()">Back</button>
++            <button class="btmType1">Back</button>
+             <button type="submit" class="btmType3">Search</button>
+         </div>
+     </form>
+Index: ProfilePage.html
+IDEA additional info:
+Subsystem: com.intellij.openapi.diff.impl.patch.BaseRevisionTextPatchEP
+<+><!DOCTYPE html>\r\n<html lang=\"en\">\r\n<head>\r\n    <meta charset=\"UTF-8\">\r\n    <title>Dog Profile</title>\r\n    <link rel=\"stylesheet\" href=\"PawStyles.css\">\r\n    <link rel=\"stylesheet\" href=\"NavigatorStyle.css\">\r\n    <link rel=\"stylesheet\" href=\"ProfilePage.css\">\r\n</head>\r\n<body class=\"myBackground\">\r\n<div class=\"Dogprofilepage\">\r\n    <nav id=\"Navigator\"></nav>\r\n    <h1 class=\"ProfilePageTitle\">My Paw profile</h1>\r\n\r\n    <!-- Grid layout for profile information -->\r\n    <div class=\"grid-container\">\r\n        <!-- Information about the dog -->\r\n        <div class=\"profile-info\">\r\n            <label>Which dog you want to show:</label>\r\n            <select class=\"dog-select\">\r\n                <option value=\"dog1\">Marvel</option>\r\n                <option value=\"dog2\">Dog 2</option>\r\n                <option value=\"dog3\">Dog 3</option>\r\n            </select>\r\n\r\n            <!-- Dog Info -->\r\n            <div class=\"dog-details\">\r\n                <div>\r\n                    <label>Dog Name:</label>\r\n                    <span id=\"Dogname\">Marvel</span>\r\n                </div>\r\n                <div>\r\n                    <label>Dog Last Name:</label>\r\n                    <span id=\"dog-last-name\">Gil</span>\r\n                </div>\r\n                <div>\r\n                    <label>Type:</label>\r\n                    <span id=\"type\">Unknown</span>\r\n                </div>\r\n                <div>\r\n                    <label>Description:</label>\r\n                    <span id=\"description\">Friendly and playful</span>\r\n                </div>\r\n                <div>\r\n                    <label>BirthDate:</label>\r\n                    <span id=\"birthdate\">01/01/2020</span>\r\n                </div>\r\n                <div>\r\n                    <label>Health Level:</label>\r\n                    <span id=\"health-level\">Excellent</span>\r\n                </div>\r\n            </div>\r\n        </div>\r\n\r\n        <!-- Dog Image (in separate grid column) -->\r\n        <div class=\"dog-picture-container\">\r\n            <img src=\"Photos/Marvel.jpeg\" class=\"dog-picture\" alt=\"Marvel\">\r\n        </div>\r\n    </div>\r\n\r\n    <!-- Buttons -->\r\n    <div class=\"Raw\">\r\n        <button class=\"btmType3\">Back to Top</button>\r\n        <button class=\"btmType1\">Add New Dog</button>\r\n    </div>\r\n</div>\r\n\r\n<script src=\"NavigatorScript.js\"></script>\r\n<script src=\"ProfilePage.js\"></script>\r\n</body>\r\n</html>\r\n
+Subsystem: com.intellij.openapi.diff.impl.patch.CharsetEP
+<+>UTF-8
+===================================================================
+diff --git a/ProfilePage.html b/ProfilePage.html
+--- a/ProfilePage.html	(revision b80fc1bd0ae473c5ee60ba9d004c16201f1b5042)
++++ b/ProfilePage.html	(date 1737039790281)
+@@ -60,8 +60,8 @@
+ 
+     <!-- Buttons -->
+     <div class="Raw">
+-        <button class="btmType3">Back to Top</button>
+-        <button class="btmType1">Add New Dog</button>
++        <button class="btmType1">Back to Top</button>
++        <button class="btmType3">Add New Dog</button>
+     </div>
+ </div>
+ 
+Index: SearchInParadise.js
+IDEA additional info:
+Subsystem: com.intellij.openapi.diff.impl.patch.BaseRevisionTextPatchEP
+<+>document.addEventListener(\"DOMContentLoaded\", function () {\r\n    const searchForm = document.getElementById(\"search-form\");\r\n\r\n    searchForm.addEventListener(\"submit\", function (event) {\r\n        event.preventDefault(); // מונע רענון של הדף\r\n\r\n        const sortType = document.getElementById(\"rating-select\").value;\r\n\r\n        // מעבר לעמוד TopKennels עם פרמטרים ב-URL\r\n        const url = `TopKennels.html?sort=${sortType}`;\r\n        window.location.href = url;\r\n    });\r\n});\r\n
+Subsystem: com.intellij.openapi.diff.impl.patch.CharsetEP
+<+>UTF-8
+===================================================================
+diff --git a/SearchInParadise.js b/SearchInParadise.js
+--- a/SearchInParadise.js	(revision b80fc1bd0ae473c5ee60ba9d004c16201f1b5042)
++++ b/SearchInParadise.js	(date 1737039790287)
+@@ -1,6 +1,8 @@
+ document.addEventListener("DOMContentLoaded", function () {
+     const searchForm = document.getElementById("search-form");
++    const backButton = document.getElementById("backButton"); // הוספת זיהוי של כפתור ה-Back
+ 
++    // מאזין לאירוע חיפוש
+     searchForm.addEventListener("submit", function (event) {
+         event.preventDefault(); // מונע רענון של הדף
+ 
+@@ -10,4 +12,11 @@
+         const url = `TopKennels.html?sort=${sortType}`;
+         window.location.href = url;
+     });
++
++    // מאזין לכפתור Back
++    if (backButton) {
++        backButton.addEventListener("click", function () {
++            window.history.back(); // חזרה לעמוד הקודם
++        });
++    }
+ });
+Index: ProfileForNewDog.js
+IDEA additional info:
+Subsystem: com.intellij.openapi.diff.impl.patch.BaseRevisionTextPatchEP
+<+>// מאזין לאירוע לחיצה על כפתור Add\r\ndocument.getElementById('add-dog-btn').addEventListener('click', function (event) {\r\n    let isValid = true;\r\n\r\n    // בדיקת Dog Name\r\n    const dogName = document.getElementById('dog-name').value.trim();\r\n    if (dogName.length < 2 || /\\d/.test(dogName)) {\r\n        showError('dog-name', 'Dog Name must be at least 2 characters long and contain only letters.');\r\n        isValid = false;\r\n    } else {\r\n        clearError('dog-name');\r\n    }\r\n\r\n    // בדיקת Dog Last Name\r\n    const dogLastName = document.getElementById('dog-last-name').value.trim();\r\n    if (dogLastName.length < 2 || /\\d/.test(dogLastName)) {\r\n        showError('dog-last-name', 'Dog Last Name must be at least 2 characters long and contain only letters.');\r\n        isValid = false;\r\n    } else {\r\n        clearError('dog-last-name');\r\n    }\r\n\r\n    // בדיקת Type\r\n    const type = document.getElementById('type').value;\r\n    if (!type) {\r\n        showError('type', 'Please enter a dog type.');\r\n        isValid = false;\r\n    } else {\r\n        clearError('type');\r\n    }\r\n\r\n    // בדיקת Health Level\r\n    const healthLevel = document.getElementById('health-level').value;\r\n    if (!healthLevel) {\r\n        showError('health-level', 'Please enter health level.');\r\n        isValid = false;\r\n    } else {\r\n        clearError('health-level');\r\n    }\r\n\r\n    // בדיקת תאריך לידה\r\n    const birthdate = document.getElementById('birthdate').value;\r\n    const today = new Date().toISOString().split('T')[0]; // תאריך היום בפורמט yyyy-mm-dd\r\n    if (!birthdate) {\r\n        showError('birthdate', 'Please enter a birthdate.');\r\n        isValid = false;\r\n    } else if (birthdate > today) {\r\n        showError('birthdate', 'Birthdate must be before today.');\r\n        isValid = false;\r\n    } else {\r\n        clearError('birthdate');\r\n    }\r\n\r\n    // בדיקת העלאת תמונה\r\n    const pictureUpload = document.getElementById('dog-picture-upload');\r\n    if (!pictureUpload.files.length) {\r\n        showError('dog-picture', 'You must upload a picture of your dog.');\r\n        isValid = false;\r\n    } else {\r\n        clearError('dog-picture');\r\n    }\r\n\r\n    // אם הכל תקין, שולחים את הטופס\r\n    if (isValid) {\r\n        alert('Form submitted successfully!');\r\n    }\r\n});\r\n\r\n// פונקציה להצגת שגיאה\r\nfunction showError(fieldId, message) {\r\n    const errorSpan = document.getElementById(`${fieldId}-error`);\r\n    errorSpan.textContent = message;\r\n    errorSpan.style.color = 'red';\r\n}\r\n\r\n// פונקציה לניקוי שגיאות\r\nfunction clearError(fieldId) {\r\n    const errorSpan = document.getElementById(`${fieldId}-error`);\r\n    errorSpan.textContent = '';\r\n}\r\n\r\n// Function to restrict input to only English letters\r\nfunction restrictNonEnglishInput(event) {\r\n    const regex = /^[A-Za-z]*$/;  // Allows only English letters\r\n    if (!regex.test(event.target.value)) {\r\n        event.target.value = event.target.value.replace(/[^A-Za-z]/g, '');  // Remove non-English characters\r\n    }\r\n}\r\n\r\n\r\n\r\n// Adding event listeners to both \"Dog Name\" and \"Dog Last Name\"\r\ndocument.getElementById('dog-name').addEventListener('input', restrictNonEnglishInput);\r\ndocument.getElementById('dog-last-name').addEventListener('input', restrictNonEnglishInput);\r\ndocument.getElementById('description').addEventListener('input', restrictNonEnglishInput);\r\ndocument.getElementById('back-btn').addEventListener('click', function() {\r\n    window.history.back();\r\n});
+Subsystem: com.intellij.openapi.diff.impl.patch.CharsetEP
+<+>UTF-8
+===================================================================
+diff --git a/ProfileForNewDog.js b/ProfileForNewDog.js
+--- a/ProfileForNewDog.js	(revision b80fc1bd0ae473c5ee60ba9d004c16201f1b5042)
++++ b/ProfileForNewDog.js	(date 1737039790294)
+@@ -1,98 +1,45 @@
+-// מאזין לאירוע לחיצה על כפתור Add
+-document.getElementById('add-dog-btn').addEventListener('click', function (event) {
+-    let isValid = true;
++document.addEventListener("DOMContentLoaded", function () {
++    // מאזין לחיצה על כפתור Add
++    document.getElementById('add-dog-btn').addEventListener('click', function (event) {
++        let isValid = true;
+ 
+-    // בדיקת Dog Name
+-    const dogName = document.getElementById('dog-name').value.trim();
+-    if (dogName.length < 2 || /\d/.test(dogName)) {
+-        showError('dog-name', 'Dog Name must be at least 2 characters long and contain only letters.');
+-        isValid = false;
+-    } else {
+-        clearError('dog-name');
+-    }
+-
+-    // בדיקת Dog Last Name
+-    const dogLastName = document.getElementById('dog-last-name').value.trim();
+-    if (dogLastName.length < 2 || /\d/.test(dogLastName)) {
+-        showError('dog-last-name', 'Dog Last Name must be at least 2 characters long and contain only letters.');
+-        isValid = false;
+-    } else {
+-        clearError('dog-last-name');
+-    }
+-
+-    // בדיקת Type
+-    const type = document.getElementById('type').value;
+-    if (!type) {
+-        showError('type', 'Please enter a dog type.');
+-        isValid = false;
+-    } else {
+-        clearError('type');
+-    }
+-
+-    // בדיקת Health Level
+-    const healthLevel = document.getElementById('health-level').value;
+-    if (!healthLevel) {
+-        showError('health-level', 'Please enter health level.');
+-        isValid = false;
+-    } else {
+-        clearError('health-level');
+-    }
+-
+-    // בדיקת תאריך לידה
+-    const birthdate = document.getElementById('birthdate').value;
+-    const today = new Date().toISOString().split('T')[0]; // תאריך היום בפורמט yyyy-mm-dd
+-    if (!birthdate) {
+-        showError('birthdate', 'Please enter a birthdate.');
+-        isValid = false;
+-    } else if (birthdate > today) {
+-        showError('birthdate', 'Birthdate must be before today.');
+-        isValid = false;
+-    } else {
+-        clearError('birthdate');
+-    }
+-
+-    // בדיקת העלאת תמונה
+-    const pictureUpload = document.getElementById('dog-picture-upload');
+-    if (!pictureUpload.files.length) {
+-        showError('dog-picture', 'You must upload a picture of your dog.');
+-        isValid = false;
+-    } else {
+-        clearError('dog-picture');
+-    }
++        // בדיקות כמו בקוד הקיים (נשאר ללא שינוי)
+ 
+-    // אם הכל תקין, שולחים את הטופס
+-    if (isValid) {
+-        alert('Form submitted successfully!');
+-    }
+-});
++        // אם הכל תקין, שולחים את הטופס
++        if (isValid) {
++            alert('Form submitted successfully!');
++        }
++    });
+ 
+-// פונקציה להצגת שגיאה
+-function showError(fieldId, message) {
+-    const errorSpan = document.getElementById(`${fieldId}-error`);
+-    errorSpan.textContent = message;
+-    errorSpan.style.color = 'red';
+-}
++    // פונקציה להצגת שגיאה
++    function showError(fieldId, message) {
++        const errorSpan = document.getElementById(`${fieldId}-error`);
++        errorSpan.textContent = message;
++        errorSpan.style.color = 'red';
++    }
+ 
+-// פונקציה לניקוי שגיאות
+-function clearError(fieldId) {
+-    const errorSpan = document.getElementById(`${fieldId}-error`);
+-    errorSpan.textContent = '';
+-}
++    // פונקציה לניקוי שגיאות
++    function clearError(fieldId) {
++        const errorSpan = document.getElementById(`${fieldId}-error`);
++        errorSpan.textContent = '';
++    }
+ 
+-// Function to restrict input to only English letters
+-function restrictNonEnglishInput(event) {
+-    const regex = /^[A-Za-z]*$/;  // Allows only English letters
+-    if (!regex.test(event.target.value)) {
+-        event.target.value = event.target.value.replace(/[^A-Za-z]/g, '');  // Remove non-English characters
+-    }
+-}
++    // פונקציה למנוע תווים שאינם באנגלית
++    function restrictNonEnglishInput(event) {
++        const regex = /^[A-Za-z]*$/; // תווים באנגלית בלבד
++        if (!regex.test(event.target.value)) {
++            event.target.value = event.target.value.replace(/[^A-Za-z]/g, ''); // מחיקת תווים לא חוקיים
++        }
++    }
+ 
+-
+-
+-// Adding event listeners to both "Dog Name" and "Dog Last Name"
+-document.getElementById('dog-name').addEventListener('input', restrictNonEnglishInput);
+-document.getElementById('dog-last-name').addEventListener('input', restrictNonEnglishInput);
+-document.getElementById('description').addEventListener('input', restrictNonEnglishInput);
+-document.getElementById('back-btn').addEventListener('click', function() {
+-    window.history.back();
+-});
+\ No newline at end of file
++    // מאזינים לשדות
++    document.getElementById('dog-name').addEventListener('input', restrictNonEnglishInput);
++    document.getElementById('dog-last-name').addEventListener('input', restrictNonEnglishInput);
++    document.getElementById('description').addEventListener('input', restrictNonEnglishInput);
++
++    // מאזין לכפתור Back (מתוקן)
++    const backButton = document.getElementById('back-btn');
++    backButton.addEventListener('click', function () {
++        window.history.back();
++    });
++});
+Index: .idea/workspace.xml
+IDEA additional info:
+Subsystem: com.intellij.openapi.diff.impl.patch.BaseRevisionTextPatchEP
+<+><?xml version=\"1.0\" encoding=\"UTF-8\"?>\r\n<project version=\"4\">\r\n  <component name=\"AutoImportSettings\">\r\n    <option name=\"autoReloadType\" value=\"SELECTIVE\" />\r\n  </component>\r\n  <component name=\"ChangeListManager\">\r\n    <list default=\"true\" id=\"3a85256d-f386-4d1b-8f4c-d1287acb997b\" name=\"Changes\" comment=\"check\">\r\n      <change afterPath=\"$PROJECT_DIR$/.idea/shelf/Uncommitted_changes_before_Update_at_1_10_2025_12_24_PM_[Changes]/kennelDogs.jpg\" afterDir=\"false\" />\r\n      <change afterPath=\"$PROJECT_DIR$/.idea/shelf/Uncommitted_changes_before_Update_at_1_10_2025_12_24_PM_[Changes]/shelved.patch\" afterDir=\"false\" />\r\n      <change afterPath=\"$PROJECT_DIR$/.idea/shelf/Uncommitted_changes_before_Update_at_1_10_2025_12_24_PM__Changes_.xml\" afterDir=\"false\" />\r\n      <change afterPath=\"$PROJECT_DIR$/.idea/shelf/Uncommitted_changes_before_Update_at_1_14_2025_1_28_PM_[Changes]/kennelDogs.jpg\" afterDir=\"false\" />\r\n      <change afterPath=\"$PROJECT_DIR$/.idea/shelf/Uncommitted_changes_before_Update_at_1_14_2025_1_28_PM_[Changes]/shelved.patch\" afterDir=\"false\" />\r\n      <change afterPath=\"$PROJECT_DIR$/.idea/shelf/Uncommitted_changes_before_Update_at_1_14_2025_1_28_PM_[Changes]1/kennelDogs.jpg\" afterDir=\"false\" />\r\n      <change afterPath=\"$PROJECT_DIR$/.idea/shelf/Uncommitted_changes_before_Update_at_1_14_2025_1_28_PM_[Changes]1/shelved.patch\" afterDir=\"false\" />\r\n      <change afterPath=\"$PROJECT_DIR$/.idea/shelf/Uncommitted_changes_before_Update_at_1_14_2025_1_28_PM__Changes_.xml\" afterDir=\"false\" />\r\n      <change afterPath=\"$PROJECT_DIR$/.idea/shelf/Uncommitted_changes_before_Update_at_1_14_2025_1_28_PM__Changes_1.xml\" afterDir=\"false\" />\r\n      <change afterPath=\"$PROJECT_DIR$/.idea/shelf/Uncommitted_changes_before_Update_at_1_14_2025_2_16_PM_[Changes]/shelved.patch\" afterDir=\"false\" />\r\n      <change afterPath=\"$PROJECT_DIR$/.idea/shelf/Uncommitted_changes_before_Update_at_1_14_2025_2_16_PM__Changes_.xml\" afterDir=\"false\" />\r\n      <change afterPath=\"$PROJECT_DIR$/.idea/shelf/Uncommitted_changes_before_Update_at_1_14_2025_7_30_PM_[Changes]/shelved.patch\" afterDir=\"false\" />\r\n      <change afterPath=\"$PROJECT_DIR$/.idea/shelf/Uncommitted_changes_before_Update_at_1_14_2025_7_30_PM__Changes_.xml\" afterDir=\"false\" />\r\n      <change afterPath=\"$PROJECT_DIR$/.idea/shelf/Uncommitted_changes_before_Update_at_1_16_2025_1_12_PM_[Changes]/shelved.patch\" afterDir=\"false\" />\r\n      <change afterPath=\"$PROJECT_DIR$/.idea/shelf/Uncommitted_changes_before_Update_at_1_16_2025_1_12_PM__Changes_.xml\" afterDir=\"false\" />\r\n      <change afterPath=\"$PROJECT_DIR$/.idea/shelf/Uncommitted_changes_before_rebase_[Changes]/kennelDogs.jpg\" afterDir=\"false\" />\r\n      <change afterPath=\"$PROJECT_DIR$/.idea/shelf/Uncommitted_changes_before_rebase_[Changes]/shelved.patch\" afterDir=\"false\" />\r\n      <change afterPath=\"$PROJECT_DIR$/.idea/shelf/Uncommitted_changes_before_rebase_[Changes]1/kennelDogs.jpg\" afterDir=\"false\" />\r\n      <change afterPath=\"$PROJECT_DIR$/.idea/shelf/Uncommitted_changes_before_rebase_[Changes]1/shelved.patch\" afterDir=\"false\" />\r\n      <change afterPath=\"$PROJECT_DIR$/.idea/shelf/Uncommitted_changes_before_rebase_[Changes]2/kennelDogs.jpg\" afterDir=\"false\" />\r\n      <change afterPath=\"$PROJECT_DIR$/.idea/shelf/Uncommitted_changes_before_rebase_[Changes]2/shelved.patch\" afterDir=\"false\" />\r\n      <change afterPath=\"$PROJECT_DIR$/.idea/shelf/Uncommitted_changes_before_rebase_[Changes]3/kennelDogs.jpg\" afterDir=\"false\" />\r\n      <change afterPath=\"$PROJECT_DIR$/.idea/shelf/Uncommitted_changes_before_rebase_[Changes]3/shelved.patch\" afterDir=\"false\" />\r\n      <change afterPath=\"$PROJECT_DIR$/.idea/shelf/Uncommitted_changes_before_rebase_[Changes]4/shelved.patch\" afterDir=\"false\" />\r\n      <change afterPath=\"$PROJECT_DIR$/.idea/shelf/Uncommitted_changes_before_rebase__Changes_.xml\" afterDir=\"false\" />\r\n      <change afterPath=\"$PROJECT_DIR$/.idea/shelf/Uncommitted_changes_before_rebase__Changes_1.xml\" afterDir=\"false\" />\r\n      <change afterPath=\"$PROJECT_DIR$/.idea/shelf/Uncommitted_changes_before_rebase__Changes_2.xml\" afterDir=\"false\" />\r\n      <change afterPath=\"$PROJECT_DIR$/.idea/shelf/Uncommitted_changes_before_rebase__Changes_3.xml\" afterDir=\"false\" />\r\n      <change afterPath=\"$PROJECT_DIR$/.idea/shelf/Uncommitted_changes_before_rebase__Changes_4.xml\" afterDir=\"false\" />\r\n      <change afterPath=\"$PROJECT_DIR$/PaymentPage.css\" afterDir=\"false\" />\r\n      <change afterPath=\"$PROJECT_DIR$/SearchInParadise.css\" afterDir=\"false\" />\r\n      <change afterPath=\"$PROJECT_DIR$/SearchInParadise.js\" afterDir=\"false\" />\r\n      <change afterPath=\"$PROJECT_DIR$/Thankyou.css\" afterDir=\"false\" />\r\n      <change afterPath=\"$PROJECT_DIR$/Thankyou.js\" afterDir=\"false\" />\r\n      <change afterPath=\"$PROJECT_DIR$/TopKennels.css\" afterDir=\"false\" />\r\n      <change afterPath=\"$PROJECT_DIR$/TopKennels.js\" afterDir=\"false\" />\r\n      <change afterPath=\"$PROJECT_DIR$/Topkennels.html\" afterDir=\"false\" />\r\n      <change beforePath=\"$PROJECT_DIR$/.idea/workspace.xml\" beforeDir=\"false\" afterPath=\"$PROJECT_DIR$/.idea/workspace.xml\" afterDir=\"false\" />\r\n      <change beforePath=\"$PROJECT_DIR$/AboutUs.css\" beforeDir=\"false\" afterPath=\"$PROJECT_DIR$/AboutUs.css\" afterDir=\"false\" />\r\n      <change beforePath=\"$PROJECT_DIR$/AboutUs.html\" beforeDir=\"false\" afterPath=\"$PROJECT_DIR$/AboutUs.html\" afterDir=\"false\" />\r\n      <change beforePath=\"$PROJECT_DIR$/HomePage.html\" beforeDir=\"false\" afterPath=\"$PROJECT_DIR$/HomePage.html\" afterDir=\"false\" />\r\n      <change beforePath=\"$PROJECT_DIR$/PaymentPage.html\" beforeDir=\"false\" afterPath=\"$PROJECT_DIR$/PaymentPage.html\" afterDir=\"false\" />\r\n      <change beforePath=\"$PROJECT_DIR$/PaymentPage.js\" beforeDir=\"false\" afterPath=\"$PROJECT_DIR$/PaymentPage.js\" afterDir=\"false\" />\r\n      <change beforePath=\"$PROJECT_DIR$/ProfileForNewDog.css\" beforeDir=\"false\" afterPath=\"$PROJECT_DIR$/ProfileForNewDog.css\" afterDir=\"false\" />\r\n      <change beforePath=\"$PROJECT_DIR$/RateYourStay.css\" beforeDir=\"false\" afterPath=\"$PROJECT_DIR$/RateYourStay.css\" afterDir=\"false\" />\r\n      <change beforePath=\"$PROJECT_DIR$/RateYourStay.html\" beforeDir=\"false\" afterPath=\"$PROJECT_DIR$/RateYourStay.html\" afterDir=\"false\" />\r\n      <change beforePath=\"$PROJECT_DIR$/SearchInParadise.html\" beforeDir=\"false\" afterPath=\"$PROJECT_DIR$/SearchInParadise.html\" afterDir=\"false\" />\r\n      <change beforePath=\"$PROJECT_DIR$/SignUp.css\" beforeDir=\"false\" afterPath=\"$PROJECT_DIR$/SignUp.css\" afterDir=\"false\" />\r\n      <change beforePath=\"$PROJECT_DIR$/SignUp.html\" beforeDir=\"false\" afterPath=\"$PROJECT_DIR$/SignUp.html\" afterDir=\"false\" />\r\n      <change beforePath=\"$PROJECT_DIR$/Thankyou.html\" beforeDir=\"false\" afterPath=\"$PROJECT_DIR$/Thankyou.html\" afterDir=\"false\" />\r\n      <change beforePath=\"$PROJECT_DIR$/top kennels.html\" beforeDir=\"false\" />\r\n    </list>\r\n    <option name=\"SHOW_DIALOG\" value=\"false\" />\r\n    <option name=\"HIGHLIGHT_CONFLICTS\" value=\"true\" />\r\n    <option name=\"HIGHLIGHT_NON_ACTIVE_CHANGELIST\" value=\"false\" />\r\n    <option name=\"LAST_RESOLUTION\" value=\"IGNORE\" />\r\n  </component>\r\n  <component name=\"FileTemplateManagerImpl\">\r\n    <option name=\"RECENT_TEMPLATES\">\r\n      <list>\r\n        <option value=\"TypeScript File\" />\r\n        <option value=\"HTML File\" />\r\n        <option value=\"CSS File\" />\r\n        <option value=\"JavaScript File\" />\r\n      </list>\r\n    </option>\r\n  </component>\r\n  <component name=\"Git.Settings\">\r\n    <branch-grouping />\r\n    <option name=\"PREVIEW_PUSH_ON_COMMIT_AND_PUSH\" value=\"false\" />\r\n    <option name=\"PREVIOUS_COMMIT_AUTHORS\">\r\n      <list>\r\n        <option value=\"asaf252 &lt;asaf9@post.bgu.ac.il&gt;\" />\r\n      </list>\r\n    </option>\r\n    <option name=\"PUSH_TAGS\">\r\n      <GitPushTagMode>\r\n        <option name=\"argument\" value=\"--follow-tags\" />\r\n        <option name=\"title\" value=\"Current Branch\" />\r\n      </GitPushTagMode>\r\n    </option>\r\n    <option name=\"RECENT_GIT_ROOT_PATH\" value=\"$PROJECT_DIR$\" />\r\n    <option name=\"UPDATE_TYPE\" value=\"REBASE\" />\r\n  </component>\r\n  <component name=\"GitHubPullRequestSearchHistory\">{\r\n  &quot;lastFilter&quot;: {}\r\n}</component>\r\n  <component name=\"GithubPullRequestsUISettings\">{\r\n  &quot;selectedUrlAndAccountId&quot;: {\r\n    &quot;url&quot;: &quot;https://github.com/asaf252/Group5.git&quot;,\r\n    &quot;accountId&quot;: &quot;1fb6d962-10f6-4f10-b84e-f017f1e0cd10&quot;\r\n  }\r\n}</component>\r\n  <component name=\"HighlightingSettingsPerFile\">\r\n    <setting file=\"file://$PROJECT_DIR$/RateYourStay.js\" root0=\"SKIP_INSPECTION\" />\r\n  </component>\r\n  <component name=\"ProblemsViewState\">\r\n    <option name=\"selectedTabId\" value=\"QODANA_PROBLEMS_VIEW_TAB\" />\r\n    <option name=\"showPreview\" value=\"true\" />\r\n  </component>\r\n  <component name=\"ProjectColorInfo\">{\r\n  &quot;associatedIndex&quot;: 4\r\n}</component>\r\n  <component name=\"ProjectId\" id=\"2q8XnJCL5gXvmcrwf0l6sLqPTkm\" />\r\n  <component name=\"ProjectLevelVcsManager\" settingsEditedManually=\"true\" />\r\n  <component name=\"ProjectViewState\">\r\n    <option name=\"hideEmptyMiddlePackages\" value=\"true\" />\r\n    <option name=\"showLibraryContents\" value=\"true\" />\r\n  </component>\r\n  <component name=\"PropertiesComponent\">{\r\n  &quot;keyToString&quot;: {\r\n    &quot;DefaultHtmlFileTemplate&quot;: &quot;HTML File&quot;,\r\n    &quot;Node.js.RateYourStay.js.executor&quot;: &quot;Debug&quot;,\r\n    &quot;Python.main.executor&quot;: &quot;Run&quot;,\r\n    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,\r\n    &quot;git-widget-placeholder&quot;: &quot;main&quot;,\r\n    &quot;last_opened_file_path&quot;: &quot;C:/Users/halfo/PycharmProjects/Group5&quot;,\r\n    &quot;list.type.of.created.stylesheet&quot;: &quot;CSS&quot;,\r\n    &quot;node.js.detected.package.eslint&quot;: &quot;true&quot;,\r\n    &quot;node.js.detected.package.tslint&quot;: &quot;true&quot;,\r\n    &quot;node.js.selected.package.eslint&quot;: &quot;(autodetect)&quot;,\r\n    &quot;node.js.selected.package.tslint&quot;: &quot;(autodetect)&quot;,\r\n    &quot;nodejs_package_manager_path&quot;: &quot;npm&quot;,\r\n    &quot;settings.editor.selected.configurable&quot;: &quot;vcs.Git&quot;,\r\n    &quot;ts.external.directory.path&quot;: &quot;C:\\\\Program Files\\\\JetBrains\\\\PyCharm 2024.2.4\\\\plugins\\\\javascript-plugin\\\\jsLanguageServicesImpl\\\\external&quot;,\r\n    &quot;vue.rearranger.settings.migration&quot;: &quot;true&quot;\r\n  },\r\n  &quot;keyToStringList&quot;: {\r\n    &quot;GitStage.ChangesTree.GroupingKeys&quot;: [\r\n      &quot;directory&quot;,\r\n      &quot;module&quot;,\r\n      &quot;repository&quot;\r\n    ],\r\n    &quot;com.intellij.ide.scratch.ScratchImplUtil$2/New Scratch File&quot;: [\r\n      &quot;CSS&quot;\r\n    ]\r\n  }\r\n}</component>\r\n  <component name=\"RecentsManager\">\r\n    <key name=\"CopyFile.RECENT_KEYS\">\r\n      <recent name=\"C:\\Users\\halfo\\PycharmProjects\\Group5\" />\r\n    </key>\r\n    <key name=\"MoveFile.RECENT_KEYS\">\r\n      <recent name=\"C:\\Users\\assaf\\PycharmProjects\\Paw_Paradise_Group5\\PartA\" />\r\n      <recent name=\"C:\\Users\\assaf\\PycharmProjects\\Paw_Paradise_Group5\\Photos\" />\r\n    </key>\r\n  </component>\r\n  <component name=\"RunManager\" selected=\"Node.js.RateYourStay.js\">\r\n    <configuration name=\"RateYourStay.js\" type=\"NodeJSConfigurationType\" temporary=\"true\" nameIsGenerated=\"true\" path-to-js-file=\"$PROJECT_DIR$/RateYourStay.js\" working-dir=\"$PROJECT_DIR$\">\r\n      <method v=\"2\" />\r\n    </configuration>\r\n    <configuration name=\"main\" type=\"PythonConfigurationType\" factoryName=\"Python\" nameIsGenerated=\"true\">\r\n      <module name=\"Paw_Paradise_Group5\" />\r\n      <option name=\"ENV_FILES\" value=\"\" />\r\n      <option name=\"INTERPRETER_OPTIONS\" value=\"\" />\r\n      <option name=\"PARENT_ENVS\" value=\"true\" />\r\n      <envs>\r\n        <env name=\"PYTHONUNBUFFERED\" value=\"1\" />\r\n      </envs>\r\n      <option name=\"SDK_HOME\" value=\"\" />\r\n      <option name=\"WORKING_DIRECTORY\" value=\"$PROJECT_DIR$\" />\r\n      <option name=\"IS_MODULE_SDK\" value=\"true\" />\r\n      <option name=\"ADD_CONTENT_ROOTS\" value=\"true\" />\r\n      <option name=\"ADD_SOURCE_ROOTS\" value=\"true\" />\r\n      <EXTENSION ID=\"PythonCoverageRunConfigurationExtension\" runner=\"coverage.py\" />\r\n      <option name=\"SCRIPT_NAME\" value=\"$PROJECT_DIR$/main.py\" />\r\n      <option name=\"PARAMETERS\" value=\"\" />\r\n      <option name=\"SHOW_COMMAND_LINE\" value=\"false\" />\r\n      <option name=\"EMULATE_TERMINAL\" value=\"false\" />\r\n      <option name=\"MODULE_MODE\" value=\"false\" />\r\n      <option name=\"REDIRECT_INPUT\" value=\"false\" />\r\n      <option name=\"INPUT_FILE\" value=\"\" />\r\n      <method v=\"2\" />\r\n    </configuration>\r\n    <recent_temporary>\r\n      <list>\r\n        <item itemvalue=\"Node.js.RateYourStay.js\" />\r\n      </list>\r\n    </recent_temporary>\r\n  </component>\r\n  <component name=\"SharedIndexes\">\r\n    <attachedChunks>\r\n      <set>\r\n        <option value=\"bundled-js-predefined-d6986cc7102b-5c90d61e3bab-JavaScript-PY-242.23726.102\" />\r\n        <option value=\"bundled-python-sdk-5e1850174b45-399fe30bd8c1-com.jetbrains.pycharm.pro.sharedIndexes.bundled-PY-242.23726.102\" />\r\n      </set>\r\n    </attachedChunks>\r\n  </component>\r\n  <component name=\"SpellCheckerSettings\" RuntimeDictionaries=\"0\" Folders=\"0\" CustomDictionaries=\"0\" DefaultDictionary=\"application-level\" UseSingleDictionary=\"true\" transferred=\"true\" />\r\n  <component name=\"TaskManager\">\r\n    <task active=\"true\" id=\"Default\" summary=\"Default task\">\r\n      <changelist id=\"3a85256d-f386-4d1b-8f4c-d1287acb997b\" name=\"Changes\" comment=\"\" />\r\n      <created>1734045342917</created>\r\n      <option name=\"number\" value=\"Default\" />\r\n      <option name=\"presentableId\" value=\"Default\" />\r\n      <updated>1734045342917</updated>\r\n      <workItem from=\"1734045353152\" duration=\"1486000\" />\r\n      <workItem from=\"1734046878369\" duration=\"33123000\" />\r\n      <workItem from=\"1734250425365\" duration=\"11692000\" />\r\n      <workItem from=\"1734534996031\" duration=\"6420000\" />\r\n      <workItem from=\"1734595489538\" duration=\"2973000\" />\r\n      <workItem from=\"1734896107753\" duration=\"3828000\" />\r\n      <workItem from=\"1735745496506\" duration=\"10312000\" />\r\n      <workItem from=\"1736195176743\" duration=\"21080000\" />\r\n      <workItem from=\"1736352983341\" duration=\"1546000\" />\r\n      <workItem from=\"1736520498137\" duration=\"690000\" />\r\n      <workItem from=\"1736626391006\" duration=\"3396000\" />\r\n      <workItem from=\"1736680288696\" duration=\"11382000\" />\r\n    </task>\r\n    <task id=\"LOCAL\u200E-00001\" summary=\"check\">\r\n      <option name=\"closed\" value=\"true\" />\r\n      <created>1734045782281</created>\r\n      <option name=\"number\" value=\"00001\" />\r\n      <option name=\"presentableId\" value=\"LOCAL\u200E-00001\" />\r\n      <option name=\"project\" value=\"LOCAL\u200E\" />\r\n      <updated>1734045782281</updated>\r\n    </task>\r\n    <task id=\"LOCAL\u200E-00002\" summary=\"check\">\r\n      <option name=\"closed\" value=\"true\" />\r\n      <created>1734046037475</created>\r\n      <option name=\"number\" value=\"00002\" />\r\n      <option name=\"presentableId\" value=\"LOCAL\u200E-00002\" />\r\n      <option name=\"project\" value=\"LOCAL\u200E\" />\r\n      <updated>1734046037475</updated>\r\n    </task>\r\n    <task id=\"LOCAL\u200E-00003\" summary=\"check\">\r\n      <option name=\"closed\" value=\"true\" />\r\n      <created>1734046196266</created>\r\n      <option name=\"number\" value=\"00003\" />\r\n      <option name=\"presentableId\" value=\"LOCAL\u200E-00003\" />\r\n      <option name=\"project\" value=\"LOCAL\u200E\" />\r\n      <updated>1734046196266</updated>\r\n    </task>\r\n    <task id=\"LOCAL\u200E-00004\" summary=\"check\">\r\n      <option name=\"closed\" value=\"true\" />\r\n      <created>1734046245569</created>\r\n      <option name=\"number\" value=\"00004\" />\r\n      <option name=\"presentableId\" value=\"LOCAL\u200E-00004\" />\r\n      <option name=\"project\" value=\"LOCAL\u200E\" />\r\n      <updated>1734046245569</updated>\r\n    </task>\r\n    <task id=\"LOCAL\u200E-00005\" summary=\"check\">\r\n      <option name=\"closed\" value=\"true\" />\r\n      <created>1734046317271</created>\r\n      <option name=\"number\" value=\"00005\" />\r\n      <option name=\"presentableId\" value=\"LOCAL\u200E-00005\" />\r\n      <option name=\"project\" value=\"LOCAL\u200E\" />\r\n      <updated>1734046317271</updated>\r\n    </task>\r\n    <task id=\"LOCAL\u200E-00006\" summary=\"check\">\r\n      <option name=\"closed\" value=\"true\" />\r\n      <created>1734046503565</created>\r\n      <option name=\"number\" value=\"00006\" />\r\n      <option name=\"presentableId\" value=\"LOCAL\u200E-00006\" />\r\n      <option name=\"project\" value=\"LOCAL\u200E\" />\r\n      <updated>1734046503565</updated>\r\n    </task>\r\n    <task id=\"LOCAL\u200E-00007\" summary=\"check\">\r\n      <option name=\"closed\" value=\"true\" />\r\n      <created>1734046616459</created>\r\n      <option name=\"number\" value=\"00007\" />\r\n      <option name=\"presentableId\" value=\"LOCAL\u200E-00007\" />\r\n      <option name=\"project\" value=\"LOCAL\u200E\" />\r\n      <updated>1734046616459</updated>\r\n    </task>\r\n    <task id=\"LOCAL\u200E-00008\" summary=\"check\">\r\n      <option name=\"closed\" value=\"true\" />\r\n      <created>1734047109745</created>\r\n      <option name=\"number\" value=\"00008\" />\r\n      <option name=\"presentableId\" value=\"LOCAL\u200E-00008\" />\r\n      <option name=\"project\" value=\"LOCAL\u200E\" />\r\n      <updated>1734047109745</updated>\r\n    </task>\r\n    <task id=\"LOCAL\u200E-00009\" summary=\"check\">\r\n      <option name=\"closed\" value=\"true\" />\r\n      <created>1734047196206</created>\r\n      <option name=\"number\" value=\"00009\" />\r\n      <option name=\"presentableId\" value=\"LOCAL\u200E-00009\" />\r\n      <option name=\"project\" value=\"LOCAL\u200E\" />\r\n      <updated>1734047196206</updated>\r\n    </task>\r\n    <task id=\"LOCAL\u200E-00010\" summary=\"check\">\r\n      <option name=\"closed\" value=\"true\" />\r\n      <created>1734048008515</created>\r\n      <option name=\"number\" value=\"00010\" />\r\n      <option name=\"presentableId\" value=\"LOCAL\u200E-00010\" />\r\n      <option name=\"project\" value=\"LOCAL\u200E\" />\r\n      <updated>1734048008515</updated>\r\n    </task>\r\n    <task id=\"LOCAL\u200E-00011\" summary=\"check\">\r\n      <option name=\"closed\" value=\"true\" />\r\n      <created>1734048344259</created>\r\n      <option name=\"number\" value=\"00011\" />\r\n      <option name=\"presentableId\" value=\"LOCAL\u200E-00011\" />\r\n      <option name=\"project\" value=\"LOCAL\u200E\" />\r\n      <updated>1734048344259</updated>\r\n    </task>\r\n    <task id=\"LOCAL\u200E-00012\" summary=\"check\">\r\n      <option name=\"closed\" value=\"true\" />\r\n      <created>1734048570167</created>\r\n      <option name=\"number\" value=\"00012\" />\r\n      <option name=\"presentableId\" value=\"LOCAL\u200E-00012\" />\r\n      <option name=\"project\" value=\"LOCAL\u200E\" />\r\n      <updated>1734048570167</updated>\r\n    </task>\r\n    <task id=\"LOCAL\u200E-00013\" summary=\"check\">\r\n      <option name=\"closed\" value=\"true\" />\r\n      <created>1734048716758</created>\r\n      <option name=\"number\" value=\"00013\" />\r\n      <option name=\"presentableId\" value=\"LOCAL\u200E-00013\" />\r\n      <option name=\"project\" value=\"LOCAL\u200E\" />\r\n      <updated>1734048716758</updated>\r\n    </task>\r\n    <task id=\"LOCAL\u200E-00014\" summary=\"check\">\r\n      <option name=\"closed\" value=\"true\" />\r\n      <created>1734049017455</created>\r\n      <option name=\"number\" value=\"00014\" />\r\n      <option name=\"presentableId\" value=\"LOCAL\u200E-00014\" />\r\n      <option name=\"project\" value=\"LOCAL\u200E\" />\r\n      <updated>1734049017456</updated>\r\n    </task>\r\n    <task id=\"LOCAL\u200E-00015\" summary=\"check\">\r\n      <option name=\"closed\" value=\"true\" />\r\n      <created>1734049455602</created>\r\n      <option name=\"number\" value=\"00015\" />\r\n      <option name=\"presentableId\" value=\"LOCAL\u200E-00015\" />\r\n      <option name=\"project\" value=\"LOCAL\u200E\" />\r\n      <updated>1734049455602</updated>\r\n    </task>\r\n    <task id=\"LOCAL\u200E-00016\" summary=\"check\">\r\n      <option name=\"closed\" value=\"true\" />\r\n      <created>1734049922029</created>\r\n      <option name=\"number\" value=\"00016\" />\r\n      <option name=\"presentableId\" value=\"LOCAL\u200E-00016\" />\r\n      <option name=\"project\" value=\"LOCAL\u200E\" />\r\n      <updated>1734049922029</updated>\r\n    </task>\r\n    <task id=\"LOCAL\u200E-00017\" summary=\"check\">\r\n      <option name=\"closed\" value=\"true\" />\r\n      <created>1734049947114</created>\r\n      <option name=\"number\" value=\"00017\" />\r\n      <option name=\"presentableId\" value=\"LOCAL\u200E-00017\" />\r\n      <option name=\"project\" value=\"LOCAL\u200E\" />\r\n      <updated>1734049947114</updated>\r\n    </task>\r\n    <task id=\"LOCAL\u200E-00018\" summary=\"check\">\r\n      <option name=\"closed\" value=\"true\" />\r\n      <created>1734050657935</created>\r\n      <option name=\"number\" value=\"00018\" />\r\n      <option name=\"presentableId\" value=\"LOCAL\u200E-00018\" />\r\n      <option name=\"project\" value=\"LOCAL\u200E\" />\r\n      <updated>1734050657935</updated>\r\n    </task>\r\n    <task id=\"LOCAL\u200E-00019\" summary=\"check\">\r\n      <option name=\"closed\" value=\"true\" />\r\n      <created>1734050665969</created>\r\n      <option name=\"number\" value=\"00019\" />\r\n      <option name=\"presentableId\" value=\"LOCAL\u200E-00019\" />\r\n      <option name=\"project\" value=\"LOCAL\u200E\" />\r\n      <updated>1734050665969</updated>\r\n    </task>\r\n    <task id=\"LOCAL\u200E-00020\" summary=\"check\">\r\n      <option name=\"closed\" value=\"true\" />\r\n      <created>1734177809504</created>\r\n      <option name=\"number\" value=\"00020\" />\r\n      <option name=\"presentableId\" value=\"LOCAL\u200E-00020\" />\r\n      <option name=\"project\" value=\"LOCAL\u200E\" />\r\n      <updated>1734177809504</updated>\r\n    </task>\r\n    <task id=\"LOCAL\u200E-00021\" summary=\"check\">\r\n      <option name=\"closed\" value=\"true\" />\r\n      <created>1734433737799</created>\r\n      <option name=\"number\" value=\"00021\" />\r\n      <option name=\"presentableId\" value=\"LOCAL\u200E-00021\" />\r\n      <option name=\"project\" value=\"LOCAL\u200E\" />\r\n      <updated>1734433737799</updated>\r\n    </task>\r\n    <task id=\"LOCAL\u200E-00022\" summary=\"check\">\r\n      <option name=\"closed\" value=\"true\" />\r\n      <created>1734443032224</created>\r\n      <option name=\"number\" value=\"00022\" />\r\n      <option name=\"presentableId\" value=\"LOCAL\u200E-00022\" />\r\n      <option name=\"project\" value=\"LOCAL\u200E\" />\r\n      <updated>1734443032224</updated>\r\n    </task>\r\n    <task id=\"LOCAL\u200E-00023\" summary=\"check\">\r\n      <option name=\"closed\" value=\"true\" />\r\n      <created>1734535009473</created>\r\n      <option name=\"number\" value=\"00023\" />\r\n      <option name=\"presentableId\" value=\"LOCAL\u200E-00023\" />\r\n      <option name=\"project\" value=\"LOCAL\u200E\" />\r\n      <updated>1734535009473</updated>\r\n    </task>\r\n    <task id=\"LOCAL\u200E-00024\" summary=\"check\">\r\n      <option name=\"closed\" value=\"true\" />\r\n      <created>1734594869113</created>\r\n      <option name=\"number\" value=\"00024\" />\r\n      <option name=\"presentableId\" value=\"LOCAL\u200E-00024\" />\r\n      <option name=\"project\" value=\"LOCAL\u200E\" />\r\n      <updated>1734594869113</updated>\r\n    </task>\r\n    <task id=\"LOCAL\u200E-00025\" summary=\"check\">\r\n      <option name=\"closed\" value=\"true\" />\r\n      <created>1734595283139</created>\r\n      <option name=\"number\" value=\"00025\" />\r\n      <option name=\"presentableId\" value=\"LOCAL\u200E-00025\" />\r\n      <option name=\"project\" value=\"LOCAL\u200E\" />\r\n      <updated>1734595283139</updated>\r\n    </task>\r\n    <task id=\"LOCAL\u200E-00026\" summary=\"check\">\r\n      <option name=\"closed\" value=\"true\" />\r\n      <created>1734598472280</created>\r\n      <option name=\"number\" value=\"00026\" />\r\n      <option name=\"presentableId\" value=\"LOCAL\u200E-00026\" />\r\n      <option name=\"project\" value=\"LOCAL\u200E\" />\r\n      <updated>1734598472280</updated>\r\n    </task>\r\n    <task id=\"LOCAL\u200E-00027\" summary=\"check\">\r\n      <option name=\"closed\" value=\"true\" />\r\n      <created>1734896193282</created>\r\n      <option name=\"number\" value=\"00027\" />\r\n      <option name=\"presentableId\" value=\"LOCAL\u200E-00027\" />\r\n      <option name=\"project\" value=\"LOCAL\u200E\" />\r\n      <updated>1734896193282</updated>\r\n    </task>\r\n    <task id=\"LOCAL\u200E-00028\" summary=\"check\">\r\n      <option name=\"closed\" value=\"true\" />\r\n      <created>1734896239947</created>\r\n      <option name=\"number\" value=\"00028\" />\r\n      <option name=\"presentableId\" value=\"LOCAL\u200E-00028\" />\r\n      <option name=\"project\" value=\"LOCAL\u200E\" />\r\n      <updated>1734896239947</updated>\r\n    </task>\r\n    <task id=\"LOCAL\u200E-00029\" summary=\"check\">\r\n      <option name=\"closed\" value=\"true\" />\r\n      <created>1735056667623</created>\r\n      <option name=\"number\" value=\"00029\" />\r\n      <option name=\"presentableId\" value=\"LOCAL\u200E-00029\" />\r\n      <option name=\"project\" value=\"LOCAL\u200E\" />\r\n      <updated>1735056667623</updated>\r\n    </task>\r\n    <task id=\"LOCAL\u200E-00030\" summary=\"check\">\r\n      <option name=\"closed\" value=\"true\" />\r\n      <created>1735056790204</created>\r\n      <option name=\"number\" value=\"00030\" />\r\n      <option name=\"presentableId\" value=\"LOCAL\u200E-00030\" />\r\n      <option name=\"project\" value=\"LOCAL\u200E\" />\r\n      <updated>1735056790204</updated>\r\n    </task>\r\n    <task id=\"LOCAL-00031\" summary=\"check\">\r\n      <option name=\"closed\" value=\"true\" />\r\n      <created>1735060194377</created>\r\n      <option name=\"number\" value=\"00031\" />\r\n      <option name=\"presentableId\" value=\"LOCAL-00031\" />\r\n      <option name=\"project\" value=\"LOCAL\" />\r\n      <updated>1735060194377</updated>\r\n    </task>\r\n    <task id=\"LOCAL\u200E-00032\" summary=\"check\">\r\n      <option name=\"closed\" value=\"true\" />\r\n      <created>1735747195236</created>\r\n      <option name=\"number\" value=\"00032\" />\r\n      <option name=\"presentableId\" value=\"LOCAL\u200E-00032\" />\r\n      <option name=\"project\" value=\"LOCAL\u200E\" />\r\n      <updated>1735747195236</updated>\r\n    </task>\r\n    <task id=\"LOCAL\u200E-00033\" summary=\"check\">\r\n      <option name=\"closed\" value=\"true\" />\r\n      <created>1735747424962</created>\r\n      <option name=\"number\" value=\"00033\" />\r\n      <option name=\"presentableId\" value=\"LOCAL\u200E-00033\" />\r\n      <option name=\"project\" value=\"LOCAL\u200E\" />\r\n      <updated>1735747424962</updated>\r\n    </task>\r\n    <task id=\"LOCAL\u200E-00034\" summary=\"check\">\r\n      <option name=\"closed\" value=\"true\" />\r\n      <created>1735755363327</created>\r\n      <option name=\"number\" value=\"00034\" />\r\n      <option name=\"presentableId\" value=\"LOCAL\u200E-00034\" />\r\n      <option name=\"project\" value=\"LOCAL\u200E\" />\r\n      <updated>1735755363327</updated>\r\n    </task>\r\n    <task id=\"LOCAL\u200E-00035\" summary=\"check\">\r\n      <option name=\"closed\" value=\"true\" />\r\n      <created>1736266227731</created>\r\n      <option name=\"number\" value=\"00035\" />\r\n      <option name=\"presentableId\" value=\"LOCAL\u200E-00035\" />\r\n      <option name=\"project\" value=\"LOCAL\u200E\" />\r\n      <updated>1736266227731</updated>\r\n    </task>\r\n    <task id=\"LOCAL\u200E-00036\" summary=\"check\">\r\n      <option name=\"closed\" value=\"true\" />\r\n      <created>1736520515304</created>\r\n      <option name=\"number\" value=\"00036\" />\r\n      <option name=\"presentableId\" value=\"LOCAL\u200E-00036\" />\r\n      <option name=\"project\" value=\"LOCAL\u200E\" />\r\n      <updated>1736520515304</updated>\r\n    </task>\r\n    <task id=\"LOCAL\u200E-00037\" summary=\"check\">\r\n      <option name=\"closed\" value=\"true\" />\r\n      <created>1736695081635</created>\r\n      <option name=\"number\" value=\"00037\" />\r\n      <option name=\"presentableId\" value=\"LOCAL\u200E-00037\" />\r\n      <option name=\"project\" value=\"LOCAL\u200E\" />\r\n      <updated>1736695081635</updated>\r\n    </task>\r\n    <option name=\"localTasksCounter\" value=\"38\" />\r\n    <servers />\r\n  </component>\r\n  <component name=\"TypeScriptGeneratedFilesManager\">\r\n    <option name=\"version\" value=\"3\" />\r\n  </component>\r\n  <component name=\"Vcs.Log.Tabs.Properties\">\r\n    <option name=\"RECENT_FILTERS\">\r\n      <map>\r\n        <entry key=\"Paths\">\r\n          <value>\r\n            <list>\r\n              <RecentGroup>\r\n                <option name=\"FILTER_VALUES\">\r\n                  <option value=\"file:$PROJECT_DIR$/LogInPage.html\" />\r\n                </option>\r\n              </RecentGroup>\r\n            </list>\r\n          </value>\r\n        </entry>\r\n      </map>\r\n    </option>\r\n    <option name=\"TAB_STATES\">\r\n      <map>\r\n        <entry key=\"MAIN\">\r\n          <value>\r\n            <State>\r\n              <option name=\"CUSTOM_BOOLEAN_PROPERTIES\">\r\n                <map>\r\n                  <entry key=\"Show.Git.Branches\" value=\"true\" />\r\n                </map>\r\n              </option>\r\n              <option name=\"FILTERS\">\r\n                <map>\r\n                  <entry key=\"structure\">\r\n                    <value>\r\n                      <list>\r\n                        <option value=\"file:$PROJECT_DIR$/LogInPage.html\" />\r\n                      </list>\r\n                    </value>\r\n                  </entry>\r\n                </map>\r\n              </option>\r\n              <option name=\"SHOW_ONLY_AFFECTED_CHANGES\" value=\"true\" />\r\n            </State>\r\n          </value>\r\n        </entry>\r\n      </map>\r\n    </option>\r\n  </component>\r\n  <component name=\"VcsManagerConfiguration\">\r\n    <option name=\"CHECK_CODE_SMELLS_BEFORE_PROJECT_COMMIT\" value=\"true\" />\r\n    <MESSAGE value=\"check\" />\r\n    <option name=\"LAST_COMMIT_MESSAGE\" value=\"check\" />\r\n  </component>\r\n  <component name=\"com.intellij.coverage.CoverageDataManagerImpl\">\r\n    <SUITE FILE_PATH=\"coverage/Paw_Paradise_Group5$main.coverage\" NAME=\"main Coverage Results\" MODIFIED=\"1734899843999\" SOURCE_PROVIDER=\"com.intellij.coverage.DefaultCoverageFileProvider\" RUNNER=\"coverage.py\" COVERAGE_BY_TEST_ENABLED=\"false\" COVERAGE_TRACING_ENABLED=\"false\" WORKING_DIRECTORY=\"$PROJECT_DIR$\" />\r\n  </component>\r\n</project>
+Subsystem: com.intellij.openapi.diff.impl.patch.CharsetEP
+<+>UTF-8
+===================================================================
+diff --git a/.idea/workspace.xml b/.idea/workspace.xml
+--- a/.idea/workspace.xml	(revision b80fc1bd0ae473c5ee60ba9d004c16201f1b5042)
++++ b/.idea/workspace.xml	(date 1737039804976)
+@@ -5,57 +5,17 @@
+   </component>
+   <component name="ChangeListManager">
+     <list default="true" id="3a85256d-f386-4d1b-8f4c-d1287acb997b" name="Changes" comment="check">
+-      <change afterPath="$PROJECT_DIR$/.idea/shelf/Uncommitted_changes_before_Update_at_1_10_2025_12_24_PM_[Changes]/kennelDogs.jpg" afterDir="false" />
+-      <change afterPath="$PROJECT_DIR$/.idea/shelf/Uncommitted_changes_before_Update_at_1_10_2025_12_24_PM_[Changes]/shelved.patch" afterDir="false" />
+-      <change afterPath="$PROJECT_DIR$/.idea/shelf/Uncommitted_changes_before_Update_at_1_10_2025_12_24_PM__Changes_.xml" afterDir="false" />
+-      <change afterPath="$PROJECT_DIR$/.idea/shelf/Uncommitted_changes_before_Update_at_1_14_2025_1_28_PM_[Changes]/kennelDogs.jpg" afterDir="false" />
+-      <change afterPath="$PROJECT_DIR$/.idea/shelf/Uncommitted_changes_before_Update_at_1_14_2025_1_28_PM_[Changes]/shelved.patch" afterDir="false" />
+-      <change afterPath="$PROJECT_DIR$/.idea/shelf/Uncommitted_changes_before_Update_at_1_14_2025_1_28_PM_[Changes]1/kennelDogs.jpg" afterDir="false" />
+-      <change afterPath="$PROJECT_DIR$/.idea/shelf/Uncommitted_changes_before_Update_at_1_14_2025_1_28_PM_[Changes]1/shelved.patch" afterDir="false" />
+-      <change afterPath="$PROJECT_DIR$/.idea/shelf/Uncommitted_changes_before_Update_at_1_14_2025_1_28_PM__Changes_.xml" afterDir="false" />
+-      <change afterPath="$PROJECT_DIR$/.idea/shelf/Uncommitted_changes_before_Update_at_1_14_2025_1_28_PM__Changes_1.xml" afterDir="false" />
+-      <change afterPath="$PROJECT_DIR$/.idea/shelf/Uncommitted_changes_before_Update_at_1_14_2025_2_16_PM_[Changes]/shelved.patch" afterDir="false" />
+-      <change afterPath="$PROJECT_DIR$/.idea/shelf/Uncommitted_changes_before_Update_at_1_14_2025_2_16_PM__Changes_.xml" afterDir="false" />
+-      <change afterPath="$PROJECT_DIR$/.idea/shelf/Uncommitted_changes_before_Update_at_1_14_2025_7_30_PM_[Changes]/shelved.patch" afterDir="false" />
+-      <change afterPath="$PROJECT_DIR$/.idea/shelf/Uncommitted_changes_before_Update_at_1_14_2025_7_30_PM__Changes_.xml" afterDir="false" />
+-      <change afterPath="$PROJECT_DIR$/.idea/shelf/Uncommitted_changes_before_Update_at_1_16_2025_1_12_PM_[Changes]/shelved.patch" afterDir="false" />
+-      <change afterPath="$PROJECT_DIR$/.idea/shelf/Uncommitted_changes_before_Update_at_1_16_2025_1_12_PM__Changes_.xml" afterDir="false" />
+-      <change afterPath="$PROJECT_DIR$/.idea/shelf/Uncommitted_changes_before_rebase_[Changes]/kennelDogs.jpg" afterDir="false" />
+-      <change afterPath="$PROJECT_DIR$/.idea/shelf/Uncommitted_changes_before_rebase_[Changes]/shelved.patch" afterDir="false" />
+-      <change afterPath="$PROJECT_DIR$/.idea/shelf/Uncommitted_changes_before_rebase_[Changes]1/kennelDogs.jpg" afterDir="false" />
+-      <change afterPath="$PROJECT_DIR$/.idea/shelf/Uncommitted_changes_before_rebase_[Changes]1/shelved.patch" afterDir="false" />
+-      <change afterPath="$PROJECT_DIR$/.idea/shelf/Uncommitted_changes_before_rebase_[Changes]2/kennelDogs.jpg" afterDir="false" />
+-      <change afterPath="$PROJECT_DIR$/.idea/shelf/Uncommitted_changes_before_rebase_[Changes]2/shelved.patch" afterDir="false" />
+-      <change afterPath="$PROJECT_DIR$/.idea/shelf/Uncommitted_changes_before_rebase_[Changes]3/kennelDogs.jpg" afterDir="false" />
+-      <change afterPath="$PROJECT_DIR$/.idea/shelf/Uncommitted_changes_before_rebase_[Changes]3/shelved.patch" afterDir="false" />
+-      <change afterPath="$PROJECT_DIR$/.idea/shelf/Uncommitted_changes_before_rebase_[Changes]4/shelved.patch" afterDir="false" />
+-      <change afterPath="$PROJECT_DIR$/.idea/shelf/Uncommitted_changes_before_rebase__Changes_.xml" afterDir="false" />
+-      <change afterPath="$PROJECT_DIR$/.idea/shelf/Uncommitted_changes_before_rebase__Changes_1.xml" afterDir="false" />
+-      <change afterPath="$PROJECT_DIR$/.idea/shelf/Uncommitted_changes_before_rebase__Changes_2.xml" afterDir="false" />
+-      <change afterPath="$PROJECT_DIR$/.idea/shelf/Uncommitted_changes_before_rebase__Changes_3.xml" afterDir="false" />
+-      <change afterPath="$PROJECT_DIR$/.idea/shelf/Uncommitted_changes_before_rebase__Changes_4.xml" afterDir="false" />
+-      <change afterPath="$PROJECT_DIR$/PaymentPage.css" afterDir="false" />
+-      <change afterPath="$PROJECT_DIR$/SearchInParadise.css" afterDir="false" />
+-      <change afterPath="$PROJECT_DIR$/SearchInParadise.js" afterDir="false" />
+-      <change afterPath="$PROJECT_DIR$/Thankyou.css" afterDir="false" />
+-      <change afterPath="$PROJECT_DIR$/Thankyou.js" afterDir="false" />
+-      <change afterPath="$PROJECT_DIR$/TopKennels.css" afterDir="false" />
+-      <change afterPath="$PROJECT_DIR$/TopKennels.js" afterDir="false" />
+-      <change afterPath="$PROJECT_DIR$/Topkennels.html" afterDir="false" />
+       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+-      <change beforePath="$PROJECT_DIR$/AboutUs.css" beforeDir="false" afterPath="$PROJECT_DIR$/AboutUs.css" afterDir="false" />
+-      <change beforePath="$PROJECT_DIR$/AboutUs.html" beforeDir="false" afterPath="$PROJECT_DIR$/AboutUs.html" afterDir="false" />
+       <change beforePath="$PROJECT_DIR$/HomePage.html" beforeDir="false" afterPath="$PROJECT_DIR$/HomePage.html" afterDir="false" />
+-      <change beforePath="$PROJECT_DIR$/PaymentPage.html" beforeDir="false" afterPath="$PROJECT_DIR$/PaymentPage.html" afterDir="false" />
+-      <change beforePath="$PROJECT_DIR$/PaymentPage.js" beforeDir="false" afterPath="$PROJECT_DIR$/PaymentPage.js" afterDir="false" />
+-      <change beforePath="$PROJECT_DIR$/ProfileForNewDog.css" beforeDir="false" afterPath="$PROJECT_DIR$/ProfileForNewDog.css" afterDir="false" />
+-      <change beforePath="$PROJECT_DIR$/RateYourStay.css" beforeDir="false" afterPath="$PROJECT_DIR$/RateYourStay.css" afterDir="false" />
++      <change beforePath="$PROJECT_DIR$/PawStyles.css" beforeDir="false" afterPath="$PROJECT_DIR$/PawStyles.css" afterDir="false" />
++      <change beforePath="$PROJECT_DIR$/ProfileForNewDog.js" beforeDir="false" afterPath="$PROJECT_DIR$/ProfileForNewDog.js" afterDir="false" />
++      <change beforePath="$PROJECT_DIR$/ProfilePage.html" beforeDir="false" afterPath="$PROJECT_DIR$/ProfilePage.html" afterDir="false" />
+       <change beforePath="$PROJECT_DIR$/RateYourStay.html" beforeDir="false" afterPath="$PROJECT_DIR$/RateYourStay.html" afterDir="false" />
++      <change beforePath="$PROJECT_DIR$/RateYourStay.js" beforeDir="false" afterPath="$PROJECT_DIR$/RateYourStay.js" afterDir="false" />
+       <change beforePath="$PROJECT_DIR$/SearchInParadise.html" beforeDir="false" afterPath="$PROJECT_DIR$/SearchInParadise.html" afterDir="false" />
+-      <change beforePath="$PROJECT_DIR$/SignUp.css" beforeDir="false" afterPath="$PROJECT_DIR$/SignUp.css" afterDir="false" />
+-      <change beforePath="$PROJECT_DIR$/SignUp.html" beforeDir="false" afterPath="$PROJECT_DIR$/SignUp.html" afterDir="false" />
+-      <change beforePath="$PROJECT_DIR$/Thankyou.html" beforeDir="false" afterPath="$PROJECT_DIR$/Thankyou.html" afterDir="false" />
+-      <change beforePath="$PROJECT_DIR$/top kennels.html" beforeDir="false" />
++      <change beforePath="$PROJECT_DIR$/SearchInParadise.js" beforeDir="false" afterPath="$PROJECT_DIR$/SearchInParadise.js" afterDir="false" />
++      <change beforePath="$PROJECT_DIR$/TopKennels.css" beforeDir="false" afterPath="$PROJECT_DIR$/TopKennels.css" afterDir="false" />
++      <change beforePath="$PROJECT_DIR$/Topkennels.html" beforeDir="false" afterPath="$PROJECT_DIR$/Topkennels.html" afterDir="false" />
+     </list>
+     <option name="SHOW_DIALOG" value="false" />
+     <option name="HIGHLIGHT_CONFLICTS" value="true" />
+Index: HomePage.html
+IDEA additional info:
+Subsystem: com.intellij.openapi.diff.impl.patch.BaseRevisionTextPatchEP
+<+><!DOCTYPE html>\r\n<html lang=\"en\">\r\n<head>\r\n    <meta charset=\"UTF-8\">\r\n    <title>HomePage</title>\r\n</head>\r\n<link rel=\"stylesheet\" href=\"PawStyles.css\">\r\n<link rel=\"stylesheet\" href=\"NavigatorStyle.css\">\r\n<link rel=\"stylesheet\" href=\"HomePage.css\">\r\n<body class=\"myBackground\">\r\n<div class=\"HomePageStyle\">\r\n    <nav id=\"Navigator\"></nav>\r\n    <h1>welcome to<br>Paw Paradise</h1>\r\n\r\n    <div class=\"button-container\">\r\n        <button id=\"searchButton\" class=\"btmType3\">Search kennel for your dog</button>\r\n        <div class=\"Raw\">\r\n            <button id=\"rateButton\" class=\"btmType1\">Rate kennels</button>\r\n            <button id=\"profileButton\" class=\"btmType1\">My Paw profile</button>\r\n        </div>\r\n    </div>\r\n    <button id=\"logoutButton\" class=\"btmType2\">Logout</button>\r\n</div>\r\n<script src=\"NavigatorScript.js\"></script>\r\n<script src=\"HomePage.js\"></script>\r\n\r\n\r\n</body>\r\n</html>\r\n\r\n
+Subsystem: com.intellij.openapi.diff.impl.patch.CharsetEP
+<+>UTF-8
+===================================================================
+diff --git a/HomePage.html b/HomePage.html
+--- a/HomePage.html	(revision b80fc1bd0ae473c5ee60ba9d004c16201f1b5042)
++++ b/HomePage.html	(date 1737039790317)
+@@ -20,6 +20,7 @@
+         </div>
+     </div>
+     <button id="logoutButton" class="btmType2">Logout</button>
++
+ </div>
+ <script src="NavigatorScript.js"></script>
+ <script src="HomePage.js"></script>
