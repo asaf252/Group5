@@ -38,7 +38,7 @@ document.addEventListener("DOMContentLoaded", function () {
             lastName: "Halfon",
             type: "Maltese",
             description: "Loyal and energetic",
-            birthdate: "15/05/2019",
+            birthdate: "21/10/2019",
             healthLevel: "Very Good",
             image: "../Photos/Louie.jpeg",
         },
@@ -90,5 +90,9 @@ document.addEventListener("DOMContentLoaded", function () {
     const backButton = document.getElementById("backButton");
     backButton.addEventListener("click", function () {
         window.location.href = "HomePage.html";
+    });
+    const addButton = document.getElementById("addButton");
+    addButton.addEventListener("click", function () {
+        window.location.href = "ProfileForNewDog.html";
     });
 });
