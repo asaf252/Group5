@@ -1,103 +1,128 @@
-/* מבנה גריד */
-.container {
-    max-width: 1000px;
-    margin: 0 auto;
-    padding: 20px;
-    background-color: #fff7f0;
-    border-radius: 15px;
-    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+/* הגבלת הרוחב של הדף למרכז */
+.Dogprofilepage {
+    width: 80%; /* תפס את 80% מהרוחב הכולל */
+    max-width: 1200px; /* הגבלה של רוחב מקסימלי ל-1200px */
+    margin: 0 auto; /* מרכז את התוכן בעמוד */
+    padding: 20px; /* הוספתי רווח פנימי */
 }
 
-h1 {
-    text-align: center;
-    font-size: 2.5rem;
-    margin-bottom: 30px;
-    color: #5a3a29;
-}
-
+/* הגדרת הגריד עם שתי עמודות, אחת לתוכן ואחת לתמונה */
 .grid-container {
     display: grid;
-    grid-template-columns: 2fr 1fr; /* עמודת טופס ועמודת תמונה */
+    grid-template-columns: 2fr 1fr; /* 2fr לתוכן, 1fr לתמונה */
     gap: 20px;
+    align-items: start; /* מיקום תחילת התוכן בתצוגה */
+    padding: 20px;
+    margin: 20px;
 }
 
-.form-fields {
-    display: grid;
-    grid-gap: 15px;
-}
-
-.form-fields label {
-    font-size: 1rem;
-    font-weight: bold;
-}
-
-.form-fields input,
-.form-fields select {
-    width: 100%;
-    padding: 10px;
-    border-radius: 5px;
-    border: 1px solid #d9a18a;
-}
-
+/* עיצוב לתמונה - לוודא שהיא בצד ימין */
 .dog-picture-container {
+    max-width: 100%; /* הגבלת רוחב התמונה */
+    overflow: hidden; /* לוודא שהתמונה לא תצא מהמיכל שלה */
     display: flex;
-    justify-content: center;
+    justify-content: center; /* מיקום התמונה במרכז */
     align-items: center;
-    border-radius: 15px;
-    border: 2px solid #d9a18a;
-    background-color: #fff;
-    padding: 10px;
-}
-/* עיצוב לכותרת הראשית של העמוד */
-.ProfilePageTitle {
-    font-size: 2.5rem;
-    font-weight: bold;
-    color: #5a3a29; /* צבע הכותרת */
-    text-align: center;
-    margin-bottom: 20px;
-    padding-bottom: 10px;
-    border-bottom: 2px solid #d9a18a; /* קו תחתון לכותרת */
-    letter-spacing: 1px; /* ריווח בין האותיות */
 }
 
 .dog-picture {
-    width: 100%;
+    width: 100%; /* התמונה תתפוס 100% מהקונטיינר שלה */
     height: auto;
     object-fit: cover;
     border-radius: 15px;
 }
 
-.image-preview img {
-    width: 100%;
-    max-height: 400px;
-    object-fit: cover;
-    border-radius: 15px;
+/* הצגת המידע של הכלב בצד שמאל */
+.dog-details {
+    display: grid;
+    grid-template-columns: 1fr; /* כל מאפיין וערך בשורה נפרדת */
+    gap: 12px;
+    padding-right: 20px; /* מרווח לימין */
 }
 
-.submit-btn {
-    background-color: #d9a18a;
-    color: white;
-    padding: 10px;
-    border-radius: 5px;
-    cursor: pointer;
-    width: 100%;
+/* כל שורה במידע */
+.dog-details div {
+    display: flex;
+    justify-content: space-between; /* כיוונתי את התוכן לימין */
+    margin-bottom: 12px;
 }
 
-/* שגיאות */
-span {
-    display: block;
-    margin-top: 5px;
-    font-size: 0.9rem;
-    color: red;
+/* עיצוב לתוויות */
+.dog-details label {
+    font-weight: bold;
+    font-size: 20px;
+    color: #5c4b51;
+    text-align: left; /* כל תווית מיושרת לימין */
+    width: 40%; /* גודל התווית יהיה קטן יותר */
 }
 
-/* רספונסיביות */
+/* עיצוב לערכים של הכלב */
+.dog-details span {
+    font-size: 20px;
+    color: #333;
+    text-align: left; /* הערך יהיה מיושר לשמאל */
+    width: 60%; /* הערכים יהיו רחבים יותר */
+}
+
+
+/* רקע צבעוני לחלק השמאלי של הדף */
+.profile-info {
+    background-color: #fff7f0;
+    padding: 20px; /* מרווח פנימי */
+    border-radius: 15px; /* קצוות מעוגלים */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* הוספת הצללה */
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    height: 100%; /* התאם את הגובה של המידע לגובה התמונה */
+}
+
+/* התמונה בצד ימין */
+.dog-picture-container {
+    flex: 1; /* מבטיח שהתמונה תתפוס את השטח המלא */
+    height: auto; /* תמונה תתאים למידות שלה */
+}
+
+/* כותרת טופס */
+.ProfilePageTitle {
+    font-size: 2.5rem;
+    font-weight: bold;
+    color: #5a3a29;
+    text-align: center;
+    margin-bottom: 20px;
+    padding-bottom: 10px;
+    border-bottom: 2px solid #d9a18a;
+    letter-spacing: 1px;
+}
+
+/* עבור מסכים קטנים */
 @media (max-width: 768px) {
     .grid-container {
-        grid-template-columns: 1fr; /* שדות ותמונה בעמודה אחת */
+        grid-template-columns: 1fr; /* הצגת התוכן והתמונה באותה שורה (עמודה אחת) */
     }
 
-    .image-preview {
-        display: none;
+    /* הקטנת התמונה במצב רספונסיבי */
+    .dog-picture-container img {
+        width: 100%; /* הגבלת רוחב התמונה ל-100% */
+        height: auto; /* שמירה על פרופורציות התמונה */
+        margin: 20px auto; /* מרכז את התמונה והוספת רווחים */
+    }
+
+    /* הוספת padding סביב התמונה כדי שתהיה מרווחה */
+    .dog-picture-container {
+        padding: 15px; /* רווחים סביב התמונה */
+        box-sizing: border-box; /* כולל את ה-padding בחישוב רוחב התמונה */
+    }
+
+    /* הוספת padding-top כדי שלא יפגע בתוכן */
+    .Dogprofilepage {
+        padding-top: 80px; /* רווח עליון כדי שהתוכן לא יתנגש עם הנביגייטור */
+    }
+
+        body {
+        margin-top: 250px; /* מוסיף רווח בחלק העליון של הדף */
     }
 }
+
+
+

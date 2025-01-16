@@ -6,49 +6,65 @@
     <link rel="stylesheet" href="PawStyles.css">
     <link rel="stylesheet" href="NavigatorStyle.css">
     <link rel="stylesheet" href="ProfilePage.css">
-
 </head>
 <body class="myBackground">
 <div class="Dogprofilepage">
-         <nav id="Navigator" ></nav>
+    <nav id="Navigator"></nav>
     <h1 class="ProfilePageTitle">My Paw profile</h1>
 
-    <div class="GridProfile">
+    <!-- Grid layout for profile information -->
+    <div class="grid-container">
+        <!-- Information about the dog -->
+        <div class="profile-info">
+            <label>Which dog you want to show:</label>
+            <select class="dog-select">
+                <option value="dog1">Marvel</option>
+                <option value="dog2">Dog 2</option>
+                <option value="dog3">Dog 3</option>
+            </select>
 
-        <label>which dog you want to show:</label>
-    <select class="dog-select">
-        <option value="dog1">Marvel</option>
-        <option value="dog2">Dog 2</option>
-        <option value="dog3">Dog 3</option>
-    </select>
+            <!-- Dog Info -->
+            <div class="dog-details">
+                <div>
+                    <label>Dog Name:</label>
+                    <span id="Dogname">Marvel</span>
+                </div>
+                <div>
+                    <label>Dog Last Name:</label>
+                    <span id="dog-last-name">Gil</span>
+                </div>
+                <div>
+                    <label>Type:</label>
+                    <span id="type">Unknown</span>
+                </div>
+                <div>
+                    <label>Description:</label>
+                    <span id="description">Friendly and playful</span>
+                </div>
+                <div>
+                    <label>BirthDate:</label>
+                    <span id="birthdate">01/01/2020</span>
+                </div>
+                <div>
+                    <label>Health Level:</label>
+                    <span id="health-level">Excellent</span>
+                </div>
+            </div>
+        </div>
 
-        <!-- נתוני הכלב -->
-        <img src="Photos/Marvel.jpeg" class="dog-picture">
-        <label>Dog Name:</label>
-        <span id="Dogname">Marvel</span>
-
-        <label>Dog last name:</label>
-        <span id="dog-last-name">Gil</span>
-
-        <label>Type:</label>
-        <span id="type">Unknown</span>
-
-        <label>Description:</label>
-        <span id="description">Friendly and playful</span>
-
-        <label>BirthDate:</label>
-        <span id="birthdate">01/01/2020</span>
-
-        <label>Health Level:</label>
-        <span id="health-level">Excellent</span>
+        <!-- Dog Image (in separate grid column) -->
+        <div class="dog-picture-container">
+            <img src="Photos/Marvel.jpeg" class="dog-picture" alt="Marvel">
+        </div>
     </div>
 
+    <!-- Buttons -->
     <div class="Raw">
-        <button class="btmType3">Back</button>
-        <button class="btmType1">Add new dog</button>
+        <button class="btmType3">Back to Top</button>
+        <button class="btmType1">Add New Dog</button>
     </div>
-
 </div>
+
 <script src="NavigatorScript.js"></script>
 <script src="ProfilePage.js"></script>
 </body>

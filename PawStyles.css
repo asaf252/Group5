@@ -270,8 +270,6 @@ form span {
 
 /*---------------------- Profile Grid Page-----------------*/
 
-
-
 /* תפריט נפתח */
 .dog-select {
     padding: 10px;
@@ -281,10 +279,6 @@ form span {
     margin-bottom: 20px;
     width: 80%;
 }
-
-
-
-
 
 .dog-picture {
     grid-column: 3 / 4; /* העמודה השלישית */
