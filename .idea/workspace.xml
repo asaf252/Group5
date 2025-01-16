@@ -5,19 +5,12 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="3a85256d-f386-4d1b-8f4c-d1287acb997b" name="Changes" comment="check">
-      <change afterPath="$PROJECT_DIR$/LogInPage.css" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/ProfileForNewDog.css" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/ProfileForNewDog.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/SignUp.css" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/HomePage.js" beforeDir="false" afterPath="$PROJECT_DIR$/HomePage.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/LogInPage.html" beforeDir="false" afterPath="$PROJECT_DIR$/LogInPage.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/NavigatorScript.js" beforeDir="false" afterPath="$PROJECT_DIR$/NavigatorScript.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/PawStyles.css" beforeDir="false" afterPath="$PROJECT_DIR$/PawStyles.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/ProfileDog.html" beforeDir="false" afterPath="$PROJECT_DIR$/ProfilePage.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/ProfileForNewDog.html" beforeDir="false" afterPath="$PROJECT_DIR$/ProfileForNewDog.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/ProfilePage.css" beforeDir="false" afterPath="$PROJECT_DIR$/ProfilePage.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/SignUp.html" beforeDir="false" afterPath="$PROJECT_DIR$/SignUp.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Scripts/SearchInParadise.js" beforeDir="false" afterPath="$PROJECT_DIR$/Scripts/SearchInParadise.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Styles/TopKennels.css" beforeDir="false" afterPath="$PROJECT_DIR$/Styles/TopKennels.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Templets/PaymentPage.html" beforeDir="false" afterPath="$PROJECT_DIR$/Templets/PaymentPage.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Templets/ProfilePage.html" beforeDir="false" afterPath="$PROJECT_DIR$/Templets/ProfilePage.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Templets/SearchInParadise.html" beforeDir="false" afterPath="$PROJECT_DIR$/Templets/SearchInParadise.html" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -29,8 +22,8 @@
       <list>
         <option value="TypeScript File" />
         <option value="HTML File" />
-        <option value="JavaScript File" />
         <option value="CSS File" />
+        <option value="JavaScript File" />
       </list>
     </option>
   </component>
@@ -54,12 +47,12 @@
   <component name="GitHubPullRequestSearchHistory">{
   &quot;lastFilter&quot;: {}
 }</component>
-  <component name="GithubPullRequestsUISettings">{
-  &quot;selectedUrlAndAccountId&quot;: {
-    &quot;url&quot;: &quot;https://github.com/asaf252/Group5.git&quot;,
-    &quot;accountId&quot;: &quot;1fb6d962-10f6-4f10-b84e-f017f1e0cd10&quot;
+  <component name="GithubPullRequestsUISettings"><![CDATA[{
+  "selectedUrlAndAccountId": {
+    "url": "https://github.com/asaf252/Group5.git",
+    "accountId": "6fc33878-fb05-4e67-8f42-87d78fbefc37"
   }
-}</component>
+}]]></component>
   <component name="HighlightingSettingsPerFile">
     <setting file="file://$PROJECT_DIR$/RateYourStay.js" root0="SKIP_INSPECTION" />
   </component>
@@ -76,35 +69,36 @@
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="PropertiesComponent">{
-  &quot;keyToString&quot;: {
-    &quot;DefaultHtmlFileTemplate&quot;: &quot;HTML File&quot;,
-    &quot;Node.js.RateYourStay.js.executor&quot;: &quot;Debug&quot;,
-    &quot;Python.main.executor&quot;: &quot;Run&quot;,
-    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
-    &quot;git-widget-placeholder&quot;: &quot;main&quot;,
-    &quot;last_opened_file_path&quot;: &quot;C:/Users/halfo/PycharmProjects/Group5&quot;,
-    &quot;list.type.of.created.stylesheet&quot;: &quot;CSS&quot;,
-    &quot;node.js.detected.package.eslint&quot;: &quot;true&quot;,
-    &quot;node.js.detected.package.tslint&quot;: &quot;true&quot;,
-    &quot;node.js.selected.package.eslint&quot;: &quot;(autodetect)&quot;,
-    &quot;node.js.selected.package.tslint&quot;: &quot;(autodetect)&quot;,
-    &quot;nodejs_package_manager_path&quot;: &quot;npm&quot;,
-    &quot;settings.editor.selected.configurable&quot;: &quot;vcs.Git&quot;,
-    &quot;ts.external.directory.path&quot;: &quot;C:\\Program Files\\JetBrains\\PyCharm 2024.2.4\\plugins\\javascript-plugin\\jsLanguageServicesImpl\\external&quot;,
-    &quot;vue.rearranger.settings.migration&quot;: &quot;true&quot;
+  <component name="PropertiesComponent"><![CDATA[{
+  "keyToString": {
+    "DefaultHtmlFileTemplate": "HTML File",
+    "Node.js.RateYourStay.js.executor": "Debug",
+    "Python.main.executor": "Run",
+    "RunOnceActivity.ShowReadmeOnStart": "true",
+    "RunOnceActivity.git.unshallow": "true",
+    "git-widget-placeholder": "main",
+    "last_opened_file_path": "C:/Users/halfo/PycharmProjects/Group5",
+    "list.type.of.created.stylesheet": "CSS",
+    "node.js.detected.package.eslint": "true",
+    "node.js.detected.package.tslint": "true",
+    "node.js.selected.package.eslint": "(autodetect)",
+    "node.js.selected.package.tslint": "(autodetect)",
+    "nodejs_package_manager_path": "npm",
+    "settings.editor.selected.configurable": "vcs.Git",
+    "ts.external.directory.path": "C:\\Program Files\\JetBrains\\PyCharm 2024.2.4\\plugins\\javascript-plugin\\jsLanguageServicesImpl\\external",
+    "vue.rearranger.settings.migration": "true"
   },
-  &quot;keyToStringList&quot;: {
-    &quot;GitStage.ChangesTree.GroupingKeys&quot;: [
-      &quot;directory&quot;,
-      &quot;module&quot;,
-      &quot;repository&quot;
+  "keyToStringList": {
+    "GitStage.ChangesTree.GroupingKeys": [
+      "directory",
+      "module",
+      "repository"
     ],
-    &quot;com.intellij.ide.scratch.ScratchImplUtil$2/New Scratch File&quot;: [
-      &quot;CSS&quot;
+    "com.intellij.ide.scratch.ScratchImplUtil$2/New Scratch File": [
+      "CSS"
     ]
   }
-}</component>
+}]]></component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
       <recent name="C:\Users\halfo\PycharmProjects\Group5" />
@@ -150,8 +144,8 @@
   <component name="SharedIndexes">
     <attachedChunks>
       <set>
-        <option value="bundled-js-predefined-d6986cc7102b-5c90d61e3bab-JavaScript-PY-242.23726.102" />
-        <option value="bundled-python-sdk-5e1850174b45-399fe30bd8c1-com.jetbrains.pycharm.pro.sharedIndexes.bundled-PY-242.23726.102" />
+        <option value="bundled-js-predefined-d6986cc7102b-deb605915726-JavaScript-PY-243.22562.180" />
+        <option value="bundled-python-sdk-85c76a3b01b3-9a18a617cbe4-com.jetbrains.pycharm.pro.sharedIndexes.bundled-PY-243.22562.180" />
       </set>
     </attachedChunks>
   </component>
@@ -175,6 +169,7 @@
       <workItem from="1736520498137" duration="690000" />
       <workItem from="1736626391006" duration="3396000" />
       <workItem from="1736680288696" duration="11382000" />
+      <workItem from="1737040098124" duration="956000" />
     </task>
     <task id="LOCAL‎-00001" summary="check">
       <option name="closed" value="true" />
@@ -472,23 +467,7 @@
       <option name="project" value="LOCAL‎" />
       <updated>1736695081635</updated>
     </task>
-    <task id="LOCAL‎-00038" summary="check">
-      <option name="closed" value="true" />
-      <created>1736856827104</created>
-      <option name="number" value="00038" />
-      <option name="presentableId" value="LOCAL‎-00038" />
-      <option name="project" value="LOCAL‎" />
-      <updated>1736856827104</updated>
-    </task>
-    <task id="LOCAL‎-00039" summary="check">
-      <option name="closed" value="true" />
-      <created>1736875641613</created>
-      <option name="number" value="00039" />
-      <option name="presentableId" value="LOCAL‎-00039" />
-      <option name="project" value="LOCAL‎" />
-      <updated>1736875641613</updated>
-    </task>
-    <option name="localTasksCounter" value="40" />
+    <option name="localTasksCounter" value="38" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">

@@ -10,4 +10,8 @@ document.addEventListener("DOMContentLoaded", function () {
         const url = `TopKennels.html?sort=${sortType}`;
         window.location.href = url;
     });
+     // כפתור חזרה
+    document.querySelector('.btmType1').addEventListener("click", () => {
+        window.location.href = "HomePage.html";
+    });
 });
