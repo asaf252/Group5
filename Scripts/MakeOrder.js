@@ -151,43 +151,55 @@ document.addEventListener("DOMContentLoaded", function () {
     document.getElementById("kennel").addEventListener("blur", validateKennel);
 
     // מאזין להגשת הטופס
-   form.addEventListener("submit", function (event) {
-    event.preventDefault(); // למנוע רענון של הדף
+    form.addEventListener("submit", function (event) {
+        event.preventDefault(); // למנוע רענון של הדף
 
-    validateOwnerName();
-    validateDogName();
-    validateDates();
-    validateCardNumber();
-    validateCVV();
-    validateExpiryDate();
-    validateID();
+        validateOwnerName();
+        validateDogName();
+        validateDates();
+        validateCardNumber();
+        validateCVV();
+        validateExpiryDate();
+        validateID();
 
-    const errors = document.querySelectorAll(".error");
-    const hasErrors = Array.from(errors).some((error) => error.textContent !== "");
+        const errors = document.querySelectorAll(".error");
+        const hasErrors = Array.from(errors).some((error) => error.textContent !== "");
 
-    if (!hasErrors) {
-        // שמירת הנתונים ב-localStorage
-        const ownerName = document.getElementById("ownerName").value.trim();
-        const dogName = document.getElementById("dogName").value.trim();
-        const fromDate = document.getElementById("from").value;
-        const untilDate = document.getElementById("until").value;
-        const kennel = document.getElementById("kennel").value; // שדה בחירת הפנסיון
+        if (!hasErrors) {
+            // שמירת הנתונים ב-localStorage
+            const ownerName = document.getElementById("ownerName").value.trim();
+            const dogName = document.getElementById("dogName").value.trim();
+            const fromDate = document.getElementById("from").value;
+            const untilDate = document.getElementById("until").value;
+            const kennel = document.getElementById("kennel").value; // שדה בחירת הפנסיון
 
-        localStorage.setItem("ownerName", ownerName);
-        localStorage.setItem("dogName", dogName);
-        localStorage.setItem("fromDate", fromDate);
-        localStorage.setItem("untilDate", untilDate);
-        localStorage.setItem("kennel", kennel);
+            localStorage.setItem("ownerName", ownerName);
+            localStorage.setItem("dogName", dogName);
+            localStorage.setItem("fromDate", fromDate);
+            localStorage.setItem("untilDate", untilDate);
+            localStorage.setItem("kennel", kennel);
 
-        // מעבר לעמוד Thank You
-        window.location.href = "Thankyou.html";
-    } else {
-        alert("Please fix the errors in the form before submitting.");
-    }
-});
+            // מעבר לעמוד Thank You
+            window.location.href = "Thankyou.html";
+        } else {
+            alert("Please fix the errors in the form before submitting.");
+        }
+    });
+    document.addEventListener("DOMContentLoaded", function () {
+        const dogNameInput = document.getElementById("dogName");
+
+        // שליפת שם הכלב מ-localStorage
+        const selectedDogName = localStorage.getItem("selectedDogName");
+        console.log("Selected Dog Name in Form:", selectedDogName); // בדיקה ב-console
+        if (selectedDogName) {
+            dogNameInput.value = selectedDogName; // עדכון השדה עם שם הכלב
+        }
+    });
 
     // כפתור חזרה
     document.querySelector('.btmType1').addEventListener("click", () => {
         window.location.href = "HomePage.html";
     });
 });
+
+
