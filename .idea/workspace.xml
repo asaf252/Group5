@@ -4,13 +4,7 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="3a85256d-f386-4d1b-8f4c-d1287acb997b" name="Changes" comment="check">
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Scripts/KennelProfile.js" beforeDir="false" afterPath="$PROJECT_DIR$/Scripts/KennelProfile.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Scripts/TopKennels.js" beforeDir="false" afterPath="$PROJECT_DIR$/Scripts/TopKennels.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Styles/KennelProfile.css" beforeDir="false" afterPath="$PROJECT_DIR$/Styles/KennelProfile.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Templets/kennelProfile.html" beforeDir="false" afterPath="$PROJECT_DIR$/Templets/kennelProfile.html" afterDir="false" />
-    </list>
+    <list default="true" id="3a85256d-f386-4d1b-8f4c-d1287acb997b" name="Changes" comment="check" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -46,12 +40,12 @@
   <component name="GitHubPullRequestSearchHistory">{
   &quot;lastFilter&quot;: {}
 }</component>
-  <component name="GithubPullRequestsUISettings"><![CDATA[{
-  "selectedUrlAndAccountId": {
-    "url": "https://github.com/asaf252/Group5.git",
-    "accountId": "1fb6d962-10f6-4f10-b84e-f017f1e0cd10"
+  <component name="GithubPullRequestsUISettings">{
+  &quot;selectedUrlAndAccountId&quot;: {
+    &quot;url&quot;: &quot;https://github.com/asaf252/Group5.git&quot;,
+    &quot;accountId&quot;: &quot;1fb6d962-10f6-4f10-b84e-f017f1e0cd10&quot;
   }
-}]]></component>
+}</component>
   <component name="HighlightingSettingsPerFile">
     <setting file="file://$PROJECT_DIR$/RateYourStay.js" root0="SKIP_INSPECTION" />
   </component>
@@ -499,7 +493,23 @@
       <option name="project" value="LOCAL‎" />
       <updated>1737043406998</updated>
     </task>
-    <option name="localTasksCounter" value="42" />
+    <task id="LOCAL‎-00042" summary="check">
+      <option name="closed" value="true" />
+      <created>1737102213942</created>
+      <option name="number" value="00042" />
+      <option name="presentableId" value="LOCAL‎-00042" />
+      <option name="project" value="LOCAL‎" />
+      <updated>1737102213942</updated>
+    </task>
+    <task id="LOCAL‎-00043" summary="check">
+      <option name="closed" value="true" />
+      <created>1737102243649</created>
+      <option name="number" value="00043" />
+      <option name="presentableId" value="LOCAL‎-00043" />
+      <option name="project" value="LOCAL‎" />
+      <updated>1737102243649</updated>
+    </task>
+    <option name="localTasksCounter" value="44" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
