@@ -6,7 +6,6 @@
     <title>Kennel Profile</title>
     <link rel="stylesheet" href="../Styles/PawStyles.css">
     <link rel="stylesheet" href="../Styles/KennelProfile.css">
-
 </head>
 <body class="myBackground">
 <div class="MainStyle">
@@ -19,36 +18,41 @@
     <div class="MainGrid">
         <!-- Left Section: Kennel Details -->
         <div class="left-section">
-            <!-- Grade Section -->
+            <!-- Name and Address -->
+            <div class="full-width-row">
+                <p><strong>Kennel Name:</strong> <span id="kennel-name">Loading...</span></p>
+            </div>
             <div class="rating">
                 <label><strong>Grade:</strong></label>
-                <div class="rating-stars" id="rating-stars">
-                    <!-- Stars will be dynamically added -->
-                </div>
+                <div class="rating-stars" id="rating-stars"></div>
             </div>
 
-            <!-- About Kennel Section -->
-            <div class="about-section">
-                <label><strong>About Kennel:</strong></label>
-                <div class="info-box" id="about-kennel">Loading...</div>
+            <div class="full-width-row">
+                <p><strong>Address:</strong> <span id="address">Loading...</span></p>
             </div>
 
-            <!-- Unified Box (Information) -->
-            <div class="unified-box">
-                <div class="left-column" id="left-column">
-                    <p><strong>Kennel Name:</strong> <span id="kennel-name">Loading...</span></p>
-                    <p><strong>Address:</strong> <span id="address">Loading...</span></p>
-                    <p><strong>Regular Price:</strong> <span id="regular-price">Loading...</span></p>
-                    <p><strong>Weekend Price:</strong> <span id="weekend-price">Loading...</span></p>
-                </div>
-                <div class="right-column" id="right-column">
-                    <p><strong>Dog Type:</strong> <span id="dog-type">Loading...</span></p>
-                    <p><strong>Capacity:</strong> <span id="capacity">Loading...</span></p>
-                    <p><strong>Distance from You:</strong> <span id="distance">Loading...</span></p>
-                    <p><strong>Phone Number:</strong> <span id="phone-number">Loading...</span></p>
-                </div>
+            <!-- Other Details -->
+            <div class="two-columns">
+                <p><strong>Distance from You:</strong> <span id="distance">Loading...</span></p>
+                <p><strong>Capacity:</strong> <span id="capacity">Loading...</span></p>
+            </div>
+            <div class="two-columns">
+                <p><strong>Regular Price:</strong> <span id="regular-price">Loading...</span></p>
+                <p><strong>Weekend Price:</strong> <span id="weekend-price">Loading...</span></p>
+            </div>
+            <div class="full-width-row">
+                <p><strong>Dog Type:</strong> <span id="dog-type">Loading...</span></p>
+            </div>
+
+            <!-- Phone Number -->
+            <div class="full-width-row">
+                <p><strong>Phone Number:</strong> <span id="phone-number">Loading...</span></p>
+            </div>
+            <div class="full-width-row">
+                <p><strong>About:</strong> <span id="about">Loading...</span></p>
             </div>
         </div>
+
 
         <!-- Right Section: Kennel Image -->
         <div class="right-section">
@@ -58,7 +62,7 @@
 
     <!-- Footer (Buttons) -->
     <footer class="Raw">
-        <button id ="backButton" type="button" class="btmType1">Back</button>
+        <button id="backButton" type="button" class="btmType1">Back</button>
     </footer>
 </div>
 <script src="../Scripts/KennelProfile.js"></script>

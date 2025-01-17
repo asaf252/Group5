@@ -1,10 +1,8 @@
 document.addEventListener("DOMContentLoaded", () => {
-    // שליפת שם הפנסיון מה-URL
     const urlParams = new URLSearchParams(window.location.search);
-    const selectedKennelName = urlParams.get("name");
+    const selectedKennelName = urlParams.get("name")?.trim();
 
     if (!selectedKennelName) {
-        // במקרה שאין פרמטר 'name' ב-URL
         document.body.innerHTML = `
             <div style="text-align: center; margin-top: 50px;">
                 <h1 style="color: red;">Error: You arrived at this page incorrectly.</h1>
@@ -15,7 +13,6 @@ document.addEventListener("DOMContentLoaded", () => {
         return;
     }
 
-    // רשימת נתוני הפנסיונים
     const kennels = [
         {
             name: "Paw Paradise",
@@ -58,7 +55,6 @@ document.addEventListener("DOMContentLoaded", () => {
         },
     ];
 
-    // חיפוש הפנסיון המתאים לפי השם שנבחר
     const selectedKennel = kennels.find((kennel) => kennel.name === selectedKennelName);
 
     if (!selectedKennel) {
@@ -72,34 +68,33 @@ document.addEventListener("DOMContentLoaded", () => {
         return;
     }
 
-    // דימוי טעינה (נתונים יטענו לאחר 2 שניות)
     setTimeout(() => {
-        // עדכון התוכן ב-HTML עם הנתונים של הפנסיון שנבחר
-        document.getElementById("kennel-name").textContent = selectedKennel.name;
-        document.getElementById("address").textContent = selectedKennel.address;
-        document.getElementById("regular-price").textContent = selectedKennel.regularPrice;
-        document.getElementById("weekend-price").textContent = selectedKennel.weekendPrice;
-        document.getElementById("dog-type").textContent = selectedKennel.dogType;
-        document.getElementById("capacity").textContent = selectedKennel.capacity;
-        document.getElementById("distance").textContent = selectedKennel.distance;
-        document.getElementById("phone-number").textContent = selectedKennel.phoneNumber;
-        document.getElementById("about-kennel").textContent = selectedKennel.about;
         document.getElementById("kennel-image").src = selectedKennel.imageSrc;
 
-        // הוספת דירוג (עצמות)
         const ratingStars = document.getElementById("rating-stars");
-        ratingStars.innerHTML = ""; // ריקון תוכן קודם
+        ratingStars.innerHTML = "";
         for (let i = 0; i < selectedKennel.grade; i++) {
             const starImg = document.createElement("img");
             starImg.src = "../Photos/DogBonePic.png";
             starImg.className = "LogoBone";
             starImg.alt = "Dog Bone";
+            starImg.className = "LogoBone"
             ratingStars.appendChild(starImg);
         }
-    }, 2000); // המתנה של 2 שניות לדימוי טעינה
+
+        document.getElementById("kennel-name").textContent = selectedKennel.name;
+        document.getElementById("address").textContent = selectedKennel.address;
+                document.getElementById("capacity").textContent = selectedKennel.capacity;
+        document.getElementById("distance").textContent = selectedKennel.distance;
+        document.getElementById("regular-price").textContent = selectedKennel.regularPrice;
+        document.getElementById("weekend-price").textContent = selectedKennel.weekendPrice;
+        document.getElementById("dog-type").textContent = selectedKennel.dogType;
+        document.getElementById("about").textContent = selectedKennel.about;
+        document.getElementById("phone-number").textContent = selectedKennel.phoneNumber;
+
+    }, 2000);
 });
-    // האזנה ללחיצה על כפתור Back
-    const backButton = document.getElementById("backButton");
-    backButton.addEventListener("click", function () {
-        location.href = "../Templets/SearchInParadise.html"; // שם הקובץ של עמוד החיפוש
-    });
+
+document.getElementById("backButton").addEventListener("click", function () {
+    location.href = "../Templets/SearchInParadise.html";
+});

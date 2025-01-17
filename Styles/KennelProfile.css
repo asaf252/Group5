@@ -1,134 +1,91 @@
-/* General Layout Adjustments */
-.MainStyle {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    padding: 20px;
-    background-color: #fff7f0;
-    border-radius: 15px;
-    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
-    max-width: 1000px;
-    margin: auto;
-}
-
 .MainGrid {
     display: grid;
-    grid-template-columns: 2fr 1fr; /* Two equal columns for content and image */
-    grid-gap: 20px;
+    grid-template-columns: 2fr 1fr; /* Left content (2 parts) and right image (1 part) */
+    gap: 20px;
     width: 100%;
     margin-top: 20px;
 }
 
 .left-section {
-    padding: 20px;
     display: flex;
     flex-direction: column;
+    gap: 20px; /* Space between rows */
 }
 
-.rating {
-    display: flex;
-    align-items: center;
-    gap: 10px;
-    margin-bottom: 20px; /* ריווח מתחת לדירוג */
-}
-
-
-.rating-stars img:hover {
-    transform: scale(1.2); /* הגדלה בזמן רחיפה */
-}
-
-.about-section {
-    margin-bottom: 20px;
-    padding: 10px;
-    background-color: #fdf6f3;
-    border-radius: 8px;
-    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
-}
-
-.info-box {
-    padding: 10px;
-    border-radius: 8px;
-    margin-top: 10px;
-    font-size: 16px;
-    line-height: 1.5;
-    color: #333;
-}
-
-.unified-box {
+.two-columns {
     display: grid;
-    grid-template-columns: 1fr 1fr; /* שני טורים */
-    gap: 20px;
-    margin-top: 20px;
+    grid-template-columns: 1fr 1fr; /* Two equal columns */
+    gap: 20px; /* Space between columns */
 }
 
-.unified-box .left-column,
-.unified-box .right-column {
-    display: flex;
-    flex-direction: column;
-    gap: 10px; /* ריווח בין הפריטים */
-}
-
-.left-column p, .right-column p {
-    margin: 0;
-    line-height: 1.5;
-}
-
-/* תמונה */
 .right-section {
     display: flex;
     justify-content: center;
-    align-items: center;
+    align-items: flex-start; /* Align image to the top */
 }
 
 .dog-picture {
-    width: 100%;
-    max-width: 400px;
+    width: 100%; /* Full width of the right column */
+    max-height: 100%; /* Ensures the image fits vertically */
     border-radius: 10px;
-    object-fit: cover; /* מוודא שהתמונה ממלאת את השטח בצורה יפה */
-    background-color: #f9f9f9;
-    padding: 5px; /* רווח פנימי */
+    object-fit: cover; /* Ensures the image is cropped nicely */
     box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
 }
 
-/* טקסטים בולטים */
+.full-width-row {
+    display: flex;
+    flex-direction: column;
+    gap: 5px; /* Small gap for better spacing */
+}
+
 label, span {
     font-size: 16px;
-    line-height: 1.5;
     color: #333;
+    display: inline-block; /* התגית תתנהג כמו בלוק פנימי */
+    word-wrap: break-word; /* שבירת מילים אם יש צורך */
+    max-width: 100%; /* התאמה לגודל המסך */
+    line-height: 1.5; /* ריווח קבוע בין השורות */
+    overflow-wrap: break-word; /* שבירת מילים ארוכות */
 }
+
 
 label {
     font-weight: bold;
     color: #6b4226;
-    margin-right: 5px; /* רווח אופקי בין תווית לערך */
 }
 
-.detail-row {
-    display: flex;
-    align-items: baseline; /* יישור התוויות והערכים */
-    margin-bottom: 10px; /* רווח בין השורות */
-}
 
-.detail-row label {
-    flex: 0 0 150px; /* גודל קבוע לתוויות */
-    text-align: left;
-}
-
-.detail-row span {
-    flex: 1; /* הערכים יתפסו את השטח הנותר */
-}
-
-/* Responsive Design for Small Screens */
+/* הוספת מרווח למטה עבור כל הגוף */
 @media (max-width: 768px) {
-    .MainGrid {
-        grid-template-columns: 1fr; /* Single column layout on small screens */
+    .MainStyle {
+        overflow-y: auto; /* אפשר גלילה אנכית */
+        margin-top: 20%;
+        padding: 0;
     }
 
-    .right-section {
-        margin-top: 20px; /* Move the image below the text on small screens */
+    body {
+    padding-top: 10vh; /* הזזת התוכן 10% מגובה המסך למטה */
+    }
+
+
+    .MainGrid {
+        grid-template-columns: 1fr; /* Single column layout for small screens */
+        margin-top: 20px; /* תוספת מרווח מעל */
+
+    }
+
+    header {
+        margin-bottom: 15px; /* רווח מתחת לכותרת */
     }
 
     .dog-picture {
-        max-width: 100%; /* Make sure image takes full width on mobile */
+        max-width: 100%;
+        max-height: 300px; /* Limit the height of the image on small screens */
+    }
+
+    .right-section {
+        margin-top: 20px; /* Space above the image */
     }
 }
+
+
