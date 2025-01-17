@@ -3,8 +3,14 @@ document.addEventListener("DOMContentLoaded", function () {
 
     const form = document.getElementById("payment-form");
     const priceLabel = document.getElementById("price");
-
+    const confirmButton = document.getElementById("confirmButton");
+    const dogNameInput = document.getElementById("dogName");
     const dailyRate = 20; // מחיר יומי
+
+    const selectedDogName = localStorage.getItem("selectedDogName");
+    if (selectedDogName) {
+        dogNameInput.value = selectedDogName; // עדכון השדה עם שם הכלב
+    }
 
     // פונקציה לחישוב סכום לתשלום
     function calculatePrice() {
@@ -32,174 +38,169 @@ document.addEventListener("DOMContentLoaded", function () {
         }
     }
 
-    // פונקציות לאימות שדות
-    function validateOwnerName() {
-        const ownerNameInput = document.getElementById("ownerName");
-        const ownerNameError = document.getElementById("ownerNameError");
-        if (ownerNameInput.value.trim() === "") {
-            ownerNameError.textContent = "Owner's full name is required.";
+    // אימות שדה ספציפי
+    function validateField(field, errorField, validationFunction) {
+        const errorMessage = validationFunction(field.value.trim());
+        if (errorMessage) {
+            errorField.textContent = errorMessage;
+            return false;
         } else {
-            ownerNameError.textContent = "";
+            errorField.textContent = "";
+            return true;
         }
     }
 
-    function validateDogName() {
-        const dogNameInput = document.getElementById("dogName");
-        const dogNameError = document.getElementById("dogNameError");
-        if (dogNameInput.value.trim() === "") {
-            dogNameError.textContent = "Dog's name is required.";
-        } else {
-            dogNameError.textContent = "";
-        }
+    // פונקציות ולידציה
+    function validateOwnerName(value) {
+        return value === "" ? "Owner's full name is required." : "";
     }
 
-    function validateDates() {
-        const fromInput = document.getElementById("from");
-        const untilInput = document.getElementById("until");
-        const dateError = document.getElementById("dateError");
-
-        const fromValue = fromInput.value;
-        const untilValue = untilInput.value;
-
-        if (fromValue === "" || untilValue === "") {
-            dateError.textContent = "Both start and end dates are required.";
-        } else {
-            const fromDate = new Date(fromValue);
-            const untilDate = new Date(untilValue);
-            if (untilDate < fromDate) {
-                dateError.textContent = "End date cannot be earlier than start date.";
-            } else {
-                dateError.textContent = "";
-            }
-        }
+    function validateDogName(value) {
+        return value === "" ? "Dog's name is required." : "";
     }
 
-    function validateCardNumber() {
-        const cardInput = document.getElementById("card");
-        const cardError = document.getElementById("cardError");
-        const cardValue = cardInput.value.trim();
-        if (cardValue.length !== 16 || !/^\d+$/.test(cardValue)) {
-            cardError.textContent = "Card number must be 16 digits.";
-        } else {
-            cardError.textContent = "";
-        }
+    function validateKennel(value) {
+        return value === "" ? "Please select a kennel." : "";
     }
 
-    function validateCVV() {
-        const cvvInput = document.getElementById("cvv");
-        const cvvError = document.getElementById("cvvError");
-        const cvvValue = cvvInput.value.trim();
-        if (cvvValue.length !== 3 || !/^\d+$/.test(cvvValue)) {
-            cvvError.textContent = "CVV must be 3 digits.";
-        } else {
-            cvvError.textContent = "";
-        }
+    function validateCardNumber(value) {
+        return value.length !== 16 || !/^\d+$/.test(value)
+            ? "Card number must be 16 digits."
+            : "";
     }
 
-    function validateExpiryDate() {
-        const expiryInput = document.getElementById("expiry");
-        const expiryError = document.getElementById("expiryError");
-        const expiryValue = expiryInput.value.trim();
-        if (!/^\d{4}\/\d{2}$/.test(expiryValue)) {
-            expiryError.textContent = "Expiry date must be in the format YYYY/MM.";
-        } else {
-            const [year, month] = expiryValue.split('/');
-            const currentDate = new Date();
-            const expiryDate = new Date(year, month - 1);
-            if (month < 1 || month > 12 || expiryDate < currentDate) {
-                expiryError.textContent = "Invalid or expired card.";
-            } else {
-                expiryError.textContent = "";
-            }
-        }
+    function validateCVV(value) {
+        return value.length !== 3 || !/^\d+$/.test(value) ? "CVV must be 3 digits." : "";
     }
 
-    function validateID() {
-        const idInput = document.getElementById("id");
-        const idError = document.getElementById("idError");
-        const idValue = idInput.value.trim();
-        if (!/^\d{9}$/.test(idValue)) {
-            idError.textContent = "ID number must be 9 digits.";
-        } else {
-            idError.textContent = "";
+    function validateExpiryDate(value) {
+        if (!/^\d{4}\/\d{2}$/.test(value)) {
+            return "Expiry date must be in the format YYYY/MM.";
         }
+        const [year, month] = value.split("/");
+        const currentDate = new Date();
+        const expiryDate = new Date(year, month - 1);
+        if (month < 1 || month > 12 || expiryDate < currentDate) {
+            return "Invalid or expired card.";
+        }
+        return "";
     }
 
-    function validateKennel() {
-        const kennelInput = document.getElementById("kennel");
-        const kennelError = document.getElementById("kennelError");
-        if (!kennelInput.value) {
-            kennelError.textContent = "Please select a kennel.";
-        } else {
-            kennelError.textContent = "";
-        }
+    function validateID(value) {
+        return !/^\d{9}$/.test(value) ? "ID number must be 9 digits." : "";
     }
+
+    // מאזינים לאירוע blur עבור כל שדה
+    document.getElementById("ownerName").addEventListener("blur", function () {
+        validateField(
+            this,
+            document.getElementById("ownerNameError"),
+            validateOwnerName
+        );
+    });
+
+    document.getElementById("dogName").addEventListener("blur", function () {
+        validateField(
+            this,
+            document.getElementById("dogNameError"),
+            validateDogName
+        );
+    });
+
+    document.getElementById("kennel").addEventListener("blur", function () {
+        validateField(
+            this,
+            document.getElementById("kennelError"),
+            validateKennel
+        );
+    });
+
+    document.getElementById("card").addEventListener("blur", function () {
+        validateField(
+            this,
+            document.getElementById("cardError"),
+            validateCardNumber
+        );
+    });
+
+    document.getElementById("cvv").addEventListener("blur", function () {
+        validateField(this, document.getElementById("cvvError"), validateCVV);
+    });
+
+    document.getElementById("expiry").addEventListener("blur", function () {
+        validateField(
+            this,
+            document.getElementById("expiryError"),
+            validateExpiryDate
+        );
+    });
+
+    document.getElementById("id").addEventListener("blur", function () {
+        validateField(this, document.getElementById("idError"), validateID);
+    });
 
     // חישוב מחיר כשהמשתמש בוחר תאריכים
     document.getElementById("from").addEventListener("change", calculatePrice);
     document.getElementById("until").addEventListener("change", calculatePrice);
 
-    // מאזינים לאירוע blur עבור כל שדה
-    document.getElementById("ownerName").addEventListener("blur", validateOwnerName);
-    document.getElementById("dogName").addEventListener("blur", validateDogName);
-    document.getElementById("from").addEventListener("blur", validateDates);
-    document.getElementById("until").addEventListener("blur", validateDates);
-    document.getElementById("card").addEventListener("blur", validateCardNumber);
-    document.getElementById("cvv").addEventListener("blur", validateCVV);
-    document.getElementById("expiry").addEventListener("blur", validateExpiryDate);
-    document.getElementById("id").addEventListener("blur", validateID);
-    document.getElementById("kennel").addEventListener("blur", validateKennel);
-
-    // מאזין להגשת הטופס
-    form.addEventListener("submit", function (event) {
+    // מאזין לכפתור Confirm
+    confirmButton.addEventListener("click", function (event) {
         event.preventDefault(); // למנוע רענון של הדף
 
-        validateOwnerName();
-        validateDogName();
-        validateDates();
-        validateCardNumber();
-        validateCVV();
-        validateExpiryDate();
-        validateID();
+        // ולידציה מלאה של הטופס
+        const isValid =
+            validateField(
+                document.getElementById("ownerName"),
+                document.getElementById("ownerNameError"),
+                validateOwnerName
+            ) &&
+            validateField(
+                document.getElementById("dogName"),
+                document.getElementById("dogNameError"),
+                validateDogName
+            ) &&
+            validateField(
+                document.getElementById("kennel"),
+                document.getElementById("kennelError"),
+                validateKennel
+            ) &&
+            validateField(
+                document.getElementById("card"),
+                document.getElementById("cardError"),
+                validateCardNumber
+            ) &&
+            validateField(
+                document.getElementById("cvv"),
+                document.getElementById("cvvError"),
+                validateCVV
+            ) &&
+            validateField(
+                document.getElementById("expiry"),
+                document.getElementById("expiryError"),
+                validateExpiryDate
+            ) &&
+            validateField(
+                document.getElementById("id"),
+                document.getElementById("idError"),
+                validateID
+            );
 
-        const errors = document.querySelectorAll(".error");
-        const hasErrors = Array.from(errors).some((error) => error.textContent !== "");
-
-        if (!hasErrors) {
-            // שמירת הנתונים ב-localStorage
-            const ownerName = document.getElementById("ownerName").value.trim();
-            const dogName = document.getElementById("dogName").value.trim();
-            const fromDate = document.getElementById("from").value;
-            const untilDate = document.getElementById("until").value;
-            const kennel = document.getElementById("kennel").value; // שדה בחירת הפנסיון
-
-            localStorage.setItem("ownerName", ownerName);
-            localStorage.setItem("dogName", dogName);
-            localStorage.setItem("fromDate", fromDate);
-            localStorage.setItem("untilDate", untilDate);
-            localStorage.setItem("kennel", kennel);
-
-            // מעבר לעמוד Thank You
+        if (isValid) {
+            // שמירת נתונים ב-localStorage
+            localStorage.setItem("ownerName", document.getElementById("ownerName").value.trim());
+            localStorage.setItem("dogName", document.getElementById("dogName").value.trim());
+            localStorage.setItem("kennel", document.getElementById("kennel").value);
+            localStorage.setItem("fromDate", document.getElementById("from").value);
+            localStorage.setItem("untilDate", document.getElementById("until").value);
+            // אם הכל תקין, מעבר לעמוד Thank You
             window.location.href = "Thankyou.html";
         } else {
             alert("Please fix the errors in the form before submitting.");
         }
     });
-    document.addEventListener("DOMContentLoaded", function () {
-        const dogNameInput = document.getElementById("dogName");
-
-        // שליפת שם הכלב מ-localStorage
-        const selectedDogName = localStorage.getItem("selectedDogName");
-        console.log("Selected Dog Name in Form:", selectedDogName); // בדיקה ב-console
-        if (selectedDogName) {
-            dogNameInput.value = selectedDogName; // עדכון השדה עם שם הכלב
-        }
-    });
 
     // כפתור חזרה
-    document.querySelector('.btmType1').addEventListener("click", () => {
+    document.querySelector(".btmType1").addEventListener("click", () => {
         window.location.href = "HomePage.html";
     });
 });
-
-
