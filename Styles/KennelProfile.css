@@ -13,12 +13,11 @@
 
 .MainGrid {
     display: grid;
-    grid-template-columns: 1fr 1fr; /* Two equal columns for content and image */
+    grid-template-columns: 2fr 1fr; /* Two equal columns for content and image */
     grid-gap: 20px;
     width: 100%;
     margin-top: 20px;
 }
-
 
 .left-section {
     padding: 20px;
@@ -27,22 +26,23 @@
 }
 
 .rating {
-    margin-bottom: 20px;
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    margin-bottom: 20px; /* ריווח מתחת לדירוג */
 }
 
-.rating-stars img {
-    width: 40px;
-    height: 40px;
-    margin-right: 5px;
-    transition: transform 0.2s ease;
-}
 
 .rating-stars img:hover {
-    transform: scale(1.1);
+    transform: scale(1.2); /* הגדלה בזמן רחיפה */
 }
 
 .about-section {
     margin-bottom: 20px;
+    padding: 10px;
+    background-color: #fdf6f3;
+    border-radius: 8px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
 }
 
 .info-box {
@@ -50,20 +50,32 @@
     padding: 10px;
     border-radius: 8px;
     margin-top: 10px;
+    font-size: 16px;
+    line-height: 1.5;
+    color: #333;
+    border: 1px solid #ddd;
 }
 
 .unified-box {
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: space-between;
+    display: grid;
+    grid-template-columns: 1fr 1fr; /* שני טורים */
+    gap: 20px;
     margin-top: 20px;
 }
 
-.left-column, .right-column {
-    width: 45%;
-    margin-bottom: 10px;
+.unified-box .left-column,
+.unified-box .right-column {
+    display: flex;
+    flex-direction: column;
+    gap: 10px; /* ריווח בין הפריטים */
 }
 
+.left-column p, .right-column p {
+    margin: 0;
+    line-height: 1.5;
+}
+
+/* תמונה */
 .right-section {
     display: flex;
     justify-content: center;
@@ -74,10 +86,39 @@
     width: 100%;
     max-width: 400px;
     border-radius: 10px;
-    object-fit: cover;
+    object-fit: cover; /* מוודא שהתמונה ממלאת את השטח בצורה יפה */
+    background-color: #f9f9f9;
+    padding: 5px; /* רווח פנימי */
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
 }
 
+/* טקסטים בולטים */
+label, span {
+    font-size: 16px;
+    line-height: 1.5;
+    color: #333;
+}
 
+label {
+    font-weight: bold;
+    color: #6b4226;
+    margin-right: 5px; /* רווח אופקי בין תווית לערך */
+}
+
+.detail-row {
+    display: flex;
+    align-items: baseline; /* יישור התוויות והערכים */
+    margin-bottom: 10px; /* רווח בין השורות */
+}
+
+.detail-row label {
+    flex: 0 0 150px; /* גודל קבוע לתוויות */
+    text-align: left;
+}
+
+.detail-row span {
+    flex: 1; /* הערכים יתפסו את השטח הנותר */
+}
 
 /* Responsive Design for Small Screens */
 @media (max-width: 768px) {
@@ -92,78 +133,4 @@
     .dog-picture {
         max-width: 100%; /* Make sure image takes full width on mobile */
     }
-}
-
-/* מבנה העמוד */
-.kennel-container {
-    display: grid;
-    grid-template-columns: 1fr 2fr; /* 1 חלק לתמונה, 2 חלקים למידע */
-    gap: 20px;
-    max-width: 1000px;
-    margin: 20px auto;
-    padding: 20px;
-    background-color: #fff;
-    border-radius: 10px;
-    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
-}
-
-/* תמונה */
-.kennel-image img {
-    width: 100%;
-    height: auto;
-    border-radius: 10px;
-    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
-    object-fit: cover;
-}
-
-/* חלוקה ל-columns במידע */
-.unified-box {
-    display: grid;
-    grid-template-columns: 1fr 1fr; /* שני טורים */
-    gap: 20px;
-}
-
-.unified-box .left-column,
-.unified-box .right-column {
-    display: flex;
-    flex-direction: column;
-    gap: 10px; /* ריווח בין הפריטים */
-}
-
-.left-column p,
-.right-column p {
-    margin: 0;
-}
-
-/* דירוג (Grade) */
-.rating {
-    display: flex;
-    align-items: center;
-    gap: 10px; /* ריווח בין התווית לעצמות */
-}
-
-.rating-stars img {
-    width: 20px;
-    height: auto;
-}
-
-/* טקסט מרכזי */
-.about-section {
-    margin-top: 20px;
-}
-
-.info-box {
-    font-size: 16px;
-    line-height: 1.5;
-    color: #333;
-    padding: 10px;
-    border: 1px solid #ddd;
-    border-radius: 5px;
-    background-color: #f9f9f9;
-}
-
-/* טקסטים בולטים */
-label {
-    font-weight: bold;
-    color: #6b4226;
 }

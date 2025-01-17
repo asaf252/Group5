@@ -45,18 +45,28 @@ document.addEventListener("DOMContentLoaded", function () {
 
         // פרטי קשר
         const contactCell = document.createElement("td");
-        contactCell.innerHTML = `
-            <p>Phone: ${kennel.contact}</p>
-            <button class="btmType1">More details</button>
-        `;
+        const detailsButton = document.createElement("button");
+        detailsButton.textContent = "More details";
+        detailsButton.className = "btmType1";
+
+        // הוספת אירוע קליק לכפתור
+        detailsButton.addEventListener("click", function () {
+            // מעבר לעמוד הפרטים עם שם הפנסיון
+            const encodedName = encodeURIComponent(kennel.name); // קידוד השם כדי להתאים ל-URL
+            location.href = `../Templets/kennelProfile.html?name=${encodedName}`;
+        });
+
+        contactCell.innerHTML = `<p>Phone: ${kennel.contact}</p>`;
+        contactCell.appendChild(detailsButton);
         row.appendChild(contactCell);
 
         // הוספת השורה לטבלה
         tableBody.appendChild(row);
     });
-   // האזנה ללחיצה על כפתור Back
+
+    // האזנה ללחיצה על כפתור Back
     const backButton = document.getElementById("backButton");
     backButton.addEventListener("click", function () {
-        location.href = "SearchInParadise.html"; // שם הקובץ של עמוד החיפוש
+        location.href = "../Templets/SearchInParadise.html"; // שם הקובץ של עמוד החיפוש
     });
 });
