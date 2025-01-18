@@ -1,4 +1,3 @@
-/*---------------------- Generic for pages-----------------*/
 body {
     margin: 0;
     font-family:  'Arial',sans-serif;
@@ -46,10 +45,6 @@ table {
     text-align: center; /* יישור כל האלמנטים בתוך הקונטיינר למרכז */
 }
 
-/* עיצוב לתאי כותרת */
-
-
-/* עיצוב לתאים רגילים */
 table tr {
     text-align: center; /* יישור טקסט למרכז */
     vertical-align: middle; /* יישור אנכי למרכז */
@@ -71,15 +66,7 @@ table td {
     color: #5a3a29; /* צבע טקסט */
     word-wrap: break-word; /* שבירת טקסט אם ארוך מדי */
   background-color: #fff7f0;
-
-
 }
-
-
-
-/*---------------------- END Generic for pages-----------------*/
-
-/*---------------------- Main styles for all pages-----------------*/
 
 .Logo {
     width: 20px; /* רוחב התמונה */
@@ -94,7 +81,6 @@ table td {
     display: inline-block; /* מבטיח יישור אחיד */
     vertical-align: middle;
 }
-
 .MainStyle {
     display: flex; /* הפיכת הקופסה לקונטיינר של Flexbox */
     flex-direction: column; /* שמירה על סדר אנכי של האלמנטים */
@@ -109,9 +95,6 @@ table td {
     box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
     box-sizing: border-box; /* מונע overflow */
 }
-
-
-
 .myBackground {
     background-image: url('../Photos/Paws.png'); /* מיקום התמונה */
     background-repeat: repeat; /* התמונה לא תחזור */
@@ -120,7 +103,6 @@ table td {
     width: 100%;
     height: 500px; /* קבע גובה אחיד */
 }
-
 .regularIMG {
     width: 150px; /* רוחב התיבה */
     height: 150px; /* גובה התיבה */
@@ -136,7 +118,6 @@ table td {
     float: left;
 }
 
-/* רשת פרופיל הכלב */
 .MainGrid {
     display: grid;
     grid-template-columns:   1fr 2fr 1.5fr; /* שלוש עמודות */
@@ -147,7 +128,6 @@ table td {
     margin: 10%; /* מרכז את ה-Grid בתוך האב */
 }
 
-/* עיצוב התוויות (label) */
 .MainGrid label {
     font-weight: bold;
     padding-right: 10px;
@@ -155,7 +135,6 @@ table td {
     text-align: start;
 }
 
-/* עיצוב הערכים (span) */
 .MainGrid span {
     background-color: #fff;
     padding: 6px;
@@ -171,11 +150,6 @@ table td {
     border-radius: 5px;
     font-size: 1rem;
 }
-
-
-/*----------------------END Main styles for all pages-----------------*/
-
-/*---------------------- forms-----------------*/
 
 form label {
     display: block; /* מציג את התווית בשורה נפרדת */
@@ -200,9 +174,6 @@ form span {
     font-size: 0.9rem; /* גודל טקסט */
     white-space: pre-line; /* תמיכה בשבירת שורות עם \n */
     margin-top: 5px; /* רווח קטן מעל ההודעה */
-
-
-
 }
 
 
@@ -213,7 +184,6 @@ form span {
 }
 
 
-/*---------------------- form Login end-----------------*/
 
 /*---------------------- btm1-----------------*/
 
@@ -232,11 +202,7 @@ form span {
     background-color: #f3d8c7;
     color: #5a3a29;
 }
-
-/*----------------------END btm1-----------------*/
-
 /*---------------------- btm2-----------------*/
-
 .btmType2 {
     background-color: #d9a764; /* צבע רקע כהה יותר */
     color: #ffffff; /* צבע טקסט לבן */
@@ -246,8 +212,6 @@ form span {
     align-items: center;
     gap: 10px;
 }
-
-/*----------------------END btm2-----------------*/
 /*---------------------- btm3-----------------*/
 .btmType3{
     background-color: #d3a18a; /* צבע כהה יותר */
@@ -256,21 +220,12 @@ form span {
     border: 1px solid #5a3a29;
     font-size: 16px;
     font-weight: bold;
-
 }
-
 .btmType3:hover {
     background-color: #f3d8c7;
     color: #5a3a29;
 }
-/*----------------------END btm3-----------------*/
 
-
-/*----------------------END About US Page-----------------*/
-
-/*---------------------- Profile Grid Page-----------------*/
-
-/* תפריט נפתח */
 .dog-select {
     padding: 10px;
     font-size: 1rem;
@@ -295,10 +250,7 @@ form span {
     height: 100%; /* מתאים את התמונה לגובה המיכל */
     border-radius: 10px; /* פינות מעוגלות */
 }
-/*----------------------END Profile Grid Page-----------------*/
-/*----------------------rate your stay page-----------------*/
 
-/* עיצוב לדירוג */
 .rating {
     display: flex;
     gap: 10px;
@@ -311,8 +263,6 @@ form span {
     display: none; /* מסתיר את תיבות הסימון */
 }
 
-
-
 .rating label {
     cursor: pointer;
 }
@@ -323,14 +273,12 @@ form span {
     transition: transform 0.2s, border 0.2s; /* אפקטים של שינוי */
 }
 
-/* סימון העצם כאשר היא נבחרת */
 .rating input[type="checkbox"]:checked + label img {
     transform: scale(1.2); /* הגדלת העצם */
     border: 2px solid #5a3a29; /* מסגרת קבועה */
     border-radius: 5px;
 }
 
-/* הגדלת העצם כאשר משתמשים ב-hover */
 .rating label:hover img {
     transform: scale(1.2); /* הגדלת העצם */
     border: 2px solid #5a3a29; /* מסגרת זמנית */

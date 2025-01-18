@@ -1,5 +1,4 @@
 .LogInMain {
-
     padding: 30px; /* יותר רווח פנימי */
     background-color: #f8ece6;
     text-align: left;
@@ -10,9 +9,8 @@
     margin: 10px;
     box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
     top: 50%; /* ממקם 50% מגובה ההורה */
-
 }
-/*---------------------- התאמות למסכים קטנים ----------------------*/
+
 @media (max-width: 768px) {
     .MainStyle {
         padding: 20px; /* הפחתת הריווח */

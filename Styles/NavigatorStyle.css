@@ -13,21 +13,13 @@
     box-sizing: border-box; /* מוודא שה-padding נכלל ברוחב */
     margin-bottom: 20px; /* רווח תחתון */
 }
-
-
-
-
-/* סגנון לגלילה (אופציונלי) */
 #Navigator::-webkit-scrollbar {
     height: 5px; /* גובה גלילה קטן */
 }
-
 #Navigator::-webkit-scrollbar-thumb {
     background-color: #d9a18a; /* צבע פס הגלילה */
     border-radius: 10px; /* פינות מעוגלות */
 }
-
-
 #Navigator a {
     text-decoration: none; /* ביטול הקו התחתון */
     color: #5d3b0b; /* צבע טקסט */
@@ -42,8 +34,6 @@
     color: #fff; /* טקסט לבן */
     cursor: pointer; /* סמן יד לחיצה */
 }
-
-/* מפריד בין הקישורים */
 #Navigator a + a::before {
     content: "|"; /* מפריד */
     color: #5d3b0b; /* צבע המפריד */

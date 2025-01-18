@@ -1,5 +1,4 @@
  .PaymentStyle {
-
     background-color: #fff7f0; /* צבע רקע */
     border: 1px solid #d9a18a; /* גבול */
     border-radius: 15px; /* פינות מעוגלות */
@@ -13,49 +12,41 @@
     flex-direction: column; /* תוכן מסודר אנכית */
     gap: 20px; /* ריווח בין האלמנטים */
     align-items: center; /* יישור תמונה וטקסט אנכית */
-
 }
  h1 , h2{
     text-align: center; /* ממרכז את הטקסט */
     margin: 10px 0; /* רווחים למעלה ולמטה */
 }
-  /* סגנון לטופס */
 .form-grid {
     display: grid;
     grid-template-columns: repeat(2, 1fr); /* שני עמודות */
     gap: 20px; /* רווח בין השדות */
     margin: 20px 0;
 }
-
 .form-group {
     display: flex;
     flex-direction: column;
 }
-
 label {
     font-weight: bold;
     margin-bottom: 5px;
 }
-
 input, select {
     padding: 10px;
     border: 1px solid #ccc;
     border-radius: 5px;
     font-size: 16px;
 }
-
 .error {
     color: red;
     font-size: 14px;
     margin-top: 5px;
 }
-
 footer.Raw {
     display: flex;
     justify-content: space-between;
     margin-top: 20px;
 }
-/* עיצוב כולל לשורת המחיר */
 .form-group.price-row {
     display: flex;
     justify-content: center; /* ממרכז את השורה */
@@ -70,8 +61,6 @@ select {
     border-radius: 4px;
     background-color: #f9f9f9;
 }
-
-/* כותרת טופס */
 .ProfilePageTitle {
     font-size: 2.5rem;
     font-weight: bold;

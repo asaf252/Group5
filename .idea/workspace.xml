@@ -5,16 +5,29 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="3a85256d-f386-4d1b-8f4c-d1287acb997b" name="Changes" comment="check">
+      <change afterPath="$PROJECT_DIR$/README.docx" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/shelf/Uncommitted_changes_before_Update_at_1_10_2025_12_24_PM_[Changes]/kennelDogs.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/shelf/Uncommitted_changes_before_Update_at_1_10_2025_12_24_PM_[Changes]/shelved.patch" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/shelf/Uncommitted_changes_before_Update_at_1_10_2025_12_24_PM__Changes_.xml" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/shelf/Uncommitted_changes_before_rebase_[Changes]/kennelDogs.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/shelf/Uncommitted_changes_before_rebase_[Changes]/shelved.patch" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/shelf/Uncommitted_changes_before_rebase_[Changes]/shelved.patch" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/shelf/Uncommitted_changes_before_rebase_[Changes]/shelved.patch" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/shelf/Uncommitted_changes_before_rebase_[Changes]1/kennelDogs.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/shelf/Uncommitted_changes_before_rebase_[Changes]1/shelved.patch" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/shelf/Uncommitted_changes_before_rebase__Changes_.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/shelf/Uncommitted_changes_before_rebase_[Changes]2/kennelDogs.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/shelf/Uncommitted_changes_before_rebase__Changes_.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/shelf/Uncommitted_changes_before_rebase__Changes_.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/shelf/Uncommitted_changes_before_rebase__Changes_1.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/shelf/Uncommitted_changes_before_rebase__Changes_2.xml" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Styles/AboutUs.css" beforeDir="false" afterPath="$PROJECT_DIR$/Styles/AboutUs.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Styles/HomePage.css" beforeDir="false" afterPath="$PROJECT_DIR$/Styles/HomePage.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Styles/KennelProfile.css" beforeDir="false" afterPath="$PROJECT_DIR$/Styles/KennelProfile.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Styles/LogInPage.css" beforeDir="false" afterPath="$PROJECT_DIR$/Styles/LogInPage.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Templets/LogInPage.html" beforeDir="false" afterPath="$PROJECT_DIR$/Templets/LogInPage.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Templets/MakeOrder.html" beforeDir="false" afterPath="$PROJECT_DIR$/Templets/MakeOrder.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Templets/ProfileForNewDog.html" beforeDir="false" afterPath="$PROJECT_DIR$/Templets/ProfileForNewDog.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Templets/ProfilePage.html" beforeDir="false" afterPath="$PROJECT_DIR$/Templets/ProfilePage.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Templets/SignUp.html" beforeDir="false" afterPath="$PROJECT_DIR$/Templets/SignUp.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Templets/Thankyou.html" beforeDir="false" afterPath="$PROJECT_DIR$/Templets/Thankyou.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Templets/Topkennels.html" beforeDir="false" afterPath="$PROJECT_DIR$/Templets/Topkennels.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Templets/kennelProfile.html" beforeDir="false" afterPath="$PROJECT_DIR$/Templets/kennelProfile.html" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -24,10 +37,10 @@
   <component name="FileTemplateManagerImpl">
     <option name="RECENT_TEMPLATES">
       <list>
-        <option value="TypeScript File" />
         <option value="HTML File" />
-        <option value="CSS File" />
+        <option value="TypeScript File" />
         <option value="JavaScript File" />
+        <option value="CSS File" />
       </list>
     </option>
   </component>
@@ -54,14 +67,14 @@
   <component name="GithubPullRequestsUISettings">{
   &quot;selectedUrlAndAccountId&quot;: {
     &quot;url&quot;: &quot;https://github.com/asaf252/Group5.git&quot;,
-    &quot;accountId&quot;: &quot;6fc33878-fb05-4e67-8f42-87d78fbefc37&quot;
+    &quot;accountId&quot;: &quot;1fb6d962-10f6-4f10-b84e-f017f1e0cd10&quot;
   }
 }</component>
   <component name="HighlightingSettingsPerFile">
     <setting file="file://$PROJECT_DIR$/RateYourStay.js" root0="SKIP_INSPECTION" />
   </component>
   <component name="ProblemsViewState">
-    <option name="selectedTabId" value="QODANA_PROBLEMS_VIEW_TAB" />
+    <option name="selectedTabId" value="CurrentFile" />
     <option name="showPreview" value="true" />
   </component>
   <component name="ProjectColorInfo">{
@@ -79,9 +92,8 @@
     &quot;Node.js.RateYourStay.js.executor&quot;: &quot;Debug&quot;,
     &quot;Python.main.executor&quot;: &quot;Run&quot;,
     &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
-    &quot;RunOnceActivity.git.unshallow&quot;: &quot;true&quot;,
     &quot;git-widget-placeholder&quot;: &quot;main&quot;,
-    &quot;last_opened_file_path&quot;: &quot;C:/Users/halfo/PycharmProjects/Group5/Photos&quot;,
+    &quot;last_opened_file_path&quot;: &quot;C:/Users/halfo/PycharmProjects/Group5&quot;,
     &quot;list.type.of.created.stylesheet&quot;: &quot;CSS&quot;,
     &quot;node.js.detected.package.eslint&quot;: &quot;true&quot;,
     &quot;node.js.detected.package.tslint&quot;: &quot;true&quot;,
@@ -105,10 +117,10 @@
 }</component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
-      <recent name="C:\Users\halfo\PycharmProjects\Group5\Photos" />
       <recent name="C:\Users\halfo\PycharmProjects\Group5" />
     </key>
     <key name="MoveFile.RECENT_KEYS">
+      <recent name="C:\Users\assaf\PycharmProjects\Paw_Paradise_Group5" />
       <recent name="C:\Users\assaf\PycharmProjects\Paw_Paradise_Group5\PartA" />
       <recent name="C:\Users\assaf\PycharmProjects\Paw_Paradise_Group5\Photos" />
     </key>
@@ -149,8 +161,8 @@
   <component name="SharedIndexes">
     <attachedChunks>
       <set>
-        <option value="bundled-js-predefined-d6986cc7102b-deb605915726-JavaScript-PY-243.22562.180" />
-        <option value="bundled-python-sdk-85c76a3b01b3-9a18a617cbe4-com.jetbrains.pycharm.pro.sharedIndexes.bundled-PY-243.22562.180" />
+        <option value="bundled-js-predefined-d6986cc7102b-5c90d61e3bab-JavaScript-PY-242.23726.102" />
+        <option value="bundled-python-sdk-5e1850174b45-399fe30bd8c1-com.jetbrains.pycharm.pro.sharedIndexes.bundled-PY-242.23726.102" />
       </set>
     </attachedChunks>
   </component>
@@ -169,12 +181,7 @@
       <workItem from="1734595489538" duration="2973000" />
       <workItem from="1734896107753" duration="3828000" />
       <workItem from="1735745496506" duration="10312000" />
-      <workItem from="1736195176743" duration="21080000" />
-      <workItem from="1736352983341" duration="1546000" />
-      <workItem from="1736520498137" duration="690000" />
-      <workItem from="1736626391006" duration="3396000" />
-      <workItem from="1736680288696" duration="11382000" />
-      <workItem from="1737040098124" duration="2575000" />
+      <workItem from="1736195176743" duration="20918000" />
     </task>
     <task id="LOCAL‎-00001" summary="check">
       <option name="closed" value="true" />
@@ -448,79 +455,7 @@
       <option name="project" value="LOCAL‎" />
       <updated>1735755363327</updated>
     </task>
-    <task id="LOCAL‎-00035" summary="check">
-      <option name="closed" value="true" />
-      <created>1736266227731</created>
-      <option name="number" value="00035" />
-      <option name="presentableId" value="LOCAL‎-00035" />
-      <option name="project" value="LOCAL‎" />
-      <updated>1736266227731</updated>
-    </task>
-    <task id="LOCAL‎-00036" summary="check">
-      <option name="closed" value="true" />
-      <created>1736520515304</created>
-      <option name="number" value="00036" />
-      <option name="presentableId" value="LOCAL‎-00036" />
-      <option name="project" value="LOCAL‎" />
-      <updated>1736520515304</updated>
-    </task>
-    <task id="LOCAL‎-00037" summary="check">
-      <option name="closed" value="true" />
-      <created>1736695081635</created>
-      <option name="number" value="00037" />
-      <option name="presentableId" value="LOCAL‎-00037" />
-      <option name="project" value="LOCAL‎" />
-      <updated>1736695081635</updated>
-    </task>
-    <task id="LOCAL-00038" summary="check">
-      <option name="closed" value="true" />
-      <created>1737041124100</created>
-      <option name="number" value="00038" />
-      <option name="presentableId" value="LOCAL-00038" />
-      <option name="project" value="LOCAL" />
-      <updated>1737041124100</updated>
-    </task>
-    <task id="LOCAL-00039" summary="check">
-      <option name="closed" value="true" />
-      <created>1737041233150</created>
-      <option name="number" value="00039" />
-      <option name="presentableId" value="LOCAL-00039" />
-      <option name="project" value="LOCAL" />
-      <updated>1737041233150</updated>
-    </task>
-    <task id="LOCAL-00040" summary="check">
-      <option name="closed" value="true" />
-      <created>1737051842001</created>
-      <option name="number" value="00040" />
-      <option name="presentableId" value="LOCAL-00040" />
-      <option name="project" value="LOCAL" />
-      <updated>1737051842004</updated>
-    </task>
-    <task id="LOCAL-00041" summary="check">
-      <option name="closed" value="true" />
-      <created>1737051849332</created>
-      <option name="number" value="00041" />
-      <option name="presentableId" value="LOCAL-00041" />
-      <option name="project" value="LOCAL" />
-      <updated>1737051849332</updated>
-    </task>
-    <task id="LOCAL-00042" summary="check">
-      <option name="closed" value="true" />
-      <created>1737053902888</created>
-      <option name="number" value="00042" />
-      <option name="presentableId" value="LOCAL-00042" />
-      <option name="project" value="LOCAL" />
-      <updated>1737053902888</updated>
-    </task>
-    <task id="LOCAL-00043" summary="check">
-      <option name="closed" value="true" />
-      <created>1737120016166</created>
-      <option name="number" value="00043" />
-      <option name="presentableId" value="LOCAL-00043" />
-      <option name="project" value="LOCAL" />
-      <updated>1737120016166</updated>
-    </task>
-    <option name="localTasksCounter" value="44" />
+    <option name="localTasksCounter" value="35" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -554,6 +489,13 @@
               </option>
               <option name="FILTERS">
                 <map>
+                  <entry key="branch">
+                    <value>
+                      <list>
+                        <option value="origin/main" />
+                      </list>
+                    </value>
+                  </entry>
                   <entry key="structure">
                     <value>
                       <list>

@@ -1,0 +1,204 @@
+Index: kennelProfile.html
+===================================================================
+diff --git a/kennelProfile.html b/kennelProfile.html
+new file mode 100644
+--- /dev/null	(date 1736504706102)
++++ b/kennelProfile.html	(date 1736504706102)
+@@ -0,0 +1,69 @@
++<!DOCTYPE html>
++<html lang="en">
++<head>
++    <meta charset="UTF-8">
++    <meta name="viewport" content="width=device-width, initial-scale=1.0">
++    <title>Kennel Profile</title>
++    <link rel="stylesheet" href="PawStyles.css">
++</head>
++<body class="myBackground">
++    <div class="MainStyle">
++        <!-- Header -->
++        <header>
++            <h1>Kennel Profile</h1>
++        </header>
++
++        <!-- Main Content -->
++        <div class="MainGrid">
++            <!-- Grade Section -->
++            <div class="rating">
++                <label><strong>Grade:</strong></label>
++                <div class="rating" style="margin-top: 10px;">
++                    <img src="DogBonePic.png" class="LogoBone" alt="Dog Bone">
++    <img src="DogBonePic.png" class="LogoBone" alt="Dog Bone">
++    <img src="DogBonePic.png" class="LogoBone" alt="Dog Bone">
++    <img src="DogBonePic.png" class="LogoBone" alt="Dog Bone">
++                </div>
++            </div>
++
++            <!-- About Kennel Section -->
++            <div class="about-section">
++                <label><strong>About Kennel:</strong></label>
++                <div class="info-box">
++                    A cozy and safe place for your dog with 24/7 care and large play areas.
++                </div>
++            </div>
++
++            <!-- Kennel Picture -->
++            <div class="image-section">
++                <img src="kennelDogs.jpg" class="dog-picture">
++            </div>
++        </div>
++
++
++    <!-- בוקס שמאלי -->
++ <div class="unified-box">
++        <div class="left-column">
++            <p><strong>Kennel Name:</strong> Paw Paradise</p>
++            <p><strong>Address:</strong> 123 Dog Street, Barkville</p>
++            <p><strong>Regular Price:</strong> $25 per night</p>
++            <p><strong>Weekend Price:</strong> $30 per night</p>
++        </div>
++        <div class="right-column">
++            <p><strong>Dog Type:</strong> All Breeds</p>
++            <p><strong>Capacity:</strong> 15 Dogs</p>
++            <p><strong>Distance from You:</strong> 5 km</p>
++            <p><strong>Phone Number:</strong> +1-800-DOG-CARE</p>
++        </div>
++    </div>
++
++    <!-- הכפתורים -->
++    <footer class="Raw">
++        <button type="button" class="btmType1">Back</button>
++        <button type="button" class="btmType2">Order Your Kennel!</button>
++    </footer>
++</div>
++
++
++</body>
++</html>
+Index: PaymentPage.html
+===================================================================
+diff --git a/PaymentPage.html b/PaymentPage.html
+new file mode 100644
+--- /dev/null	(date 1736504706102)
++++ b/PaymentPage.html	(date 1736504706102)
+@@ -0,0 +1,66 @@
++<!DOCTYPE html>
++<html lang="en">
++<head>
++    <meta charset="UTF-8">
++    <title>Make an order in paradise</title>
++<link rel="stylesheet" href="PawStyles.css">
++</head>
++<body class="myBackground">
++<div class="MainStyle">
++    <form>
++        <header>
++            <h1>Make an order in paradise</h1>
++         <h2>Book Your Dog's Stay</h2>
++        </header>
++
++        <!-- טופס -->
++         <form>
++            <div class="form-row">
++                <div class="form-group">
++                    <label for="from">From:</label>
++                    <input type="date" id="from" name="from">
++                </div>
++                <div class="form-group">
++                    <label for="until">Until:</label>
++                    <input type="date" id="until" name="until">
++                </div>
++            </div>
++           <div class=".form-group.form-row">
++    <label for="price">Total Price:</label>
++    <label id="price">$50</label>
++</div>
++            <div class="form-group">
++                <label for="card">Card Number:</label>
++                <input type="text" id="card" name="card">
++            </div>
++            <div class="form-row">
++                <div class="form-group">
++                    <label for="type">Payment Type:</label>
++                    <select id="type" name="type">
++                        <option value="credit">Credit</option>
++                        <option value="debit">Debit</option>
++                    </select>
++                </div>
++                <div class="form-group">
++                    <label for="cvv">CVV:</label>
++                    <input type="text" id="cvv" name="cvv">
++                </div>
++                <div class="form-group">
++                    <label for="expiry">Year/Month:</label>
++                    <input type="text" id="expiry" name="expiry" placeholder="YYYY/MM">
++                </div>
++            </div>
++            <div class="form-group">
++                <label for="id">ID Number:</label>
++                <input type="text" id="id" name="id">
++            </div>
++     <footer class="Raw">
++                <button type="button" class="btmType1" >Back</button>
++                <button class="btmType3">Cancellation and Payment Policy</button>
++                <button type="submit" class="btmType2">Confirm</button>
++            </footer>
++        </form>
++    </div>
++
++</body>
++</html>
+\ No newline at end of file
+Index: PawStyles.css
+IDEA additional info:
+Subsystem: com.intellij.openapi.diff.impl.patch.BaseRevisionTextPatchEP
+<+>/*---------------------- Generic for pages-----------------*/\r\nbody {\r\n    margin: 0;\r\n    font-family:  'Arial',sans-serif;\r\n    background-color: #f8ece6;\r\n    color: #5a3a29;\r\n    display: flex;\r\n    justify-content: center;\r\n    align-items: center;\r\n    min-height: 150vh; /* גובה המינימום של החלון */\r\n}\r\n\r\nheader h1 {\r\n    font-size: 2.5rem;\r\n    font-weight: bold;\r\n    margin: 0;\r\n    color: #7b4d3a;\r\n}\r\n\r\nmain h2 {\r\n    font-size: 1.8rem;\r\n    margin-bottom: 10px;\r\n}\r\n\r\nheader p {\r\n    margin: 10px 0 20px;\r\n    font-size: 1.1rem;\r\n}\r\n\r\nbutton {\r\n    display: block;\r\n    width: 100%;\r\n    margin: 10px 0;\r\n    padding: 10px;\r\n    font-size: 1rem;\r\n    border: none;\r\n    border-radius: 5px;\r\n    cursor: pointer;\r\n}\r\ntable {\r\n    align-content: center;\r\n    table-layout: fixed; /* פריסת עמודות קבועה */\r\n    border-collapse: collapse; /* איחוד גבולות */\r\n    margin: 20px 20px; /* רווח מסביב לטבלה */\r\n    background-color: #fdf6f3; /* צבע רקע לטבלה */\r\n    text-align: center; /* יישור כל האלמנטים בתוך הקונטיינר למרכז */\r\n}\r\n\r\n/* עיצוב לתאי כותרת */\r\n\r\n\r\n/* עיצוב לתאים רגילים */\r\ntable tr {\r\n    text-align: center; /* יישור טקסט למרכז */\r\n    vertical-align: middle; /* יישור אנכי למרכז */\r\n    padding: 10px; /* ריווח פנימי */\r\n    background-color: #d9a18a; /* צבע רקע לכותרת */\r\n    color: #5a3a29; /* צבע טקסט */\r\n    font-weight: bold; /* טקסט מודגש */\r\n    font-size: 1.2rem; /* גודל טקסט */\r\n    border: 1px solid #5a3a29; /* גבול */\r\n    word-wrap: break-word; /* שבירת טקסט אם ארוך מדי */\r\n}\r\n\r\ntable td {\r\n    text-align: center; /* יישור טקסט למרכז */\r\n    vertical-align: middle; /* יישור אנכי למרכז */\r\n    padding: 10px; /* ריווח פנימי */\r\n    border: 1px solid #5a3a29; /* גבול */\r\n    font-size: 1rem; /* גודל טקסט */\r\n    color: #5a3a29; /* צבע טקסט */\r\n    word-wrap: break-word; /* שבירת טקסט אם ארוך מדי */\r\n  background-color: #fff7f0;\r\n\r\n\r\n}\r\n\r\n\r\n\r\n/*---------------------- END Generic for pages-----------------*/\r\n\r\n/*---------------------- Main styles for all pages-----------------*/\r\n\r\n.Logo {\r\n    width: 20px; /* רוחב התמונה */\r\n    height: 20px; /* גובה התמונה */\r\n    vertical-align: middle; /* מוודא שהתמונה בקו אחד עם הטקסט */\r\n}\r\n.LogoBone {\r\n    width: 60px;\r\n    height: 60px;\r\n    margin-right: 0px;\r\n    margin-bottom: 0;\r\n    display: inline-block; /* מבטיח יישור אחיד */\r\n    vertical-align: middle;\r\n}\r\n\r\n.MainStyle {\r\n    display: flex; /* הפיכת הקופסה לקונטיינר של Flexbox */\r\n    flex-direction: column; /* שמירה על סדר אנכי של האלמנטים */\r\n    justify-content: center; /* ממרכז את התוכן הפנימי אנכית */\r\n    align-items: center; /* ממרכז את התוכן הפנימי אופקית */\r\n    text-align: center; /* ממרכז את הטקסט בתוך האלמנטים */\r\n    padding: 30px 30px;\r\n    width: 95%;\r\n    max-width: 1000px;\r\n    background-color: #fff7f0;\r\n    border-radius: 15px;\r\n    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);\r\n    box-sizing: border-box; /* מונע overflow */\r\n}\r\n\r\n\r\n\r\n.myBackground {\r\n    background-image: url('Photos/Paws.png'); /* מיקום התמונה */\r\n    background-repeat: repeat; /* התמונה לא תחזור */\r\n    background-position: right center; /* מצמיד את התמונה לימין ומרכז אנכית */\r\n    background-size: contain; /* מתאים את גודל התמונה לפי היחס שלה */\r\n    width: 100%;\r\n    height: 500px; /* קבע גובה אחיד */\r\n}\r\n\r\n.regularIMG {\r\n    width: 150px; /* רוחב התיבה */\r\n    height: 150px; /* גובה התיבה */\r\n    border: 2px solid #5a3a29; /* גבול */\r\n    border-radius: 10px; /* פינות מעוגלות */\r\n    display: flex; /* ממרכז תוכן אנכית ואופקית */\r\n    justify-content: center;\r\n    align-items: center;\r\n    background-color: white; /* צבע רקע */\r\n    font-size: 1rem; /* גודל טקסט */\r\n    font-weight: bold; /* טקסט מודגש */\r\n    color: #5a3a29;\r\n    float: left;\r\n}\r\n\r\n/* רשת פרופיל הכלב */\r\n.MainGrid {\r\n    display: grid;\r\n    grid-template-columns:   1fr 2fr 1.5fr; /* שלוש עמודות */\r\n    grid-gap: 15px; /* רווח בין האלמנטים */\r\n    align-items: start;\r\n    width: 100%; /* התאמה מלאה לרוחב האב */\r\n    max-width: 100%; /* ודא שלא יחרוג מגבולות האב */\r\n    margin: 10%; /* מרכז את ה-Grid בתוך האב */\r\n}\r\n\r\n/* עיצוב התוויות (label) */\r\n.MainGrid label {\r\n    font-weight: bold;\r\n    padding-right: 10px;\r\n    align-self: center;\r\n    text-align: start;\r\n}\r\n\r\n/* עיצוב הערכים (span) */\r\n.MainGrid span {\r\n    background-color: #fff;\r\n    padding: 6px;\r\n    border: 1px solid #5a3a29;\r\n    border-radius: 5px;\r\n    font-size: 1rem;\r\n}\r\n\r\n.MainGrid input {\r\n    background-color: #fff;\r\n    padding: 6px;\r\n    border: 1px solid #5a3a29;\r\n    border-radius: 5px;\r\n    font-size: 1rem;\r\n}\r\n\r\n\r\n/*----------------------END Main styles for all pages-----------------*/\r\n\r\n/*---------------------- form Login-----------------*/\r\n\r\nform label {\r\n    display: block; /* מציג את התווית בשורה נפרדת */\r\n    text-align: left; /* יישור שמאל */\r\n    margin: 10px 0 5px; /* מרווח סביב */\r\n    font-size: 20px; /* גודל טקסט */\r\n    font-weight: bold;\r\n}\r\n\r\nform input,form select {\r\n    width: 95%; /* רוחב מלא */\r\n    padding: 10px; /* ריווח פנימי */\r\n    margin-bottom: 15px; /* מרווח תחתון */\r\n    border: 1px solid #ccc; /* גבול אפור */\r\n    border-radius: 5px; /* קצוות מעוגלים */\r\n    font-size: 16px; /* גודל טקסט */\r\n}\r\n\r\nform span {\r\n    display: block; /* הופך את ה-span ל-block כדי לאפשר שבירת שורות */\r\n    color: red; /* צבע אדום לשגיאה */\r\n    font-size: 0.9rem; /* גודל טקסט */\r\n    white-space: pre-line; /* תמיכה בשבירת שורות עם \\n */\r\n    margin-top: 5px; /* רווח קטן מעל ההודעה */\r\n\r\n\r\n\r\n}\r\n\r\n\r\n.Raw {\r\n    display: flex; /* מציג את הכפתורים בשורה */\r\n    justify-content: center; /* ממרכז את הכפתורים */\r\n    gap: 20px; /* יוצר רווח של 20 פיקסלים בין הכפתורים */\r\n}\r\n\r\n\r\n/*---------------------- form Login end-----------------*/\r\n\r\n/*---------------------- btm1-----------------*/\r\n\r\n.btmType1 {\r\n    background-color: #7b4d3a; /* צבע חום כהה */\r\n    color: #ffffff; /* צבע טקסט */\r\n    border: 1px solid #5a3a29;\r\n    font-weight: bold;\r\n    display: flex;\r\n    justify-content: center;\r\n    align-items: center;\r\n    gap: 10px;\r\n}\r\n\r\n.btmType1:hover {\r\n    background-color: #f3d8c7;\r\n    color: #5a3a29;\r\n}\r\n\r\n/*----------------------END btm1-----------------*/\r\n\r\n/*---------------------- btm2-----------------*/\r\n\r\n.btmType2 {\r\n    background-color: #d9a764; /* צבע רקע כהה יותר */\r\n    color: #ffffff; /* צבע טקסט לבן */\r\n    font-weight: bold;\r\n    display: flex;\r\n    justify-content: center;\r\n    align-items: center;\r\n    gap: 10px;\r\n}\r\n\r\n/*----------------------END btm2-----------------*/\r\n/*---------------------- btm3-----------------*/\r\n.btmType3{\r\n    background-color: #d3a18a; /* צבע כהה יותר */\r\n    color: #5a3a29;\r\n    padding: 10px 20px;\r\n    border: 1px solid #5a3a29;\r\n    font-size: 16px;\r\n    font-weight: bold;\r\n\r\n}\r\n\r\n.btmType3:hover {\r\n    background-color: #f3d8c7;\r\n    color: #5a3a29;\r\n}\r\n/*----------------------END btm3-----------------*/\r\n\r\n\r\n/*----------------------END About US Page-----------------*/\r\n\r\n/*---------------------- Profile Grid Page-----------------*/\r\n\r\n.Dogprofilepage {\r\n\r\n    padding: 30px; /* יותר רווח פנימי */\r\n    background-color: #f8ece6;\r\n    text-align: left;\r\n    font-family: 'Arial', sans-serif;\r\n    color: #5a3a29;\r\n    border-radius: 10px;\r\n    max-width: 1000px; /* הגדלת הרוחב המרבי */\r\n    margin: 10px;\r\n    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);\r\n    top: 50%; /* ממקם 50% מגובה ההורה */\r\n\r\n}\r\n\r\n/* תפריט נפתח */\r\n.dog-select {\r\n    padding: 10px;\r\n    font-size: 1rem;\r\n    border: 1px solid #5a3a29;\r\n    border-radius: 5px;\r\n    margin-bottom: 20px;\r\n    width: 80%;\r\n}\r\n\r\n\r\n\r\n\r\n\r\n.dog-picture {\r\n    grid-column: 3 / 4; /* העמודה השלישית */\r\n    grid-row: 1 / 7; /* משתרע על השורות */\r\n    text-align: center;\r\n\r\n    border-radius: 10px;\r\n    overflow: hidden; /* מונע מהתמונה לחרוג מגבולות המיכל */\r\n    object-fit: contain;\r\n    border: 2px solid #5a3a29;\r\n    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);\r\n    margin-bottom: 10px;\r\n        width: 100%; /* מתאים את התמונה לרוחב המיכל */\r\n    height: 100%; /* מתאים את התמונה לגובה המיכל */\r\n    border-radius: 10px; /* פינות מעוגלות */\r\n}\r\n/*----------------------END Profile Grid Page-----------------*/\r\n/*----------------------rate your stay page-----------------*/\r\n\r\n/* עיצוב לדירוג */\r\n.rating {\r\n    display: flex;\r\n    gap: 10px;\r\n    justify-content: center;\r\n    align-items: center;\r\n    margin: 20px 0;\r\n}\r\n\r\n.rating input[type=\"checkbox\"] {\r\n    display: none; /* מסתיר את תיבות הסימון */\r\n}\r\n\r\n\r\n\r\n.rating label {\r\n    cursor: pointer;\r\n}\r\n\r\n.rating label img {\r\n    width: 40px;\r\n    height: 40px;\r\n    transition: transform 0.2s, border 0.2s; /* אפקטים של שינוי */\r\n}\r\n\r\n/* סימון העצם כאשר היא נבחרת */\r\n.rating input[type=\"checkbox\"]:checked + label img {\r\n    transform: scale(1.2); /* הגדלת העצם */\r\n    border: 2px solid #5a3a29; /* מסגרת קבועה */\r\n    border-radius: 5px;\r\n}\r\n\r\n/* הגדלת העצם כאשר משתמשים ב-hover */\r\n.rating label:hover img {\r\n    transform: scale(1.2); /* הגדלת העצם */\r\n    border: 2px solid #5a3a29; /* מסגרת זמנית */\r\n    border-radius: 5px;\r\n}\r\n
+===================================================================
+diff --git a/PawStyles.css b/PawStyles.css
+--- a/PawStyles.css	(revision a3a44b86a930f9e40b8e86232af92ed07f481991)
++++ b/PawStyles.css	(date 1736504706071)
+@@ -113,7 +113,7 @@
+ 
+ 
+ .myBackground {
+-    background-image: url('Photos/Paws.png'); /* מיקום התמונה */
++    background-image: url('Paws.png'); /* מיקום התמונה */
+     background-repeat: repeat; /* התמונה לא תחזור */
+     background-position: right center; /* מצמיד את התמונה לימין ומרכז אנכית */
+     background-size: contain; /* מתאים את גודל התמונה לפי היחס שלה */
+@@ -192,14 +192,6 @@
+     border: 1px solid #ccc; /* גבול אפור */
+     border-radius: 5px; /* קצוות מעוגלים */
+     font-size: 16px; /* גודל טקסט */
+-}
+-
+-form span {
+-    display: block; /* הופך את ה-span ל-block כדי לאפשר שבירת שורות */
+-    color: red; /* צבע אדום לשגיאה */
+-    font-size: 0.9rem; /* גודל טקסט */
+-    white-space: pre-line; /* תמיכה בשבירת שורות עם \n */
+-    margin-top: 5px; /* רווח קטן מעל ההודעה */
+ 
+ 
+ 
+@@ -265,6 +257,21 @@
+ }
+ /*----------------------END btm3-----------------*/
+ 
++/*---------------------- About US Page-----------------*/
++
++.AboutPicAndText {
++    overflow: hidden; /* מונע בעיות פריסה עם float */
++}
++
++.AboutPicAndText img {
++    float: right; /* מציב את התמונה בצד ימין */
++    margin-left: 15px; /* רווח בין התמונה לטקסט */
++    margin-bottom: 15px; /* רווח מתחת לתמונה */
++    width: 250px; /* גודל התמונה */
++    height: auto; /* שמירת יחס גובה-רוחב */
++    border-radius: 10px; /* פינות מעוגלות */
++    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); /* צל לתמונה */
++}
+ 
+ /*----------------------END About US Page-----------------*/
+ 
