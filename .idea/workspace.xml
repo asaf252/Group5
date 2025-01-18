@@ -4,9 +4,7 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="3a85256d-f386-4d1b-8f4c-d1287acb997b" name="Changes" comment="check">
-      <change beforePath="$PROJECT_DIR$/Scripts/ProfilePage.js" beforeDir="false" afterPath="$PROJECT_DIR$/Scripts/ProfilePage.js" afterDir="false" />
-    </list>
+    <list default="true" id="3a85256d-f386-4d1b-8f4c-d1287acb997b" name="Changes" comment="check" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -441,7 +439,15 @@
       <option name="project" value="LOCAL‎" />
       <updated>1737189602584</updated>
     </task>
-    <option name="localTasksCounter" value="36" />
+    <task id="LOCAL‎-00036" summary="check">
+      <option name="closed" value="true" />
+      <created>1737189996802</created>
+      <option name="number" value="00036" />
+      <option name="presentableId" value="LOCAL‎-00036" />
+      <option name="project" value="LOCAL‎" />
+      <updated>1737189996802</updated>
+    </task>
+    <option name="localTasksCounter" value="37" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
