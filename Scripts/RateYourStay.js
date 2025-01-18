@@ -3,7 +3,6 @@ document.addEventListener("DOMContentLoaded", () => {
     const commentBox = document.getElementById("comment");
     const backButton = document.getElementById("backButton");
     const form = document.querySelector("form"); // מאתר את הטופס באופן כללי
-
     // לולאה לכל ה-checkboxes לטיפול בתצוגה
     checkboxes.forEach((checkbox, index) => {
         const label = checkbox.nextElementSibling;
