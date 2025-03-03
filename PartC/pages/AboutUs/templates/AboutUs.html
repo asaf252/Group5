@@ -1,0 +1,33 @@
+{% extends "base.html" %}
+
+{% block title %}About Us{% endblock %}
+
+{% block styles %}
+<link rel="stylesheet" href="{{ url_for('static', filename='css/AboutUs.css') }}">
+{% endblock %}
+
+{% block content %}
+<div class="MainStyle">
+    <div>
+        <h1 class="ProfilePageTitle">About Paw Paradise</h1>
+    </div>
+    <h2>Welcome to Paw Paradise - Your Trusted Dog Boarding Directory</h2>
+    <div class="AboutPicAndText">
+        <img src="{{ url_for('static', filename='media/img/AboutPhoto.jpg') }}" class="regularIMG">
+        <p>
+            At “Paw Paradise”, we make finding the perfect dog boarding facility easy, reliable, and stress-free.
+            Our platform centralizes top-rated dog boarding options, giving you access to a wide range of trusted
+            and caring facilities for your furry friend. Whether you’re planning a vacation or a weekend getaway,
+            “Paw Paradise” helps you locate the ideal boarding spot, complete with ratings, reviews, and convenient
+            search tools. Simplify your search and enjoy peace of mind knowing that Paw Paradise is dedicated to
+            innovation, quality, and exceptional pet care.
+        </p>
+    </div>
+<button class="btmType1" onclick="window.location.href='{{ url_for("homePage.homePage_func") }}'">
+    Back to home page
+</button>
+{% endblock %}
+
+{% block scripts %}
+<script src="{{ url_for('static', filename='js/AboutUs.js') }}"></script>
+{% endblock %}

@@ -1,0 +1,21 @@
+{% extends "base.html" %}
+
+{% block title %}HomePage{% endblock %}
+
+{% block content %}
+<div class="MainStyle">
+    <h1>welcome to<br>Paw Paradise</h1>
+
+    <div class="button-container">
+        <button id="searchButton" class="btmType3">Search kennel for your dog</button>
+        <div class="Raw">
+            <button id="rateButton" class="btmType1">Rate kennels</button>
+            <button id="profileButton" class="btmType1">My Paw profile</button>
+        </div>
+    </div>
+</div>
+{% endblock %}
+
+{% block scripts %}
+<script src="{{ url_for('homePage.static', filename='js/HomePage.js') }}"></script>
+{% endblock %}

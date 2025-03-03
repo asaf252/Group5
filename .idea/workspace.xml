@@ -4,7 +4,158 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="3a85256d-f386-4d1b-8f4c-d1287acb997b" name="Changes" comment="check" />
+    <list default="true" id="3a85256d-f386-4d1b-8f4c-d1287acb997b" name="Changes" comment="check">
+      <change afterPath="$PROJECT_DIR$/PartC/.gitignore" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/PartC/README.md" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/PartC/app.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/PartC/db_connector.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/PartC/pages/AboutUs/AboutUs.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/PartC/pages/AboutUs/static/css/AboutUs.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/PartC/pages/AboutUs/static/js/AboutUs.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/PartC/pages/AboutUs/templates/AboutUs.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/PartC/pages/HomePage/HomePage.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/PartC/pages/HomePage/static/css/HomePage.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/PartC/pages/HomePage/static/js/HomePage.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/PartC/pages/HomePage/templates/HomePage.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/PartC/pages/LogIn/LogIn.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/PartC/pages/LogIn/static/css/LogInPage.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/PartC/pages/LogIn/static/js/LogInPage.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/PartC/pages/LogIn/templates/LogInPage.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/PartC/pages/SearchInParadise/SearchInParadise.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/PartC/pages/SearchInParadise/static/css/SearchInParadise.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/PartC/pages/SearchInParadise/static/js/SearchInParadise.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/PartC/pages/SearchInParadise/templates/SearchInParadise.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/PartC/pages/SignUp/SignUp.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/PartC/pages/SignUp/static/css/SignUp.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/PartC/pages/SignUp/static/js/Signup.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/PartC/pages/SignUp/templates/SignUp.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/PartC/pages/TopKennels/TopKennels.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/PartC/pages/TopKennels/static/css/TopKennels.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/PartC/pages/TopKennels/static/js/TopKennels.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/PartC/pages/TopKennels/templates/Topkennels.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/PartC/requierments.txt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/PartC/settings.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/PartC/static/css/NavigatorStyle.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/PartC/static/css/PawStyles.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/PartC/static/js/NavigatorScript.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/PartC/static/media/img/AboutPhoto.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/PartC/static/media/img/DogBonePic.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/PartC/static/media/img/GoogleLogo.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/PartC/static/media/img/House_pic.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/PartC/static/media/img/InstagramIcon.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/PartC/static/media/img/Louie.jpeg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/PartC/static/media/img/Lucy.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/PartC/static/media/img/Marvel.jpeg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/PartC/static/media/img/Paws.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/PartC/static/media/img/Upload.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/PartC/static/media/img/calendar_icon.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/PartC/static/media/img/dog_pic.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/PartC/static/media/img/info.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/PartC/static/media/img/kennelDogs.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/PartC/static/media/img/kennelDogs2.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/PartC/static/media/img/kennelDogs3.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/PartC/static/utilities/db/db_manager.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/PartC/templates/base.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/Paw_Paradise_Group5.iml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/Paw_Paradise_Group5.iml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/shelf/Uncommitted_changes_before_Update_at_14_01_2025_13_38_[Changes]/shelved.patch" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/shelf/Uncommitted_changes_before_Update_at_14_01_2025_13_38__Changes_.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/shelf/Uncommitted_changes_before_Update_at_16_01_2025_15_33_[Changes]/shelved.patch" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/shelf/Uncommitted_changes_before_Update_at_16_01_2025_15_33__Changes_.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/shelf/Uncommitted_changes_before_Update_at_16_01_2025_17_27_[Changes]/shelved.patch" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/shelf/Uncommitted_changes_before_Update_at_16_01_2025_17_27__Changes_.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/shelf/Uncommitted_changes_before_Update_at_16_01_2025_17_53_[Changes]/shelved.patch" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/shelf/Uncommitted_changes_before_Update_at_16_01_2025_17_53__Changes_.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/shelf/Uncommitted_changes_before_Update_at_18_01_2025_10_04_[Changes]/shelved.patch" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/shelf/Uncommitted_changes_before_Update_at_18_01_2025_10_04__Changes_.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/shelf/Uncommitted_changes_before_Update_at_1_14_2025_1_28_PM_[Changes]1/kennelDogs.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/shelf/Uncommitted_changes_before_Update_at_1_14_2025_1_28_PM_[Changes]1/shelved.patch" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/shelf/Uncommitted_changes_before_Update_at_1_14_2025_1_28_PM__Changes_1.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/shelf/Uncommitted_changes_before_Update_at_1_14_2025_2_16_PM_[Changes]/shelved.patch" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/shelf/Uncommitted_changes_before_Update_at_1_14_2025_2_16_PM__Changes_.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/shelf/Uncommitted_changes_before_Update_at_1_14_2025_7_30_PM_[Changes]/shelved.patch" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/shelf/Uncommitted_changes_before_Update_at_1_14_2025_7_30_PM__Changes_.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/shelf/Uncommitted_changes_before_Update_at_1_16_2025_1_12_PM_[Changes]/shelved.patch" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/shelf/Uncommitted_changes_before_Update_at_1_16_2025_1_12_PM__Changes_.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/shelf/Uncommitted_changes_before_Update_at_1_16_2025_5_10_PM_[Changes]1/shelved.patch" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/shelf/Uncommitted_changes_before_Update_at_1_16_2025_5_10_PM__Changes_1.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/shelf/Uncommitted_changes_before_Update_at_1_16_2025_6_06_PM_[Changes]/shelved.patch" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/shelf/Uncommitted_changes_before_Update_at_1_16_2025_6_06_PM__Changes_.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/shelf/Uncommitted_changes_before_rebase_[Changes]10/shelved.patch" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/shelf/Uncommitted_changes_before_rebase_[Changes]3/kennelDogs.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/shelf/Uncommitted_changes_before_rebase_[Changes]3/shelved.patch" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/shelf/Uncommitted_changes_before_rebase_[Changes]4/shelved.patch" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/shelf/Uncommitted_changes_before_rebase_[Changes]5/shelved.patch" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/shelf/Uncommitted_changes_before_rebase_[Changes]6/shelved.patch" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/shelf/Uncommitted_changes_before_rebase_[Changes]7/shelved.patch" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/shelf/Uncommitted_changes_before_rebase_[Changes]8/shelved.patch" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/shelf/Uncommitted_changes_before_rebase_[Changes]9/shelved.patch" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/shelf/Uncommitted_changes_before_rebase__Changes_10.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/shelf/Uncommitted_changes_before_rebase__Changes_3.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/shelf/Uncommitted_changes_before_rebase__Changes_4.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/shelf/Uncommitted_changes_before_rebase__Changes_5.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/shelf/Uncommitted_changes_before_rebase__Changes_6.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/shelf/Uncommitted_changes_before_rebase__Changes_7.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/shelf/Uncommitted_changes_before_rebase__Changes_8.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/shelf/Uncommitted_changes_before_rebase__Changes_9.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Photos/AboutPhoto.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/PartB/Photos/AboutPhoto.jpg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Photos/DogBonePic.png" beforeDir="false" afterPath="$PROJECT_DIR$/PartB/Photos/DogBonePic.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Photos/GoogleLogo.png" beforeDir="false" afterPath="$PROJECT_DIR$/PartB/Photos/GoogleLogo.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Photos/House_pic.png" beforeDir="false" afterPath="$PROJECT_DIR$/PartB/Photos/House_pic.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Photos/InstagramIcon.png" beforeDir="false" afterPath="$PROJECT_DIR$/PartB/Photos/InstagramIcon.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Photos/Louie.jpeg" beforeDir="false" afterPath="$PROJECT_DIR$/PartB/Photos/Louie.jpeg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Photos/Lucy.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/PartB/Photos/Lucy.jpg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Photos/Marvel.jpeg" beforeDir="false" afterPath="$PROJECT_DIR$/PartB/Photos/Marvel.jpeg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Photos/Paws.png" beforeDir="false" afterPath="$PROJECT_DIR$/PartB/Photos/Paws.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Photos/Upload.png" beforeDir="false" afterPath="$PROJECT_DIR$/PartB/Photos/Upload.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Photos/calendar_icon.png" beforeDir="false" afterPath="$PROJECT_DIR$/PartB/Photos/calendar_icon.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Photos/dog_pic.png" beforeDir="false" afterPath="$PROJECT_DIR$/PartB/Photos/dog_pic.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Photos/info.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/PartB/Photos/info.jpg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Photos/kennelDogs.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/PartB/Photos/kennelDogs.jpg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Photos/kennelDogs2.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/PartB/Photos/kennelDogs2.jpg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Photos/kennelDogs3.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/PartB/Photos/kennelDogs3.jpg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/README.docx" beforeDir="false" afterPath="$PROJECT_DIR$/PartB/README.docx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Scripts/AboutUs.js" beforeDir="false" afterPath="$PROJECT_DIR$/PartB/Scripts/AboutUs.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Scripts/HomePage.js" beforeDir="false" afterPath="$PROJECT_DIR$/PartB/Scripts/HomePage.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Scripts/KennelProfile.js" beforeDir="false" afterPath="$PROJECT_DIR$/PartB/Scripts/KennelProfile.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Scripts/LogInPage.js" beforeDir="false" afterPath="$PROJECT_DIR$/PartB/Scripts/LogInPage.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Scripts/MakeOrder.js" beforeDir="false" afterPath="$PROJECT_DIR$/PartB/Scripts/MakeOrder.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Scripts/NavigatorScript.js" beforeDir="false" afterPath="$PROJECT_DIR$/PartB/Scripts/NavigatorScript.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Scripts/ProfileForNewDog.js" beforeDir="false" afterPath="$PROJECT_DIR$/PartB/Scripts/ProfileForNewDog.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Scripts/ProfilePage.js" beforeDir="false" afterPath="$PROJECT_DIR$/PartB/Scripts/ProfilePage.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Scripts/RateYourStay.js" beforeDir="false" afterPath="$PROJECT_DIR$/PartB/Scripts/RateYourStay.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Scripts/SearchInParadise.js" beforeDir="false" afterPath="$PROJECT_DIR$/PartB/Scripts/SearchInParadise.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Scripts/Signup.js" beforeDir="false" afterPath="$PROJECT_DIR$/PartB/Scripts/Signup.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Scripts/Thankyou.js" beforeDir="false" afterPath="$PROJECT_DIR$/PartB/Scripts/Thankyou.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Scripts/TopKennels.js" beforeDir="false" afterPath="$PROJECT_DIR$/PartB/Scripts/TopKennels.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Styles/AboutUs.css" beforeDir="false" afterPath="$PROJECT_DIR$/PartB/Styles/AboutUs.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Styles/HomePage.css" beforeDir="false" afterPath="$PROJECT_DIR$/PartB/Styles/HomePage.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Styles/KennelProfile.css" beforeDir="false" afterPath="$PROJECT_DIR$/PartB/Styles/KennelProfile.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Styles/LogInPage.css" beforeDir="false" afterPath="$PROJECT_DIR$/PartB/Styles/LogInPage.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Styles/MakeOrder.css" beforeDir="false" afterPath="$PROJECT_DIR$/PartB/Styles/MakeOrder.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Styles/NavigatorStyle.css" beforeDir="false" afterPath="$PROJECT_DIR$/PartB/Styles/NavigatorStyle.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Styles/PawStyles.css" beforeDir="false" afterPath="$PROJECT_DIR$/PartB/Styles/PawStyles.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Styles/ProfileForNewDog.css" beforeDir="false" afterPath="$PROJECT_DIR$/PartB/Styles/ProfileForNewDog.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Styles/ProfilePage.css" beforeDir="false" afterPath="$PROJECT_DIR$/PartB/Styles/ProfilePage.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Styles/RateYourStay.css" beforeDir="false" afterPath="$PROJECT_DIR$/PartB/Styles/RateYourStay.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Styles/SearchInParadise.css" beforeDir="false" afterPath="$PROJECT_DIR$/PartB/Styles/SearchInParadise.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Styles/SignUp.css" beforeDir="false" afterPath="$PROJECT_DIR$/PartB/Styles/SignUp.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Styles/Thankyou.css" beforeDir="false" afterPath="$PROJECT_DIR$/PartB/Styles/Thankyou.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Styles/TopKennels.css" beforeDir="false" afterPath="$PROJECT_DIR$/PartB/Styles/TopKennels.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Templets/AboutUs.html" beforeDir="false" afterPath="$PROJECT_DIR$/PartB/Templets/AboutUs.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Templets/HomePage.html" beforeDir="false" afterPath="$PROJECT_DIR$/PartB/Templets/HomePage.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Templets/LogInPage.html" beforeDir="false" afterPath="$PROJECT_DIR$/PartB/Templets/LogInPage.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Templets/MakeOrder.html" beforeDir="false" afterPath="$PROJECT_DIR$/PartB/Templets/MakeOrder.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Templets/ProfileForNewDog.html" beforeDir="false" afterPath="$PROJECT_DIR$/PartB/Templets/ProfileForNewDog.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Templets/ProfilePage.html" beforeDir="false" afterPath="$PROJECT_DIR$/PartB/Templets/ProfilePage.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Templets/RateYourStay.html" beforeDir="false" afterPath="$PROJECT_DIR$/PartB/Templets/RateYourStay.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Templets/SearchInParadise.html" beforeDir="false" afterPath="$PROJECT_DIR$/PartB/Templets/SearchInParadise.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Templets/SignUp.html" beforeDir="false" afterPath="$PROJECT_DIR$/PartB/Templets/SignUp.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Templets/Thankyou.html" beforeDir="false" afterPath="$PROJECT_DIR$/PartB/Templets/Thankyou.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Templets/Topkennels.html" beforeDir="false" afterPath="$PROJECT_DIR$/PartB/Templets/Topkennels.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Templets/kennelProfile.html" beforeDir="false" afterPath="$PROJECT_DIR$/PartB/Templets/kennelProfile.html" afterDir="false" />
+    </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -13,10 +164,11 @@
   <component name="FileTemplateManagerImpl">
     <option name="RECENT_TEMPLATES">
       <list>
-        <option value="HTML File" />
         <option value="TypeScript File" />
         <option value="JavaScript File" />
         <option value="CSS File" />
+        <option value="HTML File" />
+        <option value="Python Script" />
       </list>
     </option>
   </component>
@@ -66,18 +218,26 @@
   <component name="PropertiesComponent">{
   &quot;keyToString&quot;: {
     &quot;DefaultHtmlFileTemplate&quot;: &quot;HTML File&quot;,
+    &quot;JavaScript Debug.SignUp.html.executor&quot;: &quot;Run&quot;,
+    &quot;JavaScript Debug.base.html.executor&quot;: &quot;Run&quot;,
+    &quot;Node.js.NavigatorScript.js.executor&quot;: &quot;Run&quot;,
     &quot;Node.js.RateYourStay.js.executor&quot;: &quot;Debug&quot;,
+    &quot;Python.HomePage.executor&quot;: &quot;Run&quot;,
+    &quot;Python.LogIn.executor&quot;: &quot;Run&quot;,
+    &quot;Python.app (1).executor&quot;: &quot;Run&quot;,
+    &quot;Python.app.executor&quot;: &quot;Run&quot;,
     &quot;Python.main.executor&quot;: &quot;Run&quot;,
     &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
     &quot;git-widget-placeholder&quot;: &quot;main&quot;,
-    &quot;last_opened_file_path&quot;: &quot;C:/Users/halfo/PycharmProjects/Group5&quot;,
+    &quot;last_opened_file_path&quot;: &quot;C:/Users/assaf/PycharmProjects/Paw_Paradise_Group5/PartC/pages/TopKennels/static&quot;,
     &quot;list.type.of.created.stylesheet&quot;: &quot;CSS&quot;,
     &quot;node.js.detected.package.eslint&quot;: &quot;true&quot;,
     &quot;node.js.detected.package.tslint&quot;: &quot;true&quot;,
     &quot;node.js.selected.package.eslint&quot;: &quot;(autodetect)&quot;,
     &quot;node.js.selected.package.tslint&quot;: &quot;(autodetect)&quot;,
     &quot;nodejs_package_manager_path&quot;: &quot;npm&quot;,
-    &quot;settings.editor.selected.configurable&quot;: &quot;vcs.Git&quot;,
+    &quot;run.code.analysis.last.selected.profile&quot;: &quot;aDefault&quot;,
+    &quot;settings.editor.selected.configurable&quot;: &quot;com.jetbrains.python.configuration.PyActiveSdkModuleConfigurable&quot;,
     &quot;ts.external.directory.path&quot;: &quot;C:\\Program Files\\JetBrains\\PyCharm 2024.2.4\\plugins\\javascript-plugin\\jsLanguageServicesImpl\\external&quot;,
     &quot;vue.rearranger.settings.migration&quot;: &quot;true&quot;
   },
@@ -88,25 +248,55 @@
       &quot;repository&quot;
     ],
     &quot;com.intellij.ide.scratch.ScratchImplUtil$2/New Scratch File&quot;: [
+      &quot;JupyterPython&quot;,
       &quot;CSS&quot;
     ]
   }
 }</component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
-      <recent name="C:\Users\halfo\PycharmProjects\Group5" />
+      <recent name="C:\Users\assaf\PycharmProjects\Paw_Paradise_Group5\PartC\pages\TopKennels\static" />
+      <recent name="C:\Users\assaf\PycharmProjects\Paw_Paradise_Group5\PartC\pages\KennelProfile" />
+      <recent name="C:\Users\assaf\PycharmProjects\Paw_Paradise_Group5\PartC\pages\AboutUs" />
+      <recent name="C:\Users\assaf\PycharmProjects\Paw_Paradise_Group5\PartC\pages\SignUp" />
+      <recent name="C:\Users\assaf\PycharmProjects\Paw_Paradise_Group5\PartC\Skeleton Project\pages\HomePage\static\js" />
     </key>
     <key name="MoveFile.RECENT_KEYS">
-      <recent name="C:\Users\assaf\PycharmProjects\Paw_Paradise_Group5" />
-      <recent name="C:\Users\assaf\PycharmProjects\Paw_Paradise_Group5\PartA" />
-      <recent name="C:\Users\assaf\PycharmProjects\Paw_Paradise_Group5\Photos" />
+      <recent name="C:\Users\assaf\PycharmProjects\Paw_Paradise_Group5\PartC\pages\TopKennels\static\js" />
+      <recent name="C:\Users\assaf\PycharmProjects\Paw_Paradise_Group5\PartC\pages\TopKennels\static\css" />
+      <recent name="C:\Users\assaf\PycharmProjects\Paw_Paradise_Group5\PartC\pages\TopKennels\templates" />
+      <recent name="C:\Users\assaf\PycharmProjects\Paw_Paradise_Group5\PartC\pages\KennelProfile\templates" />
+      <recent name="C:\Users\assaf\PycharmProjects\Paw_Paradise_Group5\PartC\pages\KennelProfile\static\css" />
     </key>
   </component>
-  <component name="RunManager" selected="Node.js.RateYourStay.js">
-    <configuration name="RateYourStay.js" type="NodeJSConfigurationType" temporary="true" nameIsGenerated="true" path-to-js-file="$PROJECT_DIR$/RateYourStay.js" working-dir="$PROJECT_DIR$">
+  <component name="RunManager" selected="Node.js.NavigatorScript.js">
+    <configuration name="NavigatorScript.js" type="NodeJSConfigurationType" temporary="true" nameIsGenerated="true" path-to-js-file="$PROJECT_DIR$/PartC/static/js/NavigatorScript.js" working-dir="$PROJECT_DIR$/PartC/static/js">
       <method v="2" />
     </configuration>
-    <configuration name="main" type="PythonConfigurationType" factoryName="Python" nameIsGenerated="true">
+    <configuration name="app (1)" type="PythonConfigurationType" factoryName="Python" temporary="true" nameIsGenerated="true">
+      <module name="Paw_Paradise_Group5" />
+      <option name="ENV_FILES" value="" />
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <envs>
+        <env name="PYTHONUNBUFFERED" value="1" />
+      </envs>
+      <option name="SDK_HOME" value="" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/PartC" />
+      <option name="IS_MODULE_SDK" value="true" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <EXTENSION ID="PythonCoverageRunConfigurationExtension" runner="coverage.py" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/PartC/app.py" />
+      <option name="PARAMETERS" value="" />
+      <option name="SHOW_COMMAND_LINE" value="false" />
+      <option name="EMULATE_TERMINAL" value="false" />
+      <option name="MODULE_MODE" value="false" />
+      <option name="REDIRECT_INPUT" value="false" />
+      <option name="INPUT_FILE" value="" />
+      <method v="2" />
+    </configuration>
+    <configuration name="app" type="PythonConfigurationType" factoryName="Python">
       <module name="Paw_Paradise_Group5" />
       <option name="ENV_FILES" value="" />
       <option name="INTERPRETER_OPTIONS" value="" />
@@ -129,9 +319,15 @@
       <option name="INPUT_FILE" value="" />
       <method v="2" />
     </configuration>
+    <list>
+      <item itemvalue="Node.js.NavigatorScript.js" />
+      <item itemvalue="Python.app" />
+      <item itemvalue="Python.app (1)" />
+    </list>
     <recent_temporary>
       <list>
-        <item itemvalue="Node.js.RateYourStay.js" />
+        <item itemvalue="Node.js.NavigatorScript.js" />
+        <item itemvalue="Python.app (1)" />
       </list>
     </recent_temporary>
   </component>
@@ -160,6 +356,16 @@
       <workItem from="1735745496506" duration="10312000" />
       <workItem from="1736195176743" duration="20918000" />
       <workItem from="1737190286457" duration="302000" />
+      <workItem from="1737191942840" duration="795000" />
+      <workItem from="1737482110298" duration="426000" />
+      <workItem from="1738524494355" duration="737000" />
+      <workItem from="1738590231720" duration="613000" />
+      <workItem from="1738846964245" duration="3715000" />
+      <workItem from="1738950879130" duration="418000" />
+      <workItem from="1738999513991" duration="7519000" />
+      <workItem from="1740329501154" duration="12198000" />
+      <workItem from="1740401977562" duration="22864000" />
+      <workItem from="1740570768425" duration="66094000" />
     </task>
     <task id="LOCAL‎-00001" summary="check">
       <option name="closed" value="true" />
@@ -489,7 +695,15 @@
       <option name="project" value="LOCAL‎" />
       <updated>1737190784435</updated>
     </task>
-    <option name="localTasksCounter" value="42" />
+    <task id="LOCAL‎-00042" summary="check">
+      <option name="closed" value="true" />
+      <created>1737192098442</created>
+      <option name="number" value="00042" />
+      <option name="presentableId" value="LOCAL‎-00042" />
+      <option name="project" value="LOCAL‎" />
+      <updated>1737192098442</updated>
+    </task>
+    <option name="localTasksCounter" value="43" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -551,7 +765,21 @@
     <MESSAGE value="check" />
     <option name="LAST_COMMIT_MESSAGE" value="check" />
   </component>
+  <component name="XDebuggerManager">
+    <breakpoint-manager>
+      <breakpoints>
+        <line-breakpoint enabled="true" suspend="THREAD" type="python-line">
+          <url>file://$PROJECT_DIR$/PartC/static/utilities/db/db_manager.py</url>
+          <option name="timeStamp" value="1" />
+        </line-breakpoint>
+      </breakpoints>
+    </breakpoint-manager>
+  </component>
   <component name="com.intellij.coverage.CoverageDataManagerImpl">
-    <SUITE FILE_PATH="coverage/Paw_Paradise_Group5$main.coverage" NAME="main Coverage Results" MODIFIED="1734899843999" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
+    <SUITE FILE_PATH="coverage/Paw_Paradise_Group5$app.coverage" NAME="app Coverage Results" MODIFIED="1740841400818" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/PartC" />
+    <SUITE FILE_PATH="coverage/Paw_Paradise_Group5$HomePage.coverage" NAME="HomePage Coverage Results" MODIFIED="1740576193147" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/PartC/pages/HomePage" />
+    <SUITE FILE_PATH="coverage/Paw_Paradise_Group5$LogIn.coverage" NAME="LogIn Coverage Results" MODIFIED="1740738138071" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/PartC/pages/LogIn" />
+    <SUITE FILE_PATH="coverage/Paw_Paradise_Group5$main.coverage" NAME="app Coverage Results" MODIFIED="1740566892668" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
+    <SUITE FILE_PATH="coverage/Paw_Paradise_Group5$app__1_.coverage" NAME="app (1) Coverage Results" MODIFIED="1740740219985" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/PartC" />
   </component>
 </project>

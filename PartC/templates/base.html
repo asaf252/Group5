@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>{% block title %}Paw Paradise{% endblock %}</title>
+
+    <!-- עיצובים שנטענים לכל הדפים -->
+    <link rel="stylesheet" href="{{ url_for('static', filename='css/NavigatorStyle.css') }}">
+    <link rel="stylesheet" href="{{ url_for('static', filename='css/PawStyles.css') }}">
+
+    {% block styles %}{% endblock %}
+</head>
+<body class="myBackground">
+    <!-- ניווט (לא נטען שוב בכל דף) -->
+
+
+    <main>
+<nav id="Navigator"></nav>
+        {% block content %}
+        {% endblock %}
+    </main>
+
+    {% block scripts %}
+    {% endblock %}
+ <script defer src="{{ url_for('static', filename='js/NavigatorScript.js') }}" ></script>
+</body>
+</html>

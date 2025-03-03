@@ -1,0 +1,285 @@
+body {
+    margin: 0;
+    font-family:  'Arial',sans-serif;
+    background-color: #f8ece6;
+    color: #5a3a29;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 150vh; /* גובה המינימום של החלון */
+}
+
+header h1 {
+    font-size: 2.5rem;
+    font-weight: bold;
+    margin: 0;
+    color: #7b4d3a;
+}
+
+main h2 {
+    font-size: 1.8rem;
+    margin-bottom: 10px;
+}
+
+header p {
+    margin: 10px 0 20px;
+    font-size: 1.1rem;
+}
+
+button {
+    display: block;
+    width: 100%;
+    margin: 10px 0;
+    padding: 10px;
+    font-size: 1rem;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+table {
+    align-content: center;
+    table-layout: fixed; /* פריסת עמודות קבועה */
+    border-collapse: collapse; /* איחוד גבולות */
+    margin: 20px 20px; /* רווח מסביב לטבלה */
+    background-color: #fdf6f3; /* צבע רקע לטבלה */
+    text-align: center; /* יישור כל האלמנטים בתוך הקונטיינר למרכז */
+}
+
+table tr {
+    text-align: center; /* יישור טקסט למרכז */
+    vertical-align: middle; /* יישור אנכי למרכז */
+    padding: 10px; /* ריווח פנימי */
+    background-color: #d9a18a; /* צבע רקע לכותרת */
+    color: #5a3a29; /* צבע טקסט */
+    font-weight: bold; /* טקסט מודגש */
+    font-size: 1.2rem; /* גודל טקסט */
+    border: 1px solid #5a3a29; /* גבול */
+    word-wrap: break-word; /* שבירת טקסט אם ארוך מדי */
+}
+
+table td {
+    text-align: center; /* יישור טקסט למרכז */
+    vertical-align: middle; /* יישור אנכי למרכז */
+    padding: 10px; /* ריווח פנימי */
+    border: 1px solid #5a3a29; /* גבול */
+    font-size: 1rem; /* גודל טקסט */
+    color: #5a3a29; /* צבע טקסט */
+    word-wrap: break-word; /* שבירת טקסט אם ארוך מדי */
+  background-color: #fff7f0;
+}
+
+.Logo {
+    width: 20px; /* רוחב התמונה */
+    height: 20px; /* גובה התמונה */
+    vertical-align: middle; /* מוודא שהתמונה בקו אחד עם הטקסט */
+}
+.LogoBone {
+    width: 60px;
+    height: 60px;
+    margin-right: 0px;
+    margin-bottom: 0;
+    display: inline-block; /* מבטיח יישור אחיד */
+    vertical-align: middle;
+}
+.MainStyle {
+    display: flex; /* הפיכת הקופסה לקונטיינר של Flexbox */
+    flex-direction: column; /* שמירה על סדר אנכי של האלמנטים */
+    justify-content: center; /* ממרכז את התוכן הפנימי אנכית */
+    align-items: center; /* ממרכז את התוכן הפנימי אופקית */
+    text-align: center; /* ממרכז את הטקסט בתוך האלמנטים */
+    padding: 30px 30px;
+    width: 95%;
+    max-width: 1000px;
+    background-color: #fff7f0;
+    border-radius: 15px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+    box-sizing: border-box; /* מונע overflow */
+}
+.myBackground {
+    background-image: url('../media/img/Paws.png');    background-repeat: repeat; /* התמונה לא תחזור */
+    background-position: right center; /* מצמיד את התמונה לימין ומרכז אנכית */
+    background-size: contain; /* מתאים את גודל התמונה לפי היחס שלה */
+    width: 100%;
+    height: 500px; /* קבע גובה אחיד */
+}
+.regularIMG {
+    width: 150px; /* רוחב התיבה */
+    height: 150px; /* גובה התיבה */
+    border: 2px solid #5a3a29; /* גבול */
+    border-radius: 10px; /* פינות מעוגלות */
+    display: flex; /* ממרכז תוכן אנכית ואופקית */
+    justify-content: center;
+    align-items: center;
+    background-color: white; /* צבע רקע */
+    font-size: 1rem; /* גודל טקסט */
+    font-weight: bold; /* טקסט מודגש */
+    color: #5a3a29;
+    float: left;
+}
+
+.MainGrid {
+    display: grid;
+    grid-template-columns:   1fr 2fr 1.5fr; /* שלוש עמודות */
+    grid-gap: 15px; /* רווח בין האלמנטים */
+    align-items: start;
+    width: 100%; /* התאמה מלאה לרוחב האב */
+    max-width: 100%; /* ודא שלא יחרוג מגבולות האב */
+    margin: 10%; /* מרכז את ה-Grid בתוך האב */
+}
+
+.MainGrid label {
+    font-weight: bold;
+    padding-right: 10px;
+    align-self: center;
+    text-align: start;
+}
+
+.MainGrid span {
+    background-color: #fff;
+    padding: 6px;
+    border: 1px solid #5a3a29;
+    border-radius: 5px;
+    font-size: 1rem;
+}
+
+.MainGrid input {
+    background-color: #fff;
+    padding: 6px;
+    border: 1px solid #5a3a29;
+    border-radius: 5px;
+    font-size: 1rem;
+}
+
+form label {
+    display: block; /* מציג את התווית בשורה נפרדת */
+    text-align: left; /* יישור שמאל */
+    margin: 10px 0 5px; /* מרווח סביב */
+    font-size: 20px; /* גודל טקסט */
+    font-weight: bold;
+}
+
+form input,form select {
+    width: 95%; /* רוחב מלא */
+    padding: 10px; /* ריווח פנימי */
+    margin-bottom: 15px; /* מרווח תחתון */
+    border: 1px solid #ccc; /* גבול אפור */
+    border-radius: 5px; /* קצוות מעוגלים */
+    font-size: 16px; /* גודל טקסט */
+}
+
+form span {
+    display: block; /* הופך את ה-span ל-block כדי לאפשר שבירת שורות */
+    color: red; /* צבע אדום לשגיאה */
+    font-size: 0.9rem; /* גודל טקסט */
+    white-space: pre-line; /* תמיכה בשבירת שורות עם \n */
+    margin-top: 5px; /* רווח קטן מעל ההודעה */
+}
+
+
+.Raw {
+    display: flex; /* מציג את הכפתורים בשורה */
+    justify-content: center; /* ממרכז את הכפתורים */
+    gap: 20px; /* יוצר רווח של 20 פיקסלים בין הכפתורים */
+}
+
+
+
+/*---------------------- btm1-----------------*/
+
+.btmType1 {
+    background-color: #7b4d3a; /* צבע חום כהה */
+    color: #ffffff; /* צבע טקסט */
+    border: 1px solid #5a3a29;
+    font-weight: bold;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+}
+
+.btmType1:hover {
+    background-color: #f3d8c7;
+    color: #5a3a29;
+}
+/*---------------------- btm2-----------------*/
+.btmType2 {
+    background-color: #d9a764; /* צבע רקע כהה יותר */
+    color: #ffffff; /* צבע טקסט לבן */
+    font-weight: bold;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+}
+/*---------------------- btm3-----------------*/
+.btmType3{
+    background-color: #d3a18a; /* צבע כהה יותר */
+    color: #5a3a29;
+    padding: 10px 20px;
+    border: 1px solid #5a3a29;
+    font-size: 16px;
+    font-weight: bold;
+}
+.btmType3:hover {
+    background-color: #f3d8c7;
+    color: #5a3a29;
+}
+
+.dog-select {
+    padding: 10px;
+    font-size: 1rem;
+    border: 1px solid #5a3a29;
+    border-radius: 5px;
+    margin-bottom: 20px;
+    width: 80%;
+}
+
+.dog-picture {
+    grid-column: 3 / 4; /* העמודה השלישית */
+    grid-row: 1 / 7; /* משתרע על השורות */
+    text-align: center;
+
+    border-radius: 10px;
+    overflow: hidden; /* מונע מהתמונה לחרוג מגבולות המיכל */
+    object-fit: contain;
+    border: 2px solid #5a3a29;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    margin-bottom: 10px;
+        width: 100%; /* מתאים את התמונה לרוחב המיכל */
+    height: 100%; /* מתאים את התמונה לגובה המיכל */
+    border-radius: 10px; /* פינות מעוגלות */
+}
+
+.rating {
+    display: flex;
+    gap: 10px;
+    justify-content: center;
+    align-items: center;
+    margin: 20px 0;
+}
+
+.rating input[type="checkbox"] {
+    display: none; /* מסתיר את תיבות הסימון */
+}
+
+.rating label {
+    cursor: pointer;
+}
+
+.rating label img {
+    width: 40px;
+    height: 40px;
+    transition: transform 0.2s, border 0.2s; /* אפקטים של שינוי */
+}
+
+.rating input[type="checkbox"]:checked + label img {
+    transform: scale(1.2); /* הגדלת העצם */
+    border: 2px solid #5a3a29; /* מסגרת קבועה */
+    border-radius: 5px;
+}
+
+.rating label:hover img {
+    transform: scale(1.2); /* הגדלת העצם */
+    border: 2px solid #5a3a29; /* מסגרת זמנית */
+    border-radius: 5px;
+}

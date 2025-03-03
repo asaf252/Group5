@@ -1,0 +1,46 @@
+#Navigator {
+    display: flex; /* שימוש ב-flexbox */
+    flex-wrap: wrap; /* מאפשר גלישת אלמנטים לשורות נוספות */
+    justify-content: center; /* ממרכז את הפריטים */
+    align-items: center; /* ממרכז אנכית */
+    width: 100%; /* מתאים לגודל האב */
+    padding: 10px; /* ריווח פנימי */
+    background-color: #f8e6d8; /* צבע רקע */
+    border: 1px solid #d9a18a; /* גבול דק בצבע כהה יותר */
+    border-radius: 15px; /* פינות מעוגלות */
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); /* צל עדין */
+    gap: 15px; /* רווחים בין האלמנטים */
+    box-sizing: border-box; /* מוודא שה-padding נכלל ברוחב */
+    margin-bottom: 20px; /* רווח תחתון */
+}
+#Navigator::-webkit-scrollbar {
+    height: 5px; /* גובה גלילה קטן */
+}
+#Navigator::-webkit-scrollbar-thumb {
+    background-color: #d9a18a; /* צבע פס הגלילה */
+    border-radius: 10px; /* פינות מעוגלות */
+}
+#Navigator a {
+    text-decoration: none; /* ביטול הקו התחתון */
+    color: #5d3b0b; /* צבע טקסט */
+    font-weight: normal; /* טקסט פחות מודגש */
+    padding: 5px 10px; /* ריווח פנימי */
+    transition: color 0.3s ease, background-color 0.3s ease; /* אפקט חלק */
+    position: relative; /* למיקום מדויק */
+}
+
+#Navigator a:hover {
+    background-color: #dec9a0; /* רקע בזמן רחף */
+    color: #fff; /* טקסט לבן */
+    cursor: pointer; /* סמן יד לחיצה */
+}
+#Navigator a + a::before {
+    content: "|"; /* מפריד */
+    color: #5d3b0b; /* צבע המפריד */
+    margin: 0 10px; /* רווח בין המפריד לקישורים */
+    position: absolute;
+    left: -15px; /* מיקום כדי להפריד מהקישור */
+    top: 50%; /* למרכז את המפריד אנכית */
+    transform: translateY(-50%);
+    pointer-events: none; /* כך שה-Hover לא ישפיע על המפריד */
+}

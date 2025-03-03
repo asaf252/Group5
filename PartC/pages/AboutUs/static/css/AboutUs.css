@@ -1,0 +1,62 @@
+.AboutPicAndText {
+    display: flex; /* הצגת האלמנטים בשורה */
+    flex-direction: row-reverse; /* הופך את הסדר: תמונה בצד ימין וטקסט בצד שמאל */
+    gap: 20px; /* רווח בין התמונה לטקסט */
+    align-items: center; /* ממרכז את האלמנטים אנכית */
+    justify-content: space-between; /* רווח שווה בין האלמנטים */
+    margin: 20px 0;
+    text-align: left; /* טקסט מיושר לשמאל */
+}
+.AboutPicAndText p {
+    flex: 1; /* הטקסט תופס מקום גמיש */
+}
+.AboutPicAndText .regularIMG {
+    width: 300px; /* רוחב ברירת מחדל */
+    height: auto; /* שמירה על פרופורציות התמונה */
+    border-radius: 10px; /* פינות מעוגלות */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); /* צל מסביב לתמונה */
+}
+/* כותרת טופס */
+.ProfilePageTitle {
+    font-size: 2.5rem;
+    font-weight: bold;
+    color: #5a3a29;
+    text-align: center;
+    margin-bottom: 20px;
+    padding-bottom: 10px;
+    border-bottom: 2px solid #d9a18a;
+    letter-spacing: 1px;
+}
+.regularIMG {
+    width: 300px; /* רוחב התמונה */
+    height: 300px; /* גובה התמונה */
+    border-radius: 0; /* מסגרת רגילה */
+    animation: borderToCircle 2s ease-in-out forwards; /* הגדרת האנימציה */
+}
+/* עיצוב רספונסיבי למסכים קטנים */
+@media (max-width: 768px) {
+    .AboutPicAndText {
+        flex-direction: column; /* שינוי לסידור אנכי */
+        align-items: center; /* ממרכז את הטקסט והתמונה */
+        text-align: center; /* טקסט מיושר למרכז */
+    }
+
+    .AboutPicAndText .regularIMG {
+        order: 1; /* התמונה אחרי הטקסט */
+        width: 80%; /* התאמת רוחב התמונה למסכים קטנים */
+        max-width: 300px; /* מגבלת רוחב */
+        margin-top: 20px; /* רווח בין הטקסט לתמונה */
+    }
+}
+/* הגדרת האנימציה */
+@keyframes borderToCircle {
+    0% {
+        border-radius: 0;
+        transform: scale(1); /* לא משנים את הגודל בהתחלה */
+    }
+    100% {
+        border-radius: 50%; /* מעבר לעיגול */
+        transform: scale(1.1); /* הגדלה קלה */
+    }
+}
+

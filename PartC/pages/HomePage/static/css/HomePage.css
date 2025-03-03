@@ -1,0 +1,20 @@
+/* ---------- Specific Container for HomePage ---------- */
+.HomePageStyle {
+    display: flex; /* הפיכת הקופסה לקונטיינר של Flexbox */
+    flex-direction: column; /* שמירה על סדר אנכי של האלמנטים */
+    justify-content: center; /* ממרכז את התוכן הפנימי אנכית */
+    align-items: center; /* ממרכז את התוכן הפנימי אופקית */
+    text-align: center; /* ממרכז את הטקסט בתוך האלמנטים */
+    padding: 30px;
+    width: 95%;
+    max-width: 1000px;
+    background-color: #fff7f0;
+    border-radius: 15px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+    box-sizing: border-box; /* מונע overflow */
+    border: 1px solid #d9a18a;
+}
+.HomePageStyle h1 {
+    text-align: center; /* יישור הכותרת למרכז */
+    margin-bottom: 20px; /* ריווח מתחת לכותרת */
+}
