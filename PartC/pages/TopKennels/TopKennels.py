@@ -1,5 +1,5 @@
 from flask import Blueprint, request, render_template, jsonify
-from db_connector import Kennels_col  # אוסף הכלביות מתוך MongoDB
+from PartC.db_connector import  get_all_Kennels
 
 # יצירת Blueprint לכלביות
 kennelProfile_bp = Blueprint(
@@ -29,6 +29,6 @@ def get_all_kennels():
         sort_order = -1  # סדר יורד (מהגבוה לנמוך)
 
     # שליפת הנתונים עם מיון
-    kennels = list(Kennels_col.find({}, {"_id": 0}).sort(sort_field, sort_order))
+    kennels = list(get_all_Kennels.find({}, {"_id": 0}).sort(sort_field, sort_order))
 
     return jsonify(kennels)
