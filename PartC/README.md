@@ -1,126 +1,187 @@
-# Flask Skeleton Project
+Paw Paradise Web Application
 
-### Flask skeleton project as a base project for app development
-##### [https://github.com/barakpinchovski/flask-skeleton-project](https://github.com/barakpinchovski/flask-skeleton-project)
-<br/>
+Project Overview
 
-##### Description: 
-This is a base skeleton Flask project to start developing on.
-<br/>
-You may want to modify some of the configurations and files as needed. 
-   
-###
-##### Keywords: 
-flask, lean, skeleton, project, structure, environment, setup, template, fullstack, web, development, app, university, education.
-###
+The Paw Paradise web application provides an easy and user-friendly platform for dog owners to find a kennel for their pets, manage their bookings, and track their stay. Users can register, book a stay for their dogs, add dogs to their profile, search for kennels, and manage their profiles conveniently.
 
-##### By Barak Pinchovski
-[LinkedIn](https://www.linkedin.com/in/barakpinch/)
-##
- 
-### Setup and run instructions:
+User Guide
 
-#### Prerequisites:
-Open the project's dir in the terminal and run the following commands:
-1. pip install virtualenv
-1. virtualenv venv
-1. pip install python-dotenv
-<br/>
+1. Home Page
 
-#### Configurations:
-Open the project's dir in the terminal and:
-1. Run the command: **python -c "import os; print(os.urandom(16))"**
-1. Copy the output string
-1. Edit the project's **.env** file found inside the root folder
-1. Overwrite the **SECRET_KEY** value with the string you copied
-<br/>
- 
-#### Run:
- Run the project with your IDE's configuration, or from the terminal by using the **flask run** command
- 
- ##
- 
-### Usage:
+Navigate to the home page to explore general details about the service.
 
-#### Connecting and querying a database:
-1. Edit **.env** file with your database details
+Users can access the following options:
 
-**METHOD 1 - Query the database by using the implemented DBManager module**
-1. A module named **DBManager** exists for querying the database.
-1. On `.py` files you'd like to connect and query the database, use the following import:
-    ```python
-    from utilities.db.db_manager import dbManager
-    ```
-1. Then use one of the methods ```commit(query, args=())```, ```fetch(query, args=())```, ```execute(query, args=())``` to query the database according to the explanation below:
-    <ul>
-        <li>
-            <code>commit(query, args=())</code>
-            <br/>
-            Use this method for <strong>INSERT</strong>, <strong>UPDATE</strong> and <strong>DELETE</strong> queries.
-            <br/>
-            Returns number of affected rows.
-        </li>
-        <li>
-            <code>fetch(query, args=())</code>
-            <br/>
-            Use this method for <strong>SELECT</strong> queries.
-            <br/>
-            Returns:
-            <br/>
-            - The query result as a list of named tuples where fields are accessible with dot notation.
-            Read more about it <a href="https://dev.mysql.com/doc/connector-python/en/connector-python-api-mysqlcursor.html">here.</a>
-            <br/>
-            - False if query fails.
-        </li>
-        <li>
-            <code>execute(query, args=())</code>
-            <br/>
-            Use this method for <strong>CREATE...</strong>, <strong>ALTER...</strong> and <strong>DROP...</strong> queries.
-            <br/>
-            Returns:
-            <br/>
-            - True if query is successful.
-            <br/>
-            - False if query fails.
-        </li>
-    </ul>
+Search for a Kennel: Find available kennels for their dog.
 
-   Example:
-   ```python
-   from utilities.db.db_manager import dbManager
-   query_result = dbManager.fetch('SELECT * FROM example_table')
-   if query_result:
-       for record in query_result:
-           print(record.id) #prints the record's ID 
-   ```
-<br/>
+Add a Dog: Register a new dog under their profile.
 
-**METHOD 2 - DIY**
-1. On `.py` files you'd like to connect to the database, use the following imports:
-    ```python
-    from PartC.settings import DB
-    import mysql.connector
-    ```
-1. Connect to the database with **DB as the argument
-    ```python
-   db_connection = mysql.connector.connect(**DB)
-   ```
-1. **Tip**: If you'd like the queried results to behave like JavaScript objects then instantiate cursor as follows:
-    ```python
-   db_cursor = db_connection.cursor(named_tuple=True)
-   ``` 
-   Once you do that, you'll be able access the properties with dot notation.
-   
-   Read more about it [here](https://dev.mysql.com/doc/connector-python/en/connector-python-api-mysqlcursor.html)
-   
-   Example:
-   ```python
-   from PartC.settings import DB
-   import mysql.connector
-   db_connection = mysql.connector.connect(**DB)
-   db_cursor = db_connection.cursor(named_tuple=True)
-   db_cursor.execute('SELECT * FROM example_table')
-   records = db_cursor.fetchall()
-   for record in records:
-       print(record.id) # prints the record's ID 
-   ```
+My Paw Profile: View and manage personal details and bookings.
+2. Signing Up
+
+Click on the Sign Up button to register as a new user.
+
+Fill in the registration form with personal details.
+
+Submit the form to create a new account.
+
+3. Logging In
+
+Click the Log In button to access your account.
+
+Enter your credentials (email and password).
+
+Click Sign In to log in successfully.
+
+4. Adding a Dog
+
+Navigate to My Paw Profile.
+
+Click on Add a Dog and provide details.
+
+Save the details, and the dog will be added to your profile.
+
+5. Booking a Kennel
+
+Once logged in, navigate to the Make an Order page.
+
+Select a kennel, provide stay details, and confirm the booking.
+
+The order will be saved and visible in the Profile Page.
+
+6. Searching for Kennels
+
+Navigate to the Search Kennels page.
+
+Use filters to find the best kennel for your dog.
+
+View kennel details and availability.
+
+7. Viewing and Managing Profile
+
+Navigate to My Paw Profile to:
+
+View personal details.
+
+Update account information.
+
+See past and upcoming kennel bookings.
+
+Cancel an order if necessary.
+
+8. Viewing Top Kennels
+
+Navigate to the Top Kennels page.
+
+View the highest-rated kennels based on user feedback.
+
+9. Viewing About Us
+
+Navigate to the About Us page.
+
+Learn about the purpose of Paw Paradise and its creators.
+
+10. Logging Out
+
+Click the Logout button to sign out and return to the home page.
+
+
+Website Features
+
+🏠 Home Page
+
+Users can navigate to different sections of the site.
+
+Screenshot:
+
+![img.png](pages/Photosforreadme/img.png)
+
+📋 Sign Up Page
+
+New users can create an account.
+
+Screenshot:
+
+![img_2.png](pages/Photosforreadme/img_2.png)
+
+🔑 Login Page
+
+
+
+Screenshot:
+
+![img_3.png](pages/Photosforreadme/img_3.png)
+
+🐶 Add a Dog Page
+
+Users can register their dogs.
+
+Screenshot:
+
+![img_4.png](pages/Photosforreadme/img_4.png)
+
+📌 Make an Order Page
+
+Users can book a kennel for their dogs.
+
+Screenshot:
+
+![img_5.png](pages/Photosforreadme/img_5.png)
+
+🔍 Search Kennels Page
+
+Users can search for available kennels.
+
+Screenshot:
+
+![img_6.png](pages/Photosforreadme/img_6.png)
+![img_7.png](pages/Photosforreadme/img_7.png)
+
+
+🐾 My Paw Profile Page
+
+Users can manage their account, dogs, and orders.
+
+Screenshot:
+
+![img_8.png](pages/Photosforreadme/img_8.png)
+
+
+
+ℹ️ About Us Page
+
+Users can learn about the purpose of Paw Paradise and its creators.
+
+Screenshot:
+
+![img_9.png](pages/Photosforreadme/img_9.png)
+
+🚪 Logout Feature
+
+Users can log out securely.
+
+Screenshot:
+
+![img_10.png](pages/Photosforreadme/img_10.png)
+
+Installation & Requirements
+
+To run the project, make sure the following libraries are installed.
+Add these dependencies to the requirements.txt file:
+
+Flask
+pymongo
+Flask-Session
+Werkzeug
+Jinja2
+
+To install all dependencies, run:
+
+pip install -r requirements.txt
+
+Additional Notes
+
+Ensure that the MongoDB database is running before launching the project.
+
+All pages are protected, meaning users must log in to access their profile and make orders.
+
