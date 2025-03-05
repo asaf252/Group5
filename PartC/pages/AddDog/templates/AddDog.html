@@ -1,0 +1,91 @@
+{% extends "base.html" %}
+
+{% block title %}Add a New Dog{% endblock %}
+
+{% block styles %}
+<link rel="stylesheet" href="{{ url_for('AddDog.static', filename='css/AddDog.css') }}">
+{% endblock %}
+
+{% block content %}
+<div class="AddDogContainer">
+    <h1 class="AddDogTitle">Add a New Dog to Your Pack</h1>
+    <h2 class="AddDogSubtitle">Fill in your dog's details below</h2>
+
+    <section class="AddDogBox">
+        <form id="addDogForm" class="AddDogForm">
+            <div class="form-group">
+                <label for="dogName">Dog Name:</label>
+                <input type="text" id="dogName" name="dogName" required>
+                <span id="dogNameError" class="error-message"></span>
+            </div>
+
+            <div class="form-group">
+                <label for="breed">Breed:</label>
+                <select id="breed" name="breed">
+                    <option value="">Select a breed</option>
+                    <option value="Labrador">Labrador</option>
+                    <option value="Poodle">Poodle</option>
+                    <option value="Golden Retriever">Golden Retriever</option>
+                </select>
+                <span id="breedError" class="error-message"></span>
+            </div>
+
+            <div class="form-group">
+                <label for="age">Age (years):</label>
+                <input type="number" id="age" name="age" min="1">
+                <span id="ageError" class="error-message"></span>
+            </div>
+
+            <div class="form-group">
+                <label for="weight">Weight (kg):</label>
+                <input type="number" id="weight" name="weight" min="1">
+                <span id="weightError" class="error-message"></span>
+            </div>
+
+            <div class="form-group">
+                <label>Medical Conditions:</label>
+                <table class="checkbox-table">
+                    <tr>
+                        <td><label><input type="checkbox" name="medicalConditions" value="Arthritis"> Arthritis</label></td>
+                        <td><label><input type="checkbox" name="medicalConditions" value="Diabetes"> Diabetes</label></td>
+                    </tr>
+                    <tr>
+                        <td><label><input type="checkbox" name="medicalConditions" value="Heart Disease"> Heart Disease</label></td>
+                        <td><label><input type="checkbox" name="medicalConditions" value="Allergies"> Allergies</label></td>
+                    </tr>
+                    <tr>
+                        <td><label><input type="checkbox" name="medicalConditions" value="Hip Dysplasia"> Hip Dysplasia</label></td>
+                    </tr>
+                </table>
+            </div>
+
+            <div class="form-group">
+                <label for="vaccinationStatus">Vaccinated:</label>
+                <select id="vaccinationStatus" name="vaccinationStatus">
+                    <option value="yes">Yes</option>
+                    <option value="no">No</option>
+                </select>
+            </div>
+
+            <div class="form-group">
+                <label for="favoriteFood">Favorite Food:</label>
+                <input type="text" id="favoriteFood" name="favoriteFood">
+            </div>
+
+            <div class="form-group">
+                <label for="behaviorNotes">Behavior Notes:</label>
+                <textarea id="behaviorNotes" name="behaviorNotes" rows="2"></textarea>
+            </div>
+
+            <div class="ButtonsRow">
+                <button type="button" id="addDogBtn" class="btmType1">Add Dog</button>
+                <button type="button" id="cancelButton" class="btmType3">Back to Profile</button>
+            </div>
+        </form>
+    </section>
+</div>
+{% endblock %}
+
+{% block scripts %}
+<script src="{{ url_for('AddDog.static', filename='js/AddDog.js') }}" defer></script>
+{% endblock %}

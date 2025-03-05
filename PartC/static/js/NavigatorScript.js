@@ -39,9 +39,9 @@ function setupNavbar() {
 
             if (isLoggedIn) {
                 addNavLink('Home Page', '/home/home');
-                addNavLink('New Order', '/order/new');
-                addNavLink('Dogs Profile', '/profile');
-                addNavLink('Rate Stay', '/rate');
+                addNavLink('New Order', '/MakeOrder');
+                addNavLink('Profile', '/Profile');
+                addNavLink('Add Dog', '/AddDog');
                 addNavLink('Search Kennel', '/SearchInParadise');
 
                 // יצירת כפתור Logout עם Event Listener

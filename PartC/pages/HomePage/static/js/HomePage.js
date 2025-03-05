@@ -6,22 +6,17 @@ document.addEventListener("DOMContentLoaded", function () {
     });
 
     // כפתור "Rate kennels"
-    const rateButton = document.getElementById("rateButton");
+    const rateButton = document.getElementById("AddDog");
     rateButton.addEventListener("click", function () {
-        location.href = "RateYourStay.html"; // קישור לעמוד הדירוג
+        location.href = "/AddDog";
     });
 
     // כפתור "My Paw profile"
-    const profileButton = document.getElementById("profileButton");
-    profileButton.addEventListener("click", function () {
-        location.href = "ProfilePage.html"; // קישור לעמוד הפרופיל
-    });
+profileButton.addEventListener("click", function () {
+    window.location.href = "/Profile"; // הפניה ישירה לנתיב הנכון ב-Flask
+});
 
-    // כפתור "Logout"
-    const logoutButton = document.getElementById("logoutButton");
-    logoutButton.addEventListener("click", function () {
-        location.href = "LogInPage.html"; // קישור לעמוד ההתחברות
-    });
+
 });
 
 

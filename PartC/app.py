@@ -1,7 +1,8 @@
-import os
 from flask import Flask, request
 from dotenv import load_dotenv
 from datetime import timedelta
+
+
 
 # טוען משתנים מהקובץ .env
 load_dotenv()
@@ -12,13 +13,18 @@ app.config.from_pyfile('settings.py')
 app.config['PERMANENT_SESSION_LIFETIME'] = timedelta(minutes=2)  # פקיעת session לאחר 2 דקות
 
 
+
+
 # חיבור למסד הנתונים (MongoDB)
 from db_connector import cluster  # מוודא חיבור למסד הנתונים
+
 
 # בדיקה שהחיבור למונגוDB עובד
 try:
     cluster.server_info()  # שולח פינג לבדוק חיבור
     print("✅ Connected to MongoDB successfully!")
+
+
 except Exception as e:
     print(f"❌ Failed to connect to MongoDB: {e}")
 
@@ -40,25 +46,36 @@ app.register_blueprint(SearchInParadise_bp)
 # רישום ה-Blueprint
 from pages.AboutUs.AboutUs import  about_bp
 app.register_blueprint(about_bp)
+
+from pages.TopKennels.TopKennels import TopKennels_bp
+app.register_blueprint(TopKennels_bp)
+
+from pages.MakeOrder.MakeOrder import MakeOrder_bp
+app.register_blueprint(MakeOrder_bp)
+
+from pages.Profile.Profile import Profile_bp
+app.register_blueprint(Profile_bp)
+
+from pages.AddDog.AddDog import AddDog_bp
+app.register_blueprint(AddDog_bp)
+
+
 # הרצת השרת
 if __name__ == '__main__':
     print(" Flask server is starting...")
     app.run(debug=True, host="0.0.0.0", port=5000)
 
-    from flask import session, redirect, url_for
 
+from flask import Flask, session, redirect, request
 
-    @app.route('/')
-    def home_redirect():
-        if 'email' in session:  # אם המשתמש מחובר, ננתב אותו ישירות לעמוד הבית
-            return redirect(url_for('homePage.homePage_func'))
-        return redirect(url_for('LogIn.show_login_page'))  # אם לא מחובר, ילך לדף ההתחברות
+app = Flask(__name__)
 
-
-# Middleware - בדיקה אם המשתמש מחובר לפני כל בקשה
 @app.before_request
 def require_login():
-    open_routes = ['SignUp.signup', 'LogIn.show_login_page', 'static']  # עמודים מותרים
-    if 'email' not in session and request.endpoint not in open_routes:
-        print("🔒 User not logged in, redirecting to /")
-        return redirect(url_for('LogIn.show_login_page'))  # הפנייה לעמוד הבית
+    allowed_routes = ['home', 'about', 'signup', 'static']  # דפים שמותרים בלי התחברות
+
+    # אם המשתמש לא מחובר ואין לו הרשאה להיכנס לדף
+    if 'email' not in session and request.path not in ['/', '/about', '/signup']:
+        return redirect('/')
+
+

@@ -1,5 +1,6 @@
-from flask import Flask, render_template, session, redirect, url_for
-from flask import Blueprint
+from flask import Blueprint, redirect, session
+from flask import  render_template
+
 
 homePage_bp = Blueprint(
     'homePage',
@@ -10,10 +11,11 @@ homePage_bp = Blueprint(
     url_prefix="/home"
 )
 
-
 @homePage_bp.route('/home', methods=['GET'])
 def homePage_func():
     # בדיקה אם המשתמש מחובר
     if 'email' not in session:
-        return redirect(url_for('signIn.login'))  # מפנה לדף התחברות אם אין חיבור
-    return render_template('HomePage.html')
+        return redirect('/')  # מפנה לדף ההתחברות אם המשתמש לא מחובר
+
+    return render_template('HomePage.html')  # מציג את דף הבית אם המשתמש מחובר
+

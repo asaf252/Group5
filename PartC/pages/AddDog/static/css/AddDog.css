@@ -1,0 +1,95 @@
+/* 🎨 כללי - עיצוב הדף */
+body {
+  font-family: "Poppins", sans-serif;
+  background-color: #f8f1eb;
+  background-size: cover;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+    overflow: visible;
+}
+
+/* 🎨 קונטיינר ראשי */
+.AddDogContainer {
+  max-width: 650px;
+  background: white;
+  padding: 30px;
+  border-radius: 15px;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+  border: 1px solid #d6c6b7;
+  margin-top: 30px;
+}
+
+/* 🎨 כותרות */
+.AddDogTitle {
+  text-align: center;
+  font-size: 2rem;
+  font-weight: bold;
+  color: #5a3a29;
+}
+
+.AddDogSubtitle {
+  text-align: center;
+  font-size: 1.2rem;
+  color: #7d5e50;
+  margin-bottom: 20px;
+}
+
+/* 🎨 מסגרת הטופס */
+.AddDogBox {
+  background: #fff;
+  border-radius: 12px;
+  padding: 30px;
+  box-shadow: 0 3px 10px rgba(0, 0, 0, 0.1);
+  border: 1px solid #e0d5cd;
+}
+
+/* 🎨 טופס */
+.AddDogForm {
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+}
+
+/* 🎨 תוויות */
+.form-group label {
+  font-weight: 600;
+  color: #5a3a29;
+  font-size: 1rem;
+  margin-bottom: 5px;
+}
+
+/* 🎨 טבלת מחלות רפואיות */
+.checkbox-table {
+  width: 100%;
+  border-collapse: collapse;
+}
+
+.checkbox-table td {
+  padding: 8px 12px;
+  font-size: 1rem;
+  color: #5a3a29;
+}
+
+.checkbox-table input {
+  transform: scale(1.2);
+  margin-right: 8px;
+}
+
+/* 🎨 כפתורים */
+.ButtonsRow {
+  display: flex;
+  justify-content: center;
+  gap: 15px;
+  margin-top: 20px;
+}
+
+
+
+/* 🎨 הודעות שגיאה */
+.error-message {
+  color: red;
+  font-size: 0.9rem;
+  margin-top: 4px;
+}

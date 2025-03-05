@@ -1,0 +1,69 @@
+{% extends "base.html" %}
+
+{% block title %}Make an Order in Paradise{% endblock %}
+
+{% block styles %}
+<link rel="stylesheet" href="{{ url_for('MakeOrder.static', filename='css/MakeOrder.css') }}">
+{% endblock %}
+
+{% block content %}
+<div class="PaymentStyle">
+    <form id="payment-form">
+        <header>
+            <h1 class="ProfilePageTitle">Make an Order in Paradise</h1>
+            <h2>Book Your Dog's Stay</h2>
+        </header>
+
+        <div class="form-group">
+            <label for="kennel">Select Kennel:</label>
+            <select id="kennel" name="kennel">
+                <option value="" disabled selected>Select a kennel</option>
+            </select>
+            <span id="kennelError" class="error-message"></span> <!-- הודעת שגיאה -->
+        </div>
+
+        <div class="form-grid">
+            <div class="form-group">
+                <label for="ownerName">Full Name of Dog Owner:</label>
+                <input type="text" id="ownerName" name="ownerName" readonly>
+                <span id="ownerNameError" class="error-message"></span> <!-- הודעת שגיאה -->
+            </div>
+            <div class="form-group">
+                <label for="dogName">Dog Name:</label>
+                <select id="dogName" name="dogName">
+                    <option value="" disabled selected>Select your dog</option>
+                </select>
+                <span id="dogNameError" class="error-message"></span> <!-- הודעת שגיאה -->
+            </div>
+        </div>
+
+        <div class="form-grid">
+            <div class="form-group">
+                <label for="from">From:</label>
+                <input type="date" id="from" name="from" onkeydown="return false;">
+                <span id="fromError" class="error-message"></span> <!-- הודעת שגיאה -->
+            </div>
+            <div class="form-group">
+                <label for="until">Until:</label>
+                <input type="date" id="until" name="until" onkeydown="return false;">
+                <span id="untilError" class="error-message"></span> <!-- הודעת שגיאה -->
+            </div>
+        </div>
+
+        <div class="form-group price-row">
+            <label for="price">Total Price:</label>
+            <label id="price">$0</label>
+            <span id="priceError" class="error-message"></span> <!-- הודעת שגיאה -->
+        </div>
+
+        <footer class="Raw">
+            <button type="button" class="btmType1" id="backButton">Back to home page</button>
+            <button type="submit" id="confirmButton" class="btmType2">Confirm</button>
+        </footer>
+    </form>
+</div>
+{% endblock %}
+
+{% block scripts %}
+<script src="{{ url_for('MakeOrder.static', filename='js/MakeOrder.js') }}" defer></script>
+{% endblock %}

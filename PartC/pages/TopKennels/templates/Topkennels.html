@@ -1,14 +1,16 @@
-<!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Top Kennels</title>
-    <link rel="stylesheet" href="../Styles/PawStyles.css">
-    <link rel="stylesheet" href="../Styles/NavigatorStyle.css">
-    <script src="../Scripts/TopKennels.js" defer></script>
-</head>
-<body class="myBackground">
+{% extends "base.html" %}
+
+{% block title %}Top Kennels{% endblock %}
+<link rel="stylesheet" href="{{ url_for('TopKennels.static', filename='css/TopKennels.css') }}">
+
+
+{% block styles %}
+<link rel="stylesheet" href="{{ url_for('TopKennels.static', filename='css/TopKennels.css') }}">
+<link rel="stylesheet" href="{{ url_for('TopKennels.static', filename='css/TopKennels.css') }}">
+
+{% endblock %}
+
+{% block content %}
 <div class="MainStyle">
     <h1 class="ProfilePageTitle">Top kennels we found for you:</h1>
     <p id="dog-selection"></p>
@@ -23,12 +25,22 @@
             </tr>
             </thead>
             <tbody>
-            <!-- תוכן דינמי -->
+            <!-- התוכן הדינמי יתווסף כאן -->
             </tbody>
         </table>
     </div>
 
     <button type="button" class="btmType1" id="backButton">Back to Searching</button>
 </div>
-</body>
-</html>
+{% endblock %}
+
+{% block scripts %}
+
+    <script src="{{ url_for('TopKennels.static', filename='js/TopKennels.js') }}" defer></script>
+<script src="{{ url_for('TopKennels.static', filename='js/TopKennels.js') }}" defer></script>
+
+
+
+
+
+{% endblock %}

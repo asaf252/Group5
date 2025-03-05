@@ -1,0 +1,192 @@
+/* === RESET בסיסי לסדר את העיצוב === */
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+/* === גוף הדף === */
+body {
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  background-color: #f4f4f9; /* רקע עדין */
+  color: #333; /* צבע טקסט */
+}
+
+/* === עמוד הפרופיל כולו === */
+.profile-page {
+  max-width: 1200px; /* הגבלת רוחב */
+  margin: 0 auto;    /* מרכז את התוכן */
+  padding: 20px;
+}
+
+/* === כותרת ראשית של העמוד (My Profile) === */
+.profile-page h1 {
+  text-align: center;
+  font-size: 2.5rem;
+  margin-bottom: 30px;
+  color: #5a3a29;
+  /* אפשר להוסיף קו תחתון או רקע בהתאם לטעם שלך */
+}
+
+/* === עיצוב כללי של סקשן (Section) === */
+section {
+  background-color: #f8e6d8; /* צבע רקע */
+  padding: 20px;
+  border-radius: 10px;
+  margin-bottom: 30px;
+  box-shadow: 0 2px 6px rgba(0, 0, 0, 0.1);
+
+}
+
+/* כותרות הסקשן (Client Information, וכו') */
+section h2 {
+  font-size: 1.8rem;
+  margin-bottom: 15px;
+  border-bottom: 2px solid #d9a18a;
+  padding-bottom: 5px;
+  color: #5c4b51;
+}
+
+/* === טופס עדכון פרופיל === */
+#clientForm div {
+  margin-bottom: 15px;
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+}
+
+/* תוויות שדות הטופס */
+#clientForm label {
+  width: 150px;
+  font-weight: bold;
+  color: #555;
+  margin-bottom: 5px;
+}
+
+/* שדות טקסט */
+#clientForm input {
+  flex: 1;
+  padding: 8px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+}
+
+/* כפתור עדכון פרופיל */
+#updateClientBtn {
+  background-color: #5a3a29;
+  color: #fff;
+  margin-top: 10px;
+  padding: 10px 15px;
+  font-size: 1rem;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: background-color 0.2s;
+}
+#updateClientBtn:hover {
+  background-color: #7a5a41;
+}
+
+/* === אזור של הכלבים וההזמנות זה לצד זה (Flexbox) === */
+#dogs-orders-section {
+  display: flex;           /* מפעיל Flexbox */
+  flex-direction: row;     /* מציג זה לצד זה */
+  justify-content: space-between;  /* מפזר מקום בין הכלבים להזמנות */
+  gap: 20px;               /* רווח אופקי בין הילדים */
+  margin-bottom: 30px;     /* רווח מתחת לסקשן */
+}
+
+/* כל רשימה תתפוס בערך חצי מסך */
+.list-container {
+  width: 50%;
+  background-color: #fff;
+  padding: 10px;
+  border-radius: 8px;
+  box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+}
+
+/* === רשימת הכלבים וההזמנות – גריד פנימי (כדי להציג כרטיסים) === */
+#dogsList, #ordersList {
+  display: grid;
+  grid-template-columns: 1fr; /* עמודה אחת */
+  gap: 15px;
+}
+
+/* === כרטיסי כלב/הזמנה === */
+.dog-item, .order-item {
+  background-color: #fafafa;
+  padding: 15px;
+  border-radius: 8px;
+  box-shadow: 0 1px 4px rgba(0,0,0,0.1);
+  transition: transform 0.2s ease-in-out;
+}
+.dog-item:hover, .order-item:hover {
+  transform: translateY(-3px);
+}
+
+/* עיצוב הטקסט בתוך כרטיסי הכלב/הזמנה */
+.dog-item p, .order-item p {
+  margin: 5px 0;
+  font-size: 1rem;
+}
+
+/* כפתור למחיקת כלב/ביטול הזמנה */
+.dog-item button, .order-item button {
+  background-color: #5a3a29;
+  color: #fff;
+  border: none;
+  padding: 8px 12px;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: background-color 0.2s;
+}
+.dog-item button:hover, .order-item button:hover {
+  background-color: #7a5a41;
+}
+
+/* כפתור להוספת כלב אם תרצה */
+.addBtn {
+  background-color: #d9a18a;
+  color: #fff;
+  margin-top: 10px;
+  padding: 10px 15px;
+  font-size: 1rem;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+}
+.addBtn:hover {
+  background-color: #e0b8a3;
+}
+
+/* הודעות שגיאה (אם תרצה) */
+.error-message {
+  color: red;
+  font-size: 0.9rem;
+  margin-top: 5px;
+}
+
+/* === רספונסיביות למסכים קטנים === */
+@media (max-width: 768px) {
+  /* הטופס */
+  #clientForm label {
+    width: 100%;
+    margin-bottom: 5px;
+  }
+  #clientForm input {
+    width: 100%;
+  }
+
+  /* הכלבים וההזמנות יהיו אחד מתחת לשני במקום זה לצד זה */
+  #dogs-orders-section {
+    flex-direction: column;
+  }
+  .list-container {
+    width: 100%;
+  }
+}
+.error-message {
+  color: red;
+  font-size: 0.9rem;
+  margin-left: 10px; /* או איך שמתאים לך */
+}

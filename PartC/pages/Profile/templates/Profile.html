@@ -1,0 +1,69 @@
+{% extends "base.html" %}
+
+{% block title %}My Profile - Paw Paradise{% endblock %}
+
+{% block styles %}
+<link rel="stylesheet" href="{{ url_for('Profile_bp.static', filename='css/Profile.css') }}">
+{% endblock %}
+
+{% block content %}
+<div class="profile-page">
+    <h1>My Profile</h1>
+
+    <!-- Client Info Section -->
+    <section id="client-info">
+        <h2>Client Information</h2>
+        <form id="clientForm">
+            <div>
+                <label for="firstName">First Name:</label>
+                <input type="text" id="firstName" name="firstName" required>
+                <span id="firstNameError" class="error-message"></span>
+            </div>
+            <div>
+                <label for="lastName">Last Name:</label>
+                <input type="text" id="lastName" name="lastName" required>
+                <span id="lastNameError" class="error-message"></span>
+            </div>
+            <div>
+                <label for="email">Email:</label>
+                <input type="email" id="email" name="email" readonly>
+                <!-- אין צורך בהודעת שגיאה כאן כי זה readonly -->
+            </div>
+            <div>
+                <label for="phone">Phone:</label>
+                <input type="text" id="phone" name="phone" required>
+                <span id="phoneError" class="error-message"></span>
+            </div>
+            <button type="button" id="updateClientBtn">Update Information</button>
+        </form>
+    </section>
+
+    <!-- Dogs & Orders side by side -->
+    <section id="dogs-orders-section">
+        <!-- Dogs -->
+        <div class="list-container">
+            <h2>My Dogs</h2>
+            <div id="dogsList">
+                <!-- dog cards will appear here -->
+            </div>
+            <button class="addBtn">Add New Dog</button>
+        </div>
+
+        <!-- Orders -->
+        <div class="list-container">
+            <h2>My Orders</h2>
+            <div id="ordersList">
+                <!-- order cards will appear here -->
+            </div>
+            <button class="addBtn">Make an Order</button>
+        </div>
+    </section>
+     <footer class="Raw">
+            <button type="button" class="btmType1" id="backButton">Back to home page</button>
+        </footer>
+</div>
+{% endblock %}
+
+{% block scripts %}
+<script src="{{ url_for('Profile_bp.static', filename='js/Profile.js') }}" defer></script>
+{% endblock %}

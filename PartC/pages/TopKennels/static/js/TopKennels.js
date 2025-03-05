@@ -1,72 +1,74 @@
-document.addEventListener("DOMContentLoaded", function () {
+document.addEventListener("DOMContentLoaded", async function () {
     const urlParams = new URLSearchParams(window.location.search);
-    const sortType = urlParams.get("sort");
-    const selectedDog = urlParams.get("dog");
+    const sortType = urlParams.get("sort") || "alphabetical"; // ברירת מחדל מיון אלפביתי
 
-    // נתוני פנסיונים לדוגמה
-    const kennels = [
-        { name: "Paw Paradise", address: "123 Dog Street, Woof City", grade: 5, contact: "(555) 123-4567" },
-        { name: "Happy Tails", address: "456 Bark Lane, Fetchville", grade: 4, contact: "(555) 987-6543" },
-        { name: "Bone and Tail", address: "456 Pappy Avenue, Happydog", grade: 3, contact: "(555) 956-4323" },
-    ];
-
-    // ניקוי הטבלה לפני הוספת נתונים
-    const tableBody = document.querySelector("#kennelsTable tbody");
-    tableBody.innerHTML = "";
-
-    // מיון נתונים לפי מה שנבחר
-    let sortedKennels;
-    if (sortType === "alphabetical") {
-        sortedKennels = kennels.sort((a, b) => a.name.localeCompare(b.name));
-    } else if (sortType === "rate") {
-        sortedKennels = kennels.sort((a, b) => b.grade - a.grade);
-    } else {
-        sortedKennels = kennels; // ללא מיון
-    }
-
-    // הוספת הפנסיונים לטבלה
-    sortedKennels.forEach((kennel) => {
-        const row = document.createElement("tr");
-
-        // שם הפנסיון
-        const nameCell = document.createElement("td");
-        nameCell.textContent = kennel.name;
-        row.appendChild(nameCell);
-
-        // כתובת
-        const addressCell = document.createElement("td");
-        addressCell.textContent = kennel.address;
-        row.appendChild(addressCell);
-
-        // דירוג עם עצמות בלבד
-        const gradeCell = document.createElement("td");
-        gradeCell.innerHTML = `${'<img src="../Photos/DogBonePic.png" class="LogoBone" alt="Bone">'.repeat(kennel.grade)}`;
-        row.appendChild(gradeCell);
-
-        // פרטי קשר
-        const contactCell = document.createElement("td");
-        const detailsButton = document.createElement("button");
-        detailsButton.textContent = "More details";
-        detailsButton.className = "btmType1";
-
-        // הוספת אירוע קליק לכפתור
-        detailsButton.addEventListener("click", function () {
-            // מעבר לעמוד הפרטים עם שם הפנסיון
-            const encodedName = encodeURIComponent(kennel.name); // קידוד השם כדי להתאים ל-URL
-            location.href = `../Templets/kennelProfile.html`;
+    try {
+        // שליחת בקשה לשרת לקבלת הנתונים הממוינים
+        const response = await fetch(`/TopKennels/data?sort=${sortType}`, {
+            method: "GET",
+            headers: { "Content-Type": "application/json" }
         });
 
-        contactCell.innerHTML = `<p>Phone: ${kennel.contact}</p>`;
-        contactCell.appendChild(detailsButton);
-        row.appendChild(contactCell);
+        if (!response.ok) {
+            throw new Error("❌ Failed to fetch kennels data.");
+        }
 
-        // הוספת השורה לטבלה
-        tableBody.appendChild(row);
-    });
+        const kennels = await response.json();
+        console.log("🔎 Loaded kennels data:", kennels);
 
-    // האזנה ללחיצה על כפתור Back
+        // ניקוי הטבלה לפני הכנסת הנתונים
+        const tableBody = document.querySelector("#kennelsTable tbody");
+        tableBody.innerHTML = "";
+
+        // הוספת הפנסיונים לטבלה
+        kennels.forEach((kennel) => {
+            const row = document.createElement("tr");
+
+            // שם הכלביה
+            const nameCell = document.createElement("td");
+            nameCell.textContent = kennel.name;
+            row.appendChild(nameCell);
+
+            // כתובת
+            const addressCell = document.createElement("td");
+            addressCell.textContent = kennel.Address;
+            row.appendChild(addressCell);
+
+            // דירוג
+            const gradeCell = document.createElement("td");
+            gradeCell.textContent = kennel.grade;
+            row.appendChild(gradeCell);
+
+            // יצירת תא עבור פרטי הקשר
+            const contactCell = document.createElement("td");
+
+            // יצירת אלמנט <p> עבור מספר הטלפון
+            const phoneParagraph = document.createElement("p");
+            phoneParagraph.textContent = `📞 ${kennel.PhoneNumber}`;
+
+            // יצירת כפתור "More details"
+            const detailsButton = document.createElement("button");
+            detailsButton.textContent = "More details";
+            detailsButton.className = "btmType1";
+            detailsButton.addEventListener("click", function () {
+                location.href = `/kennelProfile?kennelId=${kennel._id}`;
+            });
+
+            // הוספת מספר הטלפון והכפתור לאותו תא (td)
+            contactCell.appendChild(phoneParagraph);
+            contactCell.appendChild(detailsButton);
+            row.appendChild(contactCell);
+
+            tableBody.appendChild(row);
+        });
+
+    } catch (error) {
+        console.error("❌ Error fetching kennels data:", error);
+    }
+
+    // כפתור חזרה לחיפוש
     const backButton = document.getElementById("backButton");
     backButton.addEventListener("click", function () {
-        location.href = "../Templets/SearchInParadise.html"; // שם הקובץ של עמוד החיפוש
+        location.href = "/SearchInParadise";
     });
 });

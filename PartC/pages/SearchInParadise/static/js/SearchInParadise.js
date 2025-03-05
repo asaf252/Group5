@@ -7,24 +7,10 @@ document.addEventListener("DOMContentLoaded", function () {
         const sortType = document.getElementById("rating-select").value;
         console.log("🔍 Sending search request with:", sortType);
 
-        try {
-            const response = await fetch("/SearchInParadise/results?sort=" + sortType, {
-                method: "GET",
-                headers: { "Content-Type": "application/json" }
-            });
-
-            const data = await response.json();
-            console.log("🔎 Search results:", data); // הדפסת הנתונים שהתקבלו
-
-            if (data.length > 0) {
-                sessionStorage.setItem("kennelResults", JSON.stringify(data)); // שמירת הנתונים
-                window.location.href = "/kennelProfile"; // מעבר לדף התוצאות
-            } else {
-                alert("❌ No results found.");
-            }
-
-        } catch (error) {
-            console.error("❌ Error fetching search results:", error);
-        }
+        // מעבר לעמוד TopKennels עם סוג המיון שנבחר
+        window.location.href = `/TopKennels?sort=${sortType}`;
     });
+});
+document.querySelector('.btmType1').addEventListener("click", () => {
+    window.location.href = "/";
 });
