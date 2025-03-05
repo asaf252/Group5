@@ -74,5 +74,3 @@ def update_one_user(user_email, user):
     return True, "User updated successfully."
 
 
-def orders_col():
-    return None

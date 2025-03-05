@@ -1,27 +1,28 @@
-<!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <title>SignUp</title>
-</head>
-<link rel="stylesheet" href="{{ url_for('static', filename='css/PawStyles.css') }}">
-<link rel="stylesheet" href="{{ url_for('static', filename='css/NavigatorStyle.css') }}">
-<link rel="stylesheet" href="{{ url_for('SignUp.static', filename='css/SignUp.css') }}">
+{% extends "base.html" %}
 
-<body class="myBackground">
+{% block title %}Sign Up{% endblock %}
+
+{% block styles %}
+<link rel="stylesheet" href="{{ url_for('SignUp.static', filename='css/SignUp.css') }}">
+{% endblock %}
+
+{% block content %}
 <div class="LogInMain">
-        <nav id="Navigator"></nav>
     <form id="Signup">
         <h1 class="ProfilePageTitle">Sign up to paradise</h1>
+
         <label for="email">Email</label>
         <input type="text" id="email" name="email" placeholder="Enter your email">
         <span id="emailError"></span>
+
         <label for="firstname">First name</label>
         <input type="text" id="firstname" name="first_name" placeholder="Enter your first name">
         <span id="firstnameError"></span>
+
         <label for="lastname">Last name</label>
         <input type="text" id="lastname" name="last_name" placeholder="Enter your last name">
         <span id="lastnameError"></span>
+
         <label for="password">Password</label>
         <input type="password" id="password" name="password" placeholder="Enter your password">
         <span id="passwordError"></span>
@@ -30,25 +31,24 @@
         <input type="password" id="confirmpassword" name="confirmpassword" placeholder="Confirm your password">
         <span id="confirmPasswordError"></span>
 
-
         <label for="phonenumber">Phone number</label>
-        <input  id="phonenumber" name="phonenumber" placeholder="Enter your phone number">
+        <input id="phonenumber" name="phonenumber" placeholder="Enter your phone number">
         <span id="phonenumberError"></span>
-
 
         <div class="Raw">
             <label for="location">Location</label>
             <input type="checkbox" id="location" name="location">
             <label>Allow Location Access</label>
         </div>
+
         <div class="Raw">
             <button type="button" class="btmType1" id="backButton">Back</button>
             <button type="submit" class="btmType2">Register</button>
         </div>
     </form>
 </div>
-<script src="{{ url_for('SignUp.static', filename='js/SignUp.js') }}"></script>
-<script defer src="{{ url_for('static', filename='js/NavigatorScript.js') }}"></script>
+{% endblock %}
 
-</body>
-</html>
+{% block scripts %}
+<script src="{{ url_for('SignUp.static', filename='js/SignUp.js') }}"></script>
+{% endblock %}
