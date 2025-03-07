@@ -6,9 +6,6 @@
   <component name="ChangeListManager">
     <list default="true" id="3a85256d-f386-4d1b-8f4c-d1287acb997b" name="Changes" comment="check">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/PartC/db_connector.py" beforeDir="false" afterPath="$PROJECT_DIR$/PartC/db_connector.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/PartC/pages/AboutUs/templates/AboutUs.html" beforeDir="false" afterPath="$PROJECT_DIR$/PartC/pages/AboutUs/templates/AboutUs.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/PartC/pages/SignUp/templates/SignUp.html" beforeDir="false" afterPath="$PROJECT_DIR$/PartC/pages/SignUp/templates/SignUp.html" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -69,47 +66,47 @@
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="PropertiesComponent"><![CDATA[{
-  "keyToString": {
-    "DefaultHtmlFileTemplate": "HTML File",
-    "JavaScript Debug.MakeOrder.html.executor": "Run",
-    "JavaScript Debug.Profile.html.executor": "Run",
-    "JavaScript Debug.SignUp.html.executor": "Run",
-    "JavaScript Debug.base.html.executor": "Run",
-    "Node.js.NavigatorScript.js.executor": "Run",
-    "Node.js.RateYourStay.js.executor": "Debug",
-    "Python.HomePage.executor": "Run",
-    "Python.LogIn.executor": "Run",
-    "Python.app (1).executor": "Run",
-    "Python.app.executor": "Run",
-    "Python.init_data.executor": "Run",
-    "Python.main.executor": "Run",
-    "RunOnceActivity.ShowReadmeOnStart": "true",
-    "git-widget-placeholder": "main",
-    "last_opened_file_path": "C:/Users/assaf/PycharmProjects/Paw_Paradise_Group5/PartC/pages/MakeOrder",
-    "list.type.of.created.stylesheet": "CSS",
-    "node.js.detected.package.eslint": "true",
-    "node.js.detected.package.tslint": "true",
-    "node.js.selected.package.eslint": "(autodetect)",
-    "node.js.selected.package.tslint": "(autodetect)",
-    "nodejs_package_manager_path": "npm",
-    "run.code.analysis.last.selected.profile": "aDefault",
-    "settings.editor.selected.configurable": "com.jetbrains.python.configuration.PyActiveSdkModuleConfigurable",
-    "ts.external.directory.path": "C:\\Program Files\\JetBrains\\PyCharm 2024.2.4\\plugins\\javascript-plugin\\jsLanguageServicesImpl\\external",
-    "vue.rearranger.settings.migration": "true"
+  <component name="PropertiesComponent">{
+  &quot;keyToString&quot;: {
+    &quot;DefaultHtmlFileTemplate&quot;: &quot;HTML File&quot;,
+    &quot;JavaScript Debug.MakeOrder.html.executor&quot;: &quot;Run&quot;,
+    &quot;JavaScript Debug.Profile.html.executor&quot;: &quot;Run&quot;,
+    &quot;JavaScript Debug.SignUp.html.executor&quot;: &quot;Run&quot;,
+    &quot;JavaScript Debug.base.html.executor&quot;: &quot;Run&quot;,
+    &quot;Node.js.NavigatorScript.js.executor&quot;: &quot;Run&quot;,
+    &quot;Node.js.RateYourStay.js.executor&quot;: &quot;Debug&quot;,
+    &quot;Python.HomePage.executor&quot;: &quot;Run&quot;,
+    &quot;Python.LogIn.executor&quot;: &quot;Run&quot;,
+    &quot;Python.app (1).executor&quot;: &quot;Run&quot;,
+    &quot;Python.app.executor&quot;: &quot;Run&quot;,
+    &quot;Python.init_data.executor&quot;: &quot;Run&quot;,
+    &quot;Python.main.executor&quot;: &quot;Run&quot;,
+    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
+    &quot;git-widget-placeholder&quot;: &quot;main&quot;,
+    &quot;last_opened_file_path&quot;: &quot;C:/Users/assaf/OneDrive/שולחן העבודה/group19-main&quot;,
+    &quot;list.type.of.created.stylesheet&quot;: &quot;CSS&quot;,
+    &quot;node.js.detected.package.eslint&quot;: &quot;true&quot;,
+    &quot;node.js.detected.package.tslint&quot;: &quot;true&quot;,
+    &quot;node.js.selected.package.eslint&quot;: &quot;(autodetect)&quot;,
+    &quot;node.js.selected.package.tslint&quot;: &quot;(autodetect)&quot;,
+    &quot;nodejs_package_manager_path&quot;: &quot;npm&quot;,
+    &quot;run.code.analysis.last.selected.profile&quot;: &quot;aDefault&quot;,
+    &quot;settings.editor.selected.configurable&quot;: &quot;com.jetbrains.python.configuration.PyActiveSdkModuleConfigurable&quot;,
+    &quot;ts.external.directory.path&quot;: &quot;C:\\Program Files\\JetBrains\\PyCharm 2024.2.4\\plugins\\javascript-plugin\\jsLanguageServicesImpl\\external&quot;,
+    &quot;vue.rearranger.settings.migration&quot;: &quot;true&quot;
   },
-  "keyToStringList": {
-    "GitStage.ChangesTree.GroupingKeys": [
-      "directory",
-      "module",
-      "repository"
+  &quot;keyToStringList&quot;: {
+    &quot;GitStage.ChangesTree.GroupingKeys&quot;: [
+      &quot;directory&quot;,
+      &quot;module&quot;,
+      &quot;repository&quot;
     ],
-    "com.intellij.ide.scratch.ScratchImplUtil$2/New Scratch File": [
-      "JupyterPython",
-      "CSS"
+    &quot;com.intellij.ide.scratch.ScratchImplUtil$2/New Scratch File&quot;: [
+      &quot;JupyterPython&quot;,
+      &quot;CSS&quot;
     ]
   }
-}]]></component>
+}</component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
       <recent name="C:\Users\assaf\PycharmProjects\Paw_Paradise_Group5\PartC\pages\MakeOrder" />
@@ -202,8 +199,8 @@
     <list>
       <item itemvalue="Node.js.NavigatorScript.js" />
       <item itemvalue="Python.app" />
-      <item itemvalue="Python.init_data" />
       <item itemvalue="Python.app (1)" />
+      <item itemvalue="Python.init_data" />
     </list>
     <recent_temporary>
       <list>
@@ -248,7 +245,10 @@
       <workItem from="1740329501154" duration="12198000" />
       <workItem from="1740401977562" duration="22864000" />
       <workItem from="1740570768425" duration="71288000" />
-      <workItem from="1740992651166" duration="59850000" />
+      <workItem from="1740992651166" duration="60219000" />
+      <workItem from="1741281885146" duration="6123000" />
+      <workItem from="1741340769198" duration="452000" />
+      <workItem from="1741341232848" duration="15000" />
     </task>
     <task id="LOCAL‎-00001" summary="check">
       <option name="closed" value="true" />
@@ -626,7 +626,15 @@
       <option name="project" value="LOCAL‎" />
       <updated>1741172301344</updated>
     </task>
-    <option name="localTasksCounter" value="48" />
+    <task id="LOCAL‎-00048" summary="check">
+      <option name="closed" value="true" />
+      <created>1741173337045</created>
+      <option name="number" value="00048" />
+      <option name="presentableId" value="LOCAL‎-00048" />
+      <option name="project" value="LOCAL‎" />
+      <updated>1741173337045</updated>
+    </task>
+    <option name="localTasksCounter" value="49" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
